@@ -125,6 +125,26 @@ files and generated artifacts are preserved.
    full reproducibility requires regeneration or hashed release assets and a
    checked full-prefix result from the documented configuration.
 
+## Initial implementation status
+
+The independent public repository `zhangziqing/RTeAAL-Nanhu` has been created.
+The selected import contains 202 source/evidence records with original and
+imported hashes; the larger inventory remains a backlog, not a wholesale copy.
+
+The CPU CMake build rebuilds RU/NU/CoreMark hosts, FESVR and preprocessing from
+pinned source. Its two independent kernel CTests pass; the CUDA backend's eight
+CPU CTests also pass. Both RV64I workload binaries were rebuilt. Relocated tensor
+layout/liveness checks match the original reports, and a source-built CPU host
+matches the original Verilator trace over 1,024 non-reset cycles using the old
+frozen model. A separate fresh local checkout builds both runtime projects and
+passes all ten CTests with an explicitly supplied installed yaml-cpp dependency.
+These checks do not build fresh recursive RTL dependencies or regenerate Nanhu.
+
+`main` contains the checked import and runtime helpers. `reproduction-flow`
+isolates the new compiler-build, elaboration, model-compilation and Verilator
+source-build entry points, which have syntax/CLI checks but no complete Nanhu
+acceptance. No new performance result or complete CoreMark run is claimed.
+
 ## Remaining acceptance work
 
 The compiler's prior small-test integration does not establish a newly generated
