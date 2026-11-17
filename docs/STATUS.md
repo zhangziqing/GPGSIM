@@ -9,6 +9,7 @@ Recorded November 17, 2026. Machine-readable evidence is in
 | CPU source build | Passed | RU checked host, NU/CoreMark/THP variants, FESVR and preprocessing rebuilt from pinned C++ source |
 | Existing RU/NU controls | 2/2 passed | All 29 opcodes, large counters, wide shifts and memory compared with independent existing evaluators |
 | CUDA backend CPU controls | 8/8 passed | Schedule, opcode, memory, conflict-plan and flat-descriptor controls; GPU not exercised |
+| Fresh local checkout | Passed | CPU and CUDA-CPU builds plus all 10 CTests in a separate temporary directory; existing installed yaml-cpp used |
 | RV64I workloads | Rebuilt | Loop counts 1 and 1000; binary hashes recorded in local ignored build manifest |
 | Tensor layout and liveness | Passed | Existing frozen model; semantic reports/input hashes match original checks after path relocation |
 | CPU CoreMark short prefix | Passed | 1,024 observed non-reset cycles match the original Verilator trace byte-for-byte |

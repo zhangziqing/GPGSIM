@@ -26,6 +26,12 @@
       "online_reference_comparison": true,
       "validation_status": "passed",
       "trace_sha256": "3632de25749ade3041fc5901ddc4f08d85fdfc79fb021b00e141f15e4a2c79cc"
+    },
+    "fresh_local_checkout": {
+      "scope": "Fresh local main checkout, CPU and CUDA-CPU builds with 10 CTests. Uses system host tools and explicit installed yaml-cpp; not a remote recursive dependency build.",
+      "tested_main_commit": "546f013",
+      "cpu_ctest": 2,
+      "cuda_cpu_ctest": 8
     }
   },
   "not_run": [
