@@ -1,0 +1,38 @@
+[
+  {
+    "case": "gated",
+    "status": "passed",
+    "first_checked_cycle": 32,
+    "last_checked_cycle": 999
+  },
+  {
+    "case": "bool",
+    "status": "passed",
+    "first_checked_cycle": 32,
+    "last_checked_cycle": 999
+  },
+  {
+    "case": "signed",
+    "status": "passed",
+    "first_checked_cycle": 32,
+    "last_checked_cycle": 999
+  },
+  {
+    "case": "ram",
+    "status": "passed",
+    "first_checked_cycle": 0,
+    "last_checked_cycle": 999
+  },
+  {
+    "case": "flash",
+    "status": "passed",
+    "first_checked_cycle": 2,
+    "last_checked_cycle": 999
+  },
+  {
+    "case": "idle",
+    "status": "passed",
+    "first_checked_cycle": 1,
+    "last_checked_cycle": 999
+  }
+]

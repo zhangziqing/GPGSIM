@@ -1,0 +1,153 @@
+{
+  "status": "audited_pass",
+  "scope": "Normalized-v5 slice projection OFF/ON with flat descriptors; update composition OFF in both.",
+  "date": "2026-11-15",
+  "source": {
+    "workspace_revision": "9c84c902502a637d9def8e1a731af1ede034c34c",
+    "runtime_base": "0a6d7cc93a67823f26753741a309ed215ca5ab84",
+    "runtime_patch_commit": "12ee449aa923ce25d11012e564ca0e5b5f409744",
+    "simulator_revision": "274d8f75c13f690546dfb64f4254fcbc0c1ef7a3",
+    "engine_cuda_sha256": "6c39fad7ed9b9311aed901e4ecc5b94980bec748f82d75a68e217935a03b80ad",
+    "audit_commit": "2b408b9"
+  },
+  "gpu": {
+    "name": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+    "uuid": "GPU-67983fd2-eb55-ece7-a1ec-40165d7759fb",
+    "driver": "580.178.04",
+    "cuda": "13.2.78",
+    "architecture": "sm_120"
+  },
+  "configuration": {
+    "cuda_graph": true,
+    "threads": 128,
+    "tail_threshold": 256,
+    "flat_descriptors": true,
+    "cpu_affinity": [
+      2
+    ],
+    "cmake_build_type": "",
+    "cuda_flags": "-lineinfo --ptxas-options=-v",
+    "cycles": 100000,
+    "reset_cycles": 64,
+    "samples_per_variant": 1,
+    "order": [
+      "A",
+      "B"
+    ]
+  },
+  "memory_commit": "direct",
+  "parallel_memory_commit_loop_unroll": 1,
+  "build_seconds": [
+    {
+      "variant": "runtime",
+      "stage": "configure",
+      "seconds": 0.995457662967965,
+      "returncode": 0
+    },
+    {
+      "variant": "runtime",
+      "stage": "build",
+      "seconds": 2.182763483026065,
+      "returncode": 0
+    },
+    {
+      "variant": "diagnostic",
+      "stage": "configure",
+      "seconds": 0.9418508799863048,
+      "returncode": 0
+    },
+    {
+      "variant": "diagnostic",
+      "stage": "build",
+      "seconds": 2.1676487320219167,
+      "returncode": 0
+    }
+  ],
+  "samples": [
+    {
+      "variant": "A",
+      "projection": false,
+      "composition": false,
+      "model_sha256": "e0b3bef914ca412d05d1fea740e4c0abbb26fdd3ed9760ada73a5702ab84649b",
+      "layers": 126,
+      "nodes": 2222558,
+      "data_slots": 490089,
+      "kernels_per_cycle": 141,
+      "cycles_per_second": 3191.9750505205607,
+      "evaluation_seconds": 31.32856567399911,
+      "kernel_device_seconds": 29.981983075138395,
+      "tensor_load_seconds": 0.533287719,
+      "flat_plan_seconds": 0.026738737,
+      "memory_plan_seconds": 0.0,
+      "wall_seconds": 34.277406215667725,
+      "simulation_loop_wall_seconds": 32.833671062,
+      "allocated_device_bytes": 1165265660,
+      "descriptor_bytes": 44451160,
+      "memory_plan_bytes": 0,
+      "flat_inlined_nodes": 2177119,
+      "fused_small_layers": 57,
+      "fingerprints": {
+        "full_data_fingerprint": 6218498432779941060,
+        "memory64_fingerprint": 15503565812696885107,
+        "memory8_fingerprint": 656100811014868721
+      },
+      "result_sha256": "046780f13c87ea20856581610764e51b9ffd7b9549f0fb236e8a5c7e3346545a",
+      "command_sha256": "58df272f51ecd74cbf317046b1dbfc656c15980c8f9856d6845c1307be7bcaf6"
+    },
+    {
+      "variant": "B",
+      "projection": true,
+      "composition": false,
+      "model_sha256": "0f68d66a9077f50f9f18c645247ddea43360169a0e4361b60e1b5abed93796cc",
+      "layers": 94,
+      "nodes": 2221744,
+      "data_slots": 491052,
+      "kernels_per_cycle": 129,
+      "cycles_per_second": 3426.572639827572,
+      "evaluation_seconds": 29.183680169999864,
+      "kernel_device_seconds": 27.604065949407197,
+      "tensor_load_seconds": 0.554373008,
+      "flat_plan_seconds": 0.026679983,
+      "memory_plan_seconds": 0.0,
+      "wall_seconds": 32.12578988075256,
+      "simulation_loop_wall_seconds": 30.671471954,
+      "allocated_device_bytes": 1165161436,
+      "descriptor_bytes": 44434880,
+      "memory_plan_bytes": 0,
+      "flat_inlined_nodes": 2176305,
+      "fused_small_layers": 31,
+      "fingerprints": {
+        "full_data_fingerprint": 5423141915325995166,
+        "memory64_fingerprint": 15503565812696885107,
+        "memory8_fingerprint": 656100811014868721
+      },
+      "result_sha256": "c7c2116192cd1c0693ef821451830c719ed79e6bd47507c99158deac5555e97c",
+      "command_sha256": "eaa07b2fe7663df5d3fe9d12385b7baa2ba7844898619d55b482431539b7fe87"
+    }
+  ],
+  "throughput_ratio_B_over_A": 1.0734960598356658,
+  "throughput_percent_change": 7.349605983566576,
+  "checks_file": "projection-only-flat-checks.json",
+  "ctest_passes": 30,
+  "full_prefix_alias_diagnostics": 2,
+  "positive_alias_control": "Expected error 7; return code 1",
+  "input_archive": {
+    "bytes": 45296001,
+    "sha256": "d8e156bb51ced9694a3cee27578c13bc7f2b15f8cc6d8bcf6d718dbf6293071b"
+  },
+  "evidence_archive": {
+    "local_path": "results/experimental/plru-projection/runtime/projection-only-flat-20261115T084928Z/projection-only-flat-evidence.tar.gz",
+    "remote_path": "/home/zhangziqing/projection-only-flat-20261115T091710Z/projection-only-flat-evidence.tar.gz",
+    "bytes": 765076,
+    "sha256": "147292d42b887f6143b3888a338136106a0f4ceea2f98dccf1603e726b095be2",
+    "manifest_files": 205
+  },
+  "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+  "verification_boundary": "Local audit rehashes the complete returned evidence and original inputs, verifies model-specific CPU receipts and raw monitor logs. GPU trace and executable binaries remain remote; their hashes are receipts, checked against the retained per-run verification source.",
+  "limits": [
+    "One independent 100K timed sample per variant, fixed A then B order.",
+    "Large GPU traces remain remote; audit verifies their hash receipts and retained comparison source.",
+    "Approximately one-second monitoring cannot exclude activity between observations.",
+    "Direct applicability is limited to reset plus this prefix; CoreMark and final CRC are incomplete."
+  ]
+}

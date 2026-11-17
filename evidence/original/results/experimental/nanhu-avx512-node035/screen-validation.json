@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "candidate_count": 20,
+  "screen_samples": 22,
+  "all_equal_window_final_state_and_fingerprints_match": true,
+  "all_full_prefix_trace_sha256": "3b2e77dda7c5680b6e7a244f55b745f6e6d5cfcc537e1e86af1882ea22461253",
+  "all_20_candidate_build_manifests_verified": true,
+  "scope": "16,384 non-reset cycle screens only; full confirmation audited separately"
+}

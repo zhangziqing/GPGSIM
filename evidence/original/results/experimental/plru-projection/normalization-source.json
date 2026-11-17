@@ -1,0 +1,32 @@
+{
+  "status": "production_compile_and_actual_100k_raw_state_gate_passed",
+  "snapshot": "/tmp/rteaal-plru-normalized-v5/snapshot",
+  "snapshot_manifest_sha256": "8d133413d59b4a0e38edda58464298dd1dcbfbeba3838d810063716b34c441e2",
+  "patch_sha256": "f4f364f114561c3ff968e915117fc61222b8c2c9e855fff964ac8b8051b7723e",
+  "files": {
+    "SliceGraph.scala": {
+      "added": 40,
+      "deleted": 1,
+      "sha256": "24ea768b4cad17e92a7ba4e5acce67ac8ada4c878423fe5897f041ec151c11b5"
+    },
+    "SliceRewrite.scala": {
+      "added": 2,
+      "deleted": 3,
+      "sha256": "c7e3f6c866c37f60aca3114eb82c8f808e79d38a120968f5295842bee5d3eb23"
+    },
+    "ProjectSlices.scala": {
+      "added": 1,
+      "deleted": 1,
+      "sha256": "317cd801f15b6a9c6da91c896e18e9231d1f49f2cb8984cef56b096622ea92b8"
+    },
+    "ComposeMaskedUpdates.scala": {
+      "added": 3,
+      "deleted": 1,
+      "sha256": "866950f1e6ac8775fd78f3470f3d6a72069d867e218523fa51cc99d25077e8e6"
+    }
+  },
+  "scala_tests": "not run; user instruction",
+  "correctness_gate": "normalization-checks-v5.json",
+  "correctness_gate_sha256": "6cc14bbac7b2e424dc98df1ca4b9c795c2bee43618ce69eeb9d8330ecd7858b8",
+  "gpu_result": "not run; automatic approval review blocked private payload upload"
+}

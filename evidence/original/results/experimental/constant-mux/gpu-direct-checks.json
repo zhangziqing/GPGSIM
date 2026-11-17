@@ -1,0 +1,439 @@
+{
+  "status": "passed",
+  "host": "corvus01",
+  "environment": {
+    "hostname": "corvus01",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+    "cpu_affinity": [
+      2
+    ],
+    "cuda_architecture": "120",
+    "device_info": "name, uuid, driver_version, memory.total [MiB], compute_cap\nNVIDIA RTX PRO 6000 Blackwell Workstation Edition, GPU-67983fd2-eb55-ece7-a1ec-40165d7759fb, 580.178.04, 97887 MiB, 12.0",
+    "nvcc": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2026 NVIDIA Corporation\nBuilt on Thu_Mar_19_11:12:51_PM_PDT_2026\nCuda compilation tools, release 13.2, V13.2.78\nBuild cuda_13.2.r13.2/compiler.37668154_0",
+    "cmake": "cmake version 3.28.3",
+    "compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+  },
+  "archive_sha256": "c724c155fadd1819a4046bc1ad9a34b43ec1e6f81558e1d52aa84c757e42b9fe",
+  "simulator_revision": "03e16868fa3d73f4df6e957a369621576fd818aa",
+  "runtime_mode": "--direct-memory-writes; loop unrolling unchanged",
+  "full_gpu_runs_checked": 10,
+  "smoke_runs_checked": 2,
+  "summary": {
+    "off": {
+      "median_cycles_per_second": 2290.0492062243566,
+      "median_evaluation_seconds": 43.66718397499926,
+      "median_cuda_event_seconds": 42.703159275235166,
+      "min_cycles_per_second": 2289.89715511379,
+      "max_cycles_per_second": 2290.1191772072675,
+      "control_cycles_per_second": 2290.4114140634993,
+      "control_vs_trial_median_percent": 0.015816596349038647
+    },
+    "on": {
+      "median_cycles_per_second": 2528.7257615034464,
+      "median_evaluation_seconds": 39.54560890800009,
+      "median_cuda_event_seconds": 38.58623233690803,
+      "min_cycles_per_second": 2526.781077282113,
+      "max_cycles_per_second": 2529.1559792448793,
+      "control_cycles_per_second": 2525.935180922446,
+      "control_vs_trial_median_percent": -0.11035520828250878
+    }
+  },
+  "speedup_ratio_of_medians": 1.1042233304989109,
+  "throughput_improvement_percent": 10.422333049891087,
+  "profile_windows": 6,
+  "kernel_activity_records": 221184,
+  "dropped_records": 0,
+  "telemetry_samples_checked": 92,
+  "gpu_uuid": "GPU-67983fd2-eb55-ece7-a1ec-40165d7759fb",
+  "profiles": {
+    "off": [
+      {
+        "nonreset_cycle_begin": 1024,
+        "nonreset_cycle_end_exclusive": 1280,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.85923046875,
+          "compute": 192.05312890625,
+          "commit": 84.30609375000003,
+          "small_layers": 48.86423828125,
+          "suffix": 99.83240234375,
+          "gather": 1.15534765625
+        },
+        "mean_all_kernel_us_per_cycle": 427.07044140625004,
+        "suffix_kernel_share_percent": 23.376097398598606,
+        "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies",
+        "mean_within_cycle_kernel_gaps_us": 14.0611015625,
+        "slowest_launches": [
+          {
+            "ordinal": 142,
+            "category": "suffix",
+            "mean_us": 99.83240234375,
+            "graph_node_id": "21474836622"
+          },
+          {
+            "ordinal": 139,
+            "category": "small_layers",
+            "mean_us": 48.86423828125,
+            "graph_node_id": "21474836619"
+          },
+          {
+            "ordinal": 5,
+            "category": "compute",
+            "mean_us": 9.2564921875,
+            "graph_node_id": "21474836485"
+          },
+          {
+            "ordinal": 77,
+            "category": "compute",
+            "mean_us": 8.6488671875,
+            "graph_node_id": "21474836557"
+          },
+          {
+            "ordinal": 11,
+            "category": "compute",
+            "mean_us": 5.80878515625,
+            "graph_node_id": "21474836491"
+          }
+        ]
+      },
+      {
+        "nonreset_cycle_begin": 20000,
+        "nonreset_cycle_end_exclusive": 20256,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.85846484375,
+          "compute": 192.54980468749994,
+          "commit": 84.519890625,
+          "small_layers": 48.75653125,
+          "suffix": 99.8232734375,
+          "gather": 1.15658984375
+        },
+        "mean_all_kernel_us_per_cycle": 427.66455468749996,
+        "suffix_kernel_share_percent": 23.34148863714978,
+        "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies",
+        "mean_within_cycle_kernel_gaps_us": 14.060421875,
+        "slowest_launches": [
+          {
+            "ordinal": 142,
+            "category": "suffix",
+            "mean_us": 99.8232734375,
+            "graph_node_id": "21474836622"
+          },
+          {
+            "ordinal": 139,
+            "category": "small_layers",
+            "mean_us": 48.75653125,
+            "graph_node_id": "21474836619"
+          },
+          {
+            "ordinal": 5,
+            "category": "compute",
+            "mean_us": 9.5721015625,
+            "graph_node_id": "21474836485"
+          },
+          {
+            "ordinal": 77,
+            "category": "compute",
+            "mean_us": 8.64823046875,
+            "graph_node_id": "21474836557"
+          },
+          {
+            "ordinal": 11,
+            "category": "compute",
+            "mean_us": 5.80939453125,
+            "graph_node_id": "21474836491"
+          }
+        ]
+      },
+      {
+        "nonreset_cycle_begin": 90000,
+        "nonreset_cycle_end_exclusive": 90256,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.85911328125,
+          "compute": 192.16733984375003,
+          "commit": 84.35476171874997,
+          "small_layers": 48.74902734375,
+          "suffix": 99.832515625,
+          "gather": 1.1568515625
+        },
+        "mean_all_kernel_us_per_cycle": 427.119609375,
+        "suffix_kernel_share_percent": 23.373432976089287,
+        "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies",
+        "mean_within_cycle_kernel_gaps_us": 14.07069140625,
+        "slowest_launches": [
+          {
+            "ordinal": 142,
+            "category": "suffix",
+            "mean_us": 99.832515625,
+            "graph_node_id": "21474836622"
+          },
+          {
+            "ordinal": 139,
+            "category": "small_layers",
+            "mean_us": 48.74902734375,
+            "graph_node_id": "21474836619"
+          },
+          {
+            "ordinal": 5,
+            "category": "compute",
+            "mean_us": 9.5590703125,
+            "graph_node_id": "21474836485"
+          },
+          {
+            "ordinal": 77,
+            "category": "compute",
+            "mean_us": 8.64761328125,
+            "graph_node_id": "21474836557"
+          },
+          {
+            "ordinal": 11,
+            "category": "compute",
+            "mean_us": 5.81130859375,
+            "graph_node_id": "21474836491"
+          }
+        ]
+      }
+    ],
+    "on": [
+      {
+        "nonreset_cycle_begin": 1024,
+        "nonreset_cycle_end_exclusive": 1280,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.85997265625,
+          "compute": 191.11282421875003,
+          "commit": 84.27171484375002,
+          "small_layers": 49.22733203125,
+          "suffix": 58.8796171875,
+          "gather": 1.1449609375
+        },
+        "mean_all_kernel_us_per_cycle": 385.49642187500007,
+        "suffix_kernel_share_percent": 15.273713022060718,
+        "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies",
+        "mean_within_cycle_kernel_gaps_us": 14.05475390625,
+        "slowest_launches": [
+          {
+            "ordinal": 142,
+            "category": "suffix",
+            "mean_us": 58.8796171875,
+            "graph_node_id": "21474836622"
+          },
+          {
+            "ordinal": 139,
+            "category": "small_layers",
+            "mean_us": 49.22733203125,
+            "graph_node_id": "21474836619"
+          },
+          {
+            "ordinal": 5,
+            "category": "compute",
+            "mean_us": 8.80250390625,
+            "graph_node_id": "21474836485"
+          },
+          {
+            "ordinal": 77,
+            "category": "compute",
+            "mean_us": 8.64812890625,
+            "graph_node_id": "21474836557"
+          },
+          {
+            "ordinal": 11,
+            "category": "compute",
+            "mean_us": 5.72078515625,
+            "graph_node_id": "21474836491"
+          }
+        ]
+      },
+      {
+        "nonreset_cycle_begin": 20000,
+        "nonreset_cycle_end_exclusive": 20256,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.8595078125,
+          "compute": 191.63492968750003,
+          "commit": 84.4819609375,
+          "small_layers": 49.11999609375,
+          "suffix": 58.87503125,
+          "gather": 1.14504296875
+        },
+        "mean_all_kernel_us_per_cycle": 386.11646875,
+        "suffix_kernel_share_percent": 15.247997952690278,
+        "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies",
+        "mean_within_cycle_kernel_gaps_us": 14.0636953125,
+        "slowest_launches": [
+          {
+            "ordinal": 142,
+            "category": "suffix",
+            "mean_us": 58.87503125,
+            "graph_node_id": "21474836622"
+          },
+          {
+            "ordinal": 139,
+            "category": "small_layers",
+            "mean_us": 49.11999609375,
+            "graph_node_id": "21474836619"
+          },
+          {
+            "ordinal": 5,
+            "category": "compute",
+            "mean_us": 9.0942421875,
+            "graph_node_id": "21474836485"
+          },
+          {
+            "ordinal": 77,
+            "category": "compute",
+            "mean_us": 8.647609375,
+            "graph_node_id": "21474836557"
+          },
+          {
+            "ordinal": 11,
+            "category": "compute",
+            "mean_us": 5.7166640625,
+            "graph_node_id": "21474836491"
+          }
+        ]
+      },
+      {
+        "nonreset_cycle_begin": 90000,
+        "nonreset_cycle_end_exclusive": 90256,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.8583828125,
+          "compute": 191.26462890624998,
+          "commit": 84.3816953125,
+          "small_layers": 49.114046875,
+          "suffix": 58.8774765625,
+          "gather": 1.1449765625
+        },
+        "mean_all_kernel_us_per_cycle": 385.64120703124996,
+        "suffix_kernel_share_percent": 15.267423576373396,
+        "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies",
+        "mean_within_cycle_kernel_gaps_us": 14.05150390625,
+        "slowest_launches": [
+          {
+            "ordinal": 142,
+            "category": "suffix",
+            "mean_us": 58.8774765625,
+            "graph_node_id": "21474836622"
+          },
+          {
+            "ordinal": 139,
+            "category": "small_layers",
+            "mean_us": 49.114046875,
+            "graph_node_id": "21474836619"
+          },
+          {
+            "ordinal": 5,
+            "category": "compute",
+            "mean_us": 9.08803125,
+            "graph_node_id": "21474836485"
+          },
+          {
+            "ordinal": 77,
+            "category": "compute",
+            "mean_us": 8.6487109375,
+            "graph_node_id": "21474836557"
+          },
+          {
+            "ordinal": 11,
+            "category": "compute",
+            "mean_us": 5.71791796875,
+            "graph_node_id": "21474836491"
+          }
+        ]
+      }
+    ]
+  },
+  "runs": [
+    {
+      "mode": "off",
+      "label": "csr-direct-profile-control",
+      "cycles_per_second": 2290.4114140634993,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "cpu_fingerprints_match": true
+    },
+    {
+      "mode": "off",
+      "label": "csr-direct-profile-cupti",
+      "cycles_per_second": 2131.5052133169625,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "cpu_fingerprints_match": true
+    },
+    {
+      "mode": "off",
+      "label": "csr-direct-r01-off",
+      "cycles_per_second": 2289.89715511379,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "cpu_fingerprints_match": true
+    },
+    {
+      "mode": "off",
+      "label": "csr-direct-r02-off",
+      "cycles_per_second": 2290.1191772072675,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "cpu_fingerprints_match": true
+    },
+    {
+      "mode": "off",
+      "label": "csr-direct-r03-off",
+      "cycles_per_second": 2290.0492062243566,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "cpu_fingerprints_match": true
+    },
+    {
+      "mode": "on",
+      "label": "csr-direct-profile-control",
+      "cycles_per_second": 2525.935180922446,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "cpu_fingerprints_match": true
+    },
+    {
+      "mode": "on",
+      "label": "csr-direct-profile-cupti",
+      "cycles_per_second": 2360.9895933934918,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "cpu_fingerprints_match": true
+    },
+    {
+      "mode": "on",
+      "label": "csr-direct-r01-on",
+      "cycles_per_second": 2528.7257615034464,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "cpu_fingerprints_match": true
+    },
+    {
+      "mode": "on",
+      "label": "csr-direct-r02-on",
+      "cycles_per_second": 2526.781077282113,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "cpu_fingerprints_match": true
+    },
+    {
+      "mode": "on",
+      "label": "csr-direct-r03-on",
+      "cycles_per_second": 2529.1559792448793,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "cpu_fingerprints_match": true
+    }
+  ],
+  "validation_scope": "Fixed CoreMark 100K prefix, all traces and full per-variant CPU fingerprints; dynamic write conflict freedom is not proven."
+}

@@ -1,0 +1,150 @@
+{
+  "status": "passed",
+  "gpu": "rtx6000",
+  "device": "name, uuid, driver_version, compute_cap\nNVIDIA RTX PRO 6000 Blackwell Workstation Edition, GPU-67983fd2-eb55-ece7-a1ec-40165d7759fb, 580.178.04, 12.0\n",
+  "input_sha256": "79d20c5e19d892f257a7a640e92435047e3885c167e4d775cdf8afba65d6c944",
+  "evidence_sha256": "0422934fe80fb23cba8fdf19a4d165feb485c30ca697fd27465721d3a845f5ee",
+  "manifest_files": 340,
+  "transfer_parts": 88,
+  "full_runs": 12,
+  "correctness_runs": 3,
+  "performance_runs": 9,
+  "smoke_runs": 3,
+  "ctest_passes": 15,
+  "host_CPU_ctest_passes": 4,
+  "local_CPU_ctest_passes": 4,
+  "full_GPU_trace_bytes_checked": true,
+  "independent_CPU_fingerprints_checked": true,
+  "simulator_revision": "274d8f75c13f690546dfb64f4254fcbc0c1ef7a3",
+  "frozen_workspace_revision": "384db6fe0a19c98d7526c856fbab1c5acbccc1f8",
+  "reference_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+  "affinity": [
+    2
+  ],
+  "model_sha256": {
+    "A": "2559d196d040b92404f0d7a01d03568d807693bdfc6dd271ea677044da8a8458",
+    "B": "dee90699e7503a8cc9b5fdfe7194de5a44ccafc4f0d89b9514127be77c6fdb01",
+    "C": "93ceaa446ead2ccd6cb927a664f4b651ac274d66737dcc9fe60ae612e948a3aa"
+  },
+  "host_cpu_oracle_sha256": "7b075d5458e146d9a9d72207063f9e7280c2125f856f9081e24110ab5a349d8a",
+  "host_cpu_oracles_corroborated_by_local": true,
+  "cpu_oracle": {
+    "status": "passed",
+    "variants": {
+      "A": {
+        "full_data_fingerprint": 6218498432779941060,
+        "memory64_fingerprint": 15503565812696885107,
+        "memory8_fingerprint": 656100811014868721
+      },
+      "B": {
+        "full_data_fingerprint": 8769197886991778073,
+        "memory64_fingerprint": 15503565812696885107,
+        "memory8_fingerprint": 7225028034901834993
+      },
+      "C": {
+        "full_data_fingerprint": 1712193739793972449,
+        "memory64_fingerprint": 15503565812696885107,
+        "memory8_fingerprint": 7225028034901834993
+      }
+    },
+    "evidence": {
+      "A": {
+        "result_sha256": "377ed9f17d5da58ddb7683bff514affa168130653b00162a99949e228b2acea9",
+        "command_sha256": "c6bcf03bd37708d796d55bb3c04286cc4d686a47d34cee209c259a4cd593e779",
+        "launch_proof_sha256": "66f8f3d6695894ad4951710ddf0eeb7c7df6d18ac983a8fa531c3e500c87ca7f",
+        "binary_sha256": "d2f142e6bda84dac5cc67338038ee258a4f65201babff3350d99486a0c2eb00b",
+        "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+        "evaluation_seconds": 1920.2566069919894
+      },
+      "B": {
+        "result_sha256": "236d013ff26f068634b68ad8c60e854e2d43975a8c851ec42c2210b51cb8cdb9",
+        "command_sha256": "d551b19dc8db6822a19e74c647bc5ee37ca394a2f66c537e5ee49d8ad43e2e71",
+        "launch_proof_sha256": "f87b9f97c43d4ee65719047a804d8320c61c753a561d0a632c9ab38227fd17d2",
+        "binary_sha256": "d2f142e6bda84dac5cc67338038ee258a4f65201babff3350d99486a0c2eb00b",
+        "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+        "evaluation_seconds": 1992.2174196579979
+      },
+      "C": {
+        "result_sha256": "3f36632771ead5d0a731c9fcb08a7e437bf290d1d7e8914853e750ef04947b06",
+        "command_sha256": "0457b1dff2a43e06a6a1e2a3c4a00822a765b2ffa65715599cba56b7d177488c",
+        "launch_proof_sha256": "08824591b358ad97acf08128eca0716a48de12e82f64599e5f4b48a605946630",
+        "binary_sha256": "d2f142e6bda84dac5cc67338038ee258a4f65201babff3350d99486a0c2eb00b",
+        "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+        "evaluation_seconds": 1944.4050606489986
+      }
+    }
+  },
+  "cpu_oracle_sha256": "7f2ffe0b71fc0a041a47b21a430a52016eb95d92b8301b2ee4d1ef4b03a7bda9",
+  "schedules": {
+    "A": {
+      "logical_layers": 126,
+      "nodes": 2222558,
+      "kernel_launches_per_cycle": 141
+    },
+    "B": {
+      "logical_layers": 94,
+      "nodes": 2220432,
+      "kernel_launches_per_cycle": 127
+    },
+    "C": {
+      "logical_layers": 94,
+      "nodes": 2219573,
+      "kernel_launches_per_cycle": 127
+    }
+  },
+  "summary": {
+    "A": {
+      "samples": 3,
+      "cycles_per_second": [
+        2929.2218859070176,
+        2924.5702150447864,
+        2925.832903471603
+      ],
+      "allocated_device_bytes": 1156375428,
+      "median_cycles_per_second": 2925.832903471603,
+      "median_evaluation_seconds": 34.178301802999925,
+      "median_kernel_device_seconds": 33.52065558356077,
+      "throughput_ratio_to_A": 1.0
+    },
+    "B": {
+      "samples": 3,
+      "cycles_per_second": [
+        3189.9566395603715,
+        3189.111137507675,
+        3189.0066379345653
+      ],
+      "allocated_device_bytes": 1156244192,
+      "median_cycles_per_second": 3189.111137507675,
+      "median_evaluation_seconds": 31.35669962199909,
+      "median_kernel_device_seconds": 30.231908109758027,
+      "throughput_ratio_to_A": 1.089984029410457
+    },
+    "C": {
+      "samples": 3,
+      "cycles_per_second": [
+        3231.5981762804545,
+        3227.729585793297,
+        3227.1155991375094
+      ],
+      "allocated_device_bytes": 1156211832,
+      "median_cycles_per_second": 3227.729585793297,
+      "median_evaluation_seconds": 30.981529691999416,
+      "median_kernel_device_seconds": 30.01598795914377,
+      "throughput_ratio_to_A": 1.1031831592171524
+    }
+  },
+  "build": {
+    "binary_sha256": "f064fb1f0a65c2aee80440dab788ff3af93276fd6e0dc0c9f645aa4efff4f981",
+    "environment": {
+      "nvcc": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2026 NVIDIA Corporation\nBuilt on Thu_Mar_19_11:12:51_PM_PDT_2026\nCuda compilation tools, release 13.2, V13.2.78\nBuild cuda_13.2.r13.2/compiler.37668154_0\n",
+      "cmake": "cmake version 3.28.3\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).\n",
+      "compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+      "cpu": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           48 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  32\nOn-line CPU(s) list:                     0-31\nVendor ID:                               AuthenticAMD\nModel name:                              AMD Ryzen 9 9950X 16-Core Processor\nCPU family:                              26\nModel:                                   68\nThread(s) per core:                      2\nCore(s) per socket:                      16\nSocket(s):                               1\nStepping:                                0\nFrequency boost:                         enabled\nCPU(s) scaling MHz:                      55%\nCPU max MHz:                             5756.4521\nCPU min MHz:                             624.1940\nBogoMIPS:                                8599.98\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good amd_lbr_v2 nopl xtopology nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpuid_fault cpb cat_l3 cdp_l3 hw_pstate ssbd mba perfmon_v2 ibrs ibpb stibp ibrs_enhanced vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local user_shstk avx_vnni avx512_bf16 clzero irperf xsaveerptr rdpru wbnoinvd cppc arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif x2avic v_spec_ctrl vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid bus_lock_detect movdiri movdir64b overflow_recov succor smca fsrm avx512_vp2intersect flush_l1d amd_lbr_pmc_freeze\nVirtualization:                          AMD-V\nL1d cache:                               768 KiB (16 instances)\nL1i cache:                               512 KiB (16 instances)\nL2 cache:                                16 MiB (16 instances)\nL3 cache:                                64 MiB (2 instances)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-31\nVulnerability Gather data sampling:      Not affected\nVulnerability Ghostwrite:                Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Old microcode:             Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Not affected\nVulnerability Spec rstack overflow:      Mitigation; IBPB on VMEXIT only\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; STIBP always-on; PBRSB-eIBRS Not affected; BHI Not affected\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Mitigation; IBPB on VMEXIT\n"
+    },
+    "build_seconds": 11.040033405006398,
+    "ctest": "15/15 passed"
+  },
+  "scope": "Fixed 100K prefix, automatic clocks, one Blackwell host; complete CoreMark CRC not established.",
+  "named_memory_checks_sha256": "65ea96fda39cd9c683f0688a9e4b40ec0f0e200731eff179e160518353b95a0b"
+}

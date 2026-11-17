@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "variants": {
+    "A": {
+      "label": "A-normalized-v5",
+      "raw_byte_differences": 0,
+      "raw_named_state_differences": 0,
+      "memory8_sha256": "2776e7193b64e65dcc2b9c36d31e59850e3aea742b0bc1d17b6f2feca22cd7de",
+      "memory8_fingerprint": 656100811014868721,
+      "memory64_fingerprint": 15503565812696885107,
+      "full_data_fingerprint": 6218498432779941060
+    },
+    "B": {
+      "label": "B-normalized-v5",
+      "raw_byte_differences": 0,
+      "raw_named_state_differences": 0,
+      "memory8_sha256": "2776e7193b64e65dcc2b9c36d31e59850e3aea742b0bc1d17b6f2feca22cd7de",
+      "memory8_fingerprint": 656100811014868721,
+      "memory64_fingerprint": 15503565812696885107,
+      "full_data_fingerprint": 5423141915325995166
+    },
+    "C": {
+      "label": "C-normalized-v5",
+      "raw_byte_differences": 0,
+      "raw_named_state_differences": 0,
+      "memory8_sha256": "2776e7193b64e65dcc2b9c36d31e59850e3aea742b0bc1d17b6f2feca22cd7de",
+      "memory8_fingerprint": 656100811014868721,
+      "memory64_fingerprint": 15503565812696885107,
+      "full_data_fingerprint": 15095929913355426954
+    }
+  },
+  "raw_byte_elements": 206884,
+  "raw_named_inputs_and_registers": 150978,
+  "writer_masks_per_variant": 16,
+  "evidence_sha256": {
+    "/tmp/rteaal-plru-normalized-v5/A-normalized-v5/provenance.json": "257a3d820d0b5b8d069819ca7e75677d0951c876643d1bf7758a8593f8596315",
+    "/tmp/rteaal-plru-normalized-v5/A-normalized-v5/structure-checks.json": "17acb3916730c4709f32ede5fdc76bfdb7fc931839941275c1ac87e3fa390297",
+    "/tmp/rteaal-plru-normalized-v5/normalization-v5/A/command.json": "ce97cabdf3fe6dc2ea5b522ce3fb82cca51551259a59de53b3e82219439382c1",
+    "/tmp/rteaal-plru-normalized-v5/normalization-v5/A/result.json": "cb8aed68c75341005631d9f26ccc172e026fa2e01b3f526a2b9e1b75fc3e9135",
+    "/tmp/rteaal-plru-normalized-v5/normalization-v5/A/writer-checks.json": "316e7b9198232c8a5dfebd131e47eab670d06066ec0acb7cefdeff723190d26c",
+    "/tmp/rteaal-plru-normalized-v5/normalization-v5/A/actual.trace": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+    "/tmp/rteaal-plru-normalized-v5/normalization-v5/A/memory8.bin": "2776e7193b64e65dcc2b9c36d31e59850e3aea742b0bc1d17b6f2feca22cd7de",
+    "/tmp/rteaal-plru-normalized-v5/normalization-v5/A/data.bin": "7b93467442831f9fc68296005379702bf95b1bd00535047c375012df9eed0958",
+    "/tmp/rteaal-plru-normalized-v5/normalization-v5/A/runner.cc": "d53c4f0974784c7b98cd9f0ff1a0e139217235b7479cd4d73aff248834a95f90",
+    "/tmp/rteaal-plru-normalized-v5/B-normalized-v5/provenance.json": "55a9d540e8952ab425853ba06060ee9de63b4dd3d6112ca4f5c362e4226904d6",
+    "/tmp/rteaal-plru-normalized-v5/B-normalized-v5/structure-checks.json": "60cb3e28462a48fe96a9ad99c08e8aed5b653329fbd45ff5acc745a002babb91",
+    "/tmp/rteaal-plru-normalized-v5/normalization-v5/B/command.json": "376279878b62dc5361484315dca083104cf67aadf919dc710cb134bea85d8eee",
+    "/tmp/rteaal-plru-normalized-v5/normalization-v5/B/result.json": "82644db7b721880e83b72eef598e4d744b18853b8b7cf29cb3bbf8c7782b6d58",
+    "/tmp/rteaal-plru-normalized-v5/normalization-v5/B/writer-checks.json": "316e7b9198232c8a5dfebd131e47eab670d06066ec0acb7cefdeff723190d26c",
+    "/tmp/rteaal-plru-normalized-v5/normalization-v5/B/actual.trace": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+    "/tmp/rteaal-plru-normalized-v5/normalization-v5/B/memory8.bin": "2776e7193b64e65dcc2b9c36d31e59850e3aea742b0bc1d17b6f2feca22cd7de",
+    "/tmp/rteaal-plru-normalized-v5/normalization-v5/B/data.bin": "0aeb5a240ba1dfb8fabe3d3b9cb9b30c4b465f3f7da20ed14aeef054710adb34",
+    "/tmp/rteaal-plru-normalized-v5/normalization-v5/B/runner.cc": "1665a0085bfbc7189a2bc5ee65e53acaaffc4bb26fa731066823df9814110d60",
+    "/tmp/rteaal-plru-normalized-v5/C-normalized-v5/provenance.json": "b09c113d302ee827dbb60fa634a5c6c8f223e2713a566e689f9c41a1035e1ea4",
+    "/tmp/rteaal-plru-normalized-v5/C-normalized-v5/structure-checks.json": "8d1c29e41c6eb4328628d81ccf1d55fb4a0300fefdace0739d7824395115a485",
+    "/tmp/rteaal-plru-normalized-v5/normalization-v5/C/command.json": "0db62576e5f47e7b42618c8bf8b9a1baa39b4446347ca4aee5e49b639f0fc9c9",
+    "/tmp/rteaal-plru-normalized-v5/normalization-v5/C/result.json": "b94073b32bb783b8e1a0bd25c79613c177ba3cb1185e42de766ab04386469be7",
+    "/tmp/rteaal-plru-normalized-v5/normalization-v5/C/writer-checks.json": "316e7b9198232c8a5dfebd131e47eab670d06066ec0acb7cefdeff723190d26c",
+    "/tmp/rteaal-plru-normalized-v5/normalization-v5/C/actual.trace": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+    "/tmp/rteaal-plru-normalized-v5/normalization-v5/C/memory8.bin": "2776e7193b64e65dcc2b9c36d31e59850e3aea742b0bc1d17b6f2feca22cd7de",
+    "/tmp/rteaal-plru-normalized-v5/normalization-v5/C/data.bin": "1ca4ba2722e9a00e0e944923dd5da5d957ae4e14ca75199832f437dcfcd93ce3",
+    "/tmp/rteaal-plru-normalized-v5/normalization-v5/C/runner.cc": "bf4a144efedf45ab061671f60018e8ae13518b5359449bcee189b8d64b907759",
+    "/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/memory-diagnostic/A/result.json": "106d42a684266fa754ad30e88c8983d7f85003c65a418b895c201a31e78719c1",
+    "/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/memory-diagnostic/A/memory8.bin": "2776e7193b64e65dcc2b9c36d31e59850e3aea742b0bc1d17b6f2feca22cd7de",
+    "/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/memory-diagnostic/A/data.bin": "7b93467442831f9fc68296005379702bf95b1bd00535047c375012df9eed0958"
+  },
+  "verifier_sha256": "cf1f3031134cfb623ed9afe3a59e378e4b38eb3f3dfe4d2374a781c7849d4eed",
+  "scala_tests": "not run; user instruction",
+  "scope": "Fixed Nanhu 100K Verilator prefix, raw byte memory and named state versus retained A; memory64 fingerprint comparison"
+}

@@ -1,0 +1,226 @@
+{
+  "passed": true,
+  "candidates": {
+    "hybrid1-s8": {
+      "files": 9,
+      "mismatches": []
+    },
+    "hybrid16-s8": {
+      "files": 9,
+      "mismatches": []
+    },
+    "hybrid32-s8": {
+      "files": 9,
+      "mismatches": []
+    },
+    "hybrid4-branchless": {
+      "files": 9,
+      "mismatches": []
+    },
+    "hybrid4-pgo": {
+      "files": 9,
+      "mismatches": []
+    },
+    "hybrid4-pgo-train": {
+      "files": 9,
+      "mismatches": []
+    },
+    "hybrid4-s1": {
+      "files": 9,
+      "mismatches": []
+    },
+    "hybrid4-s24": {
+      "files": 9,
+      "mismatches": []
+    },
+    "hybrid4-s8": {
+      "files": 9,
+      "mismatches": []
+    },
+    "hybrid8-s16": {
+      "files": 9,
+      "mismatches": []
+    },
+    "iu1-native-s16": {
+      "files": 4,
+      "mismatches": []
+    },
+    "iu8-native-s24": {
+      "files": 4,
+      "mismatches": []
+    },
+    "nu-aligned-all-s1": {
+      "files": 4,
+      "mismatches": []
+    },
+    "nu-aligned-thp-s1": {
+      "files": 4,
+      "mismatches": []
+    },
+    "nu-native-branchless-s1": {
+      "files": 4,
+      "mismatches": []
+    },
+    "nu-native-cunroll-s1": {
+      "files": 4,
+      "mismatches": []
+    },
+    "nu-native-cunroll-s16": {
+      "files": 4,
+      "mismatches": []
+    },
+    "nu-native-gcc-s1": {
+      "files": 4,
+      "mismatches": []
+    },
+    "nu-native-novec-s1": {
+      "files": 4,
+      "mismatches": []
+    },
+    "nu-native-novec-s16": {
+      "files": 4,
+      "mismatches": []
+    },
+    "nu-native-o2-s1": {
+      "files": 4,
+      "mismatches": []
+    },
+    "nu-native-pf16": {
+      "files": 4,
+      "mismatches": []
+    },
+    "nu-native-pf32": {
+      "files": 4,
+      "mismatches": []
+    },
+    "nu-native-pf8": {
+      "files": 4,
+      "mismatches": []
+    },
+    "nu-native-pgo-s1": {
+      "files": 4,
+      "mismatches": []
+    },
+    "nu-native-s1": {
+      "files": 4,
+      "mismatches": []
+    },
+    "nu-native-s16": {
+      "files": 4,
+      "mismatches": []
+    },
+    "nu-native-s24": {
+      "files": 4,
+      "mismatches": []
+    },
+    "nu-native-s32": {
+      "files": 4,
+      "mismatches": []
+    },
+    "nu-native-s8": {
+      "files": 4,
+      "mismatches": []
+    },
+    "nu-native-thp-s1": {
+      "files": 4,
+      "mismatches": []
+    },
+    "nu-native-thp-s16": {
+      "files": 4,
+      "mismatches": []
+    },
+    "nu-prefetch-baseline": {
+      "files": 4,
+      "mismatches": []
+    },
+    "nu-s1": {
+      "files": 4,
+      "mismatches": []
+    },
+    "ou-s1": {
+      "files": 4,
+      "mismatches": []
+    },
+    "psu16-native-s24": {
+      "files": 4,
+      "mismatches": []
+    },
+    "psu16-s24": {
+      "files": 4,
+      "mismatches": []
+    },
+    "psu2-native-s1": {
+      "files": 4,
+      "mismatches": []
+    },
+    "psu32-native-s1": {
+      "files": 4,
+      "mismatches": []
+    },
+    "psu32-s24": {
+      "files": 4,
+      "mismatches": []
+    },
+    "psu4-native-all-s16": {
+      "files": 4,
+      "mismatches": []
+    },
+    "psu4-native-s1": {
+      "files": 4,
+      "mismatches": []
+    },
+    "psu4-s24": {
+      "files": 4,
+      "mismatches": []
+    },
+    "psu64-native-s1": {
+      "files": 4,
+      "mismatches": []
+    },
+    "psu8-aligned-all-s1": {
+      "files": 4,
+      "mismatches": []
+    },
+    "psu8-aligned-thp-s1": {
+      "files": 4,
+      "mismatches": []
+    },
+    "psu8-native-s24": {
+      "files": 4,
+      "mismatches": []
+    },
+    "psu8-s24": {
+      "files": 4,
+      "mismatches": []
+    },
+    "simd16-native": {
+      "files": 4,
+      "mismatches": []
+    },
+    "simd4-native": {
+      "files": 4,
+      "mismatches": []
+    },
+    "simd8-native": {
+      "files": 4,
+      "mismatches": []
+    },
+    "su512-native": {
+      "files": 138,
+      "mismatches": []
+    },
+    "ti512-native": {
+      "files": 138,
+      "mismatches": []
+    },
+    "upstream-psu8-native-s1": {
+      "files": 4,
+      "mismatches": []
+    },
+    "upstream-psu8-thp-s1": {
+      "files": 4,
+      "mismatches": []
+    }
+  },
+  "files_checked": 538
+}

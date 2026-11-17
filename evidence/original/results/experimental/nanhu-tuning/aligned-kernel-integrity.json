@@ -1,0 +1,14 @@
+{
+  "nu": {
+    "source": "nu-native-s1",
+    "aligned": "nu-aligned-all-s1",
+    "kernel_header_byte_identical": true,
+    "sha256": "bde01fffd692535a55a8b1db92a21002a92aff51eb6b54cd5ddeb17866ee0070"
+  },
+  "psu": {
+    "source": "upstream-psu8-native-s1",
+    "aligned": "psu8-aligned-all-s1",
+    "kernel_header_byte_identical": true,
+    "sha256": "d6806d22eed29940813bc6d4bbee8a5af4fa1e9b5f7f10289b4f905244dd039c"
+  }
+}

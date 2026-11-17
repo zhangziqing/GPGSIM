@@ -1,0 +1,33 @@
+{
+  "status": "failed",
+  "host": {
+    "node": "node007.bosccluster.com",
+    "cpu": 31,
+    "siblings": [
+      31,
+      159
+    ],
+    "initial_cpu_utilization": {
+      "cpu31": {
+        "busy_percent": 100.0,
+        "ticks": 201
+      },
+      "cpu159": {
+        "busy_percent": 9.18918918918919,
+        "ticks": 185
+      }
+    },
+    "cpu_description": "model name\t: AMD EPYC 7773X 64-Core Processor"
+  },
+  "image": "/nfs/home/zhangziqing/RTeAAL/XiangShan-nanhu-legacy/ready-to-run/coremark-2-iteration.bin",
+  "image_sha256": "1156255cce0d01cffbf7232fa4a168a00defc41e0c8ea6096a3186ca30a48519",
+  "cycles": 100000,
+  "samples": [],
+  "accepted_artifacts_before": {
+    "tensor_manifest_files": 20,
+    "best_candidate_files": 4,
+    "evaluator_header_byte_identical": true,
+    "model_archive_unchanged": true
+  },
+  "error": "RuntimeError('coremark-thp-preflight-rteaal failed: Aligned signals bytes=4194304 advise=0 collapse=0 errno=0\\nAligned signals bytes=20971520 advise=0 collapse=0 errno=0\\nAligned signals bytes=8388608 advise=0 collapse=-1 errno=12\\nAligned signals bytes=2097152 advise=0 collapse=-1 errno=12\\nAligned signals bytes=2097152 advise=0 collapse=0 errno=0\\nAnonHugePages:     26624 kB\\nFAIL: Full 36 MiB THP coverage required for this sample\\n')"
+}

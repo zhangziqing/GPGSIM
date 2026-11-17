@@ -1,0 +1,111 @@
+{
+  "status": "passed_independent_source_receipt_and_monitor_audit",
+  "evidence_source": {
+    "kind": "Retrieved evidence archive plus independent local verifier",
+    "message_id": "537f262f-e3b3-455d-a784-d8bb10cacf7a",
+    "server_id": "srv_Mmu5pxKa0bxY",
+    "agent_id": "ff09998c-2cea-4a5c-ab34-62e8a71869bc",
+    "verifier": "audit_optimization_rerun.py",
+    "checks": "optimization-rerun-checks.json"
+  },
+  "base_source_revision": "0a6d7cc93a67823f26753741a309ed215ca5ab84",
+  "parent_workspace_revision": "1fc00fd81c317c8d8406fb3882b5ec61d4ccba01",
+  "simulator_revision": "274d8f75c13f690546dfb64f4254fcbc0c1ef7a3",
+  "source_change": {
+    "path": "results/experimental/nanhu-cuda-2060/src/engine_cuda.cu",
+    "change": "Add #pragma unroll 1 to commit_memory_parallel",
+    "base_sha256": "6edf7d848611ecb6a4f7b284a8c07e761d4ee7b1783ffcf48e6b32cd4e885384",
+    "patched_sha256": "6c39fad7ed9b9311aed901e4ecc5b94980bec748f82d75a68e217935a03b80ad"
+  },
+  "local_checks": {
+    "cpu_release_ctest": {
+      "passed": 8,
+      "total": 8
+    },
+    "cuda_sm75_compilation": "passed; CUDA 12.6.85; no compiler warnings/errors",
+    "ptxas_entries": 30,
+    "stack_or_spill_bytes": 0,
+    "prepared_source_hashes_verified": 17,
+    "sm120_gpu_evidence_audited": true
+  },
+  "limits": [
+    "Single sample per table cell; not medians or a statistical ranking.",
+    "Direct-mode diagnostic covers only reset plus this fixed 100K prefix.",
+    "GPU activity between one-second monitor samples cannot be excluded.",
+    "Full CoreMark completion and final CRC were not verified.",
+    "Large traces remain on the GPU host; local audit checks their hash receipts and the trace-checking source."
+  ],
+  "configuration": {
+    "gpu": "RTX PRO 6000 Blackwell",
+    "cuda": "13.2.78",
+    "architecture": "sm_120",
+    "device": 0,
+    "cuda_graph": true,
+    "threads": 128,
+    "tail_threshold": 256,
+    "cpu_affinity": [
+      2
+    ],
+    "cmake_build_type": "",
+    "cuda_flags": "-lineinfo --ptxas-options=-v",
+    "cycles": 100000,
+    "model_sha256": "46bfece3ef8cbbf71d2efd91a8886070554db7b606a5b40d7e4c90eac17b4be2",
+    "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+    "fingerprints": {
+      "full_data_fingerprint": 6218498432779941060,
+      "memory64_fingerprint": 15503565812696885107,
+      "memory8_fingerprint": 656100811014868721
+    }
+  },
+  "samples": [
+    {
+      "loop": "no_unroll",
+      "memory_commit": "full_scan",
+      "samples_per_representation": 1,
+      "legacy_cycles_per_second": 1794.1391077334486,
+      "flat_cycles_per_second": 1846.1695458887664,
+      "flat_over_legacy_ratio": 1.0290002251949395
+    },
+    {
+      "loop": "no_unroll",
+      "memory_commit": "candidates",
+      "samples_per_representation": 1,
+      "legacy_cycles_per_second": 2886.242395142988,
+      "flat_cycles_per_second": 3143.6165699249664,
+      "flat_over_legacy_ratio": 1.0891727511227371
+    },
+    {
+      "loop": "no_unroll",
+      "memory_commit": "direct",
+      "samples_per_representation": 1,
+      "legacy_cycles_per_second": 2906.753012336142,
+      "flat_cycles_per_second": 3174.644426134397,
+      "flat_over_legacy_ratio": 1.0921617394602618
+    },
+    {
+      "loop": "original",
+      "memory_commit": "direct",
+      "samples_per_representation": 1,
+      "legacy_cycles_per_second": 2878.112765702456,
+      "flat_cycles_per_second": 3139.856364815159,
+      "flat_over_legacy_ratio": 1.0909427880074114
+    }
+  ],
+  "checks": {
+    "gpu_trace_and_fingerprints_passed": 8,
+    "cuda_ctest_passed": 30,
+    "known_collision_diagnostic_error": 7,
+    "full_prefix_diagnostic_collisions": 0,
+    "idle_checks_passed": true,
+    "external_compute_pids_seen": false,
+    "evidence_manifest_files_verified": 316
+  },
+  "archive": {
+    "path": "/home/zhangziqing/flat-descriptors-20261115T040104Z/optimization-rerun-20261115T080342Z/optimization-rerun-evidence.tar.gz",
+    "size_bytes": 864993,
+    "sha256": "e1c63e880e918439dc18db700df147730986f2f3caa2a57ffedbab2629c7e0ac",
+    "retrieved": true,
+    "hash_verified": true,
+    "local_path": "results/experimental/flat-descriptors/runtime/optimized-blackwell-20261115/optimization-rerun-evidence.tar.gz"
+  }
+}

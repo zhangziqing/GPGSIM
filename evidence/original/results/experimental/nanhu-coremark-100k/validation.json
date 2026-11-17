@@ -1,0 +1,145 @@
+{
+  "status": "passed",
+  "independent_trace_parse": {
+    "cycles": 100000,
+    "commit_events": 167375,
+    "fused_extra_instructions": 4523,
+    "compressed_commit_events": 74948,
+    "skipped_commit_events": 74,
+    "exception_cycles": 0,
+    "trap_cycles": 0,
+    "retired_instructions_including_fused": 171898,
+    "uart": "Running CoreMark for 2 iterations\r\n",
+    "final_gpr": [
+      0,
+      2147490940,
+      2147536272,
+      0,
+      0,
+      44,
+      44,
+      8,
+      2147501900,
+      25438,
+      4,
+      2147536320,
+      2147536368,
+      44,
+      2147502505,
+      73,
+      2147536280,
+      9,
+      2147536320,
+      136,
+      0,
+      0,
+      2147502566,
+      2147536280,
+      103,
+      101,
+      1,
+      2147536656,
+      9,
+      9,
+      2147499056,
+      5
+    ],
+    "final_fpr": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "final_csr": [
+      3,
+      9223372079804473344,
+      9223372045444734976,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "all_four_full_traces_byte_identical": true,
+  "full_trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+  "initial_and_corrected_verilator_architectural_traces_identical": true,
+  "build_manifests_verified": true,
+  "thp_pair": {
+    "rteaal_to_verilator_throughput": 0.2779420014986446,
+    "verilator_speed_ratio": 3.5978729181198497,
+    "host": {
+      "node": "node007.bosccluster.com",
+      "cpu": 110,
+      "siblings": [
+        110,
+        238
+      ],
+      "initial_cpu_utilization": {
+        "cpu110": {
+          "busy_percent": 9.743589743589743,
+          "ticks": 195
+        },
+        "cpu238": {
+          "busy_percent": 8.290155440414507,
+          "ticks": 193
+        }
+      },
+      "cpu_description": "model name\t: AMD EPYC 7773X 64-Core Processor"
+    },
+    "accepted_artifacts_before": {
+      "tensor_manifest_files": 20,
+      "best_candidate_files": 4,
+      "evaluator_header_byte_identical": true,
+      "model_archive_unchanged": true
+    },
+    "accepted_artifacts_after": {
+      "tensor_manifest_files": 20,
+      "best_candidate_files": 4,
+      "evaluator_header_byte_identical": true,
+      "model_archive_unchanged": true
+    }
+  },
+  "initial_allocation_pair": {
+    "rteaal_to_verilator_throughput": 0.2206818849993002,
+    "verilator_speed_ratio": 4.5314095445721385
+  }
+}

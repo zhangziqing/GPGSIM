@@ -1,0 +1,205 @@
+{
+  "status": "passed",
+  "gpu": "rtx6000",
+  "device": "name, uuid, driver_version, compute_cap\nNVIDIA RTX PRO 6000 Blackwell Workstation Edition, GPU-67983fd2-eb55-ece7-a1ec-40165d7759fb, 580.178.04, 12.0\n",
+  "input_sha256": "a53577553e1d88c3b978a52805de37f282f905fa3c0834380be7a4182f00dea8",
+  "evidence_sha256": "c136e46b010b9db8d9797a71b82ee23395893bae0c4c213a525cfedde1695c36",
+  "manifest_files": 270,
+  "transfer_parts": 61,
+  "full_runs": 10,
+  "smoke_runs": 2,
+  "ctest_passes": 30,
+  "full_GPU_trace_bytes_checked": true,
+  "independent_CPU_fingerprints_checked": true,
+  "simulator_revision": "274d8f75c13f690546dfb64f4254fcbc0c1ef7a3",
+  "frozen_workspace_revision": "77c31fbb1b086109f986bab331c5b96f33876da1",
+  "reference_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+  "affinity": [
+    2
+  ],
+  "model_sha256": {
+    "off": "bd4003941bac6a667b51be9bd1df8cffabb02644d4d54ecd22655d00956d8a34",
+    "on": "46bfece3ef8cbbf71d2efd91a8886070554db7b606a5b40d7e4c90eac17b4be2"
+  },
+  "cpu_oracle": {
+    "status": "passed",
+    "variants": {
+      "off": {
+        "full_data_fingerprint": 1338522527552546502,
+        "memory64_fingerprint": 15503565812696885107,
+        "memory8_fingerprint": 656100811014868721
+      },
+      "on": {
+        "full_data_fingerprint": 6218498432779941060,
+        "memory64_fingerprint": 15503565812696885107,
+        "memory8_fingerprint": 656100811014868721
+      }
+    },
+    "evidence": {
+      "off": {
+        "result_sha256": "a648e79cab5f51e1c3d650bfdbdb489f0f9e543ac71f2a428d3718f05ae4fd25",
+        "command_sha256": "b7be2ebe42e1ba1d4c77a2740264ba7d18e7577ec736ac19b18518fdf5c090d4",
+        "launch_proof_sha256": "a6e214c43a64fdaf0d3b95d37154a8a48b91890d41656ec1a718d1443df25f84",
+        "binary_sha256": "d2f142e6bda84dac5cc67338038ee258a4f65201babff3350d99486a0c2eb00b",
+        "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+        "evaluation_seconds": 1864.212217799006
+      },
+      "on": {
+        "result_sha256": "9b649a82fe62bb95f955b979383ab437fe38473531f60594115335b050e624a8",
+        "command_sha256": "14830edaed2fd26f57023d558014eac2e2be37f9b5909298314e69258736b9de",
+        "launch_proof_sha256": "fc38f37dd80c9ed69c7f94b442fef41afa100480f25e8db1f66c6d77b4552f19",
+        "binary_sha256": "d2f142e6bda84dac5cc67338038ee258a4f65201babff3350d99486a0c2eb00b",
+        "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+        "evaluation_seconds": 1972.9376945019628
+      }
+    }
+  },
+  "cpu_oracle_sha256": "e46c8189d8f74b03c76ded43e82ed195dbbaea7e4529d9857c972f2243f2dc2a",
+  "summary": {
+    "off": {
+      "samples": 3,
+      "cycles_per_second": [
+        2942.708127146093,
+        2942.2036435515374,
+        2939.1049246041857
+      ],
+      "allocated_device_bytes": 1156375500,
+      "median_cycles_per_second": 2942.2036435515374,
+      "median_evaluation_seconds": 33.988130025999794,
+      "median_kernel_device_seconds": 33.3333881267881
+    },
+    "on": {
+      "samples": 3,
+      "cycles_per_second": [
+        2931.1083820956887,
+        2930.8504736321547,
+        2928.4674460679907
+      ],
+      "allocated_device_bytes": 1156375428,
+      "median_cycles_per_second": 2930.8504736321547,
+      "median_evaluation_seconds": 34.119789084999496,
+      "median_kernel_device_seconds": 33.468366622092226
+    }
+  },
+  "on_throughput_change_percent": -0.3858730154272516,
+  "profiles": {
+    "off": [
+      {
+        "nonreset_cycle_begin": 1024,
+        "nonreset_cycle_end_exclusive": 1280,
+        "cycles": 256,
+        "kernels": 36096,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.86758203125,
+          "compute": 187.75566015624995,
+          "commit": 83.25639453125004,
+          "suffix": 59.75521875,
+          "gather": 1.143859375
+        },
+        "mean_all_kernel_us_per_cycle": 332.77871484375,
+        "suffix_kernel_share_percent": 17.956442550136337,
+        "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies"
+      },
+      {
+        "nonreset_cycle_begin": 20000,
+        "nonreset_cycle_end_exclusive": 20256,
+        "cycles": 256,
+        "kernels": 36096,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.868984375,
+          "compute": 189.16786328125008,
+          "commit": 83.60737890625,
+          "suffix": 59.68905859375,
+          "gather": 1.1409765625
+        },
+        "mean_all_kernel_us_per_cycle": 334.4742617187501,
+        "suffix_kernel_share_percent": 17.845635800802164,
+        "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies"
+      },
+      {
+        "nonreset_cycle_begin": 90000,
+        "nonreset_cycle_end_exclusive": 90256,
+        "cycles": 256,
+        "kernels": 36096,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.86837109375,
+          "compute": 188.53041796875,
+          "commit": 83.42509375,
+          "suffix": 59.63872265625,
+          "gather": 1.14348828125
+        },
+        "mean_all_kernel_us_per_cycle": 333.60609375,
+        "suffix_kernel_share_percent": 17.876988392466977,
+        "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies"
+      }
+    ],
+    "on": [
+      {
+        "nonreset_cycle_begin": 1024,
+        "nonreset_cycle_end_exclusive": 1280,
+        "cycles": 256,
+        "kernels": 36096,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.87075390625,
+          "compute": 189.5299492187501,
+          "commit": 83.660890625,
+          "suffix": 59.0983828125,
+          "gather": 1.14248828125
+        },
+        "mean_all_kernel_us_per_cycle": 334.3024648437501,
+        "suffix_kernel_share_percent": 17.67811758137112,
+        "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies"
+      },
+      {
+        "nonreset_cycle_begin": 20000,
+        "nonreset_cycle_end_exclusive": 20256,
+        "cycles": 256,
+        "kernels": 36096,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.8698515625,
+          "compute": 190.95241796874998,
+          "commit": 83.89541015625001,
+          "suffix": 59.04750390625,
+          "gather": 1.14174609375
+        },
+        "mean_all_kernel_us_per_cycle": 335.9069296875,
+        "suffix_kernel_share_percent": 17.57853104167363,
+        "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies"
+      },
+      {
+        "nonreset_cycle_begin": 90000,
+        "nonreset_cycle_end_exclusive": 90256,
+        "cycles": 256,
+        "kernels": 36096,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.86712890625,
+          "compute": 190.39345703125008,
+          "commit": 83.73339843750003,
+          "suffix": 58.996875,
+          "gather": 1.1432265625
+        },
+        "mean_all_kernel_us_per_cycle": 335.1340859375001,
+        "suffix_kernel_share_percent": 17.6039613622001,
+        "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies"
+      }
+    ]
+  },
+  "build": {
+    "binary_sha256": "d353fb152f3fb8ac0053378f62b4407d3f69e1a69351de8ba49b3fd6db1bd9a2",
+    "build_seconds": 10.926147749007214,
+    "ctest": "15/15 passed"
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "status": "passed",
+  "files_checked": 57,
+  "full_gpu_runs": 7,
+  "archive_sha256": "cb7d3b28b59263e5bfa73261d70031be12be9115a79bc1f13533157c6a8d1e67",
+  "median_cycles_per_second": {
+    "original": 2290.3609538934306,
+    "no_unroll": 2351.3585224165513
+  },
+  "samples": [
+    {
+      "variant": "original",
+      "round": 1,
+      "cycles_per_second": 2290.4406371401656
+    },
+    {
+      "variant": "no_unroll",
+      "round": 1,
+      "cycles_per_second": 2351.3585224165513
+    },
+    {
+      "variant": "no_unroll",
+      "round": 2,
+      "cycles_per_second": 2352.5755159902874
+    },
+    {
+      "variant": "original",
+      "round": 2,
+      "cycles_per_second": 2290.206205447327
+    },
+    {
+      "variant": "original",
+      "round": 3,
+      "cycles_per_second": 2290.3609538934306
+    },
+    {
+      "variant": "no_unroll",
+      "round": 3,
+      "cycles_per_second": 2350.638891879998
+    }
+  ],
+  "instructions": {
+    "original": {
+      "ordered": {
+        "static_instructions": 320,
+        "reciprocal_instructions": 2
+      },
+      "direct": {
+        "static_instructions": 408,
+        "reciprocal_instructions": 3
+      }
+    },
+    "no_unroll": {
+      "ordered": {
+        "static_instructions": 320,
+        "reciprocal_instructions": 2
+      },
+      "direct": {
+        "static_instructions": 248,
+        "reciprocal_instructions": 2
+      }
+    }
+  },
+  "windows": [
+    {
+      "nonreset_cycle_begin": 1024,
+      "nonreset_cycle_end_exclusive": 1280,
+      "cycles": 256,
+      "kernels": 36864,
+      "copies": 256,
+      "dropped_records": 0,
+      "mean_kernel_us_per_cycle": {
+        "set_reset": 0.857453125,
+        "compute": 191.99982421875,
+        "commit": 77.42648046874997,
+        "small_layers": 48.87333203125,
+        "suffix": 99.83385546875,
+        "gather": 1.15585546875
+      },
+      "mean_all_kernel_us_per_cycle": 420.14680078124996,
+      "suffix_kernel_share_percent": 23.761660277577278,
+      "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies",
+      "mean_kernel_span_us": 434.20511328125,
+      "mean_in_cycle_gap_us": 14.0583125,
+      "mean_d2h_us": 0.42159375,
+      "mean_cycle_start_spacing_us": 518.4126313725491
+    },
+    {
+      "nonreset_cycle_begin": 20000,
+      "nonreset_cycle_end_exclusive": 20256,
+      "cycles": 256,
+      "kernels": 36864,
+      "copies": 256,
+      "dropped_records": 0,
+      "mean_kernel_us_per_cycle": {
+        "set_reset": 0.8595078125,
+        "compute": 192.5290937499999,
+        "commit": 77.74573046875,
+        "small_layers": 48.767921875,
+        "suffix": 99.83296875,
+        "gather": 1.1558515625
+      },
+      "mean_all_kernel_us_per_cycle": 420.8910742187499,
+      "suffix_kernel_share_percent": 23.719431193761494,
+      "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies",
+      "mean_kernel_span_us": 434.94148828125,
+      "mean_in_cycle_gap_us": 14.0504140625,
+      "mean_d2h_us": 0.425625,
+      "mean_cycle_start_spacing_us": 522.5298901960784
+    },
+    {
+      "nonreset_cycle_begin": 90000,
+      "nonreset_cycle_end_exclusive": 90256,
+      "cycles": 256,
+      "kernels": 36864,
+      "copies": 256,
+      "dropped_records": 0,
+      "mean_kernel_us_per_cycle": {
+        "set_reset": 0.86025390625,
+        "compute": 192.151,
+        "commit": 77.58129296874998,
+        "small_layers": 48.75755859375,
+        "suffix": 99.831328125,
+        "gather": 1.15596484375
+      },
+      "mean_all_kernel_us_per_cycle": 420.3373984375,
+      "suffix_kernel_share_percent": 23.7502845324014,
+      "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies",
+      "mean_kernel_span_us": 434.396328125,
+      "mean_in_cycle_gap_us": 14.0589296875,
+      "mean_d2h_us": 0.4221171875,
+      "mean_cycle_start_spacing_us": 520.1255176470588
+    }
+  ]
+}

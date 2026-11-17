@@ -1,0 +1,12 @@
+[
+  "taskset",
+  "-c",
+  "31",
+  "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-coremark-100k/rteaal_coremark",
+  "xiangshan-nanhu-indexed",
+  "/nfs/home/zhangziqing/RTeAAL/XiangShan-nanhu-legacy/ready-to-run/coremark-2-iteration.bin",
+  "/nfs/home/zhangziqing/RTeAAL/results/nanhu/preserved-signals.txt",
+  "10000",
+  "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-coremark-100k/phase-probe-rteaal.trace",
+  "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-coremark-100k/phase-probe-verilator.trace"
+]

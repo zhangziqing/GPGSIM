@@ -1,0 +1,690 @@
+{
+  "status": "passed",
+  "simulator_revision": "274d8f75c13f690546dfb64f4254fcbc0c1ef7a3",
+  "workspace_revision": "76689755887363ce0f7f93b8ba709f099a8e180b",
+  "workspace_revision_at_collection": "449a661c2d007f6608e90f54dca0c4145899c0af",
+  "cpu_affinity": [
+    95
+  ],
+  "host": "node007.bosccluster.com",
+  "reference_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+  "fixed_prefix_cycles": 100000,
+  "compiler_overlay_classes_byte_identical": true,
+  "baseline": "Fresh binary concat A; projection and composition disabled",
+  "independent_binary_control": {
+    "status": "passed",
+    "directory": "/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/on",
+    "structure_sha256": "e6e58c66e232d4cba0676aa2c939165c71cf57dad5966abfe5e65110c08afac3",
+    "named_depths_sha256": "bf9cf81322be81f5c4b9607f25adece78b150f81581aec9b97c6c71b022b0470"
+  },
+  "snapshot_manifest_sha256": "d85100878ed0e65039960f252f975484a69e66b6431979f0660af59f3df4f52d",
+  "verilator_register_reference_sha256": "7478c0ed17ea064ea60ac7c43f56e49a13ac12cb57eacf7a87b3d440565138b9",
+  "retained_memory_control_sha256": "6f62b9147c41480e9ebc42b32337f954d4d49d1195e45d822f75b208227841fc",
+  "cpu_policy": {
+    "scaling_governor": "schedutil",
+    "scaling_driver": "acpi-cpufreq",
+    "scaling_min_freq": "1500000",
+    "scaling_max_freq": "2200000"
+  },
+  "named_registers_match_verilator": true,
+  "named_memories_match_accepted_concat_control": true,
+  "named_depth_deltas": {
+    "B": {
+      "outputs": 151461,
+      "shorter": 10625,
+      "unchanged": 140836,
+      "longer": 0
+    },
+    "C": {
+      "outputs": 151461,
+      "shorter": 10625,
+      "unchanged": 140836,
+      "longer": 0
+    }
+  },
+  "variants": {
+    "A": {
+      "layout": {
+        "design": "plru-A-binary-v1",
+        "operations": 2222558,
+        "layers": 126,
+        "data_slots": 490089,
+        "maximum_layer_nodes": 197615,
+        "mux_table_operations_opcode_24": 4391,
+        "mux_table_entries": 198676,
+        "memwrite_placeholder_liveness": "passed",
+        "graph_write_conflicts": "none",
+        "argument_count": 5121670,
+        "scatter_count": 2217941,
+        "bounds_count": 7308,
+        "observed_signals": 515
+      },
+      "graph": {
+        "value_path_nodes": 126,
+        "nonassign_path_nodes": 123,
+        "concat_fanin_histogram": {
+          "2": 177560
+        },
+        "lookup_size_histogram": {
+          "4": 193,
+          "8": 2192,
+          "16": 985,
+          "32": 116,
+          "64": 248,
+          "128": 189,
+          "256": 466,
+          "512": 1,
+          "1024": 1
+        },
+        "nodes_over_50": 50183,
+        "terminal_nodes_over_50": 13105,
+        "terminal_depth_histogram_over_50": {
+          "51": 4207,
+          "52": 205,
+          "53": 2467,
+          "54": 2402,
+          "55": 2257,
+          "56": 199,
+          "57": 66,
+          "58": 59,
+          "59": 91,
+          "60": 8,
+          "61": 9,
+          "62": 132,
+          "63": 212,
+          "64": 157,
+          "65": 88,
+          "66": 30,
+          "67": 14,
+          "68": 78,
+          "69": 174,
+          "70": 20,
+          "72": 80,
+          "78": 1,
+          "83": 4,
+          "87": 2,
+          "89": 2,
+          "90": 8,
+          "91": 2,
+          "92": 18,
+          "93": 32,
+          "94": 80,
+          "126": 1
+        }
+      },
+      "named_target_depths": {
+        "l_soc.core_with_l2.core.ctrlBlock.fpDq.dataModule.r_5_cf_waitForRobIdx_value": {
+          "depth": 24,
+          "nonassign_depth": 22,
+          "node": 1783329
+        },
+        "l_soc.core_with_l2.core.ctrlBlock.intDq.dataModule.r_5_cf_waitForRobIdx_value": {
+          "depth": 24,
+          "nonassign_depth": 22,
+          "node": 1783335
+        },
+        "l_soc.core_with_l2.core.ctrlBlock.lsDq.dataModule.r_5_cf_waitForRobIdx_value": {
+          "depth": 24,
+          "nonassign_depth": 22,
+          "node": 1783342
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_0.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "depth": 41,
+          "nonassign_depth": 39,
+          "node": 2063513
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_0.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "depth": 36,
+          "nonassign_depth": 34,
+          "node": 2007764
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_1.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "depth": 41,
+          "nonassign_depth": 39,
+          "node": 2063516
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_1.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "depth": 36,
+          "nonassign_depth": 34,
+          "node": 2007759
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_2.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "depth": 41,
+          "nonassign_depth": 39,
+          "node": 2063514
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_2.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "depth": 36,
+          "nonassign_depth": 34,
+          "node": 2007765
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_3.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "depth": 41,
+          "nonassign_depth": 39,
+          "node": 2063515
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_3.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "depth": 36,
+          "nonassign_depth": 34,
+          "node": 2007760
+        },
+        "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.normal_refill_idx_state_reg": {
+          "depth": 126,
+          "nonassign_depth": 123,
+          "node": 2222557
+        },
+        "l_soc.core_with_l2.core.memBlock.LoadUnit_1.io_perf_9_value_REG": {
+          "depth": 69,
+          "nonassign_depth": 67,
+          "node": 2221206
+        },
+        "l_soc.core_with_l2.core.memBlock.lsq.loadQueue.writebacked_0": {
+          "depth": 94,
+          "nonassign_depth": 92,
+          "node": 2222346
+        },
+        "l_soc.core_with_l2.core.memBlock.sbuffer.do_uarch_drain_REG_1": {
+          "depth": 78,
+          "nonassign_depth": 76,
+          "node": 2221638
+        }
+      },
+      "compile": {
+        "status": "compiled_and_preprocessed",
+        "design": "plru-A-binary-v1",
+        "operations": 2222558,
+        "layers": 126,
+        "opcode_histogram": {
+          "20": 313529,
+          "13": 524049,
+          "0": 14370,
+          "1": 1518,
+          "3": 524,
+          "4": 3840,
+          "5": 26,
+          "6": 1124,
+          "7": 80,
+          "8": 70325,
+          "9": 26191,
+          "10": 4615,
+          "11": 26369,
+          "14": 245733,
+          "15": 93591,
+          "17": 177560,
+          "18": 124763,
+          "19": 544310,
+          "21": 8675,
+          "22": 30336,
+          "23": 765,
+          "24": 4391,
+          "25": 170,
+          "26": 65,
+          "12": 8,
+          "28": 5428,
+          "16": 203
+        },
+        "preprocess_build": [
+          "clang++",
+          "-std=c++17",
+          "-O3",
+          "-I/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/binary-snapshot-v1/runtime-sources/kernel",
+          "-I/nfs/home/zhangziqing/RTeAAL/tools/local/include",
+          "-L/nfs/home/zhangziqing/RTeAAL/tools/local/lib",
+          "-DJSONPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/A-binary-v1/RTeAAL-Sim/kernel/json/\"",
+          "-DTXTPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/A-binary-v1/RTeAAL-Sim/kernel/txt/\"",
+          "-DYAMLPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/A-binary-v1/RTeAAL-Sim/kernel/yaml/\"",
+          "/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/binary-snapshot-v1/runtime-sources/kernel/preprocess_tensor.cc",
+          "-lyaml-cpp",
+          "-lpthread",
+          "-o",
+          "/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/A-binary-v1/RTeAAL-Sim/kernel/bin/preprocess_tensor"
+        ],
+        "preprocess_binary_sha256": "78bb6349f44b72e382c2f02a2ad7b3098fb9093c71d5e955f8070242695b4388",
+        "resources": "\tCommand being timed: \"java -XX:ActiveProcessorCount=12 -Xmx256g -Xss64m -Xlog:class+load=info:file=/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/A-binary-v1/classes.log -Drteaal.nanhu=true -Drteaal.design=plru-A-binary-v1 -Drteaal.genericOnly=true -Drteaal.reduceConstantMuxChains=true -Drteaal.balancePriorityMuxChains=true -Drteaal.balanceConcat=true -Drteaal.projectSlices=false -Drteaal.composeMaskedUpdates=false -Drteaal.sliceReport=/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/A-binary-v1/slice-candidates.jsonl -Drteaal.preserved=/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/A-binary-v1/preserved.txt -Drteaal.sliceMaxGrowth=1024 -Drteaal.skipRegElision=true -Drteaal.preClockInput=true -cp /nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/A-binary-v1/compiler-overlay.jar:/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/binary-snapshot-v1/main.jar:/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/binary-snapshot-v1/fast-accesses.jar:/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/binary-snapshot-v1/assembly.jar essent.Driver -O1 --normalize-mux-index --dump /nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/A-binary-v1/SimTop.preclock.lo.fir\"\n\tUser time (seconds): 1205.15\n\tSystem time (seconds): 174.04\n\tPercent of CPU this job got: 106%\n\tElapsed (wall clock) time (h:mm:ss or m:ss): 21:39.50\n\tAverage shared text size (kbytes): 0\n\tAverage unshared data size (kbytes): 0\n\tAverage stack size (kbytes): 0\n\tAverage total size (kbytes): 0\n\tMaximum resident set size (kbytes): 101534972\n\tAverage resident set size (kbytes): 0\n\tMajor (requiring I/O) page faults: 0\n\tMinor (reclaiming a frame) page faults: 85195498\n\tVoluntary context switches: 109245\n\tInvoluntary context switches: 74132\n\tSwaps: 0\n\tFile system inputs: 1326392\n\tFile system outputs: 2229080\n\tSocket messages sent: 0\n\tSocket messages received: 0\n\tSignals delivered: 0\n\tPage size (bytes): 4096\n\tExit status: 0\n"
+      }
+    },
+    "B": {
+      "layout": {
+        "design": "plru-B-binary-v1",
+        "operations": 2220432,
+        "layers": 94,
+        "data_slots": 491448,
+        "maximum_layer_nodes": 197765,
+        "mux_table_operations_opcode_24": 4391,
+        "mux_table_entries": 198676,
+        "memwrite_placeholder_liveness": "passed",
+        "graph_write_conflicts": "none",
+        "argument_count": 5096601,
+        "scatter_count": 2215815,
+        "bounds_count": 5452,
+        "observed_signals": 515
+      },
+      "graph": {
+        "value_path_nodes": 94,
+        "nonassign_path_nodes": 92,
+        "concat_fanin_histogram": {
+          "2": 169887
+        },
+        "lookup_size_histogram": {
+          "4": 193,
+          "8": 2192,
+          "16": 985,
+          "32": 116,
+          "64": 248,
+          "128": 189,
+          "256": 466,
+          "512": 1,
+          "1024": 1
+        },
+        "nodes_over_50": 15733,
+        "terminal_nodes_over_50": 6113,
+        "terminal_depth_histogram_over_50": {
+          "51": 4111,
+          "52": 55,
+          "53": 33,
+          "54": 348,
+          "55": 137,
+          "56": 257,
+          "57": 14,
+          "58": 13,
+          "59": 101,
+          "60": 132,
+          "61": 214,
+          "62": 240,
+          "63": 84,
+          "64": 28,
+          "65": 12,
+          "66": 72,
+          "67": 92,
+          "68": 20,
+          "73": 1,
+          "78": 1,
+          "83": 4,
+          "87": 2,
+          "89": 2,
+          "90": 8,
+          "91": 2,
+          "92": 18,
+          "93": 32,
+          "94": 80
+        }
+      },
+      "named_target_depths": {
+        "l_soc.core_with_l2.core.ctrlBlock.fpDq.dataModule.r_5_cf_waitForRobIdx_value": {
+          "depth": 24,
+          "nonassign_depth": 22,
+          "node": 1786528
+        },
+        "l_soc.core_with_l2.core.ctrlBlock.intDq.dataModule.r_5_cf_waitForRobIdx_value": {
+          "depth": 24,
+          "nonassign_depth": 22,
+          "node": 1786534
+        },
+        "l_soc.core_with_l2.core.ctrlBlock.lsDq.dataModule.r_5_cf_waitForRobIdx_value": {
+          "depth": 24,
+          "nonassign_depth": 22,
+          "node": 1786541
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_0.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "depth": 41,
+          "nonassign_depth": 39,
+          "node": 2085218
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_0.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "depth": 36,
+          "nonassign_depth": 34,
+          "node": 2011746
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_1.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "depth": 41,
+          "nonassign_depth": 39,
+          "node": 2085221
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_1.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "depth": 36,
+          "nonassign_depth": 34,
+          "node": 2011742
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_2.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "depth": 41,
+          "nonassign_depth": 39,
+          "node": 2085219
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_2.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "depth": 36,
+          "nonassign_depth": 34,
+          "node": 2011747
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_3.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "depth": 41,
+          "nonassign_depth": 39,
+          "node": 2085220
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_3.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "depth": 36,
+          "nonassign_depth": 34,
+          "node": 2011743
+        },
+        "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.normal_refill_idx_state_reg": {
+          "depth": 73,
+          "nonassign_depth": 72,
+          "node": 2219686
+        },
+        "l_soc.core_with_l2.core.memBlock.LoadUnit_1.io_perf_9_value_REG": {
+          "depth": 60,
+          "nonassign_depth": 57,
+          "node": 2217306
+        },
+        "l_soc.core_with_l2.core.memBlock.lsq.loadQueue.writebacked_0": {
+          "depth": 94,
+          "nonassign_depth": 92,
+          "node": 2220352
+        },
+        "l_soc.core_with_l2.core.memBlock.sbuffer.do_uarch_drain_REG_1": {
+          "depth": 78,
+          "nonassign_depth": 76,
+          "node": 2219727
+        }
+      },
+      "compile": {
+        "status": "compiled_and_preprocessed",
+        "design": "plru-B-binary-v1",
+        "operations": 2220432,
+        "layers": 94,
+        "opcode_histogram": {
+          "20": 326964,
+          "13": 516187,
+          "0": 14370,
+          "1": 1518,
+          "3": 524,
+          "4": 3840,
+          "5": 26,
+          "6": 1124,
+          "7": 80,
+          "8": 70325,
+          "9": 26190,
+          "10": 4615,
+          "11": 26369,
+          "14": 245347,
+          "15": 93661,
+          "17": 169887,
+          "18": 117639,
+          "19": 551725,
+          "21": 8675,
+          "22": 30336,
+          "23": 765,
+          "24": 4391,
+          "25": 170,
+          "26": 65,
+          "12": 8,
+          "28": 5428,
+          "16": 203
+        },
+        "preprocess_build": [
+          "clang++",
+          "-std=c++17",
+          "-O3",
+          "-I/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/binary-snapshot-v1/runtime-sources/kernel",
+          "-I/nfs/home/zhangziqing/RTeAAL/tools/local/include",
+          "-L/nfs/home/zhangziqing/RTeAAL/tools/local/lib",
+          "-DJSONPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/B-binary-v1/RTeAAL-Sim/kernel/json/\"",
+          "-DTXTPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/B-binary-v1/RTeAAL-Sim/kernel/txt/\"",
+          "-DYAMLPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/B-binary-v1/RTeAAL-Sim/kernel/yaml/\"",
+          "/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/binary-snapshot-v1/runtime-sources/kernel/preprocess_tensor.cc",
+          "-lyaml-cpp",
+          "-lpthread",
+          "-o",
+          "/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/B-binary-v1/RTeAAL-Sim/kernel/bin/preprocess_tensor"
+        ],
+        "preprocess_binary_sha256": "d74f9b6014610bb83b8d49837ba5146243261dfafb9421efeea529a623268e79",
+        "resources": "\tCommand being timed: \"java -XX:ActiveProcessorCount=12 -Xmx256g -Xss64m -Xlog:class+load=info:file=/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/B-binary-v1/classes.log -Drteaal.nanhu=true -Drteaal.design=plru-B-binary-v1 -Drteaal.genericOnly=true -Drteaal.reduceConstantMuxChains=true -Drteaal.balancePriorityMuxChains=true -Drteaal.balanceConcat=true -Drteaal.projectSlices=true -Drteaal.composeMaskedUpdates=false -Drteaal.sliceReport=/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/B-binary-v1/slice-candidates.jsonl -Drteaal.preserved=/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/B-binary-v1/preserved.txt -Drteaal.sliceMaxGrowth=1024 -Drteaal.skipRegElision=true -Drteaal.preClockInput=true -cp /nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/B-binary-v1/compiler-overlay.jar:/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/binary-snapshot-v1/main.jar:/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/binary-snapshot-v1/fast-accesses.jar:/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/binary-snapshot-v1/assembly.jar essent.Driver -O1 --normalize-mux-index --dump /nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/B-binary-v1/SimTop.preclock.lo.fir\"\n\tUser time (seconds): 1094.11\n\tSystem time (seconds): 116.87\n\tPercent of CPU this job got: 120%\n\tElapsed (wall clock) time (h:mm:ss or m:ss): 16:48.02\n\tAverage shared text size (kbytes): 0\n\tAverage unshared data size (kbytes): 0\n\tAverage stack size (kbytes): 0\n\tAverage total size (kbytes): 0\n\tMaximum resident set size (kbytes): 57667852\n\tAverage resident set size (kbytes): 0\n\tMajor (requiring I/O) page faults: 0\n\tMinor (reclaiming a frame) page faults: 65306078\n\tVoluntary context switches: 108768\n\tInvoluntary context switches: 46494\n\tSwaps: 0\n\tFile system inputs: 1326392\n\tFile system outputs: 2238216\n\tSocket messages sent: 0\n\tSocket messages received: 0\n\tSignals delivered: 0\n\tPage size (bytes): 4096\n\tExit status: 0\n"
+      }
+    },
+    "C": {
+      "layout": {
+        "design": "plru-C-binary-v1",
+        "operations": 2219573,
+        "layers": 94,
+        "data_slots": 491338,
+        "maximum_layer_nodes": 197765,
+        "mux_table_operations_opcode_24": 4391,
+        "mux_table_entries": 198676,
+        "memwrite_placeholder_liveness": "passed",
+        "graph_write_conflicts": "none",
+        "argument_count": 5093026,
+        "scatter_count": 2214956,
+        "bounds_count": 5452,
+        "observed_signals": 515
+      },
+      "graph": {
+        "value_path_nodes": 94,
+        "nonassign_path_nodes": 92,
+        "concat_fanin_histogram": {
+          "2": 169829
+        },
+        "lookup_size_histogram": {
+          "4": 193,
+          "8": 2192,
+          "16": 985,
+          "32": 116,
+          "64": 248,
+          "128": 189,
+          "256": 466,
+          "512": 1,
+          "1024": 1
+        },
+        "nodes_over_50": 15162,
+        "terminal_nodes_over_50": 6111,
+        "terminal_depth_histogram_over_50": {
+          "51": 4111,
+          "52": 55,
+          "53": 33,
+          "54": 348,
+          "55": 136,
+          "56": 257,
+          "57": 14,
+          "58": 13,
+          "59": 101,
+          "60": 132,
+          "61": 214,
+          "62": 240,
+          "63": 84,
+          "64": 28,
+          "65": 12,
+          "66": 72,
+          "67": 92,
+          "68": 20,
+          "78": 1,
+          "83": 4,
+          "87": 2,
+          "89": 2,
+          "90": 8,
+          "91": 2,
+          "92": 18,
+          "93": 32,
+          "94": 80
+        }
+      },
+      "named_target_depths": {
+        "l_soc.core_with_l2.core.ctrlBlock.fpDq.dataModule.r_5_cf_waitForRobIdx_value": {
+          "depth": 24,
+          "nonassign_depth": 22,
+          "node": 1786679
+        },
+        "l_soc.core_with_l2.core.ctrlBlock.intDq.dataModule.r_5_cf_waitForRobIdx_value": {
+          "depth": 24,
+          "nonassign_depth": 22,
+          "node": 1786685
+        },
+        "l_soc.core_with_l2.core.ctrlBlock.lsDq.dataModule.r_5_cf_waitForRobIdx_value": {
+          "depth": 24,
+          "nonassign_depth": 22,
+          "node": 1786692
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_0.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "depth": 41,
+          "nonassign_depth": 39,
+          "node": 2085603
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_0.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "depth": 36,
+          "nonassign_depth": 34,
+          "node": 2012236
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_1.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "depth": 41,
+          "nonassign_depth": 39,
+          "node": 2085606
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_1.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "depth": 36,
+          "nonassign_depth": 34,
+          "node": 2012232
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_2.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "depth": 41,
+          "nonassign_depth": 39,
+          "node": 2085604
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_2.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "depth": 36,
+          "nonassign_depth": 34,
+          "node": 2012237
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_3.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "depth": 41,
+          "nonassign_depth": 39,
+          "node": 2085605
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_3.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "depth": 36,
+          "nonassign_depth": 34,
+          "node": 2012233
+        },
+        "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.normal_refill_idx_state_reg": {
+          "depth": 39,
+          "nonassign_depth": 38,
+          "node": 2049709
+        },
+        "l_soc.core_with_l2.core.memBlock.LoadUnit_1.io_perf_9_value_REG": {
+          "depth": 60,
+          "nonassign_depth": 57,
+          "node": 2216617
+        },
+        "l_soc.core_with_l2.core.memBlock.lsq.loadQueue.writebacked_0": {
+          "depth": 94,
+          "nonassign_depth": 92,
+          "node": 2219493
+        },
+        "l_soc.core_with_l2.core.memBlock.sbuffer.do_uarch_drain_REG_1": {
+          "depth": 78,
+          "nonassign_depth": 76,
+          "node": 2218868
+        }
+      },
+      "compile": {
+        "status": "compiled_and_preprocessed",
+        "design": "plru-C-binary-v1",
+        "operations": 2219573,
+        "layers": 94,
+        "opcode_histogram": {
+          "20": 326964,
+          "13": 516921,
+          "0": 14370,
+          "1": 1518,
+          "3": 524,
+          "4": 3840,
+          "5": 26,
+          "6": 1124,
+          "7": 80,
+          "8": 70325,
+          "9": 26190,
+          "10": 4615,
+          "11": 26369,
+          "14": 245578,
+          "15": 93694,
+          "17": 169829,
+          "18": 117548,
+          "19": 550017,
+          "21": 8675,
+          "22": 30336,
+          "23": 765,
+          "24": 4391,
+          "25": 170,
+          "26": 65,
+          "12": 8,
+          "28": 5428,
+          "16": 203
+        },
+        "preprocess_build": [
+          "clang++",
+          "-std=c++17",
+          "-O3",
+          "-I/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/binary-snapshot-v1/runtime-sources/kernel",
+          "-I/nfs/home/zhangziqing/RTeAAL/tools/local/include",
+          "-L/nfs/home/zhangziqing/RTeAAL/tools/local/lib",
+          "-DJSONPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/C-binary-v1/RTeAAL-Sim/kernel/json/\"",
+          "-DTXTPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/C-binary-v1/RTeAAL-Sim/kernel/txt/\"",
+          "-DYAMLPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/C-binary-v1/RTeAAL-Sim/kernel/yaml/\"",
+          "/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/binary-snapshot-v1/runtime-sources/kernel/preprocess_tensor.cc",
+          "-lyaml-cpp",
+          "-lpthread",
+          "-o",
+          "/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/C-binary-v1/RTeAAL-Sim/kernel/bin/preprocess_tensor"
+        ],
+        "preprocess_binary_sha256": "151dceb3b95751e5d5de305480196111fbfea57b2261d9f153f9cdec98d8835e",
+        "resources": "\tCommand being timed: \"java -XX:ActiveProcessorCount=12 -Xmx256g -Xss64m -Xlog:class+load=info:file=/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/C-binary-v1/classes.log -Drteaal.nanhu=true -Drteaal.design=plru-C-binary-v1 -Drteaal.genericOnly=true -Drteaal.reduceConstantMuxChains=true -Drteaal.balancePriorityMuxChains=true -Drteaal.balanceConcat=true -Drteaal.projectSlices=true -Drteaal.composeMaskedUpdates=true -Drteaal.sliceReport=/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/C-binary-v1/slice-candidates.jsonl -Drteaal.preserved=/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/C-binary-v1/preserved.txt -Drteaal.sliceMaxGrowth=1024 -Drteaal.skipRegElision=true -Drteaal.preClockInput=true -cp /nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/C-binary-v1/compiler-overlay.jar:/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/binary-snapshot-v1/main.jar:/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/binary-snapshot-v1/fast-accesses.jar:/nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/binary-snapshot-v1/assembly.jar essent.Driver -O1 --normalize-mux-index --dump /nfs/home/zhangziqing/RTeAAL/results/experimental/plru-projection/runtime/C-binary-v1/SimTop.preclock.lo.fir\"\n\tUser time (seconds): 1209.56\n\tSystem time (seconds): 191.14\n\tPercent of CPU this job got: 121%\n\tElapsed (wall clock) time (h:mm:ss or m:ss): 19:14.11\n\tAverage shared text size (kbytes): 0\n\tAverage unshared data size (kbytes): 0\n\tAverage stack size (kbytes): 0\n\tAverage total size (kbytes): 0\n\tMaximum resident set size (kbytes): 101823672\n\tAverage resident set size (kbytes): 0\n\tMajor (requiring I/O) page faults: 0\n\tMinor (reclaiming a frame) page faults: 91994071\n\tVoluntary context switches: 128228\n\tInvoluntary context switches: 8540\n\tSwaps: 0\n\tFile system inputs: 1326392\n\tFile system outputs: 2239120\n\tSocket messages sent: 0\n\tSocket messages received: 0\n\tSignals delivered: 0\n\tPage size (bytes): 4096\n\tExit status: 0\n"
+      }
+    }
+  },
+  "evidence_sha256": {
+    "runtime/A-binary-v1/provenance.json": "b028b4c52e265b50aee6459b1c00e73ef62db038aa49322ef863ef46bc5b2e9a",
+    "runtime/A-binary-v1/compiler-overlay.jar": "49072002a45afd74034d7d2c149047b78740950d6e9825c62815255e8fb0bcbf",
+    "runtime/A-binary-v1/overlay-loads.txt": "49396ee6ee8a636ee6b44ceb7cd5e0887c6219d6f8d4ff794e8a82e6872d4872",
+    "runtime/A-binary-v1/runtime-load-checks.json": "c4eb2f92572438850d67dadcf118d4c86f6b7a1e319434bee37d0b4e2810bb14",
+    "runtime/A-binary-v1/compile.time": "eaeafcdda5c0f7fc5189e99e4d10cb972db631f1aa66f81578a1fb48eadb5757",
+    "runtime/A-binary-v1/slice-candidates.jsonl": "1a69d8d1b0efefdca1b7ad23c266fc3338bb92fe9661698da4cfca480b30ebe8",
+    "runtime/A-binary-v1/compile.log": "ee988e426869ea9955577fe2ac4bd42aeab0cbf930309d2baca3f0890ef5ec56",
+    "runtime/A-binary-v1/compile-result.json": "ca52415e23508a5b29b841f8819802d1914bda2c3c2c6a6e19435c198e317360",
+    "runtime/A-binary-v1/preprocess.log": "08b0f14013176961884eb96bc451ae735debe77213b7b221a96a1904a224f016",
+    "runtime/A-binary-v1/structure-checks.json": "08bbbaccd2a33c9d06e306c5268c9f415f08b0f44fb3d33ab785b3c391c7c491",
+    "runtime/A-binary-v1/named-depths.json": "bf9cf81322be81f5c4b9607f25adece78b150f81581aec9b97c6c71b022b0470",
+    "runtime/A-binary-v1/graph.json": "74949a5cab09ad2f49785ecddef4754547de4146b53c306cd6ea1baa5457a67b",
+    "runtime/A-binary-v1/layout.json": "ca7d1a3b64a54527aeb7eb578c643b53e5685bc1e2623a5c96f3c9406c7e977b",
+    "runtime/A-binary-v1/coremark-command.json": "5031dd9ab979b4c77f23b003cf1fb5c495d375b00b14577f572a3cb2054345e7",
+    "runtime/A-binary-v1/coremark-100000.json": "3d91155c0c01f510aff621fd9f7c6035af1d71cb37faf24ff748b502d5a8e9c0",
+    "runtime/B-binary-v1/provenance.json": "ef05a72fc6472f9d50eab3894569d3a8016aca5a635d071bb3a89bdf2b8e50db",
+    "runtime/B-binary-v1/compiler-overlay.jar": "49072002a45afd74034d7d2c149047b78740950d6e9825c62815255e8fb0bcbf",
+    "runtime/B-binary-v1/overlay-loads.txt": "ee54546422ac2359fe8ca4de39553570ed553207878348fe9777a84eab0d95f7",
+    "runtime/B-binary-v1/runtime-load-checks.json": "c4eb2f92572438850d67dadcf118d4c86f6b7a1e319434bee37d0b4e2810bb14",
+    "runtime/B-binary-v1/compile.time": "fcbb6fa51647b738cfb6ba9a2ab970f7d48129313629e8010f5ec28454e0f5dc",
+    "runtime/B-binary-v1/slice-candidates.jsonl": "f317836c291107d0871d056ddd81106bd0e56c7c33964246c0de1906908a7a9c",
+    "runtime/B-binary-v1/compile.log": "8946070c43068d62a290c9a1405900481071bb2375fdcfcb9098fbcf83fe63f4",
+    "runtime/B-binary-v1/compile-result.json": "19e93c09cdc8b718f2a11d9fae53f27a12a22aa04980fdf82053c49980220115",
+    "runtime/B-binary-v1/preprocess.log": "491cedb88d85da836b429a167a3778c534a01dced0d3140b68d3e2af8bc8b520",
+    "runtime/B-binary-v1/structure-checks.json": "cb58a774c907ee04e6465d606dc3474b0a77993ee4942ecbfd275b0a27a62c5f",
+    "runtime/B-binary-v1/named-depths.json": "3d0ebf883b73516e9d6d563f12edc40ff6513c93ce5df68b50689e1b897b9696",
+    "runtime/B-binary-v1/graph.json": "41f2aaa0273017aac43f41633ef0ba1a64976bab3efcb1c4f21eac18500df3cf",
+    "runtime/B-binary-v1/layout.json": "51b635c079726ee957409f95a89e636a98300a720380d675d570f11b023bf70c",
+    "runtime/B-binary-v1/coremark-command.json": "e9ec8050f857bf9a46999720c54a78422d28987746669d7e117e34a18f11426e",
+    "runtime/B-binary-v1/coremark-100000.json": "7625f832db0b6c6e361e2a2524220c9e9ca8df75b82b92a919b122114d144a04",
+    "runtime/C-binary-v1/provenance.json": "6d9738236ede955e7baec43b4c09a20c1f2bfed9942f3709b8a4383011f404b5",
+    "runtime/C-binary-v1/compiler-overlay.jar": "49072002a45afd74034d7d2c149047b78740950d6e9825c62815255e8fb0bcbf",
+    "runtime/C-binary-v1/overlay-loads.txt": "84e3745754208fe49d9fc6b99f4b8f9829c2fb6e49e93a3f31f7054707494b51",
+    "runtime/C-binary-v1/runtime-load-checks.json": "c4eb2f92572438850d67dadcf118d4c86f6b7a1e319434bee37d0b4e2810bb14",
+    "runtime/C-binary-v1/compile.time": "422fab6bf35686b084ff83ec89e009f7a07c3bcb7cf309b285f483d012dbc393",
+    "runtime/C-binary-v1/slice-candidates.jsonl": "f79ead6fb53dfe5b339be6082d48cc50dd52bbbedb63f0680432445d1bcb4d0d",
+    "runtime/C-binary-v1/compile.log": "4e37ebd55d652cadd2c038de762404d3c09f17742a77def4c06fc3eff5c88130",
+    "runtime/C-binary-v1/compile-result.json": "5ccdda0dee6546b397f20a05f3a5d43c0fc98a469f4ddc57176fd3443f40be0f",
+    "runtime/C-binary-v1/preprocess.log": "964c629aac2efacea43942667c596a32e1916d125aab3c8af18da6f09f9dfb75",
+    "runtime/C-binary-v1/structure-checks.json": "a13153c869c82ed18e3669af1d0e9e1e7b65141f4d228e380b6bdb09c05df69e",
+    "runtime/C-binary-v1/named-depths.json": "c5b55981de0bfccd59b95f5d10d568484a67defcaa2ad8977e8d4ca7016b2e50",
+    "runtime/C-binary-v1/graph.json": "795ff7b673c2d0d588dcaa06daf3ef72f2dff20cefefa6ef23758aa3bd13d961",
+    "runtime/C-binary-v1/layout.json": "e0f5d4661ff3f17b981ced2a7bf7cc9fd22a1a71a1c7a9d740ab49a43acf31e6",
+    "runtime/C-binary-v1/coremark-command.json": "97dfca913c3bc897b1fa7475642803ca124cfa734a56fb99aa2ae8729459d654",
+    "runtime/C-binary-v1/coremark-100000.json": "8ff03d374feff3878240ee9175e5254302dee01e5c8c97c81f857eef7ed6f5cf"
+  },
+  "gpu_execution": "not run",
+  "separate_performance_measurements": "Outside this correctness gate; see performance.json",
+  "scope": "Fixed 100K prefix; complete CoreMark execution and CRC are not established."
+}

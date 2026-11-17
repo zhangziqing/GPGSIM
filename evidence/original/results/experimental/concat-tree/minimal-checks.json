@@ -1,0 +1,273 @@
+{
+  "status": "passed",
+  "variants": {
+    "off": {
+      "operations": 148,
+      "depths": {
+        "shared": 1,
+        "wide_top": 2,
+        "flags": 64,
+        "count_out": 1,
+        "fields": 2,
+        "repeated": 7,
+        "wide_lo": 2,
+        "wide_hi": 3
+      }
+    },
+    "on": {
+      "operations": 148,
+      "depths": {
+        "shared": 1,
+        "wide_top": 2,
+        "flags": 7,
+        "count_out": 1,
+        "fields": 2,
+        "repeated": 3,
+        "wide_lo": 2,
+        "wide_hi": 3
+      }
+    }
+  },
+  "executions": [
+    {
+      "mode": "off",
+      "kernel": "RU",
+      "result": "PASS 7999 independent observations over 1000 cycles",
+      "build": [
+        "clang++",
+        "-std=c++17",
+        "-O1",
+        "-g",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "-I/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel",
+        "-I/nfs/home/zhangziqing/RTeAAL/tools/local/include",
+        "-DCONCAT_KERNEL=\"kernel_RU.cc\"",
+        "-DJSONPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-off/RTeAAL-Sim/kernel/json/\"",
+        "-DTXTPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-off/RTeAAL-Sim/kernel/txt/\"",
+        "-DYAMLPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-off/RTeAAL-Sim/kernel/yaml/\"",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-off/legacy-kernel-test-RU.cc",
+        "/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel/libfesvr.a",
+        "-lpthread",
+        "-o",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-off/test-RU"
+      ],
+      "run": [
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-off/test-RU",
+        "concat-tree-minimal-off"
+      ],
+      "binary_sha256": "7c967851ccc41140d063949895480c67933f7b2e8db965ab522b09c3be427b50"
+    },
+    {
+      "mode": "off",
+      "kernel": "OU",
+      "result": "PASS 7999 independent observations over 1000 cycles",
+      "build": [
+        "clang++",
+        "-std=c++17",
+        "-O1",
+        "-g",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "-I/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel",
+        "-I/nfs/home/zhangziqing/RTeAAL/tools/local/include",
+        "-DCONCAT_KERNEL=\"kernel_OU.cc\"",
+        "-DJSONPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-off/RTeAAL-Sim/kernel/json/\"",
+        "-DTXTPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-off/RTeAAL-Sim/kernel/txt/\"",
+        "-DYAMLPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-off/RTeAAL-Sim/kernel/yaml/\"",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-off/legacy-kernel-test-OU.cc",
+        "/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel/libfesvr.a",
+        "-lpthread",
+        "-o",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-off/test-OU"
+      ],
+      "run": [
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-off/test-OU",
+        "concat-tree-minimal-off"
+      ],
+      "binary_sha256": "2f488f3bc6859ffde44f0d042eee6270ab22aa67a4ff7763dec1c029bf7bce06"
+    },
+    {
+      "mode": "off",
+      "kernel": "NU",
+      "result": "PASS 7999 independent observations over 1000 cycles",
+      "build": [
+        "clang++",
+        "-std=c++17",
+        "-O1",
+        "-g",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "-I/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel",
+        "-I/nfs/home/zhangziqing/RTeAAL/tools/local/include",
+        "-DCONCAT_KERNEL=\"kernel_NU.cc\"",
+        "-DCONCAT_GROUPED",
+        "-DJSONPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-off/RTeAAL-Sim/kernel/json/\"",
+        "-DTXTPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-off/RTeAAL-Sim/kernel/txt/\"",
+        "-DYAMLPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-off/RTeAAL-Sim/kernel/yaml/\"",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-off/legacy-kernel-test-NU.cc",
+        "/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel/libfesvr.a",
+        "-lpthread",
+        "-o",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-off/test-NU"
+      ],
+      "run": [
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-off/test-NU",
+        "concat-tree-minimal-off"
+      ],
+      "binary_sha256": "e41dcd1d1899d64e23bc7170aaa1702661fe57f044c7f11bee51f96b95a80e4b"
+    },
+    {
+      "mode": "off",
+      "kernel": "PSU",
+      "result": "PASS 7999 independent observations over 1000 cycles",
+      "build": [
+        "clang++",
+        "-std=c++17",
+        "-O1",
+        "-g",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "-I/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel",
+        "-I/nfs/home/zhangziqing/RTeAAL/tools/local/include",
+        "-DCONCAT_KERNEL=\"kernel_PSU.cc\"",
+        "-DCONCAT_GROUPED",
+        "-DJSONPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-off/RTeAAL-Sim/kernel/json/\"",
+        "-DTXTPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-off/RTeAAL-Sim/kernel/txt/\"",
+        "-DYAMLPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-off/RTeAAL-Sim/kernel/yaml/\"",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-off/legacy-kernel-test-PSU.cc",
+        "/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel/libfesvr.a",
+        "-lpthread",
+        "-o",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-off/test-PSU"
+      ],
+      "run": [
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-off/test-PSU",
+        "concat-tree-minimal-off"
+      ],
+      "binary_sha256": "f1e1bb5ea8f04567479a66179e5fc5d13c97c06a82df4841240308f486c21fdc"
+    },
+    {
+      "mode": "on",
+      "kernel": "RU",
+      "result": "PASS 7999 independent observations over 1000 cycles",
+      "build": [
+        "clang++",
+        "-std=c++17",
+        "-O1",
+        "-g",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "-I/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel",
+        "-I/nfs/home/zhangziqing/RTeAAL/tools/local/include",
+        "-DCONCAT_KERNEL=\"kernel_RU.cc\"",
+        "-DJSONPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-on/RTeAAL-Sim/kernel/json/\"",
+        "-DTXTPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-on/RTeAAL-Sim/kernel/txt/\"",
+        "-DYAMLPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-on/RTeAAL-Sim/kernel/yaml/\"",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-on/legacy-kernel-test-RU.cc",
+        "/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel/libfesvr.a",
+        "-lpthread",
+        "-o",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-on/test-RU"
+      ],
+      "run": [
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-on/test-RU",
+        "concat-tree-minimal-on"
+      ],
+      "binary_sha256": "1ea75afb7061ea9ed442834fca8a7a2cfa164180266b9e90ade88e6634fb4ee9"
+    },
+    {
+      "mode": "on",
+      "kernel": "OU",
+      "result": "PASS 7999 independent observations over 1000 cycles",
+      "build": [
+        "clang++",
+        "-std=c++17",
+        "-O1",
+        "-g",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "-I/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel",
+        "-I/nfs/home/zhangziqing/RTeAAL/tools/local/include",
+        "-DCONCAT_KERNEL=\"kernel_OU.cc\"",
+        "-DJSONPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-on/RTeAAL-Sim/kernel/json/\"",
+        "-DTXTPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-on/RTeAAL-Sim/kernel/txt/\"",
+        "-DYAMLPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-on/RTeAAL-Sim/kernel/yaml/\"",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-on/legacy-kernel-test-OU.cc",
+        "/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel/libfesvr.a",
+        "-lpthread",
+        "-o",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-on/test-OU"
+      ],
+      "run": [
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-on/test-OU",
+        "concat-tree-minimal-on"
+      ],
+      "binary_sha256": "498ce2de67bcbc62c1626cdc93953350e01249497d2a00e42759e8eca1b2f1a0"
+    },
+    {
+      "mode": "on",
+      "kernel": "NU",
+      "result": "PASS 7999 independent observations over 1000 cycles",
+      "build": [
+        "clang++",
+        "-std=c++17",
+        "-O1",
+        "-g",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "-I/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel",
+        "-I/nfs/home/zhangziqing/RTeAAL/tools/local/include",
+        "-DCONCAT_KERNEL=\"kernel_NU.cc\"",
+        "-DCONCAT_GROUPED",
+        "-DJSONPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-on/RTeAAL-Sim/kernel/json/\"",
+        "-DTXTPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-on/RTeAAL-Sim/kernel/txt/\"",
+        "-DYAMLPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-on/RTeAAL-Sim/kernel/yaml/\"",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-on/legacy-kernel-test-NU.cc",
+        "/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel/libfesvr.a",
+        "-lpthread",
+        "-o",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-on/test-NU"
+      ],
+      "run": [
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-on/test-NU",
+        "concat-tree-minimal-on"
+      ],
+      "binary_sha256": "df25ef66f62af844eaa18d290d9fe3a56aa0a2f01ffdd9b99c59d20484752ab1"
+    },
+    {
+      "mode": "on",
+      "kernel": "PSU",
+      "result": "PASS 7999 independent observations over 1000 cycles",
+      "build": [
+        "clang++",
+        "-std=c++17",
+        "-O1",
+        "-g",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "-I/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel",
+        "-I/nfs/home/zhangziqing/RTeAAL/tools/local/include",
+        "-DCONCAT_KERNEL=\"kernel_PSU.cc\"",
+        "-DCONCAT_GROUPED",
+        "-DJSONPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-on/RTeAAL-Sim/kernel/json/\"",
+        "-DTXTPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-on/RTeAAL-Sim/kernel/txt/\"",
+        "-DYAMLPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-on/RTeAAL-Sim/kernel/yaml/\"",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-on/legacy-kernel-test-PSU.cc",
+        "/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel/libfesvr.a",
+        "-lpthread",
+        "-o",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-on/test-PSU"
+      ],
+      "run": [
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/minimal-on/test-PSU",
+        "concat-tree-minimal-on"
+      ],
+      "binary_sha256": "56ebb3112d27f81b965847018e15a6eeebf1184a41cafd1231832c79eb26006f"
+    }
+  ],
+  "opcodes": "original 0..28 only",
+  "oracle_sha256": "18f3f4ba19f4b30bbcf9e327e52d6920e878939adc969ca8cb7d2aef2a6cf0b1",
+  "fixture_sha256": "c3338ce9529d1b2dfd4894ac6991b5d10a88dba8e9954d024fa309180a9e76ab",
+  "sanitizers": "ASan/UBSan; LeakSanitizer disabled by sandbox"
+}

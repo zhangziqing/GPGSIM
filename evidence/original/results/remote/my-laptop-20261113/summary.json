@@ -1,0 +1,23 @@
+{
+  "input_commit": "d01b26619d0c58889ffdd7bce0491f4539a6ef29",
+  "implementation_tag": "portable-20261112-commit-parallel",
+  "gpu": {"name": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition", "memory_mib": 97887, "driver": "580.178.04", "cuda": "13.2.78", "compute_capability": "12.0", "arch": "sm_120"},
+  "parameters": {"graph": true, "threads": 128, "tail_threshold": 256},
+  "correctness": {"ctest_parallel": "6/6 passed", "ctest_baseline": "6/6 passed", "smoke_parallel": "passed", "smoke_baseline": "passed", "all_100k_runs": "6/6 passed", "commit_events": 167375, "retired_instructions": 171898, "exception_cycles": 0, "trap": false, "fingerprints": [10550482425419111625, 15503565812696885107, 656100811014868721]},
+  "runs": {
+    "baseline": [
+      {"label":"baseline-100k-1","cycles_per_second":472.2122698971475,"kernel_device_cycles_per_second":474.46817057590044,"simulation_loop_wall_seconds":212.267097652,"trace_sha256":"aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae"},
+      {"label":"baseline-100k-2","cycles_per_second":472.56361740044673,"kernel_device_cycles_per_second":474.66310727469045,"simulation_loop_wall_seconds":212.108363157,"trace_sha256":"aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae"},
+      {"label":"baseline-100k-3","cycles_per_second":472.4120851078452,"kernel_device_cycles_per_second":474.5971630634564,"simulation_loop_wall_seconds":212.173986074,"trace_sha256":"aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae"}
+    ],
+    "parallel": [
+      {"label":"parallel-100k-1","cycles_per_second":733.2531679797261,"kernel_device_cycles_per_second":737.7894141439014,"simulation_loop_wall_seconds":136.81427842,"trace_sha256":"aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae"},
+      {"label":"parallel-100k-2","cycles_per_second":733.1479931223254,"kernel_device_cycles_per_second":737.6894101989767,"simulation_loop_wall_seconds":136.835363997,"trace_sha256":"aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae"},
+      {"label":"parallel-100k-3","cycles_per_second":732.8129261639557,"kernel_device_cycles_per_second":737.3770779724634,"simulation_loop_wall_seconds":136.895472264,"trace_sha256":"aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae"}
+    ]
+  },
+  "median_cycles_per_second": {"baseline":472.4120851078452,"parallel":733.1479931223254,"speedup":1.5519247204587447},
+  "binary_sha256": {"baseline":"eabb859a619e6892d954744bb413668f064e254da089d5585f92631e59d5bf7a","parallel":"a6f280dc2b9b394983be45e28547c24f73c945dab0595d8336a9e9aaa128bc9d"},
+  "sanitizers": {"path_checked": "/usr/local/cuda-13.2/bin/compute-sanitizer", "default_path_available": false, "executed": false, "reason": "not available in the benchmark PATH at run time"},
+  "limitations": "100K is a fixed CoreMark prefix, not a complete CoreMark score"
+}

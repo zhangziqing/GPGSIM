@@ -1,0 +1,20 @@
+[
+  "io_priviledgeMode",
+  "io_mstatus",
+  "io_sstatus",
+  "io_mepc",
+  "io_sepc",
+  "io_mtval",
+  "io_stval",
+  "io_mtvec",
+  "io_stvec",
+  "io_mcause",
+  "io_scause",
+  "io_satp",
+  "io_mip",
+  "io_mie",
+  "io_mscratch",
+  "io_sscratch",
+  "io_mideleg",
+  "io_medeleg"
+]

@@ -1,0 +1,201 @@
+{
+  "status": "passed",
+  "variants": {
+    "minimal-off": {
+      "status": "compiled_and_preprocessed",
+      "design": "priority-mux-minimal-off",
+      "operations": 619,
+      "layers": 134,
+      "pass_counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "preprocess_build": [
+        "clang++",
+        "-std=c++17",
+        "-O3",
+        "-I/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel",
+        "-I/nfs/home/zhangziqing/RTeAAL/tools/local/include",
+        "-L/nfs/home/zhangziqing/RTeAAL/tools/local/lib",
+        "-DJSONPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/runtime/minimal-off/RTeAAL-Sim/kernel/json/\"",
+        "-DTXTPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/runtime/minimal-off/RTeAAL-Sim/kernel/txt/\"",
+        "-DYAMLPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/runtime/minimal-off/RTeAAL-Sim/kernel/yaml/\"",
+        "/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel/preprocess_tensor.cc",
+        "-lyaml-cpp",
+        "-lpthread",
+        "-o",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/runtime/minimal-off/RTeAAL-Sim/kernel/bin/preprocess_tensor"
+      ],
+      "opcode_histogram": {
+        "8": 36,
+        "11": 105,
+        "13": 234,
+        "15": 1,
+        "18": 4,
+        "19": 238,
+        "24": 1
+      },
+      "ru": {
+        "status": "passed",
+        "clz_checks": 6036,
+        "lfst_checks": 8192,
+        "dense_lookup_checks": 8192
+      },
+      "opcode_24_tables": 1,
+      "runner_build": [
+        "clang++",
+        "-std=c++17",
+        "-O2",
+        "-I/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel",
+        "-I/nfs/home/zhangziqing/RTeAAL/tools/local/include",
+        "-L/nfs/home/zhangziqing/RTeAAL/tools/local/lib",
+        "-DJSONPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/runtime/minimal-off/RTeAAL-Sim/kernel/json/\"",
+        "-DTXTPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/runtime/minimal-off/RTeAAL-Sim/kernel/txt/\"",
+        "-DYAMLPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/runtime/minimal-off/RTeAAL-Sim/kernel/yaml/\"",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/minimal_ru.cc",
+        "/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel/libfesvr.a",
+        "-lpthread",
+        "-o",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/runtime/minimal-off/check_minimal"
+      ],
+      "runner_sha256": "4e232d794e0e38402e56fae80aa0b218219f663767dcf0bc84ce13733521e386"
+    },
+    "minimal-on": {
+      "status": "compiled_and_preprocessed",
+      "design": "priority-mux-minimal-on",
+      "operations": 811,
+      "layers": 11,
+      "pass_counts": [
+        2,
+        238,
+        132,
+        1
+      ],
+      "preprocess_build": [
+        "clang++",
+        "-std=c++17",
+        "-O3",
+        "-I/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel",
+        "-I/nfs/home/zhangziqing/RTeAAL/tools/local/include",
+        "-L/nfs/home/zhangziqing/RTeAAL/tools/local/lib",
+        "-DJSONPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/runtime/minimal-on/RTeAAL-Sim/kernel/json/\"",
+        "-DTXTPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/runtime/minimal-on/RTeAAL-Sim/kernel/txt/\"",
+        "-DYAMLPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/runtime/minimal-on/RTeAAL-Sim/kernel/yaml/\"",
+        "/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel/preprocess_tensor.cc",
+        "-lyaml-cpp",
+        "-lpthread",
+        "-o",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/runtime/minimal-on/RTeAAL-Sim/kernel/bin/preprocess_tensor"
+      ],
+      "opcode_histogram": {
+        "8": 36,
+        "11": 105,
+        "13": 234,
+        "14": 168,
+        "15": 1,
+        "18": 4,
+        "19": 238,
+        "20": 2,
+        "22": 22,
+        "24": 1
+      },
+      "ru": {
+        "status": "passed",
+        "clz_checks": 6036,
+        "lfst_checks": 8192,
+        "dense_lookup_checks": 8192
+      },
+      "opcode_24_tables": 1,
+      "runner_build": [
+        "clang++",
+        "-std=c++17",
+        "-O2",
+        "-I/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel",
+        "-I/nfs/home/zhangziqing/RTeAAL/tools/local/include",
+        "-L/nfs/home/zhangziqing/RTeAAL/tools/local/lib",
+        "-DJSONPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/runtime/minimal-on/RTeAAL-Sim/kernel/json/\"",
+        "-DTXTPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/runtime/minimal-on/RTeAAL-Sim/kernel/txt/\"",
+        "-DYAMLPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/runtime/minimal-on/RTeAAL-Sim/kernel/yaml/\"",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/minimal_ru.cc",
+        "/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel/libfesvr.a",
+        "-lpthread",
+        "-o",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/runtime/minimal-on/check_minimal"
+      ],
+      "runner_sha256": "b7a59202157924bdf516d9b0a0f8c0f1319774e7a57d02c37af57f1abc732899"
+    },
+    "minimal-replay": {
+      "status": "compiled_and_preprocessed",
+      "design": "priority-mux-minimal-replay",
+      "operations": 811,
+      "layers": 11,
+      "pass_counts": [
+        2,
+        238,
+        132,
+        1
+      ],
+      "preprocess_build": [
+        "clang++",
+        "-std=c++17",
+        "-O3",
+        "-I/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel",
+        "-I/nfs/home/zhangziqing/RTeAAL/tools/local/include",
+        "-L/nfs/home/zhangziqing/RTeAAL/tools/local/lib",
+        "-DJSONPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/runtime/minimal-replay/RTeAAL-Sim/kernel/json/\"",
+        "-DTXTPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/runtime/minimal-replay/RTeAAL-Sim/kernel/txt/\"",
+        "-DYAMLPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/runtime/minimal-replay/RTeAAL-Sim/kernel/yaml/\"",
+        "/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel/preprocess_tensor.cc",
+        "-lyaml-cpp",
+        "-lpthread",
+        "-o",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/runtime/minimal-replay/RTeAAL-Sim/kernel/bin/preprocess_tensor"
+      ],
+      "opcode_histogram": {
+        "8": 36,
+        "11": 105,
+        "13": 234,
+        "14": 168,
+        "15": 1,
+        "18": 4,
+        "19": 238,
+        "20": 2,
+        "22": 22,
+        "24": 1
+      },
+      "ru": {
+        "status": "passed",
+        "clz_checks": 6036,
+        "lfst_checks": 8192,
+        "dense_lookup_checks": 8192
+      },
+      "opcode_24_tables": 1,
+      "runner_build": [
+        "clang++",
+        "-std=c++17",
+        "-O2",
+        "-I/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel",
+        "-I/nfs/home/zhangziqing/RTeAAL/tools/local/include",
+        "-L/nfs/home/zhangziqing/RTeAAL/tools/local/lib",
+        "-DJSONPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/runtime/minimal-replay/RTeAAL-Sim/kernel/json/\"",
+        "-DTXTPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/runtime/minimal-replay/RTeAAL-Sim/kernel/txt/\"",
+        "-DYAMLPATH=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/runtime/minimal-replay/RTeAAL-Sim/kernel/yaml/\"",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/minimal_ru.cc",
+        "/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel/libfesvr.a",
+        "-lpthread",
+        "-o",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/priority-mux/runtime/minimal-replay/check_minimal"
+      ],
+      "runner_sha256": "3c1e30c24c938831b4d2fd68a950e3c2b493a9dec87118ef819140039e4ac16c"
+    }
+  },
+  "source_sha256": {
+    "PriorityProbe.fir": "5acbb5e6fc54cc894ed4431b8056bb45563678f4a806609bb3a46053335504ec",
+    "minimal_ru.cc": "45d484cf4c983c629412016c7fd6043d68ae511311b360b44215d2046370158f",
+    "check_minimal.py": "5ccd5a2249d5daa1031b3ee836c392f060b38b94c91b216aff1c3ea7bd2900a1"
+  },
+  "reference": "Independent first-hit loops; no evaluation of a transformed tree as the oracle.",
+  "verification": "Reexecuted all three hash-matched RU binaries; current fixture and oracle source match the original run."
+}

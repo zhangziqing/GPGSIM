@@ -1,0 +1,9 @@
+[
+  "taskset",
+  "-c",
+  "31",
+  "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-coremark-100k/verilator_coremark_edge",
+  "/nfs/home/zhangziqing/RTeAAL/XiangShan-nanhu-legacy/ready-to-run/coremark-2-iteration.bin",
+  "10000",
+  "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-coremark-100k/phase-probe-verilator.trace"
+]

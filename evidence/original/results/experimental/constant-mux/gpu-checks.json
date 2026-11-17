@@ -1,0 +1,522 @@
+{
+  "status": "passed",
+  "host": "corvus01",
+  "environment": {
+    "hostname": "corvus01",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+    "cpu_affinity": [
+      2
+    ],
+    "cuda_architecture": "120",
+    "device_info": "name, uuid, driver_version, memory.total [MiB], compute_cap\nNVIDIA RTX PRO 6000 Blackwell Workstation Edition, GPU-67983fd2-eb55-ece7-a1ec-40165d7759fb, 580.178.04, 97887 MiB, 12.0",
+    "nvcc": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2026 NVIDIA Corporation\nBuilt on Thu_Mar_19_11:12:51_PM_PDT_2026\nCuda compilation tools, release 13.2, V13.2.78\nBuild cuda_13.2.r13.2/compiler.37668154_0",
+    "cmake": "cmake version 3.28.3",
+    "compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+  },
+  "archive_sha256": "c724c155fadd1819a4046bc1ad9a34b43ec1e6f81558e1d52aa84c757e42b9fe",
+  "archived_files_verified": 166,
+  "simulator_revision": "03e16868fa3d73f4df6e957a369621576fd818aa",
+  "full_gpu_runs_checked": 10,
+  "compiler_overlay_sha256": {
+    "off": "4b79791d0e5d0ad862a693a68aaef735428e4defa56995064b164b4df6bae537",
+    "on": "4b79791d0e5d0ad862a693a68aaef735428e4defa56995064b164b4df6bae537"
+  },
+  "gpu_smoke_runs_checked": 2,
+  "ctests_per_build": 15,
+  "cuda_builds_checked": 3,
+  "cpu_oracles": {
+    "off": {
+      "command": {
+        "command": [
+          "/nfs/home/zhangziqing/RTeAAL/results/experimental/constant-mux/runtime/portable/cpu-build/nanhu_gpu",
+          "--data",
+          "/nfs/home/zhangziqing/RTeAAL/results/experimental/constant-mux/runtime/portable/gpu/off/data",
+          "--cycles",
+          "100000",
+          "--trace",
+          "/nfs/home/zhangziqing/RTeAAL/results/experimental/constant-mux/runtime/portable/gpu/off/runs/cpu-export-100k/actual.trace",
+          "--reference",
+          "/nfs/home/zhangziqing/RTeAAL/results/experimental/constant-mux/runtime/portable/gpu/off/runs/cpu-export-100k/reference.trace",
+          "--tail-threshold",
+          "256",
+          "--threads",
+          "128",
+          "--device",
+          "0",
+          "--cpu"
+        ],
+        "binary_sha256": "bba56832fb0703cfd58e9f1f5d732e8c242fee9f963989bd54cd4ff3445c3b18",
+        "model_sha256": "15e9a2d2be9e69927f3742f10d46999957cd9b8cab14a211c3c5a639d907b1ed",
+        "platform": "Linux-6.8.0-111-generic-x86_64-with-glibc2.39",
+        "cycles": 100000,
+        "nvidia_smi": null
+      },
+      "fingerprints": {
+        "full_data_fingerprint": 3027358707500526234,
+        "memory64_fingerprint": 15503565812696885107,
+        "memory8_fingerprint": 656100811014868721
+      },
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae"
+    },
+    "on": {
+      "command": {
+        "command": [
+          "/nfs/home/zhangziqing/RTeAAL/results/experimental/constant-mux/runtime/portable/cpu-build/nanhu_gpu",
+          "--data",
+          "/nfs/home/zhangziqing/RTeAAL/results/experimental/constant-mux/runtime/portable/gpu/on/data",
+          "--cycles",
+          "100000",
+          "--trace",
+          "/nfs/home/zhangziqing/RTeAAL/results/experimental/constant-mux/runtime/portable/gpu/on/runs/cpu-export-100k/actual.trace",
+          "--reference",
+          "/nfs/home/zhangziqing/RTeAAL/results/experimental/constant-mux/runtime/portable/gpu/on/runs/cpu-export-100k/reference.trace",
+          "--tail-threshold",
+          "256",
+          "--threads",
+          "128",
+          "--device",
+          "0",
+          "--cpu"
+        ],
+        "binary_sha256": "bba56832fb0703cfd58e9f1f5d732e8c242fee9f963989bd54cd4ff3445c3b18",
+        "model_sha256": "be9adf3bed8ac0641afd98759d42fff98b2ff07ae359a8666ea153a3f7c0d7c4",
+        "platform": "Linux-6.8.0-111-generic-x86_64-with-glibc2.39",
+        "cycles": 100000,
+        "nvidia_smi": null
+      },
+      "fingerprints": {
+        "full_data_fingerprint": 5068111312814057314,
+        "memory64_fingerprint": 15503565812696885107,
+        "memory8_fingerprint": 656100811014868721
+      },
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae"
+    }
+  },
+  "summary": {
+    "off": {
+      "samples": 3,
+      "median_cycles_per_second": 1480.241128690633,
+      "median_evaluation_seconds": 67.55656092899967,
+      "median_kernel_device_seconds": 66.56940713942515,
+      "median_final_10k_window_seconds": 7.262058577000002,
+      "kernel_launches_per_cycle": 144,
+      "fused_small_layers_per_cycle": 135,
+      "static_final_suffix_layers": 108,
+      "min_cycles_per_second": 1479.8159887713575,
+      "max_cycles_per_second": 1482.1677722380653
+    },
+    "on": {
+      "samples": 3,
+      "median_cycles_per_second": 1567.8015606377764,
+      "median_evaluation_seconds": 63.78358238100001,
+      "median_kernel_device_seconds": 62.80001901513239,
+      "median_final_10k_window_seconds": 6.876325814999956,
+      "kernel_launches_per_cycle": 144,
+      "fused_small_layers_per_cycle": 70,
+      "static_final_suffix_layers": 43,
+      "min_cycles_per_second": 1567.6409220807757,
+      "max_cycles_per_second": 1568.6615349320277
+    }
+  },
+  "runs": [
+    {
+      "mode": "off",
+      "label": "csr-profile-control",
+      "cycles_per_second": 1479.2571820435148,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "cpu_fingerprints_match": true
+    },
+    {
+      "mode": "off",
+      "label": "csr-profile-cupti",
+      "cycles_per_second": 1360.123553400509,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "cpu_fingerprints_match": true
+    },
+    {
+      "mode": "off",
+      "label": "mux-r01-off",
+      "cycles_per_second": 1482.1677722380653,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "cpu_fingerprints_match": true
+    },
+    {
+      "mode": "off",
+      "label": "mux-r02-off",
+      "cycles_per_second": 1480.241128690633,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "cpu_fingerprints_match": true
+    },
+    {
+      "mode": "off",
+      "label": "mux-r03-off",
+      "cycles_per_second": 1479.8159887713575,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "cpu_fingerprints_match": true
+    },
+    {
+      "mode": "on",
+      "label": "csr-profile-control",
+      "cycles_per_second": 1567.569455176239,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "cpu_fingerprints_match": true
+    },
+    {
+      "mode": "on",
+      "label": "csr-profile-cupti",
+      "cycles_per_second": 1438.039572390482,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "cpu_fingerprints_match": true
+    },
+    {
+      "mode": "on",
+      "label": "mux-r01-on",
+      "cycles_per_second": 1568.6615349320277,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "cpu_fingerprints_match": true
+    },
+    {
+      "mode": "on",
+      "label": "mux-r02-on",
+      "cycles_per_second": 1567.8015606377764,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "cpu_fingerprints_match": true
+    },
+    {
+      "mode": "on",
+      "label": "mux-r03-on",
+      "cycles_per_second": 1567.6409220807757,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "cpu_fingerprints_match": true
+    }
+  ],
+  "throughput_speedup_ratio_of_medians": 1.0591528165580673,
+  "throughput_improvement_percent": 5.915281655806726,
+  "profile_windows": 6,
+  "dropped_activity_records": 0,
+  "profile": {
+    "off": [
+      {
+        "nonreset_cycle_begin": 1024,
+        "nonreset_cycle_end_exclusive": 1280,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.8562265625,
+          "compute": 191.83421875,
+          "commit": 92.50785937500002,
+          "small_layers": 48.82984375,
+          "suffix": 99.75825,
+          "gather": 1.1547265625
+        },
+        "mean_all_kernel_us_per_cycle": 434.941125,
+        "suffix_kernel_share_percent": 22.936035308227062,
+        "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies",
+        "mean_within_cycle_kernel_gaps_us": 14.06406640625,
+        "slowest_launches": [
+          {
+            "ordinal": 142,
+            "category": "suffix",
+            "mean_us": 99.75825,
+            "graph_node_id": "21474836622"
+          },
+          {
+            "ordinal": 139,
+            "category": "small_layers",
+            "mean_us": 48.82984375,
+            "graph_node_id": "21474836619"
+          },
+          {
+            "ordinal": 10,
+            "category": "commit",
+            "mean_us": 9.96873828125,
+            "graph_node_id": "21474836490"
+          },
+          {
+            "ordinal": 5,
+            "category": "compute",
+            "mean_us": 9.2342265625,
+            "graph_node_id": "21474836485"
+          },
+          {
+            "ordinal": 77,
+            "category": "compute",
+            "mean_us": 8.638734375,
+            "graph_node_id": "21474836557"
+          }
+        ]
+      },
+      {
+        "nonreset_cycle_begin": 20000,
+        "nonreset_cycle_end_exclusive": 20256,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.857390625,
+          "compute": 192.411671875,
+          "commit": 430.2569570312498,
+          "small_layers": 48.76595703125,
+          "suffix": 99.83161328125,
+          "gather": 1.15608984375
+        },
+        "mean_all_kernel_us_per_cycle": 773.2796796874998,
+        "suffix_kernel_share_percent": 12.910156041032174,
+        "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies",
+        "mean_within_cycle_kernel_gaps_us": 14.0796796875,
+        "slowest_launches": [
+          {
+            "ordinal": 12,
+            "category": "commit",
+            "mean_us": 153.08053125,
+            "graph_node_id": "21474836492"
+          },
+          {
+            "ordinal": 142,
+            "category": "suffix",
+            "mean_us": 99.83161328125,
+            "graph_node_id": "21474836622"
+          },
+          {
+            "ordinal": 16,
+            "category": "commit",
+            "mean_us": 97.39179296875,
+            "graph_node_id": "21474836496"
+          },
+          {
+            "ordinal": 4,
+            "category": "commit",
+            "mean_us": 55.47447265625,
+            "graph_node_id": "21474836484"
+          },
+          {
+            "ordinal": 139,
+            "category": "small_layers",
+            "mean_us": 48.76595703125,
+            "graph_node_id": "21474836619"
+          }
+        ]
+      },
+      {
+        "nonreset_cycle_begin": 90000,
+        "nonreset_cycle_end_exclusive": 90256,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.85785546875,
+          "compute": 192.16434765625004,
+          "commit": 315.046125,
+          "small_layers": 48.758609375,
+          "suffix": 99.83590234375,
+          "gather": 1.15812109375
+        },
+        "mean_all_kernel_us_per_cycle": 657.8209609375001,
+        "suffix_kernel_share_percent": 15.176759068526469,
+        "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies",
+        "mean_within_cycle_kernel_gaps_us": 14.0732578125,
+        "slowest_launches": [
+          {
+            "ordinal": 12,
+            "category": "commit",
+            "mean_us": 113.03444140625,
+            "graph_node_id": "21474836492"
+          },
+          {
+            "ordinal": 142,
+            "category": "suffix",
+            "mean_us": 99.83590234375,
+            "graph_node_id": "21474836622"
+          },
+          {
+            "ordinal": 16,
+            "category": "commit",
+            "mean_us": 72.69187109375,
+            "graph_node_id": "21474836496"
+          },
+          {
+            "ordinal": 139,
+            "category": "small_layers",
+            "mean_us": 48.758609375,
+            "graph_node_id": "21474836619"
+          },
+          {
+            "ordinal": 4,
+            "category": "commit",
+            "mean_us": 25.6079609375,
+            "graph_node_id": "21474836484"
+          }
+        ]
+      }
+    ],
+    "on": [
+      {
+        "nonreset_cycle_begin": 1024,
+        "nonreset_cycle_end_exclusive": 1280,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.85959765625,
+          "compute": 191.05323046875,
+          "commit": 92.58542968750001,
+          "small_layers": 49.154875,
+          "suffix": 58.85546875,
+          "gather": 1.144734375
+        },
+        "mean_all_kernel_us_per_cycle": 393.6533359375,
+        "suffix_kernel_share_percent": 14.951091068448212,
+        "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies",
+        "mean_within_cycle_kernel_gaps_us": 14.0662265625,
+        "slowest_launches": [
+          {
+            "ordinal": 142,
+            "category": "suffix",
+            "mean_us": 58.85546875,
+            "graph_node_id": "21474836622"
+          },
+          {
+            "ordinal": 139,
+            "category": "small_layers",
+            "mean_us": 49.154875,
+            "graph_node_id": "21474836619"
+          },
+          {
+            "ordinal": 10,
+            "category": "commit",
+            "mean_us": 10.014828125,
+            "graph_node_id": "21474836490"
+          },
+          {
+            "ordinal": 5,
+            "category": "compute",
+            "mean_us": 8.7502421875,
+            "graph_node_id": "21474836485"
+          },
+          {
+            "ordinal": 77,
+            "category": "compute",
+            "mean_us": 8.64736328125,
+            "graph_node_id": "21474836557"
+          }
+        ]
+      },
+      {
+        "nonreset_cycle_begin": 20000,
+        "nonreset_cycle_end_exclusive": 20256,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.8608671875,
+          "compute": 191.48462890625,
+          "commit": 430.58508203125024,
+          "small_layers": 49.11047265625,
+          "suffix": 58.8519765625,
+          "gather": 1.14346484375
+        },
+        "mean_all_kernel_us_per_cycle": 732.0364921875002,
+        "suffix_kernel_share_percent": 8.039486718296818,
+        "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies",
+        "mean_within_cycle_kernel_gaps_us": 14.0836171875,
+        "slowest_launches": [
+          {
+            "ordinal": 12,
+            "category": "commit",
+            "mean_us": 153.0270859375,
+            "graph_node_id": "21474836492"
+          },
+          {
+            "ordinal": 16,
+            "category": "commit",
+            "mean_us": 97.584609375,
+            "graph_node_id": "21474836496"
+          },
+          {
+            "ordinal": 142,
+            "category": "suffix",
+            "mean_us": 58.8519765625,
+            "graph_node_id": "21474836622"
+          },
+          {
+            "ordinal": 4,
+            "category": "commit",
+            "mean_us": 55.4650078125,
+            "graph_node_id": "21474836484"
+          },
+          {
+            "ordinal": 139,
+            "category": "small_layers",
+            "mean_us": 49.11047265625,
+            "graph_node_id": "21474836619"
+          }
+        ]
+      },
+      {
+        "nonreset_cycle_begin": 90000,
+        "nonreset_cycle_end_exclusive": 90256,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.85925390625,
+          "compute": 191.19596093749993,
+          "commit": 315.36008984374985,
+          "small_layers": 49.0318671875,
+          "suffix": 58.8585625,
+          "gather": 1.1444921875
+        },
+        "mean_all_kernel_us_per_cycle": 616.4502265624998,
+        "suffix_kernel_share_percent": 9.547982945551327,
+        "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies",
+        "mean_within_cycle_kernel_gaps_us": 14.0612734375,
+        "slowest_launches": [
+          {
+            "ordinal": 12,
+            "category": "commit",
+            "mean_us": 112.99869921875,
+            "graph_node_id": "21474836492"
+          },
+          {
+            "ordinal": 16,
+            "category": "commit",
+            "mean_us": 72.905140625,
+            "graph_node_id": "21474836496"
+          },
+          {
+            "ordinal": 142,
+            "category": "suffix",
+            "mean_us": 58.8585625,
+            "graph_node_id": "21474836622"
+          },
+          {
+            "ordinal": 139,
+            "category": "small_layers",
+            "mean_us": 49.0318671875,
+            "graph_node_id": "21474836619"
+          },
+          {
+            "ordinal": 4,
+            "category": "commit",
+            "mean_us": 25.6045703125,
+            "graph_node_id": "21474836484"
+          }
+        ]
+      }
+    ]
+  },
+  "profile_build_flags_match": true,
+  "other_gpu_compute_processes_observed": false,
+  "timing_scope": "Evaluation excludes model loading, online oracle/trace work and final hashing; CUDA events include inter-kernel gaps.",
+  "unavailable_checks": {
+    "hardware_counters": "not run",
+    "full_CoreMark_completion_and_CRC": "not run"
+  }
+}

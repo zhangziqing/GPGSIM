@@ -1,0 +1,96 @@
+{
+  "status": "passed",
+  "rewritten_modules": 38,
+  "rewritten_roots": 112,
+  "unmapped_roots": [],
+  "selector_wrapper_flags": 0,
+  "boolean_identity_flags": 0,
+  "equality_runs_checked": 177,
+  "dense_equality_runs": 0,
+  "variants": {
+    "off": {
+      "size_histogram": {
+        "4": 190,
+        "8": 2206,
+        "16": 985,
+        "32": 117,
+        "64": 248,
+        "128": 189,
+        "256": 466,
+        "512": 1,
+        "1024": 1
+      },
+      "tables": 4403,
+      "entries": 198808,
+      "examples": {
+        "l_simAXIMem.ram.state": 1,
+        "l_soc.core_with_l2.core.frontend.icache.missUnit.entries_0.state": 16,
+        "l_soc.core_with_l2.core.frontend.icache.missUnit.entries_1.state": 20
+      }
+    },
+    "on": {
+      "size_histogram": {
+        "4": 193,
+        "8": 2192,
+        "16": 985,
+        "32": 116,
+        "64": 248,
+        "128": 189,
+        "256": 466,
+        "512": 1,
+        "1024": 1
+      },
+      "tables": 4391,
+      "entries": 198676,
+      "examples": {
+        "l_simAXIMem.ram.state": 0,
+        "l_soc.core_with_l2.core.frontend.icache.missUnit.entries_0.state": 13,
+        "l_soc.core_with_l2.core.frontend.icache.missUnit.entries_1.state": 14
+      }
+    }
+  },
+  "unchanged_modules": [
+    {
+      "module": "AXI4RAM",
+      "identical": true,
+      "lines": 297,
+      "sha256": "eb71a2b4884c93c5eeb95cc7916b50ce3d334afd13d4c6f81d631cded43a8478"
+    },
+    {
+      "module": "AXI4RAMWrapper",
+      "identical": true,
+      "lines": 57,
+      "sha256": "58782c3de09e402005eb5cd8ea56b949919cb298327a68475af4b23a2abd5042"
+    },
+    {
+      "module": "ICacheMissEntry",
+      "identical": true,
+      "lines": 359,
+      "sha256": "a7519c54906d42b3176a97d832cc75f7a99be4c24ddad07a7b569a264be0cef0"
+    },
+    {
+      "module": "SDHelper",
+      "identical": true,
+      "lines": 10,
+      "sha256": "6e6608bb6ed9ffe131035b1f045b38edd61c9e0782aa87facb4cabefd2aacafa"
+    },
+    {
+      "module": "TLB",
+      "identical": true,
+      "lines": 1529,
+      "sha256": "15826dedd6c4a0b5557d04f8f11d023097c8f899db0ac977c9de19581d1e00a6"
+    }
+  ],
+  "pad_metadata_trace": "TeAALExtract.padtailExtract aliases a same-word UInt Pad to its input; eqneqExtract then calls extractMetadata with the equality operand type on the mapped name. Because extractMetadata overwrites that name's width, alias erasure alone does not establish a narrower lookup selector. No generic guard gap is demonstrated by this audit.",
+  "prepared_source_sha256": {
+    "off": "7e68d4ab87e9c37d344562ef9899839085fd0c6a298f610d766b2df3fc8f9336",
+    "on": "af0192d4fd48a57eb1fd1077bad47979724da0977f131bc65a4ad67e715af712"
+  },
+  "boundary": "Exact A/B structural audit. Resolves aliases, strips explicit Pad/casts and trivial Boolean identities; does not prove arbitrary Boolean equivalence or runtime timing. Unchanged-module examples show that aggregate table counts also depend on downstream extraction partitioning or sharing.",
+  "detailed_audit_sha256": "5b0f2dc539bffa03d69d7808a330f503f899c3db4a50f53c092f4b5f3829aae2",
+  "source_hashes": {
+    "results/experimental/priority-mux/inspect_lookups.py": "0b8a7bead5942f90e0df54f3f0f7baf89d3bb9101c04d8eebc8b292ef4b9fbe0",
+    "results/experimental/priority-mux/inspect_firrtl.py": "1c86dc01b5ec46270a39368494a74680ddddaaae4032efab7f6e7e4e5b362127",
+    "results/experimental/mux-index/tensor_layout.py": "c287783e70bc11b3aa36ab1932be9c29e9ee43f574b59e31c823bf6d2c704582"
+  }
+}

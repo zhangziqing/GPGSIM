@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "source_sha256": "8a6f7c54a8bb2f939fac11a1b7371e162cd47006e88abb5cfc5c3aea71f2191f",
+  "input_sha256": {
+    "gpu-checks.json": "a96e942cf43e052cee53bf58d4a5f87f897317fa402e2a04d9b39f39fc56551d",
+    "plot-checks.json": "a6279b367a74cf82d7f80f250090d172eb6dfbe353322d4b6537369c28500bf0"
+  },
+  "throughput": {
+    "original/off": {
+      "median": 2525.7087547399706,
+      "samples": [
+        2540.7156235628013,
+        2524.9387511777086,
+        2525.7087547399706
+      ]
+    },
+    "no-unroll/off": {
+      "median": 2580.0029639971585,
+      "samples": [
+        2579.9533583487814,
+        2581.040056955431,
+        2580.0029639971585
+      ]
+    },
+    "original/on": {
+      "median": 2939.409017951121,
+      "samples": [
+        2942.0405276430615,
+        2939.409017951121,
+        2938.6180650165534
+      ]
+    },
+    "no-unroll/on": {
+      "median": 2956.454338809883,
+      "samples": [
+        2956.454338809883,
+        2957.0949137169523,
+        2956.1484696563402
+      ]
+    }
+  },
+  "profile_mean_us_per_cycle": {
+    "compute": [
+      191.08169921875,
+      188.4067864583333
+    ],
+    "commit": [
+      77.43793098958332,
+      76.62959505208333
+    ],
+    "small_layers": [
+      48.99407942708333,
+      0.0
+    ],
+    "suffix": [
+      58.828210937499996,
+      59.697888020833325
+    ],
+    "other": [
+      2.000404947916667,
+      2.012389322916667
+    ]
+  },
+  "outputs": {
+    "runtime/tail-analysis/priority-mux-gpu.png": "bbc04662683c971eb7a67b0b8b8d47639222efff285464ac071f8f7b0c390256",
+    "runtime/tail-analysis/priority-mux-gpu.svg": "aa86430acb8a1a19c7e4d40e29707f036262a8237a9704cf1598e6fc3c81ad38",
+    "runtime/tail-analysis/priority-mux-gpu.pdf": "754b3b8115e472c01b6b2287755f1b09c9d48d64e780c7a0ffbd268350fea26f"
+  }
+}

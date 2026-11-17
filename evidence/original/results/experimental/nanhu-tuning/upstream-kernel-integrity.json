@@ -1,0 +1,30 @@
+{
+  "kernel_IU.cc": {
+    "matches_original_archive": true,
+    "sha256": "f128063409d887f3b194803eccd86498610a05d531dd4c6b84a44055e7f90d46"
+  },
+  "kernel_NU.cc": {
+    "matches_original_archive": true,
+    "sha256": "3b711c697a18f74098d2daad5143954287ff9066b75e0a8e57133b6e48fb235f"
+  },
+  "kernel_OU.cc": {
+    "matches_original_archive": true,
+    "sha256": "eacc28eea85d7a67f09bee0ca976a7eacc9b18ee1513a51ab5b5570dee2f84a8"
+  },
+  "kernel_PSU.cc": {
+    "matches_original_archive": true,
+    "sha256": "fb5a45336444c005e118213d98657021e08786cba0252e8c0a5fbc3538cf30b5"
+  },
+  "kernel_RU.cc": {
+    "matches_original_archive": true,
+    "sha256": "05ad910e0d61a6c4c057c9446c561de4a213203cca2a22716644b4b8771b8d50"
+  },
+  "kernel_SU.cc": {
+    "matches_original_archive": true,
+    "sha256": "960d0318751a8a7c7f05ad2659f8d973d96ee6dce4b4abb8dcaa3f4399a899a0"
+  },
+  "kernel_TI.cc": {
+    "matches_original_archive": true,
+    "sha256": "c200c96e58aca347644385829efc8e0ebfddd579f98b715296a87bd8a66a6b7f"
+  }
+}

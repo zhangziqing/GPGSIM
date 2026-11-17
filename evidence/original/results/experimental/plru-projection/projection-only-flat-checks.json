@@ -1,0 +1,76 @@
+{
+  "runs": [
+    "smoke-A",
+    "smoke-B",
+    "diagnostic-A",
+    "diagnostic-B",
+    "timed-A",
+    "timed-B"
+  ],
+  "monitoring": {
+    "smoke-A": {
+      "idle_observations": 12,
+      "monitor_observations": 3,
+      "external_compute_pids": [],
+      "max_monitor_gap_seconds": 1.0002344030071981
+    },
+    "smoke-B": {
+      "idle_observations": 11,
+      "monitor_observations": 2,
+      "external_compute_pids": [],
+      "max_monitor_gap_seconds": 1.0002428729785606
+    },
+    "diagnostic-A": {
+      "idle_observations": 11,
+      "monitor_observations": 36,
+      "external_compute_pids": [],
+      "max_monitor_gap_seconds": 1.0002438809606247
+    },
+    "diagnostic-B": {
+      "idle_observations": 11,
+      "monitor_observations": 33,
+      "external_compute_pids": [],
+      "max_monitor_gap_seconds": 1.0002463239943609
+    },
+    "timed-A": {
+      "idle_observations": 12,
+      "monitor_observations": 35,
+      "external_compute_pids": [],
+      "max_monitor_gap_seconds": 1.0002526150201447
+    },
+    "timed-B": {
+      "idle_observations": 11,
+      "monitor_observations": 33,
+      "external_compute_pids": [],
+      "max_monitor_gap_seconds": 1.0002365719992667
+    },
+    "alias-positive-control": {
+      "idle_observations": 11,
+      "monitor_observations": 1,
+      "external_compute_pids": [],
+      "max_monitor_gap_seconds": 0
+    },
+    "ctest": {
+      "idle_observations": 11,
+      "monitor_observations": 5,
+      "external_compute_pids": [],
+      "max_monitor_gap_seconds": 1.001010406005662
+    }
+  },
+  "throughput_ratio_B_over_A": 1.0734960598356658,
+  "status": "passed",
+  "evidence_manifest_files": 205,
+  "input_manifest_files": 55,
+  "ctest_passes": 30,
+  "timed_samples": 2,
+  "full_prefix_alias_diagnostics": 2,
+  "evidence_archive_sha256": "147292d42b887f6143b3888a338136106a0f4ceea2f98dccf1603e726b095be2",
+  "verifier_sha256": "f18c025e07d5a7aa1b4eb3fdeb9ff20863308185e8ee4008f044e92ff455202f",
+  "monitor_helper_sha256": "f948ca734ab62b8e5a40f10e8275fccac864f0bfe987fe17afbc1134d5df7de3",
+  "limits": [
+    "One independent 100K timed sample per variant, fixed A then B order.",
+    "Large GPU traces remain remote; audit verifies their hash receipts and retained comparison source.",
+    "Approximately one-second monitoring cannot exclude activity between observations.",
+    "Direct applicability is limited to reset plus this prefix; CoreMark and final CRC are incomplete."
+  ]
+}

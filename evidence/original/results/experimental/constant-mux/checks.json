@@ -1,0 +1,171 @@
+{
+  "status": "functional_structure_and_gpu_passed",
+  "simulator_revision": "03e16868fa3d73f4df6e957a369621576fd818aa",
+  "scala": {
+    "tests": 61,
+    "suites": 10,
+    "status": "passed",
+    "log": "logs/constant-mux-full-tests.log",
+    "log_sha256": "426502bd341feba27f01db8df1978f00319e5d9e2e93e0b288997bf5167cc220"
+  },
+  "firrtl": {
+    "status": "passed",
+    "addresses_per_variant": 4096,
+    "off_mux_depth": 193,
+    "on_or_depth": 8,
+    "comparisons_preserved": true,
+    "input_sha256": "4eca6ecb46a01e8fc14a14e7d285ba123dbf70dd9d291d3c3217c7c09886ed0e"
+  },
+  "minimal_ru": {
+    "status": "passed",
+    "total_address_evaluations": 12288,
+    "variants": {
+      "minimal-off": {
+        "operations": 387,
+        "layers": 195,
+        "ru_addresses_checked": 4096
+      },
+      "minimal-on": {
+        "operations": 324,
+        "layers": 11,
+        "ru_addresses_checked": 4096
+      },
+      "minimal-replay": {
+        "operations": 324,
+        "layers": 11,
+        "ru_addresses_checked": 4096
+      }
+    }
+  },
+  "full_graph": {
+    "off": {
+      "operations": 2218090,
+      "layers": 205,
+      "data_slots": 490753,
+      "value_path_nodes": 205,
+      "nonassign_path_nodes": 203,
+      "compile_wall": "16:52.87",
+      "compile_peak_rss_kib": 57241108
+    },
+    "on": {
+      "operations": 2218027,
+      "layers": 140,
+      "data_slots": 490621,
+      "value_path_nodes": 140,
+      "nonassign_path_nodes": 138,
+      "compile_wall": "17:25.15",
+      "compile_peak_rss_kib": 100284784
+    }
+  },
+  "graph_evidence_sha256": "298f2f51d461b372705baaaea5998ed75429d8d51e2990ca7a1485bc13a3fa1e",
+  "dependency_controls": {
+    "status": "passed",
+    "memory_writers_per_mode": 600,
+    "register_writers": 600,
+    "log_sha256": "bea41a887d71a7412046df6ad26d252e661c81a5937610c3e0f302f255b13878"
+  },
+  "coremark": {
+    "status": "passed",
+    "cycles": 100000,
+    "named_architectural_state_matches_verilator": true,
+    "named_memory_mapping_and_contents_match_between_variants": true,
+    "data_buffer_fingerprints_compared": false,
+    "reference_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+    "variants": {
+      "off": {
+        "observed_cycles": 100000,
+        "retired_instructions_including_fused": 171898,
+        "commit_events": 167375,
+        "exception_cycles": 0,
+        "full_trace_byte_identical": true,
+        "evaluation_seconds": 470.55339450300715,
+        "cycles_per_second": 212.51573395962598,
+        "wall_seconds": 477.9042930435389
+      },
+      "on": {
+        "observed_cycles": 100000,
+        "retired_instructions_including_fused": 171898,
+        "commit_events": 167375,
+        "exception_cycles": 0,
+        "full_trace_byte_identical": true,
+        "evaluation_seconds": 482.2314347969999,
+        "cycles_per_second": 207.36931021947169,
+        "wall_seconds": 489.110725145787
+      }
+    },
+    "raw_checks_sha256": "36626f62cf2ba0750d2817e8151ac6def839d40ee8493373e8a1729bbd21e19f",
+    "timing_scope": "One sequential RU run per variant on the same pinned CPU; not GPU measurements.",
+    "workload_scope": "Fixed CoreMark 100K-cycle prefix; completion and CRC not established."
+  },
+  "portable_cpu": {
+    "tests": 4,
+    "status": "passed",
+    "log_sha256": "eea92d96c0b023053ba9cebc985ceb82a8f5a22a884d1e2b4364f728c2d69e5e"
+  },
+  "gpu": {
+    "status": "passed",
+    "packages": "runtime/portable/gpu/{off,on}",
+    "correctness_gate_sha256": "ae66f095a72fddf4a40348376cfe234cfab48aee3ad1a5c200dce4361f7b33f6",
+    "static_launches_per_cycle": 144,
+    "off_suffix_layers": 108,
+    "on_suffix_layers": 43,
+    "host": "corvus01",
+    "primary_runtime_mode": "--direct-memory-writes; loop unrolling unchanged",
+    "configuration": {
+      "cpu_affinity": [
+        2
+      ],
+      "cuda_graph": true,
+      "threads": 128,
+      "tail_threshold": 256,
+      "cuda_architecture": "120"
+    },
+    "primary_summary": {
+      "off": {
+        "median_cycles_per_second": 2290.0492062243566,
+        "median_evaluation_seconds": 43.66718397499926,
+        "median_cuda_event_seconds": 42.703159275235166,
+        "min_cycles_per_second": 2289.89715511379,
+        "max_cycles_per_second": 2290.1191772072675,
+        "control_cycles_per_second": 2290.4114140634993,
+        "control_vs_trial_median_percent": 0.015816596349038647
+      },
+      "on": {
+        "median_cycles_per_second": 2528.7257615034464,
+        "median_evaluation_seconds": 39.54560890800009,
+        "median_cuda_event_seconds": 38.58623233690803,
+        "min_cycles_per_second": 2526.781077282113,
+        "max_cycles_per_second": 2529.1559792448793,
+        "control_cycles_per_second": 2525.935180922446,
+        "control_vs_trial_median_percent": -0.11035520828250878
+      }
+    },
+    "throughput_improvement_percent": 10.422333049891087,
+    "full_100k_gpu_runs_checked": 20,
+    "gpu_smoke_runs_checked": 4,
+    "portable_cpu_100k_oracles": 2,
+    "ctests_per_cuda_build": 15,
+    "cuda_builds": 3,
+    "cupti_windows": 12,
+    "dropped_activity_records": 0,
+    "direct_audit": {
+      "path": "gpu-direct-checks.json",
+      "sha256": "56c85875d20c8987a2a9b4b7946b4cd5d202c2ea0b05906e6bfd19e867c4635a"
+    },
+    "ordered_audit": {
+      "path": "gpu-checks.json",
+      "sha256": "8597e6aba8f6242543f33cbf71702e7ea7db2f146b935dd3168dc196d44dbd5b"
+    },
+    "archive_sha256": "c724c155fadd1819a4046bc1ad9a34b43ec1e6f81558e1d52aa84c757e42b9fe",
+    "workload_scope": "Fixed CoreMark 100K-cycle prefix; full completion and CRC not run."
+  },
+  "source_sha256": {
+    "results/experimental/constant-mux/run_coremark.py": "13558221e3cdbc1bd9e456d9349b0524bb861786ea0ee7f3b16f4978ea1bee8c",
+    "results/experimental/constant-mux/export_gpu.py": "cdf0d4ae93869717bbb9a759fdcd8b5288eb3d228de7fbfaaa7a32b8e4863107",
+    "results/experimental/constant-mux/package_gpu.py": "35e52b3be72315b3783aa3e306c1eb88740ee5e9bfb4e2c7d989beabe598415b",
+    "results/experimental/constant-mux/measure_gpu.sh": "e6560ce33122ccbcc99cb7dca3e4dafd8b3bf8aa4ecab4e21a3063322b133d09",
+    "results/experimental/constant-mux/audit_gpu.py": "ceb743c6755fb4212fa02122e191052cf6e21281954cbcb5261827727e932846",
+    "results/experimental/constant-mux/run_direct_gpu.py": "cc3178dcc741bf495297448ba1124a4204b1ec6737fe91877ae10ac56ec8ce48",
+    "results/experimental/constant-mux/audit_direct_gpu.py": "4b9c59da622939b5ff218399b5765a4d5daa25625e8a53c091010f3523ee69e3"
+  }
+}

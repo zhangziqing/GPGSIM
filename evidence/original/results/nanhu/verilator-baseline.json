@@ -1,0 +1,89 @@
+{
+  "status": "passed",
+  "cpu": 95,
+  "node": "node007.bosccluster.com",
+  "program": "results/nanhu/checked-loop-1000.bin",
+  "program_sha256": "c759e3067fc549ce8d05c04576c8cccda0d6a5bb02085b387c223265d3207726",
+  "repeats": 3,
+  "samples": [
+    {
+      "checked_cycles_per_second": 389.70478304254596,
+      "checked_run_seconds": 25.693808328,
+      "cycles_per_second": 389.794764863328,
+      "first_commit_cycle": 630,
+      "loop_count_observed": 1000,
+      "measured_cycles": 10013,
+      "retired_instructions": 8011,
+      "simulation_seconds": 25.687877064000112,
+      "simulator": "Verilator",
+      "status": "passed",
+      "total_cycles": 10644,
+      "trap_code": 0,
+      "repeat": 1,
+      "wall_seconds": 27.395519696176052
+    },
+    {
+      "checked_cycles_per_second": 315.16495400208726,
+      "checked_run_seconds": 31.77066445,
+      "cycles_per_second": 315.2262079897165,
+      "first_commit_cycle": 630,
+      "loop_count_observed": 1000,
+      "measured_cycles": 10013,
+      "retired_instructions": 8011,
+      "simulation_seconds": 31.764490852,
+      "simulator": "Verilator",
+      "status": "passed",
+      "total_cycles": 10644,
+      "trap_code": 0,
+      "repeat": 2,
+      "wall_seconds": 33.35526641085744
+    },
+    {
+      "checked_cycles_per_second": 405.59965261222993,
+      "checked_run_seconds": 24.686904773,
+      "cycles_per_second": 405.69892297111113,
+      "first_commit_cycle": 630,
+      "loop_count_observed": 1000,
+      "measured_cycles": 10013,
+      "retired_instructions": 8011,
+      "simulation_seconds": 24.680864140999955,
+      "simulator": "Verilator",
+      "status": "passed",
+      "total_cycles": 10644,
+      "trap_code": 0,
+      "repeat": 3,
+      "wall_seconds": 28.23807488568127
+    }
+  ],
+  "timing": "evaluation after first retired boot instruction until successful checked trap; excludes loading, reset, oracle and trace; includes cache startup stalls and per-cycle timer overhead",
+  "source": {
+    "selected_commit": "0a68ebc13b3d96a78d8663679393ecbea5b8fb73",
+    "generation": "Nanhu",
+    "author_date": "2023-08-01T09:28:41+08:00",
+    "committer_date": "2024-03-13T14:04:28+08:00",
+    "scala": "2.12.13",
+    "mill": "0.11.7",
+    "rteaal_firrtl": "1.5.6",
+    "following_chisel_bump": {
+      "commit": "2fa0f68b55ddc8f2f610ed871837837b8a826f69",
+      "subject": "Bump Chisel 3.6.1"
+    },
+    "jdk": "/nfs/share/graalvm-ce-java11-21.3.0",
+    "original_checkout_modified": false,
+    "chisel_declared": "3.5.0",
+    "chisel_resolved": "3.5.1",
+    "firrtl_resolved": "1.5.1",
+    "resolved_classpath": "XiangShan-nanhu-legacy/out/XiangShan/test/runClasspath.json"
+  },
+  "binary_sha256": {
+    "Verilator": "fa3fee970ada90a63193a10c68aba04223f3569765c74bf87137efc917064c9a"
+  },
+  "summary": {
+    "Verilator": {
+      "median_cycles_per_second": 389.794764863328,
+      "min_cycles_per_second": 315.2262079897165,
+      "max_cycles_per_second": 405.69892297111113,
+      "median_simulation_seconds": 25.687877064000112
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  ".": {
+    "source": "/nfs/home/zhangziqing/XiangShan",
+    "commit": "0a68ebc13b3d96a78d8663679393ecbea5b8fb73"
+  },
+  "difftest": {
+    "source": "/nfs/home/zhangziqing/XiangShan/difftest",
+    "commit": "b2f739e433929d1bb6cf589a67f68758533bc138"
+  },
+  "fudian": {
+    "source": "/nfs/home/zhangziqing/XiangShan/fudian",
+    "commit": "1285cb3940326ca92e92cd9c2a91beddaa3b236d"
+  },
+  "fudian/berkeley-softfloat-3": {
+    "commit": "b64af41c3276f97f0e181920400ee056b9c88037",
+    "status": "unavailable nested submodule",
+    "error": "No local repository with commit b64af41c3276f97f0e181920400ee056b9c88037 for /nfs/home/zhangziqing/XiangShan/fudian/berkeley-softfloat-3"
+  },
+  "fudian/berkeley-testfloat-3": {
+    "commit": "06b20075dd3c1a5d0dd007a93643282832221612",
+    "status": "unavailable nested submodule",
+    "error": "No local repository with commit 06b20075dd3c1a5d0dd007a93643282832221612 for /nfs/home/zhangziqing/XiangShan/fudian/berkeley-testfloat-3"
+  },
+  "huancun": {
+    "source": "/nfs/home/zhangziqing/XiangShan/huancun",
+    "commit": "92fa6bb986b07f2b62fb1122b45a232c49f97b65"
+  },
+  "huancun/rocket-chip": {
+    "source": "/nfs/home/zhangziqing/XiangShan/rocket-chip",
+    "commit": "ccb072185eb9ab819ac0d03fde8615156f2e16ca"
+  },
+  "huancun/rocket-chip/api-config-chipsalliance": {
+    "source": "https://github.com/chipsalliance/api-config-chipsalliance",
+    "commit": "fd8df1105a92065425cd353b6855777e35bd79b4",
+    "archive": "downloads/api-config-fd8df110.tar.gz",
+    "sha256": "2b60db2875e53a29577109287cb9cebcbf7932c2556da1c948df12cbe20f2d95"
+  },
+  "huancun/rocket-chip/hardfloat": {
+    "source": "/nfs/home/zhangziqing/XiangShan/rocket-chip/hardfloat",
+    "commit": "70455e53f233a06cb5a342d125e22b7b1505c271"
+  },
+  "huancun/rocket-chip/hardfloat/berkeley-softfloat-3": {
+    "source": "/nfs/home/zhangziqing/XiangShan/rocket-chip/hardfloat/berkeley-softfloat-3",
+    "commit": "b64af41c3276f97f0e181920400ee056b9c88037"
+  },
+  "huancun/rocket-chip/hardfloat/berkeley-testfloat-3": {
+    "source": "/nfs/home/zhangziqing/XiangShan/rocket-chip/hardfloat/berkeley-testfloat-3",
+    "commit": "06b20075dd3c1a5d0dd007a93643282832221612"
+  },
+  "huancun/rocket-chip/torture": {
+    "source": "/nfs/home/zhangziqing/XiangShan/rocket-chip/torture",
+    "commit": "99d8b2b441ecaa18b852505bb7718ee04e2753f5"
+  },
+  "huancun/rocket-chip/torture/env": {
+    "source": "/nfs/home/zhangziqing/XiangShan/rocket-chip/torture/env",
+    "commit": "ce70afbf50a203be04bc326326cfa75831fe7f5d"
+  },
+  "ready-to-run": {
+    "source": "/nfs/home/zhangziqing/XiangShan/ready-to-run",
+    "commit": "55df55381ce26dab14211e0fed4165661035ec54"
+  },
+  "rocket-chip": {
+    "source": "/nfs/home/zhangziqing/XiangShan/rocket-chip",
+    "commit": "294e15cbe34c2b75285b809125d8b44f0b172a79"
+  },
+  "rocket-chip/api-config-chipsalliance": {
+    "source": "https://github.com/chipsalliance/api-config-chipsalliance",
+    "commit": "fd8df1105a92065425cd353b6855777e35bd79b4",
+    "archive": "downloads/api-config-fd8df110.tar.gz",
+    "sha256": "2b60db2875e53a29577109287cb9cebcbf7932c2556da1c948df12cbe20f2d95"
+  },
+  "rocket-chip/hardfloat": {
+    "source": "https://github.com/OpenXiangShan/berkeley-hardfloat",
+    "commit": "e5e2e5d3a0a300f45e815b68267c5521c1a1873a",
+    "archive": "downloads/hardfloat-e5e2e5d.tar.gz",
+    "sha256": "de47cb8963eaaba696bf6766bf0825353e82be44c1d00d0971a0319c7b66a93e"
+  },
+  "rocket-chip/torture": {
+    "source": "/nfs/home/zhangziqing/XiangShan/rocket-chip/torture",
+    "commit": "99d8b2b441ecaa18b852505bb7718ee04e2753f5"
+  },
+  "rocket-chip/torture/env": {
+    "source": "/nfs/home/zhangziqing/XiangShan/rocket-chip/torture/env",
+    "commit": "ce70afbf50a203be04bc326326cfa75831fe7f5d"
+  }
+}

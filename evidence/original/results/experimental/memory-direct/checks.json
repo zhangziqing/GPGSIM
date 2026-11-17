@@ -1,0 +1,86 @@
+{
+  "status": "passed",
+  "source_revision": "d4bb4fe2905d4e1aa7d28cc94c754a703d94755c",
+  "archived_files_checked": 70,
+  "full_gpu_runs": 6,
+  "archive": {
+    "bytes": 9436771,
+    "sha256": "0f603d256f80dbb354512e830f7606b665eaec47de2ffea3990c80a50a1c885b",
+    "parts": [
+      {
+        "path": "/home/zhangziqing/memory-direct-20261113/evidence.part000",
+        "sha256": "2c5b6ace346c76e30fc6d806511b19da5c1e05faad1818e36995cac68ffb0598"
+      },
+      {
+        "path": "/home/zhangziqing/memory-direct-20261113/evidence.part001",
+        "sha256": "8885c288f4abcf4861f7ed2de6bafaa41c0440e4f8ff5c5879ea3fbdf3fb547d"
+      },
+      {
+        "path": "/home/zhangziqing/memory-direct-20261113/evidence.part002",
+        "sha256": "69d05b43bc6fcec807118dc1ca51d3b85d5c19957077ff30edb79cd64626ddc3"
+      },
+      {
+        "path": "/home/zhangziqing/memory-direct-20261113/evidence.part003",
+        "sha256": "8adf04214bcabe9d96b80e90746bf1a82bc0011aba7c75bcc0cfc21f30b77104"
+      },
+      {
+        "path": "/home/zhangziqing/memory-direct-20261113/evidence.part004",
+        "sha256": "3fdd382b43eda476771d8af56a5b106b7864ff323d45e1e8df50dea3c7878b2e"
+      }
+    ]
+  },
+  "median_cycles_per_second": {
+    "direct": 2290.3255928688172,
+    "candidates": 2323.589971749845
+  },
+  "samples": [
+    {
+      "mode": "direct",
+      "round": 1,
+      "cycles_per_second": 2290.3255928688172,
+      "full_data_fingerprint": 3027358707500526234,
+      "memory64_fingerprint": 15503565812696885107,
+      "memory8_fingerprint": 656100811014868721
+    },
+    {
+      "mode": "candidates",
+      "round": 1,
+      "cycles_per_second": 2324.0844688110597,
+      "full_data_fingerprint": 3027358707500526234,
+      "memory64_fingerprint": 15503565812696885107,
+      "memory8_fingerprint": 656100811014868721
+    },
+    {
+      "mode": "candidates",
+      "round": 2,
+      "cycles_per_second": 2323.589971749845,
+      "full_data_fingerprint": 3027358707500526234,
+      "memory64_fingerprint": 15503565812696885107,
+      "memory8_fingerprint": 656100811014868721
+    },
+    {
+      "mode": "direct",
+      "round": 2,
+      "cycles_per_second": 2290.565965160344,
+      "full_data_fingerprint": 3027358707500526234,
+      "memory64_fingerprint": 15503565812696885107,
+      "memory8_fingerprint": 656100811014868721
+    },
+    {
+      "mode": "direct",
+      "round": 3,
+      "cycles_per_second": 2290.0190069651608,
+      "full_data_fingerprint": 3027358707500526234,
+      "memory64_fingerprint": 15503565812696885107,
+      "memory8_fingerprint": 656100811014868721
+    },
+    {
+      "mode": "candidates",
+      "round": 3,
+      "cycles_per_second": 2321.583329964293,
+      "full_data_fingerprint": 3027358707500526234,
+      "memory64_fingerprint": 15503565812696885107,
+      "memory8_fingerprint": 656100811014868721
+    }
+  ]
+}

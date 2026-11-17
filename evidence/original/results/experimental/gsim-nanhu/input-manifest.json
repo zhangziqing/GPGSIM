@@ -1,0 +1,56 @@
+{
+  "source_commit": "0a68ebc13b3d96a78d8663679393ecbea5b8fb73",
+  "source": "results/nanhu/SimTop.preclock.lo.fir",
+  "source_sha256": "4eca6ecb46a01e8fc14a14e7d285ba123dbf70dd9d291d3c3217c7c09886ed0e",
+  "target_sha256": "e09ed16ba24733bb215467d3d532cdfe684eafd2f8acc60680f7eed57fb7a96c",
+  "syntax_changes": {
+    "registers": 71138,
+    "connections": 215749,
+    "invalidations": 0,
+    "numeric_fields": 0,
+    "clock_aliases": {
+      "bool_clock_ports": 3,
+      "root_clock_connections": 1,
+      "explicit_clock_wires": 2
+    },
+    "reset_guards": {
+      "async_registers": 17226,
+      "guarded_connections": 17226
+    },
+    "aggregate_invalidations_expanded": false
+  },
+  "external_modules": {
+    "DifftestArchEvent": 1,
+    "DifftestArchFpRegState": 1,
+    "DifftestArchIntRegState": 1,
+    "DifftestAtomicEvent": 1,
+    "DifftestCSRState": 1,
+    "DifftestDebugMode": 1,
+    "DifftestFpWriteback": 1,
+    "DifftestInstrCommit": 1,
+    "DifftestIntWriteback": 1,
+    "DifftestLoadEvent": 1,
+    "DifftestLrScEvent": 1,
+    "DifftestRefillEvent": 1,
+    "DifftestRunaheadCommitEvent": 1,
+    "DifftestSbufferEvent": 1,
+    "DifftestStoreEvent": 1,
+    "DifftestTrapEvent": 1,
+    "FlashHelper": 1,
+    "RAMHelper": 1,
+    "SDHelper": 1,
+    "STD_CLKGT_func": 1,
+    "SimJTAG": 1,
+    "TLLogWriter": 5
+  },
+  "external_interfaces_sha256": "fe34fcda20c92118864d04f51223453e251a8d339aaf4e9e1190a6bfd5c13369",
+  "input_scope": "Pinned pre-clock Low FIRRTL with restored CHIRRTL memories",
+  "memories": {
+    "memories": 993,
+    "readers": 3705,
+    "writers": 1868
+  },
+  "jtag": "TCK=0, TMS=1, TDI=0; same idle policy as accepted reference",
+  "flash": "Synchronous held boot words, same as accepted reference",
+  "gates": "Original TE/E/CK/Q ports; defname mapped to GSIM builtin ClockGate; subject to execution validation"
+}

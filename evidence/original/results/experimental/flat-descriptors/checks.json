@@ -1,0 +1,275 @@
+{
+  "status": "passed_host_validation_gpu_pending",
+  "scope": "Frozen 126-layer Nanhu 100K prefix; CoreMark does not complete",
+  "workspace_commit": "719c7658848c723690cba85ad99eb0b41e3478be",
+  "simulator_commit": "274d8f75c13f690546dfb64f4254fcbc0c1ef7a3",
+  "source_sha256": {
+    "results/experimental/nanhu-cuda-2060/src/coremark_common.h": "05212b3df4d66814bbe4537444c086f29f272363d7e715310bf26942a598ecfe",
+    "results/experimental/nanhu-cuda-2060/src/engine.h": "27c43bed466a1e6e2c730584df673e59b8366774d2c96d5bd2395d14b7fe290f",
+    "results/experimental/nanhu-cuda-2060/src/engine_cpu.cpp": "29c9facf30c9684e00dc9bc0e3a0775c11f8be3801b201571683b454ddd9f452",
+    "results/experimental/nanhu-cuda-2060/src/engine_cuda.cu": "6edf7d848611ecb6a4f7b284a8c07e761d4ee7b1783ffcf48e6b32cd4e885384",
+    "results/experimental/nanhu-cuda-2060/src/flat_ops.cpp": "dedab0eea9d6f7e97913ad76e42de5fcd4440d29b56c600010eb13e42a4543cb",
+    "results/experimental/nanhu-cuda-2060/src/flat_ops.h": "924c19db9e7e5554f36e0705dd838a563af383b5a03a2390ecf5f920bbf7728c",
+    "results/experimental/nanhu-cuda-2060/src/main.cpp": "a7a231b7cceab72d3eb72477866a7ac54140453073fd187b59f5274a6b888ac6",
+    "results/experimental/nanhu-cuda-2060/src/memory_plan.cpp": "55f51a5acc7d03c90a9634ba6792ec01cdc071ac17f9228b721570730207a3e7",
+    "results/experimental/nanhu-cuda-2060/src/memory_plan.h": "7cdb101d1856b567ceaebef8b7a08009f17b0330888a807dea422e533b8f5aeb",
+    "results/experimental/nanhu-cuda-2060/src/ops.h": "dcc29eeb9eedbc5cc2b4ee445c33813af79c19831bee2677a8342203ddc60433",
+    "results/experimental/nanhu-cuda-2060/tests/flat_plan_test.cpp": "4678dbff65ece226f18b2754b609efae800cdce2cf3fe161198b509479d9485c",
+    "results/experimental/nanhu-cuda-2060/tests/memory_direct_test.cpp": "7d8bac7e21810929f57df8c4d7cf1f7eb611ead1c16e4d3a141ded521a6a459a",
+    "results/experimental/nanhu-cuda-2060/tests/memory_plan_test.cpp": "1d648d0722f83186e8e1ee0e6cf784c64387a28e4bd71e34a01296e4b67afe87",
+    "results/experimental/nanhu-cuda-2060/tests/op_test.cpp": "b681a37857b9a08f4e07cbe6081decfaa6ebc859259c90502f139ff0d4917e54",
+    "results/experimental/nanhu-cuda-2060/tests/reference_ou.h": "dc2859ecab68d6af638404cdd47737077a65f6b9413e27f6f4986961b1d6e615",
+    "results/experimental/nanhu-cuda-2060/CMakeLists.txt": "eb0d2925ca56b3923769906a39cc322bb9b7083a14a2d9c5a303143730350d9f",
+    "results/experimental/nanhu-cuda-2060/run.py": "7d27e9e05152dc4ed91d19a9dc95a7bafb38b8e1b63f933af11d64f8844d0542",
+    "results/experimental/flat-descriptors/run_pairs.py": "bdbe40e57bffaccee2916b17de42ade42c25c0aee6b060ab11f5164f429cfb72",
+    "results/experimental/flat-descriptors/collect_checks.py": "8405182a39ecce3f3ceb4dd34b65cacfb560397683352380e3796b75ce670bfb"
+  },
+  "model_sha256": "46bfece3ef8cbbf71d2efd91a8886070554db7b606a5b40d7e4c90eac17b4be2",
+  "assets": {
+    "args.bin": {
+      "bytes": 20486680,
+      "sha256": "7e860ac68245c0adc537bd8d690383c77ec703eb521012e4f465eb1ea701f49f"
+    },
+    "initial.bin": {
+      "bytes": 3920712,
+      "sha256": "5adbcf10949e5bf6640cb55cc67f85de6f401c753b5d23fe71a7f42f6868fe23"
+    },
+    "jump.bin": {
+      "bytes": 794704,
+      "sha256": "5261f1f2b253ad5233ef742a735415725952d54fb5524ce8803480ef1929d1cf"
+    },
+    "layers.bin": {
+      "bytes": 2016,
+      "sha256": "42e6cc977e66971e2d5d112c36481022f0c28525d398fa25658365968e087bd8"
+    },
+    "observe.bin": {
+      "bytes": 2060,
+      "sha256": "75edd5f0d6978940b31c189a908c4e91504ac2c9f3c38b6fcb17e69fc03d3841"
+    },
+    "ops.bin": {
+      "bytes": 35560928,
+      "sha256": "6fa1894aae2bf1f89841fe117ec03b8f5232f58a9ccce658d13e58c62a35a52d"
+    },
+    "program.bin": {
+      "bytes": 18984,
+      "sha256": "1156255cce0d01cffbf7232fa4a168a00defc41e0c8ea6096a3186ca30a48519"
+    },
+    "reference-100k.trace.gz": {
+      "bytes": 1711046,
+      "sha256": "0337632e8b5618c280e270a8a7f16ae491e436056de3e267384b0ada300cd564"
+    },
+    "scatter.bin": {
+      "bytes": 8871764,
+      "sha256": "abf8cb1ed5d6d4cd8b7e18e315032eb080da994d9effd39d0e9a52aa8fb7cf75"
+    }
+  },
+  "model": {
+    "nodes": 2222558,
+    "layers": 126,
+    "data_slots": 490089,
+    "inlined_nodes": 2177119,
+    "inlined_fraction": 0.9795555391580332,
+    "legacy_descriptor_bytes": 35560928,
+    "flat_descriptor_bytes": 44451160,
+    "extra_descriptor_bytes": 8890232,
+    "opcode_counts": {
+      "0": 14370,
+      "1": 1518,
+      "3": 524,
+      "4": 3840,
+      "5": 26,
+      "6": 1124,
+      "7": 80,
+      "8": 70325,
+      "9": 26191,
+      "10": 4615,
+      "11": 26369,
+      "12": 8,
+      "13": 524049,
+      "14": 245733,
+      "15": 93591,
+      "16": 203,
+      "17": 177560,
+      "18": 124763,
+      "19": 544310,
+      "20": 313529,
+      "21": 8675,
+      "22": 30336,
+      "23": 765,
+      "24": 4391,
+      "25": 170,
+      "26": 65,
+      "28": 5428
+    }
+  },
+  "cpu_ctest": {
+    "cpu-tests.log": {
+      "status": "passed",
+      "tests": 8,
+      "sha256": "2d62f2ffd2ccad64c83788d39ae4fcfe7a00d2a66840f40bafd09720a2c06da9"
+    },
+    "cuda-host-tests.log": {
+      "status": "passed",
+      "tests": 8,
+      "sha256": "799353caef77bcca968505a1ca2a3940e158f5d392ce784fcc56382cf2fbb3b1"
+    },
+    "asan-tests.log": {
+      "status": "passed",
+      "tests": 8,
+      "sha256": "a9603502cae035fb9a68332a9ed805ec09d816edddbb58c890a137a68ebef908"
+    }
+  },
+  "build_log_sha256": {
+    "cpu-build.log": "199eb35d5b402d7f3f5a84afd7e5861529ee4172f9b7f2b7e3555e7d33d28c16",
+    "cuda-build.log": "089e28595b5d209cbaeb903e7677c0953b0f2cff1880cba14ce63cc96fc24f00",
+    "asan-build.log": "dcfd7cbf161d702c34f374a7bcde8d0295ceabf42df057dbc42e54b9d69d2bc6"
+  },
+  "cuda_compilation": {
+    "status": "passed",
+    "toolkit": "12.6.85",
+    "architecture": "sm_75",
+    "ptx_sha256": "ae7f1610d7af842d0d7ffbee2785f1704d6cd4967fde033aefbb57ee2d65d95f",
+    "cubin_sha256": "7059fbd635bdceb559f486ebb974dd30224ce9b8bc6230ffd64ea7231f47b21f",
+    "ptxas_log_sha256": "8491518d637749e62f51176da9983968007baca2ce2cd05c9cefd0a6db9e5f43",
+    "resources": [
+      {
+        "kernel": "void nanhu::commit<false, false>(nanhu::View, nanhu::Layer, unsigned int)",
+        "registers": 22,
+        "stack_bytes": 0,
+        "spill_bytes": 0
+      },
+      {
+        "kernel": "void nanhu::commit<true, false>(nanhu::View, nanhu::Layer, unsigned int)",
+        "registers": 20,
+        "stack_bytes": 0,
+        "spill_bytes": 0
+      },
+      {
+        "kernel": "void nanhu::compute<false>(nanhu::View, nanhu::Layer)",
+        "registers": 60,
+        "stack_bytes": 0,
+        "spill_bytes": 0
+      },
+      {
+        "kernel": "void nanhu::small_layers<false>(nanhu::View, nanhu::Layer const*, unsigned int, unsigned int, unsigned int)",
+        "registers": 63,
+        "stack_bytes": 0,
+        "spill_bytes": 0
+      },
+      {
+        "kernel": "void nanhu::commit<false, true>(nanhu::View, nanhu::Layer, unsigned int)",
+        "registers": 22,
+        "stack_bytes": 0,
+        "spill_bytes": 0
+      },
+      {
+        "kernel": "void nanhu::commit<true, true>(nanhu::View, nanhu::Layer, unsigned int)",
+        "registers": 20,
+        "stack_bytes": 0,
+        "spill_bytes": 0
+      },
+      {
+        "kernel": "void nanhu::compute<true>(nanhu::View, nanhu::Layer)",
+        "registers": 60,
+        "stack_bytes": 0,
+        "spill_bytes": 0
+      },
+      {
+        "kernel": "void nanhu::small_layers<true>(nanhu::View, nanhu::Layer const*, unsigned int, unsigned int, unsigned int)",
+        "registers": 63,
+        "stack_bytes": 0,
+        "spill_bytes": 0
+      },
+      {
+        "kernel": "nanhu::gather(unsigned long const*, unsigned int const*, unsigned int, nanhu::Error const*, unsigned long*)",
+        "registers": 12,
+        "stack_bytes": 0,
+        "spill_bytes": 0
+      },
+      {
+        "kernel": "nanhu::set_reset(unsigned long*, unsigned int, bool)",
+        "registers": 6,
+        "stack_bytes": 0,
+        "spill_bytes": 0
+      }
+    ]
+  },
+  "smoke_cpu": [
+    {
+      "folder": "results/experimental/nanhu-cuda-2060/runs/flat-descriptors-base-4096",
+      "result_sha256": "7417d2eef8b7f3d6df9c4d7c30c4b9088d1171d31384823005e682a788641f5c",
+      "command_sha256": "3abff6ccf3dc2b25ffa0a3399c225d1f0ba73a940d17f7cdc6ed3c0b6fb65de5",
+      "binary_sha256": "196f257be9d19e3b31ae1008c51bd20be13becef1e51fe3b39855296720fa79d",
+      "trace_sha256": "388403a9d416f2d61ea1da4df6b9ce64318ad7f4c66dff3056e30acd95d9b1b4",
+      "cycles": 4096,
+      "fingerprints": {
+        "full_data_fingerprint": 16474025080090779486,
+        "memory64_fingerprint": 10476570942795089333,
+        "memory8_fingerprint": 10695766432071658643
+      }
+    },
+    {
+      "folder": "results/experimental/nanhu-cuda-2060/runs/flat-descriptors-flat-4096",
+      "result_sha256": "b983ed22c4e573216982f686388af7ab3241313e238478d8e632afdf9d75649d",
+      "command_sha256": "0cde382874c5d4f4c4d081340970aa6831e54430e117194e7c6a6e62a6698d44",
+      "binary_sha256": "196f257be9d19e3b31ae1008c51bd20be13becef1e51fe3b39855296720fa79d",
+      "trace_sha256": "388403a9d416f2d61ea1da4df6b9ce64318ad7f4c66dff3056e30acd95d9b1b4",
+      "cycles": 4096,
+      "fingerprints": {
+        "full_data_fingerprint": 16474025080090779486,
+        "memory64_fingerprint": 10476570942795089333,
+        "memory8_fingerprint": 10695766432071658643
+      }
+    }
+  ],
+  "full_100k_legacy_cpu": {
+    "folder": "results/experimental/concat-tree/runtime/portable/gpu/on/runs/binary-concat-cpu-100k",
+    "result_sha256": "9b649a82fe62bb95f955b979383ab437fe38473531f60594115335b050e624a8",
+    "command_sha256": "14830edaed2fd26f57023d558014eac2e2be37f9b5909298314e69258736b9de",
+    "binary_sha256": "d2f142e6bda84dac5cc67338038ee258a4f65201babff3350d99486a0c2eb00b",
+    "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+    "cycles": 100000,
+    "fingerprints": {
+      "full_data_fingerprint": 6218498432779941060,
+      "memory64_fingerprint": 15503565812696885107,
+      "memory8_fingerprint": 656100811014868721
+    }
+  },
+  "full_100k_flat_cpu": {
+    "folder": "results/experimental/nanhu-cuda-2060/runs/flat-descriptors-flat-100k",
+    "result_sha256": "4f0a038a5cc34a3d7f056799224230d07373736bcdd6c35c15e1124f295e8cd9",
+    "command_sha256": "dee76749c15bb3c7e8c42a901794cba6839093fb748a2645fa63b6fafda4fd26",
+    "binary_sha256": "024c707213f4e0a9b5c41eb946c1bc956caff147b990170b51d5c2a793235091",
+    "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+    "cycles": 100000,
+    "fingerprints": {
+      "full_data_fingerprint": 6218498432779941060,
+      "memory64_fingerprint": 15503565812696885107,
+      "memory8_fingerprint": 656100811014868721
+    }
+  },
+  "full_100k_fingerprints_compared_with_legacy_cpu": true,
+  "model_contains_full_fingerprint_expectations": false,
+  "full_100k": {
+    "commit_events": 167375,
+    "retired": 171898,
+    "uart": "Running CoreMark for 2 iterations\r\n",
+    "flat_plan_seconds": 0.049770523
+  },
+  "gpu_runtime": {
+    "status": "not run",
+    "tests": 22,
+    "probe": "FAIL: cudaSetDevice(config.device): CUDA driver version is insufficient for CUDA runtime version",
+    "deferred": [
+      "GPU CTest",
+      "Compute Sanitizer",
+      "Blackwell compilation",
+      "100K performance pairs"
+    ]
+  },
+  "gpu_pairs_dry_run": {
+    "status": "passed",
+    "repetitions": 3,
+    "sha256": "f0731c7bac254e46dc0f2faad2fc103129c07d7a6fafe79e04c994abe2b67688"
+  }
+}

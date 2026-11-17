@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "tensor_sha256": {
+    "unswizzled_nptr": {
+      "old_sha256": "5bb726869a1d597c7406beb87112550ae33765461636ce887e59182f7ca957bc",
+      "new_sha256": "5bb726869a1d597c7406beb87112550ae33765461636ce887e59182f7ca957bc"
+    },
+    "unswizzled_rptr": {
+      "old_sha256": "6451e376d13b4c52039c2d47087d7feb3c68ebb963686c53174b7f995f8fcb49",
+      "new_sha256": "6451e376d13b4c52039c2d47087d7feb3c68ebb963686c53174b7f995f8fcb49"
+    },
+    "unswizzled_sptr": {
+      "old_sha256": "da2c08cf8849be2a1081258cc0e7598b5966203bcfc2c52b176ad3eb07e696af",
+      "new_sha256": "da2c08cf8849be2a1081258cc0e7598b5966203bcfc2c52b176ad3eb07e696af"
+    },
+    "unswizzled_ss_lens_ptr": {
+      "old_sha256": "828ae00e99380b094cad9ae154a8e2d031dfde4d09cc9b8ea3990ac00043b801",
+      "new_sha256": "828ae00e99380b094cad9ae154a8e2d031dfde4d09cc9b8ea3990ac00043b801"
+    },
+    "rptr": {
+      "old_sha256": "b1b5a5013fee463685a610efce3bc42c1ab0e4bedd696c4cb93746857cc484ad",
+      "new_sha256": "b1b5a5013fee463685a610efce3bc42c1ab0e4bedd696c4cb93746857cc484ad"
+    },
+    "sptr": {
+      "old_sha256": "a3b4f00004f210e372e7e9fc79a716b4c21e328135a13031a23f5e01e93eb1ff",
+      "new_sha256": "a3b4f00004f210e372e7e9fc79a716b4c21e328135a13031a23f5e01e93eb1ff"
+    },
+    "fptr": {
+      "old_sha256": "5e2f228f37d9db2942b9d918493d0142f12fff13c5960985fd58150c2536a87a",
+      "new_sha256": "5e2f228f37d9db2942b9d918493d0142f12fff13c5960985fd58150c2536a87a"
+    },
+    "layer_num": {
+      "old_sha256": "65a699905c02619370bcf9207f5a477c3d67130ca71ec6f750e07fe8d510b084",
+      "new_sha256": "65a699905c02619370bcf9207f5a477c3d67130ca71ec6f750e07fe8d510b084"
+    },
+    "S_shape": {
+      "old_sha256": "2d5548aa0ba3cd05c9ae23a5fb20d55b042cc92f88fe227fff46e8dc5df6b1d6",
+      "new_sha256": "2d5548aa0ba3cd05c9ae23a5fb20d55b042cc92f88fe227fff46e8dc5df6b1d6"
+    },
+    "muxJT": {
+      "old_sha256": "03e355bd0296619f3734fe1591961ccad3700e5ae342c8908dca8cec38b5b450",
+      "new_sha256": "03e355bd0296619f3734fe1591961ccad3700e5ae342c8908dca8cec38b5b450"
+    }
+  },
+  "initial_value_sha256": [
+    "6cff6edf33a30acedb936a079113e4dd40a2ea155d152f5c1b35fbff5b419e9e",
+    "80daa84905d8b36afcd5c376ed69073d80c613c5fdfb0dcdca47715e04738280"
+  ],
+  "initial_value_differences": 42403,
+  "runtime_zeroed_slots": 152988,
+  "runtime_normalized_initial_values_identical": true,
+  "initialization_contract": "Compiler randomizes signal values; the retained runner zeros every InputRegMap input/state slot before reset and preserves constants."
+}

@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "module": "TLB",
+  "module_byte_identical": true,
+  "module_lines": 1529,
+  "module_sha256": "15826dedd6c4a0b5557d04f8f11d023097c8f899db0ac977c9de19581d1e00a6",
+  "unchanged_normal_refill_definitions": 676,
+  "ordered_update_roots": [
+    {
+      "name": "_normal_refill_idx_state_reg_T_107",
+      "uses": 3,
+      "expression": "mux(normalPage_tlb_normal_fa.io_access_0_touch_ways_valid, _normal_refill_idx_state_reg_T_106, normal_refill_idx_state_reg)",
+      "line": 636387
+    },
+    {
+      "name": "_normal_refill_idx_state_reg_T_215",
+      "uses": 3,
+      "expression": "mux(normalPage_tlb_normal_fa.io_access_1_touch_ways_valid, _normal_refill_idx_state_reg_T_214, _normal_refill_idx_state_reg_T_107)",
+      "line": 636492
+    },
+    {
+      "name": "_normal_refill_idx_state_reg_T_323",
+      "uses": 3,
+      "expression": "mux(normalPage_tlb_normal_fa.io_access_2_touch_ways_valid, _normal_refill_idx_state_reg_T_322, _normal_refill_idx_state_reg_T_215)",
+      "line": 636597
+    },
+    {
+      "name": "_normal_refill_idx_state_reg_T_431",
+      "uses": 3,
+      "expression": "mux(normalPage_tlb_normal_fa.io_access_3_touch_ways_valid, _normal_refill_idx_state_reg_T_430, _normal_refill_idx_state_reg_T_323)",
+      "line": 636702
+    },
+    {
+      "name": "_normal_refill_idx_state_reg_T_539",
+      "uses": 3,
+      "expression": "mux(normalPage_tlb_normal_fa.io_access_4_touch_ways_valid, _normal_refill_idx_state_reg_T_538, _normal_refill_idx_state_reg_T_431)",
+      "line": 636807
+    },
+    {
+      "name": "_normal_refill_idx_state_reg_T_647",
+      "uses": 1,
+      "expression": "mux(normalPage_tlb_normal_fa.io_access_5_touch_ways_valid, _normal_refill_idx_state_reg_T_646, _normal_refill_idx_state_reg_T_539)",
+      "line": 636912
+    }
+  ],
+  "endpoint": "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.normal_refill_idx_state_reg",
+  "value_path_nodes": 126,
+  "nonassign_path_nodes": 123,
+  "path_opcode_counts": {
+    "17": 56,
+    "18": 25,
+    "14": 4,
+    "19": 33,
+    "20": 3,
+    "13": 4,
+    "15": 1
+  },
+  "source_sha256": {
+    "XiangShan-nanhu-legacy/src/main/scala/xiangshan/cache/mmu/TLB.scala": "9e496b13e75138367a963f512ceb432c6932cee34e315989dfcd6e8b4052d1d8",
+    "XiangShan-nanhu-legacy/rocket-chip/src/main/scala/util/Replacement.scala": "130d6acfb0d7e86d2fcb0f6a00aeae2e1d2425b8c4b3f4e97a9e27bd1167c24d"
+  },
+  "explanation": "Six ordered guarded PLRU updates; each intermediate state feeds left/right slices and fallback. The outer chain is below threshold eight and intermediates are shared.",
+  "boundary": "Static tensor path and unchanged prepared TLB source; no timing measurement or new PLRU transformation."
+}

@@ -1,0 +1,22 @@
+{
+  "command": [
+    "taskset",
+    "-c",
+    "31",
+    "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-coremark-100k/verilator_coremark",
+    "/nfs/home/zhangziqing/RTeAAL/XiangShan-nanhu-legacy/ready-to-run/coremark-2-iteration.bin",
+    "100000",
+    "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-coremark-100k/coremark-verilator.trace"
+  ],
+  "cpu": 31,
+  "siblings": [
+    31,
+    159
+  ],
+  "binary_sha256": "9ca763e0daa698a1da4f16b5705c7332e7a3078405ba11fd0c62b17fa82d74ab",
+  "image": "/nfs/home/zhangziqing/RTeAAL/XiangShan-nanhu-legacy/ready-to-run/coremark-2-iteration.bin",
+  "image_sha256": "1156255cce0d01cffbf7232fa4a168a00defc41e0c8ea6096a3186ca30a48519",
+  "image_bytes": 18984,
+  "requested_nonreset_cycles": 100000,
+  "reset_cycles": 64
+}

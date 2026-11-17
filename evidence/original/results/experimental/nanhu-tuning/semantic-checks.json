@@ -1,0 +1,128 @@
+{
+  "derived_grouped_all_ops": {
+    "passed": true,
+    "seeds": 4,
+    "operations_per_seed": [
+      145084,
+      145171,
+      145258,
+      145345
+    ],
+    "output_words_per_seed": [
+      170114,
+      170216,
+      170318,
+      170420
+    ],
+    "sanitizers": [
+      "address",
+      "undefined"
+    ],
+    "disabled_checks": [
+      "shift sanitizer (preserve upstream semantics)",
+      "LeakSanitizer (sandbox unsupported)"
+    ],
+    "files": {
+      "check-groups-asan": {
+        "bytes": 4637512,
+        "sha256": "e39d1292f8e3608af26cb1268bc6e87973d1e5d487a1cd049690b9a7b49414d8"
+      },
+      "check-groups.log": {
+        "bytes": 200,
+        "sha256": "039f05af27e96013f74e401175837bbcced9d8d1cca2a8996d70b41338faaf2a"
+      },
+      "build/psu8-s24/kernel.h": {
+        "bytes": 29968,
+        "sha256": "d6806d22eed29940813bc6d4bbee8a5af4fa1e9b5f7f10289b4f905244dd039c"
+      },
+      "check_groups.cc": {
+        "bytes": 2696,
+        "sha256": "7a07234cfa18ba15a384cc8659b2836c3ad8a3cb1e9fd3d94a449f9276cb86d0"
+      }
+    }
+  },
+  "upstream_psu_all_ops": {
+    "passed": true,
+    "seeds": 4,
+    "operations_per_seed": [
+      145084,
+      145171,
+      145258,
+      145345
+    ],
+    "output_words_per_seed": [
+      170114,
+      170216,
+      170318,
+      170420
+    ],
+    "sanitizers": [
+      "address",
+      "undefined"
+    ],
+    "disabled_checks": [
+      "shift sanitizer (preserve upstream semantics)",
+      "LeakSanitizer (sandbox unsupported)"
+    ],
+    "files": {
+      "check-upstream-psu-asan": {
+        "bytes": 4611104,
+        "sha256": "0e1b79eb81d23e5e882a1b879d6c7f898a588db83f1ce6bb116bf15b261b2ce7"
+      },
+      "check-upstream-psu.log": {
+        "bytes": 200,
+        "sha256": "039f05af27e96013f74e401175837bbcced9d8d1cca2a8996d70b41338faaf2a"
+      },
+      "build/upstream-psu8-native-s1/kernel.h": {
+        "bytes": 29968,
+        "sha256": "d6806d22eed29940813bc6d4bbee8a5af4fa1e9b5f7f10289b4f905244dd039c"
+      },
+      "check_groups.cc": {
+        "bytes": 2696,
+        "sha256": "7a07234cfa18ba15a384cc8659b2836c3ad8a3cb1e9fd3d94a449f9276cb86d0"
+      }
+    }
+  },
+  "simd_all_ops": {
+    "passed": true,
+    "seeds": 4,
+    "operations_per_seed": [
+      145084,
+      145171,
+      145258,
+      145345
+    ],
+    "output_words_per_seed": [
+      170114,
+      170216,
+      170318,
+      170420
+    ],
+    "sanitizers": [
+      "address",
+      "undefined"
+    ],
+    "disabled_checks": [
+      "shift sanitizer (preserve upstream semantics)",
+      "LeakSanitizer (sandbox unsupported)"
+    ],
+    "files": {
+      "check-simd-asan": {
+        "bytes": 4533680,
+        "sha256": "61bd7cbb5e5b3dbf7db793668310081c29b0b1ffb8cbd914548ca2abdfe5bea3"
+      },
+      "check-simd.log": {
+        "bytes": 200,
+        "sha256": "039f05af27e96013f74e401175837bbcced9d8d1cca2a8996d70b41338faaf2a"
+      },
+      "build/simd4-native/kernel.h": {
+        "bytes": 21614,
+        "sha256": "57f9597b0df33b2e8f3dc9b0916ccde23988ddcffd925b7683e94447b300b6ad"
+      },
+      "check_simd.cc": {
+        "bytes": 2833,
+        "sha256": "0786454a7ae78782fde6ec388a65369937ebaec1fd9a7dfa61ae1eabf3781d56"
+      }
+    }
+  }
+}

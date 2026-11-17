@@ -1,0 +1,141 @@
+{
+  "status": "passed",
+  "variants": {
+    "off": {
+      "CLZ_8": {
+        "oracle_cases": 5780,
+        "local_cone": {
+          "mux_depth": 106,
+          "or_depth": 0,
+          "operation_depth": 107,
+          "operation_counts": {
+            "bits": 106,
+            "mux": 106
+          }
+        },
+        "selection_only": {
+          "mux_depth": 106,
+          "or_depth": 0,
+          "operation_depth": 106,
+          "operation_counts": {
+            "mux": 106
+          }
+        },
+        "retained_original_expressions": {
+          "definitions_checked": 106,
+          "all_unchanged": true,
+          "expressions_sha256": "6f0d66a84ce129889a10caeefa6e2d7e4b6a5e1d664b21878c27e12d70c9a7bf"
+        },
+        "firrtl_lines": [
+          1047478,
+          1047694
+        ]
+      },
+      "LFST": {
+        "oracle_cases": 8192,
+        "local_cone": {
+          "mux_depth": 132,
+          "or_depth": 0,
+          "operation_depth": 134,
+          "operation_counts": {
+            "and": 127,
+            "eq": 36,
+            "mux": 132
+          }
+        },
+        "selection_only": {
+          "mux_depth": 132,
+          "or_depth": 0,
+          "operation_depth": 132,
+          "operation_counts": {
+            "mux": 132
+          }
+        },
+        "retained_original_expressions": {
+          "definitions_checked": 169,
+          "all_unchanged": true,
+          "expressions_sha256": "f6dd1b9f51c245201a99d52e65b70ba041d266b8cbcf71266458c6bc9fbf2fb5"
+        },
+        "firrtl_lines": [
+          1605653,
+          1621831
+        ]
+      }
+    },
+    "on": {
+      "CLZ_8": {
+        "oracle_cases": 5780,
+        "local_cone": {
+          "mux_depth": 7,
+          "or_depth": 6,
+          "operation_depth": 8,
+          "operation_counts": {
+            "bits": 106,
+            "mux": 106,
+            "or": 99
+          }
+        },
+        "selection_only": {
+          "mux_depth": 7,
+          "or_depth": 6,
+          "operation_depth": 7,
+          "operation_counts": {
+            "mux": 106,
+            "or": 99
+          }
+        },
+        "retained_original_expressions": {
+          "definitions_checked": 106,
+          "all_unchanged": true,
+          "expressions_sha256": "6f0d66a84ce129889a10caeefa6e2d7e4b6a5e1d664b21878c27e12d70c9a7bf"
+        },
+        "firrtl_lines": [
+          1047970,
+          1048286
+        ]
+      },
+      "LFST": {
+        "oracle_cases": 8192,
+        "local_cone": {
+          "mux_depth": 8,
+          "or_depth": 7,
+          "operation_depth": 10,
+          "operation_counts": {
+            "and": 127,
+            "eq": 36,
+            "mux": 132,
+            "or": 124
+          }
+        },
+        "selection_only": {
+          "mux_depth": 8,
+          "or_depth": 7,
+          "operation_depth": 8,
+          "operation_counts": {
+            "mux": 132,
+            "or": 124
+          }
+        },
+        "retained_original_expressions": {
+          "definitions_checked": 169,
+          "all_unchanged": true,
+          "expressions_sha256": "f6dd1b9f51c245201a99d52e65b70ba041d266b8cbcf71266458c6bc9fbf2fb5"
+        },
+        "firrtl_lines": [
+          1607215,
+          1624008
+        ]
+      }
+    }
+  },
+  "prepared_firrtl_sha256": {
+    "off": "7e68d4ab87e9c37d344562ef9899839085fd0c6a298f610d766b2df3fc8f9336",
+    "on": "af0192d4fd48a57eb1fd1077bad47979724da0977f131bc65a4ad67e715af712"
+  },
+  "source_sha256": "1c86dc01b5ec46270a39368494a74680ddddaaae4032efab7f6e7e4e5b362127",
+  "contracts": {
+    "CLZ_8": "Highest set input bit wins; result=106-bit; zero/bit0 return106.",
+    "LFST": "Lane5: bypass4..0 priority, then table[ssid*4+ptr]; table0 is default."
+  },
+  "boundary": "Prepared local FIRRTL cones; state data, precomputed LFST row/column and bypass hits are independent inputs. All CLZ zero/single/two-hot and LFST128x32x2 data cases checked against independent ordered first-hit loops. Local depth includes original bit/comparison/AND conditions; selection-only depth treats original conditions as leaves. No tensor-depth, clock/state-transition or full-system equivalence claim."
+}

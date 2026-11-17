@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "uart_sampling": "Clock-low settled UART value, sampled at the upcoming rising edge; DPI callbacks also sample that edge",
+  "base_source_sha256": "e3a216c683897e721efb397bac2a9d17d2f8a715eb270c27f71f08cd1ee57367",
+  "files": {
+    "build-edge.py": {
+      "bytes": 3699,
+      "sha256": "e7edd3e308be12c4dc1931baba6df72ba11ad76b0716c42ed6d47b5d914b05de"
+    },
+    "run-edge.py": {
+      "bytes": 7569,
+      "sha256": "4c291705acd7362f13dcd829152b37db8554e8538742f6103ad11526d768e4d0"
+    },
+    "verilator_coremark_edge.cc": {
+      "bytes": 3715,
+      "sha256": "7211f2980862f725cfce955afa89f7fc71c815c90cd654080ee3b447c3bc679b"
+    },
+    "verilator_coremark_edge": {
+      "bytes": 44084600,
+      "sha256": "5975fb29ef7ae9f655f104e0df33496c196bc3d7e00f6dc90b37583b0410eb11"
+    },
+    "verilator-edge-build.command.json": {
+      "bytes": 993,
+      "sha256": "a134b25e1e0be0f973a4a80cdaa36f25c5e7dfbf898e1197d247d2b8f4dad154"
+    },
+    "verilator-edge-build.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

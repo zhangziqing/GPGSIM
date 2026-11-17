@@ -1,0 +1,99 @@
+{
+  "status": "local_verification_passed_gpu_deferred",
+  "simulator_revision": "84973ad2575db87f8e018c2a5c155c3572436349",
+  "scala_tests": {
+    "passed": 70,
+    "suites": 11,
+    "focused_suites": [
+      "BalancePriorityMuxChainsTest",
+      "NormalizeMuxIndexTest",
+      "ReduceConstantMuxChainsTest",
+      "BalanceAssociativeOpsTest"
+    ],
+    "focused_tests": 33,
+    "log_sha256": "d1b2e76dec122877cc11620f26290d2bedc47d37bc1212eee02c570a09aead4f",
+    "report_sha256": {
+      "TEST-essent.AcyclicPartSpec.xml": "d467751d7e40566713636218877ec2e03bd6408619d9fde87a3033647223d00a",
+      "TEST-essent.BalanceAssociativeOpsTest.xml": "40d606a7159326faae6b8a86b4b63ed9c6f5f3e7dd7190a78851f1bc412c75d8",
+      "TEST-essent.BalancePriorityMuxChainsTest.xml": "ce4139b0de76e5c5292768b282b7e0e1a942fc29bba6c1319723d6e4e0bafb1c",
+      "TEST-essent.GraphSpec.xml": "fa41cc9f4e57e2339e5b9c488a2d370e42cb30d79aad26c6618187a0e2e186bd",
+      "TEST-essent.MFFCSpec.xml": "3c8e8230e5ece2b51cff55527bbf4694716b14366de280cc916ad3d6b83e7214",
+      "TEST-essent.MergeGraphSpec.xml": "ac8055faf4b54ecabd2676825509108b72bfac3b37125deb9f5d890f6a61d329",
+      "TEST-essent.NormalizeMuxIndexTest.xml": "432d57a4e3bd3d71211d9fa1f434e2cdec99e273d45b64f3ff563ab907a1d04e",
+      "TEST-essent.ReduceConstantMuxChainsTest.xml": "c059fbf100efe1aebe7961877cba89ef1ddef4d50a5afba3efe13f05422c6725",
+      "TEST-essent.ReplaceRsvdKeyTest.xml": "e36e28e61a2398359c54a82509cc2d4e3b1a46a5c79f681d00a455fe3ec57346",
+      "TEST-essent.StatementGraphSpec.xml": "255ce679674191f92ec72f166cba552459294775365995b68e2b27af93d01794",
+      "TEST-essent.TopologicalSortSpec.xml": "f1c1ca5e12d10273f4d0aa47385dc6a410aaa971ff6d6880003a30e463aea031"
+    }
+  },
+  "coremark": {
+    "status": "passed",
+    "variants": {
+      "off": {
+        "observed_cycles": 100000,
+        "retired_instructions_including_fused": 171898,
+        "commit_events": 167375,
+        "exception_cycles": 0,
+        "full_trace_byte_identical": true,
+        "evaluation_seconds": 506.23830938400226,
+        "wall_seconds": 513.442456651479,
+        "host": "node007.bosccluster.com",
+        "cpu_affinity": [
+          12
+        ],
+        "command_metadata_sha256": "77ac07954a3986611e81e88cff5025146968606972c6a2c2c0a82a393bfe9e50",
+        "compile_metadata_sha256": "f4c119352ac47f76d029e60aa83b1208982847bd38f67d12e73b68b1e9d133b4",
+        "compile_resources_sha256": "8d2068087a787eb59d56ea5385b25c0fcd3ca0bbbe94a28e9c920e533a3dc326"
+      },
+      "on": {
+        "observed_cycles": 100000,
+        "retired_instructions_including_fused": 171898,
+        "commit_events": 167375,
+        "exception_cycles": 0,
+        "full_trace_byte_identical": true,
+        "evaluation_seconds": 539.4381976380009,
+        "wall_seconds": 546.6663334686309,
+        "host": "node007.bosccluster.com",
+        "cpu_affinity": [
+          13
+        ],
+        "command_metadata_sha256": "3eff3b4d7d78c4a4620b7aa67f2f371ca2a0500178201afa3e00587292935c06",
+        "compile_metadata_sha256": "c7e8e5ac9220dd0e19b2513cfc2328e4bfe5021c06741b6379a41f2e7ac88432",
+        "compile_resources_sha256": "126329c3176e7979bf5c48c9914d65ced24829c8b375e90fcc9bb54102cd6761"
+      }
+    },
+    "program_sha256": "1156255cce0d01cffbf7232fa4a168a00defc41e0c8ea6096a3186ca30a48519",
+    "reference_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+    "named_architectural_state_matches_verilator": true,
+    "named_memory_mapping_and_contents_match_between_variants": true,
+    "detailed_result_sha256": "7266c431a67a23d74a3f59d85329d2e283e105ab3b16133f8c1fa01f3969ccec",
+    "scope": "Fixed CoreMark 100K-cycle prefix; completion and CRC not established.",
+    "timing_scope": "One RU correctness run per variant; CPU affinity and concurrency recorded in command metadata; not performance samples."
+  },
+  "evidence_sha256": {
+    "baseline-checks.json": "1403f103f2913ccc917c3a4c8ab7337cd13c7b3062a25f1d7cf6984e122977f7",
+    "minimal-checks.json": "7ed97fcdc2e0f3ce7658c5a9aa0644cac52a215b142b5120ca993c95e5d4afc2",
+    "minimal-depth-checks.json": "3b64731707913703e4e21420a8b9440ecb16b365162baa36443aeba367995f50",
+    "firrtl-checks.json": "959e2fa7b5a23fe51c41786f5527fe96cc49dd49592b239f66f15a073d2339bb",
+    "graph-checks.json": "382789ee825d20795730285034cf0da4373f0ce5c96a0b317ec476e83ebf1d36",
+    "critical-path-checks.json": "9eb963e8ff341d02273f4606f464b58ea4814bdec79db06d8973b77d172db704",
+    "lookup-checks.json": "00d3503e6274bdea19a4a783a55b339cf869b48e82ed14ef5127044797110339"
+  },
+  "source_sha256": {
+    "run_coremark.py": "79c6c1b78d77df446f7ab8d8aa4e86515b4c7fe288f653c3eaa0003460d5a1c2",
+    "collect_checks.py": "bc50598b487fb3a495290b70d580ce7148b17af55b9193d0c1324530c3cf1942",
+    "compile.py": "8ae40a858d7fbe561dd2bf7c78dde31f1b00aa12fcb668d5283b0575e0843465",
+    "export_gpu.py": "6c29c22c9124adc726c732c63aaf52e1906256fff53d99c21f8397ced3d04232",
+    "check_minimal.py": "5ccd5a2249d5daa1031b3ee836c392f060b38b94c91b216aff1c3ea7bd2900a1",
+    "inspect_firrtl.py": "1c86dc01b5ec46270a39368494a74680ddddaaae4032efab7f6e7e4e5b362127",
+    "inspect_lookups.py": "0b8a7bead5942f90e0df54f3f0f7baf89d3bb9101c04d8eebc8b292ef4b9fbe0",
+    "prepare.py": "0ff155ce10676dcb51f797de41237acb2c33449ff42b75092ce709a496954928"
+  },
+  "gpu_package_preparation": {
+    "status": "passed",
+    "metadata_sha256": "d37fa58fd196489e75ca88062131299d6af57705aba148c6eb3f43c0adcf8119",
+    "correctness_gate_sha256": "35d20c8a18396c20685209c3ac41499522917f6056348fe9c687eee8d512d8e1"
+  },
+  "gpu_execution": "not run: device occupied; user requested graph analysis first",
+  "paired_gpu_timing": "not run"
+}

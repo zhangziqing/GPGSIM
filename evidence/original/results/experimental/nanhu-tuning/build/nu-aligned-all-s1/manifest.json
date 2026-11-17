@@ -1,0 +1,58 @@
+{
+  "name": "nu-aligned-all-s1",
+  "source_candidate": "nu-native-thp-s1",
+  "configuration": {
+    "name": "nu-native-thp-s1",
+    "family": "NU",
+    "unroll": 8,
+    "scatter": 1,
+    "native": true,
+    "compiler_unroll": false,
+    "unchecked": true,
+    "unroll_all": false,
+    "prefetch": 0,
+    "prefetch_locality": 1,
+    "compiler": "clang++",
+    "branchless_mux": false,
+    "huge_pages": true,
+    "extra": [],
+    "aligned_signals": true,
+    "all_arrays": true
+  },
+  "command": [
+    "clang++",
+    "-std=c++17",
+    "-O3",
+    "-g",
+    "-DNANHU_LARGE_LAYERS",
+    "-I/nfs/home/zhangziqing/RTeAAL/tools/local/include",
+    "-I/nfs/home/zhangziqing/RTeAAL/tools",
+    "-DTASK_ROOT=\"/nfs/home/zhangziqing/RTeAAL\"",
+    "-march=native",
+    "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-tuning/build/nu-aligned-all-s1/runner.cc",
+    "/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel/libfesvr.a",
+    "-lpthread",
+    "-o",
+    "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-tuning/build/nu-aligned-all-s1/runner"
+  ],
+  "build_seconds": 14.184598445892334,
+  "implementation_note": "Same evaluator and tensor. Live signals copied to a 2 MiB aligned allocation and locally advised/collapsed to THPs before reset/timing.",
+  "files": {
+    "runner.cc": {
+      "bytes": 17480,
+      "sha256": "0b0b12b21b975f55f39b83934b4b764988a920a16729c7a94e31ddf4316612d3"
+    },
+    "build.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "kernel.h": {
+      "bytes": 16884,
+      "sha256": "bde01fffd692535a55a8b1db92a21002a92aff51eb6b54cd5ddeb17866ee0070"
+    },
+    "runner": {
+      "bytes": 3066456,
+      "sha256": "9417edfe3d4de6e0ca168048d19a7bafe594ab6d4b5ab7a8c9e86e5ac63cb0fb"
+    }
+  }
+}

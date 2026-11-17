@@ -1,0 +1,150 @@
+{
+  "status": "passed",
+  "manifest_files": 316,
+  "ctest_passes": 30,
+  "performance_samples": 8,
+  "full_prefix_alias_diagnostics": 1,
+  "positive_control": "expected error 7",
+  "fingerprints": {
+    "full_data_fingerprint": 6218498432779941060,
+    "memory64_fingerprint": 15503565812696885107,
+    "memory8_fingerprint": 656100811014868721
+  },
+  "source_engine_sha256": "6c39fad7ed9b9311aed901e4ecc5b94980bec748f82d75a68e217935a03b80ad",
+  "samples": [
+    {
+      "name": "patched-fullscan-legacy",
+      "cycles_per_second": 1794.1391077334486,
+      "diagnostic": false,
+      "fingerprints": {
+        "full_data_fingerprint": 6218498432779941060,
+        "memory64_fingerprint": 15503565812696885107,
+        "memory8_fingerprint": 656100811014868721
+      },
+      "idle_observations": 11,
+      "monitor_observations": 59,
+      "external_compute_pids": [],
+      "max_monitor_gap_seconds": 1.0002448129816912
+    },
+    {
+      "name": "patched-fullscan-flat",
+      "cycles_per_second": 1846.1695458887664,
+      "diagnostic": false,
+      "fingerprints": {
+        "full_data_fingerprint": 6218498432779941060,
+        "memory64_fingerprint": 15503565812696885107,
+        "memory8_fingerprint": 656100811014868721
+      },
+      "idle_observations": 11,
+      "monitor_observations": 58,
+      "external_compute_pids": [],
+      "max_monitor_gap_seconds": 1.0002425980055705
+    },
+    {
+      "name": "patched-candidate-legacy",
+      "cycles_per_second": 2886.242395142988,
+      "diagnostic": false,
+      "fingerprints": {
+        "full_data_fingerprint": 6218498432779941060,
+        "memory64_fingerprint": 15503565812696885107,
+        "memory8_fingerprint": 656100811014868721
+      },
+      "idle_observations": 11,
+      "monitor_observations": 38,
+      "external_compute_pids": [],
+      "max_monitor_gap_seconds": 1.0011785849928856
+    },
+    {
+      "name": "patched-candidate-flat",
+      "cycles_per_second": 3143.6165699249664,
+      "diagnostic": false,
+      "fingerprints": {
+        "full_data_fingerprint": 6218498432779941060,
+        "memory64_fingerprint": 15503565812696885107,
+        "memory8_fingerprint": 656100811014868721
+      },
+      "idle_observations": 11,
+      "monitor_observations": 36,
+      "external_compute_pids": [],
+      "max_monitor_gap_seconds": 1.0002490429906175
+    },
+    {
+      "name": "patched-direct-legacy",
+      "cycles_per_second": 2906.753012336142,
+      "diagnostic": false,
+      "fingerprints": {
+        "full_data_fingerprint": 6218498432779941060,
+        "memory64_fingerprint": 15503565812696885107,
+        "memory8_fingerprint": 656100811014868721
+      },
+      "idle_observations": 11,
+      "monitor_observations": 38,
+      "external_compute_pids": [],
+      "max_monitor_gap_seconds": 1.0011676219874062
+    },
+    {
+      "name": "patched-direct-flat",
+      "cycles_per_second": 3174.644426134397,
+      "diagnostic": false,
+      "fingerprints": {
+        "full_data_fingerprint": 6218498432779941060,
+        "memory64_fingerprint": 15503565812696885107,
+        "memory8_fingerprint": 656100811014868721
+      },
+      "idle_observations": 11,
+      "monitor_observations": 35,
+      "external_compute_pids": [],
+      "max_monitor_gap_seconds": 1.0011727439705282
+    },
+    {
+      "name": "control-direct-legacy",
+      "cycles_per_second": 2878.112765702456,
+      "diagnostic": false,
+      "fingerprints": {
+        "full_data_fingerprint": 6218498432779941060,
+        "memory64_fingerprint": 15503565812696885107,
+        "memory8_fingerprint": 656100811014868721
+      },
+      "idle_observations": 11,
+      "monitor_observations": 38,
+      "external_compute_pids": [],
+      "max_monitor_gap_seconds": 1.000241871981416
+    },
+    {
+      "name": "control-direct-flat",
+      "cycles_per_second": 3139.856364815159,
+      "diagnostic": false,
+      "fingerprints": {
+        "full_data_fingerprint": 6218498432779941060,
+        "memory64_fingerprint": 15503565812696885107,
+        "memory8_fingerprint": 656100811014868721
+      },
+      "idle_observations": 11,
+      "monitor_observations": 35,
+      "external_compute_pids": [],
+      "max_monitor_gap_seconds": 1.0002474670181982
+    },
+    {
+      "name": "diagnostic-candidate",
+      "cycles_per_second": 2869.9458069915504,
+      "diagnostic": true,
+      "fingerprints": {
+        "full_data_fingerprint": 6218498432779941060,
+        "memory64_fingerprint": 15503565812696885107,
+        "memory8_fingerprint": 656100811014868721
+      },
+      "idle_observations": 11,
+      "monitor_observations": 38,
+      "external_compute_pids": [],
+      "max_monitor_gap_seconds": 1.0002439090167172
+    }
+  ],
+  "evidence_archive_sha256": "e1c63e880e918439dc18db700df147730986f2f3caa2a57ffedbab2629c7e0ac",
+  "verifier_sha256": "f948ca734ab62b8e5a40f10e8275fccac864f0bfe987fe17afbc1134d5df7de3",
+  "limits": [
+    "One sample per cell; not a statistical ranking.",
+    "Large traces remain remote; audit verifies trace hash receipts and the trace-checking source.",
+    "One-second monitoring cannot exclude activity between observations.",
+    "Direct diagnostic covers only reset plus this fixed 100K prefix."
+  ]
+}

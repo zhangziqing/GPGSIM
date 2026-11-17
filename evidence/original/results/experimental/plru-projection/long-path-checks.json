@@ -1,0 +1,255 @@
+{
+  "status": "passed",
+  "source": "repaired normalized v5 models",
+  "variants": {
+    "B": {
+      "operations_scanned": 2221744,
+      "value_edges_scanned": 3338453,
+      "maximum_depth": 94,
+      "maximum_nonassign_depth": 92,
+      "nodes_over_threshold": 15914,
+      "endpoints_over_threshold": 6249,
+      "named_endpoint_rows": 6249,
+      "unnamed_endpoints": 0
+    },
+    "C": {
+      "operations_scanned": 2220671,
+      "value_edges_scanned": 3335025,
+      "maximum_depth": 94,
+      "maximum_nonassign_depth": 92,
+      "nodes_over_threshold": 15338,
+      "endpoints_over_threshold": 6247,
+      "named_endpoint_rows": 6247,
+      "unnamed_endpoints": 0
+    }
+  },
+  "categories": {
+    "B": [
+      {
+        "category": "LoadQueue and LoadUnit",
+        "endpoints": 478,
+        "minimum_depth": 51,
+        "maximum_depth": 94,
+        "maximum_consecutive_muxes": 79
+      },
+      {
+        "category": "Store buffer",
+        "endpoints": 1,
+        "minimum_depth": 78,
+        "maximum_depth": 78,
+        "maximum_consecutive_muxes": 3
+      },
+      {
+        "category": "ITLB PLRU",
+        "endpoints": 1,
+        "minimum_depth": 73,
+        "maximum_depth": 73,
+        "maximum_consecutive_muxes": 27
+      },
+      {
+        "category": "L3 SourceD",
+        "endpoints": 488,
+        "minimum_depth": 56,
+        "maximum_depth": 69,
+        "maximum_consecutive_muxes": 1
+      },
+      {
+        "category": "L2 SourceD",
+        "endpoints": 352,
+        "minimum_depth": 57,
+        "maximum_depth": 68,
+        "maximum_consecutive_muxes": 1
+      },
+      {
+        "category": "Issue age matrices",
+        "endpoints": 4105,
+        "minimum_depth": 51,
+        "maximum_depth": 62,
+        "maximum_consecutive_muxes": 3
+      },
+      {
+        "category": "FTQ commit state",
+        "endpoints": 55,
+        "minimum_depth": 51,
+        "maximum_depth": 59,
+        "maximum_consecutive_muxes": 37
+      },
+      {
+        "category": "ICache and IFU",
+        "endpoints": 20,
+        "minimum_depth": 52,
+        "maximum_depth": 59,
+        "maximum_consecutive_muxes": 1
+      },
+      {
+        "category": "TileLink D-channel buffers",
+        "endpoints": 112,
+        "minimum_depth": 52,
+        "maximum_depth": 57,
+        "maximum_consecutive_muxes": 1
+      },
+      {
+        "category": "AXI and TileLink misc",
+        "endpoints": 480,
+        "minimum_depth": 51,
+        "maximum_depth": 56,
+        "maximum_consecutive_muxes": 1
+      },
+      {
+        "category": "DTLB PLRU",
+        "endpoints": 1,
+        "minimum_depth": 55,
+        "maximum_depth": 55,
+        "maximum_consecutive_muxes": 6
+      },
+      {
+        "category": "Integer divider",
+        "endpoints": 4,
+        "minimum_depth": 53,
+        "maximum_depth": 54,
+        "maximum_consecutive_muxes": 3
+      },
+      {
+        "category": "Floating-point FMA",
+        "endpoints": 8,
+        "minimum_depth": 52,
+        "maximum_depth": 53,
+        "maximum_consecutive_muxes": 3
+      },
+      {
+        "category": "L1 DCache",
+        "endpoints": 8,
+        "minimum_depth": 52,
+        "maximum_depth": 53,
+        "maximum_consecutive_muxes": 1
+      },
+      {
+        "category": "L2 and L3 data storage",
+        "endpoints": 136,
+        "minimum_depth": 51,
+        "maximum_depth": 51,
+        "maximum_consecutive_muxes": 1
+      }
+    ],
+    "C": [
+      {
+        "category": "LoadQueue and LoadUnit",
+        "endpoints": 478,
+        "minimum_depth": 51,
+        "maximum_depth": 94,
+        "maximum_consecutive_muxes": 79
+      },
+      {
+        "category": "Store buffer",
+        "endpoints": 1,
+        "minimum_depth": 78,
+        "maximum_depth": 78,
+        "maximum_consecutive_muxes": 3
+      },
+      {
+        "category": "L3 SourceD",
+        "endpoints": 488,
+        "minimum_depth": 56,
+        "maximum_depth": 69,
+        "maximum_consecutive_muxes": 1
+      },
+      {
+        "category": "L2 SourceD",
+        "endpoints": 352,
+        "minimum_depth": 57,
+        "maximum_depth": 68,
+        "maximum_consecutive_muxes": 1
+      },
+      {
+        "category": "Issue age matrices",
+        "endpoints": 4105,
+        "minimum_depth": 51,
+        "maximum_depth": 62,
+        "maximum_consecutive_muxes": 3
+      },
+      {
+        "category": "FTQ commit state",
+        "endpoints": 55,
+        "minimum_depth": 51,
+        "maximum_depth": 59,
+        "maximum_consecutive_muxes": 37
+      },
+      {
+        "category": "ICache and IFU",
+        "endpoints": 20,
+        "minimum_depth": 52,
+        "maximum_depth": 59,
+        "maximum_consecutive_muxes": 1
+      },
+      {
+        "category": "TileLink D-channel buffers",
+        "endpoints": 112,
+        "minimum_depth": 52,
+        "maximum_depth": 57,
+        "maximum_consecutive_muxes": 1
+      },
+      {
+        "category": "AXI and TileLink misc",
+        "endpoints": 480,
+        "minimum_depth": 51,
+        "maximum_depth": 56,
+        "maximum_consecutive_muxes": 1
+      },
+      {
+        "category": "Integer divider",
+        "endpoints": 4,
+        "minimum_depth": 53,
+        "maximum_depth": 54,
+        "maximum_consecutive_muxes": 3
+      },
+      {
+        "category": "Floating-point FMA",
+        "endpoints": 8,
+        "minimum_depth": 52,
+        "maximum_depth": 53,
+        "maximum_consecutive_muxes": 3
+      },
+      {
+        "category": "L1 DCache",
+        "endpoints": 8,
+        "minimum_depth": 52,
+        "maximum_depth": 53,
+        "maximum_consecutive_muxes": 1
+      },
+      {
+        "category": "L2 and L3 data storage",
+        "endpoints": 136,
+        "minimum_depth": 51,
+        "maximum_depth": 51,
+        "maximum_consecutive_muxes": 1
+      }
+    ]
+  },
+  "families": {
+    "B": 52,
+    "C": 50
+  },
+  "checks": [
+    "all_depth_recurrences",
+    "all_deep_sinks_covered",
+    "all_witness_edges",
+    "all_categories_classified",
+    "named_target_depths",
+    "no_unnamed_endpoints"
+  ],
+  "artifact_sha256": {
+    "LONG_PATHS.md": "85431fb3b98e9059bd3050070c78ff1d143df3b802810a898f1a7e62184163d2",
+    "long-path-families-B.tsv": "b83b0084deb768752b8e50c09b8ee66c6227421b2fefb3af4d604dd2e2f7ec00",
+    "long-path-families-C.tsv": "147280cc1cd62a9c58a9f22adaf74c7c21effb77285ba76e4a315750b78a1e9b",
+    "runtime/long-paths-B-v5/summary.json": "ebb13a6f36a103ba570895e152e96ff72231fba6c1640718d7c866abd9e0c143",
+    "runtime/long-paths-B-v5/endpoints.tsv": "77adff08aa16fd56bcff48f53b643ba5e52e333fdd3e10fbc9564a10aafa4219",
+    "runtime/long-paths-B-v5/endpoints.json": "d745158594c433d308baeb82f846aaa2e191a1323f34a6dc1cac1e597f9f9d49",
+    "runtime/long-paths-C-v5/summary.json": "40aab6e46493e762d6d7fc2e287aaf0508c6760c4ddd1d1913158465080be07e",
+    "runtime/long-paths-C-v5/endpoints.tsv": "3dffa2d9de4f4a8440184293f35c6448fb1bee5ffc2f960d55fb1fc3c93874d9",
+    "runtime/long-paths-C-v5/endpoints.json": "ed86e2aa23ac5774e6dd518f0e165398f449aebbed9fc26e108ad804951e14ac"
+  },
+  "source_sha256": {
+    "results/experimental/plru-projection/summarize_long_paths.py": "5a1d1a1629747aee8ef29ff561c15b6c2935e510bcb26f07c6da6a18089a40f2",
+    "results/experimental/plru-projection/inspect_long_paths.py": "80bce8773ebe23891de5778a0b488a328619dae84c51947dd1d6a1813b664436"
+  }
+}

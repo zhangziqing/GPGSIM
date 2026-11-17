@@ -1,0 +1,369 @@
+{
+  "status": "passed",
+  "variants": {
+    "off": {
+      "status": "passed",
+      "layout": {
+        "design": "concat-tree-off",
+        "operations": 2222558,
+        "layers": 126,
+        "data_slots": 490183,
+        "maximum_layer_nodes": 197530,
+        "mux_table_operations_opcode_24": 4391,
+        "mux_table_entries": 198676,
+        "memwrite_placeholder_liveness": "passed",
+        "graph_write_conflicts": "none",
+        "argument_count": 5121670,
+        "scatter_count": 2217941,
+        "bounds_count": 7308,
+        "observed_signals": 515
+      },
+      "graph": {
+        "value_path_nodes": 126,
+        "nonassign_path_nodes": 123,
+        "concat_fanin_histogram": {
+          "2": 177560
+        },
+        "lookup_size_histogram": {
+          "4": 193,
+          "8": 2192,
+          "16": 985,
+          "32": 116,
+          "64": 248,
+          "128": 189,
+          "256": 466,
+          "512": 1,
+          "1024": 1
+        },
+        "nodes_over_50": 50235,
+        "terminal_nodes_over_50": 13105,
+        "critical_opcode_histogram": {
+          "13": 4,
+          "14": 4,
+          "15": 1,
+          "17": 56,
+          "18": 25,
+          "19": 33,
+          "20": 3
+        },
+        "critical_max_consecutive_concat": 5
+      },
+      "named_target_depths": {
+        "l_soc.core_with_l2.core.ctrlBlock.fpDq.dataModule.r_5_cf_waitForRobIdx_value": {
+          "depth": 24,
+          "nonassign_depth": 22,
+          "node": 1781605
+        },
+        "l_soc.core_with_l2.core.ctrlBlock.intDq.dataModule.r_5_cf_waitForRobIdx_value": {
+          "depth": 24,
+          "nonassign_depth": 22,
+          "node": 1781611
+        },
+        "l_soc.core_with_l2.core.ctrlBlock.lsDq.dataModule.r_5_cf_waitForRobIdx_value": {
+          "depth": 24,
+          "nonassign_depth": 22,
+          "node": 1781618
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_0.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "depth": 41,
+          "nonassign_depth": 39,
+          "node": 2063485
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_0.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "depth": 36,
+          "nonassign_depth": 34,
+          "node": 2007378
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_1.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "depth": 41,
+          "nonassign_depth": 39,
+          "node": 2063488
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_1.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "depth": 36,
+          "nonassign_depth": 34,
+          "node": 2007373
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_2.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "depth": 41,
+          "nonassign_depth": 39,
+          "node": 2063486
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_2.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "depth": 36,
+          "nonassign_depth": 34,
+          "node": 2007379
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_3.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "depth": 41,
+          "nonassign_depth": 39,
+          "node": 2063487
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_3.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "depth": 36,
+          "nonassign_depth": 34,
+          "node": 2007374
+        },
+        "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.normal_refill_idx_state_reg": {
+          "depth": 126,
+          "nonassign_depth": 123,
+          "node": 2222557
+        },
+        "l_soc.core_with_l2.core.memBlock.LoadUnit_1.io_perf_9_value_REG": {
+          "depth": 70,
+          "nonassign_depth": 68,
+          "node": 2221278
+        },
+        "l_soc.core_with_l2.core.memBlock.lsq.loadQueue.writebacked_0": {
+          "depth": 94,
+          "nonassign_depth": 92,
+          "node": 2222346
+        },
+        "l_soc.core_with_l2.core.memBlock.sbuffer.do_uarch_drain_REG_1": {
+          "depth": 78,
+          "nonassign_depth": 76,
+          "node": 2221638
+        }
+      },
+      "compile": {
+        "status": "compiled_and_preprocessed",
+        "design": "concat-tree-off",
+        "operations": 2222558,
+        "layers": 126,
+        "priority_pass_counts": [
+          112,
+          2896,
+          132,
+          1394
+        ],
+        "concat_stats": [
+          0,
+          0,
+          0
+        ],
+        "opcode_histogram": {
+          "0": 14370,
+          "1": 1518,
+          "3": 524,
+          "4": 3840,
+          "5": 26,
+          "6": 1124,
+          "7": 80,
+          "8": 70325,
+          "9": 26191,
+          "10": 4615,
+          "11": 26369,
+          "12": 8,
+          "13": 524049,
+          "14": 245733,
+          "15": 93591,
+          "16": 203,
+          "17": 177560,
+          "18": 124763,
+          "19": 544310,
+          "20": 313529,
+          "21": 8675,
+          "22": 30336,
+          "23": 765,
+          "24": 4391,
+          "25": 170,
+          "26": 65,
+          "28": 5428
+        }
+      },
+      "provenance_sha256": "62c6ba68bde4a3f305a813dd231396a53ca6dc2e2efb2bb4eb90f0bbb0d4270f"
+    },
+    "on": {
+      "status": "passed",
+      "layout": {
+        "design": "concat-tree-on",
+        "operations": 2222558,
+        "layers": 126,
+        "data_slots": 490089,
+        "maximum_layer_nodes": 197615,
+        "mux_table_operations_opcode_24": 4391,
+        "mux_table_entries": 198676,
+        "memwrite_placeholder_liveness": "passed",
+        "graph_write_conflicts": "none",
+        "argument_count": 5121670,
+        "scatter_count": 2217941,
+        "bounds_count": 7308,
+        "observed_signals": 515
+      },
+      "graph": {
+        "value_path_nodes": 126,
+        "nonassign_path_nodes": 123,
+        "concat_fanin_histogram": {
+          "2": 177560
+        },
+        "lookup_size_histogram": {
+          "4": 193,
+          "8": 2192,
+          "16": 985,
+          "32": 116,
+          "64": 248,
+          "128": 189,
+          "256": 466,
+          "512": 1,
+          "1024": 1
+        },
+        "nodes_over_50": 50183,
+        "terminal_nodes_over_50": 13105,
+        "critical_opcode_histogram": {
+          "13": 4,
+          "14": 4,
+          "15": 1,
+          "17": 56,
+          "18": 25,
+          "19": 33,
+          "20": 3
+        },
+        "critical_max_consecutive_concat": 5
+      },
+      "named_target_depths": {
+        "l_soc.core_with_l2.core.ctrlBlock.fpDq.dataModule.r_5_cf_waitForRobIdx_value": {
+          "depth": 24,
+          "nonassign_depth": 22,
+          "node": 1783329
+        },
+        "l_soc.core_with_l2.core.ctrlBlock.intDq.dataModule.r_5_cf_waitForRobIdx_value": {
+          "depth": 24,
+          "nonassign_depth": 22,
+          "node": 1783335
+        },
+        "l_soc.core_with_l2.core.ctrlBlock.lsDq.dataModule.r_5_cf_waitForRobIdx_value": {
+          "depth": 24,
+          "nonassign_depth": 22,
+          "node": 1783342
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_0.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "depth": 41,
+          "nonassign_depth": 39,
+          "node": 2063513
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_0.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "depth": 36,
+          "nonassign_depth": 34,
+          "node": 2007764
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_1.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "depth": 41,
+          "nonassign_depth": 39,
+          "node": 2063516
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_1.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "depth": 36,
+          "nonassign_depth": 34,
+          "node": 2007759
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_2.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "depth": 41,
+          "nonassign_depth": 39,
+          "node": 2063514
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_2.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "depth": 36,
+          "nonassign_depth": 34,
+          "node": 2007765
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_3.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "depth": 41,
+          "nonassign_depth": 39,
+          "node": 2063515
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_3.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "depth": 36,
+          "nonassign_depth": 34,
+          "node": 2007760
+        },
+        "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.normal_refill_idx_state_reg": {
+          "depth": 126,
+          "nonassign_depth": 123,
+          "node": 2222557
+        },
+        "l_soc.core_with_l2.core.memBlock.LoadUnit_1.io_perf_9_value_REG": {
+          "depth": 69,
+          "nonassign_depth": 67,
+          "node": 2221206
+        },
+        "l_soc.core_with_l2.core.memBlock.lsq.loadQueue.writebacked_0": {
+          "depth": 94,
+          "nonassign_depth": 92,
+          "node": 2222346
+        },
+        "l_soc.core_with_l2.core.memBlock.sbuffer.do_uarch_drain_REG_1": {
+          "depth": 78,
+          "nonassign_depth": 76,
+          "node": 2221638
+        }
+      },
+      "compile": {
+        "status": "compiled_and_preprocessed",
+        "design": "concat-tree-on",
+        "operations": 2222558,
+        "layers": 126,
+        "priority_pass_counts": [
+          112,
+          2896,
+          132,
+          1394
+        ],
+        "concat_stats": [
+          2496,
+          5975,
+          34
+        ],
+        "opcode_histogram": {
+          "0": 14370,
+          "1": 1518,
+          "3": 524,
+          "4": 3840,
+          "5": 26,
+          "6": 1124,
+          "7": 80,
+          "8": 70325,
+          "9": 26191,
+          "10": 4615,
+          "11": 26369,
+          "12": 8,
+          "13": 524049,
+          "14": 245733,
+          "15": 93591,
+          "16": 203,
+          "17": 177560,
+          "18": 124763,
+          "19": 544310,
+          "20": 313529,
+          "21": 8675,
+          "22": 30336,
+          "23": 765,
+          "24": 4391,
+          "25": 170,
+          "26": 65,
+          "28": 5428
+        }
+      },
+      "provenance_sha256": "f8dc35dea77c1f56c2487d49f192c79670e3d622f11951618df6188bafd0abea"
+    }
+  },
+  "named_outputs": 151461,
+  "named_depth_changes": {
+    "same": 150560,
+    "shorter": 901
+  },
+  "named_depth_delta_histogram": {
+    "-1": 901,
+    "0": 150560
+  },
+  "named_depths_over_50": {
+    "off": 12890,
+    "on": 12890
+  },
+  "lowered_firrtl_sha256": {
+    "off": "af0192d4fd48a57eb1fd1077bad47979724da0977f131bc65a4ad67e715af712",
+    "on": "af0192d4fd48a57eb1fd1077bad47979724da0977f131bc65a4ad67e715af712"
+  },
+  "operation_count_unchanged": true,
+  "lookup_inventory_unchanged": true,
+  "longer_named_paths": 0
+}

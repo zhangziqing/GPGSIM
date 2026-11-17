@@ -1,0 +1,409 @@
+{
+  "status": "static_structure_checks_passed",
+  "simulator_revision": "03e16868fa3d73f4df6e957a369621576fd818aa",
+  "layer_indexing": "one based",
+  "variants": {
+    "off": {
+      "operations": 2218090,
+      "layers": 205,
+      "data_slots": 490753,
+      "value_path_nodes": 205,
+      "nonassign_path_nodes": 203,
+      "critical_path_opcodes": {
+        "13": 2,
+        "8": 1,
+        "19": 198,
+        "14": 2,
+        "20": 2
+      },
+      "csr": {
+        "root_node": 2218067,
+        "root_layer": 195,
+        "selector_value_version": [
+          208556,
+          43028
+        ],
+        "comparisons": 193,
+        "all_comparisons_match_real_addresses": true,
+        "opcode_counts": {
+          "19": 193,
+          "8": 193
+        },
+        "orchain_fanin_histogram": {}
+      },
+      "tail_nodes_from_layer_98": 1038,
+      "tail_components": 70,
+      "deepest_components": [
+        {
+          "nodes": 120,
+          "value_path_nodes": 108,
+          "global_value_path_nodes": 205,
+          "global_nonassign_path_nodes": 203,
+          "first_layer": 98,
+          "last_layer": 205,
+          "opcode_counts": {
+            "19": 109,
+            "13": 1,
+            "14": 2,
+            "20": 8
+          },
+          "terminal_registers": [
+            "l_soc.core_with_l2.core.wb2Ctrl.io_out_6_bits_uop_r_cf_exceptionVec_2",
+            "l_soc.core_with_l2.core.wbArbiter.fpArbiter.shared_buffer.data_0_uop_cf_exceptionVec_2",
+            "l_soc.core_with_l2.core.wbArbiter.fpArbiter.shared_buffer.data_1_uop_cf_exceptionVec_2",
+            "l_soc.core_with_l2.core.wbArbiter.intArbiter.arb.io_out_bits_uop_r_cf_exceptionVec_2"
+          ]
+        },
+        {
+          "nodes": 82,
+          "value_path_nodes": 43,
+          "global_value_path_nodes": 140,
+          "global_nonassign_path_nodes": 138,
+          "first_layer": 98,
+          "last_layer": 140,
+          "opcode_counts": {
+            "19": 80,
+            "20": 2
+          },
+          "terminal_registers": [
+            "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_2.fmac.add_pipe.s2_io_in_r_1_near_path_lzc"
+          ]
+        },
+        {
+          "nodes": 82,
+          "value_path_nodes": 43,
+          "global_value_path_nodes": 140,
+          "global_nonassign_path_nodes": 138,
+          "first_layer": 98,
+          "last_layer": 140,
+          "opcode_counts": {
+            "19": 80,
+            "20": 2
+          },
+          "terminal_registers": [
+            "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_0.fmac.add_pipe.s2_io_in_r_1_near_path_lzc"
+          ]
+        },
+        {
+          "nodes": 82,
+          "value_path_nodes": 43,
+          "global_value_path_nodes": 140,
+          "global_nonassign_path_nodes": 138,
+          "first_layer": 98,
+          "last_layer": 140,
+          "opcode_counts": {
+            "19": 80,
+            "20": 2
+          },
+          "terminal_registers": [
+            "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_3.fmac.add_pipe.s2_io_in_r_1_near_path_lzc"
+          ]
+        },
+        {
+          "nodes": 82,
+          "value_path_nodes": 43,
+          "global_value_path_nodes": 140,
+          "global_nonassign_path_nodes": 138,
+          "first_layer": 98,
+          "last_layer": 140,
+          "opcode_counts": {
+            "19": 80,
+            "20": 2
+          },
+          "terminal_registers": [
+            "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_1.fmac.add_pipe.s2_io_in_r_1_near_path_lzc"
+          ]
+        },
+        {
+          "nodes": 49,
+          "value_path_nodes": 43,
+          "global_value_path_nodes": 140,
+          "global_nonassign_path_nodes": 138,
+          "first_layer": 98,
+          "last_layer": 140,
+          "opcode_counts": {
+            "19": 43,
+            "20": 6
+          },
+          "terminal_registers": [
+            "l_soc.core_with_l2.core.ctrlBlock.fpDq.dataModule.r_5_cf_waitForRobIdx_value",
+            "l_soc.core_with_l2.core.ctrlBlock.intDq.dataModule.r_5_cf_waitForRobIdx_value",
+            "l_soc.core_with_l2.core.ctrlBlock.lsDq.dataModule.r_5_cf_waitForRobIdx_value"
+          ]
+        }
+      ],
+      "cuda_static_schedule": {
+        "threads": 128,
+        "threshold": 256,
+        "launches_per_cycle": 144,
+        "small_layer_runs_inclusive": [
+          [
+            70,
+            96
+          ],
+          [
+            98,
+            205
+          ]
+        ]
+      },
+      "pass_counts": [
+        0,
+        0,
+        0
+      ],
+      "opcode_histogram": {
+        "0": 14370,
+        "1": 1518,
+        "3": 524,
+        "4": 3840,
+        "5": 26,
+        "6": 1124,
+        "7": 80,
+        "8": 70309,
+        "9": 26191,
+        "10": 4615,
+        "11": 26369,
+        "12": 8,
+        "13": 524049,
+        "14": 241649,
+        "15": 93590,
+        "16": 203,
+        "17": 177560,
+        "18": 124763,
+        "19": 544552,
+        "20": 313510,
+        "21": 8675,
+        "22": 29734,
+        "23": 765,
+        "24": 4403,
+        "25": 170,
+        "26": 65,
+        "28": 5428
+      },
+      "graph_write_conflicts": "none",
+      "memwrite_placeholder_liveness": "passed"
+    },
+    "on": {
+      "operations": 2218027,
+      "layers": 140,
+      "data_slots": 490621,
+      "value_path_nodes": 140,
+      "nonassign_path_nodes": 138,
+      "critical_path_opcodes": {
+        "18": 1,
+        "15": 6,
+        "17": 8,
+        "19": 109,
+        "11": 4,
+        "13": 5,
+        "9": 2,
+        "14": 2,
+        "26": 1,
+        "20": 2
+      },
+      "csr": {
+        "root_node": 1282982,
+        "root_layer": 11,
+        "selector_value_version": [
+          208541,
+          43013
+        ],
+        "comparisons": 193,
+        "all_comparisons_match_real_addresses": true,
+        "opcode_counts": {
+          "14": 97,
+          "22": 32,
+          "8": 193,
+          "15": 1
+        },
+        "orchain_fanin_histogram": {
+          "4": 8,
+          "8": 1,
+          "6": 2,
+          "5": 4,
+          "3": 16,
+          "7": 1
+        }
+      },
+      "tail_nodes_from_layer_98": 918,
+      "tail_components": 69,
+      "deepest_components": [
+        {
+          "nodes": 82,
+          "value_path_nodes": 43,
+          "global_value_path_nodes": 140,
+          "global_nonassign_path_nodes": 138,
+          "first_layer": 98,
+          "last_layer": 140,
+          "opcode_counts": {
+            "19": 80,
+            "20": 2
+          },
+          "terminal_registers": [
+            "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_2.fmac.add_pipe.s2_io_in_r_1_near_path_lzc"
+          ]
+        },
+        {
+          "nodes": 82,
+          "value_path_nodes": 43,
+          "global_value_path_nodes": 140,
+          "global_nonassign_path_nodes": 138,
+          "first_layer": 98,
+          "last_layer": 140,
+          "opcode_counts": {
+            "19": 80,
+            "20": 2
+          },
+          "terminal_registers": [
+            "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_0.fmac.add_pipe.s2_io_in_r_1_near_path_lzc"
+          ]
+        },
+        {
+          "nodes": 82,
+          "value_path_nodes": 43,
+          "global_value_path_nodes": 140,
+          "global_nonassign_path_nodes": 138,
+          "first_layer": 98,
+          "last_layer": 140,
+          "opcode_counts": {
+            "19": 80,
+            "20": 2
+          },
+          "terminal_registers": [
+            "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_3.fmac.add_pipe.s2_io_in_r_1_near_path_lzc"
+          ]
+        },
+        {
+          "nodes": 82,
+          "value_path_nodes": 43,
+          "global_value_path_nodes": 140,
+          "global_nonassign_path_nodes": 138,
+          "first_layer": 98,
+          "last_layer": 140,
+          "opcode_counts": {
+            "19": 80,
+            "20": 2
+          },
+          "terminal_registers": [
+            "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_1.fmac.add_pipe.s2_io_in_r_1_near_path_lzc"
+          ]
+        },
+        {
+          "nodes": 49,
+          "value_path_nodes": 43,
+          "global_value_path_nodes": 140,
+          "global_nonassign_path_nodes": 138,
+          "first_layer": 98,
+          "last_layer": 140,
+          "opcode_counts": {
+            "19": 43,
+            "20": 6
+          },
+          "terminal_registers": [
+            "l_soc.core_with_l2.core.ctrlBlock.fpDq.dataModule.r_5_cf_waitForRobIdx_value",
+            "l_soc.core_with_l2.core.ctrlBlock.intDq.dataModule.r_5_cf_waitForRobIdx_value",
+            "l_soc.core_with_l2.core.ctrlBlock.lsDq.dataModule.r_5_cf_waitForRobIdx_value"
+          ]
+        },
+        {
+          "nodes": 48,
+          "value_path_nodes": 42,
+          "global_value_path_nodes": 139,
+          "global_nonassign_path_nodes": 137,
+          "first_layer": 98,
+          "last_layer": 139,
+          "opcode_counts": {
+            "19": 42,
+            "20": 6
+          },
+          "terminal_registers": [
+            "l_soc.core_with_l2.core.ctrlBlock.fpDq.dataModule.r_4_cf_waitForRobIdx_value",
+            "l_soc.core_with_l2.core.ctrlBlock.intDq.dataModule.r_4_cf_waitForRobIdx_value",
+            "l_soc.core_with_l2.core.ctrlBlock.lsDq.dataModule.r_4_cf_waitForRobIdx_value"
+          ]
+        }
+      ],
+      "cuda_static_schedule": {
+        "threads": 128,
+        "threshold": 256,
+        "launches_per_cycle": 144,
+        "small_layer_runs_inclusive": [
+          [
+            70,
+            96
+          ],
+          [
+            98,
+            140
+          ]
+        ]
+      },
+      "pass_counts": [
+        1,
+        193,
+        193
+      ],
+      "opcode_histogram": {
+        "0": 14370,
+        "1": 1518,
+        "3": 524,
+        "4": 3840,
+        "5": 26,
+        "6": 1124,
+        "7": 80,
+        "8": 70309,
+        "9": 26191,
+        "10": 4615,
+        "11": 26369,
+        "12": 8,
+        "13": 524049,
+        "14": 241746,
+        "15": 93591,
+        "16": 203,
+        "17": 177560,
+        "18": 124763,
+        "19": 544359,
+        "20": 313510,
+        "21": 8675,
+        "22": 29766,
+        "23": 765,
+        "24": 4403,
+        "25": 170,
+        "26": 65,
+        "28": 5428
+      },
+      "graph_write_conflicts": "none",
+      "memwrite_placeholder_liveness": "passed"
+    }
+  },
+  "lzc": {
+    "status": "passed",
+    "module": "CLZ_8",
+    "input_width": 107,
+    "output_width": 7,
+    "firrtl_muxes": 106,
+    "firrtl_lines": [
+      1047478,
+      1047694
+    ],
+    "tensor_chain_layers_one_based": [
+      31,
+      136
+    ],
+    "tensor_priority_constants_match_in_order": true,
+    "tensor_constant_slots_immutable": true,
+    "default_and_bit_zero_value": 106,
+    "priority": "Largest set input bit wins; result is 106 - bit index; zero input returns 106.",
+    "critical_path_register": [
+      "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_0.fmac.add_pipe.s2_io_in_r_1_near_path_lzc"
+    ],
+    "source": "XiangShan-nanhu-legacy/fudian/src/main/scala/fudian/utils/CLZ.scala",
+    "source_sha256": "ae8a7e62a342f91690c09dde5416da5b7ed6b9a1232cc43a56937dfa7da90668",
+    "prepared_firrtl_sha256": "7e68d4ab87e9c37d344562ef9899839085fd0c6a298f610d766b2df3fc8f9336",
+    "boundary": "Structural identification and constant/chain matching, not a runtime bottleneck proof."
+  },
+  "memory_maps_equal": true,
+  "input_sha256": "4eca6ecb46a01e8fc14a14e7d285ba123dbf70dd9d291d3c3217c7c09886ed0e",
+  "boundary": "Static operand-value edges with all mux branches; excludes memory array dependencies and register anti-overwrite scheduling edges; no gate-delay model."
+}

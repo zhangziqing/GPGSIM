@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "grouped_operand_words": 4989669,
+  "checked_data_indices": 4252331,
+  "largest_data_index": 461323,
+  "bounded_static_shifts": 302487,
+  "index_upper_bound": 461324,
+  "source_sha256": "f5f449e545e8d8cdac2c078462fdaa2d40ef8c975c92d538bae6c6af102a9cfc"
+}

@@ -1,0 +1,6 @@
+[submodule "RTeAAL-Sim"]
+	path = RTeAAL-Sim
+	url = https://github.com/zhangziqing/RTeAAL-Sim.git
+[submodule "XiangShan-nanhu-legacy"]
+	path = XiangShan-nanhu-legacy
+	url = https://github.com/zhangziqing/XiangShan.git

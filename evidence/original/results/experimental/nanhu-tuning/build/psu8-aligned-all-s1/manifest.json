@@ -1,0 +1,58 @@
+{
+  "name": "psu8-aligned-all-s1",
+  "source_candidate": "upstream-psu8-thp-s1",
+  "configuration": {
+    "name": "upstream-psu8-thp-s1",
+    "family": "UPSU",
+    "unroll": 8,
+    "scatter": 1,
+    "native": true,
+    "compiler_unroll": false,
+    "unchecked": true,
+    "unroll_all": false,
+    "prefetch": 0,
+    "prefetch_locality": 1,
+    "compiler": "clang++",
+    "branchless_mux": false,
+    "huge_pages": true,
+    "extra": [],
+    "aligned_signals": true,
+    "all_arrays": true
+  },
+  "command": [
+    "clang++",
+    "-std=c++17",
+    "-O3",
+    "-g",
+    "-DNANHU_LARGE_LAYERS",
+    "-I/nfs/home/zhangziqing/RTeAAL/tools/local/include",
+    "-I/nfs/home/zhangziqing/RTeAAL/tools",
+    "-DTASK_ROOT=\"/nfs/home/zhangziqing/RTeAAL\"",
+    "-march=native",
+    "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-tuning/build/psu8-aligned-all-s1/runner.cc",
+    "/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel/libfesvr.a",
+    "-lpthread",
+    "-o",
+    "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-tuning/build/psu8-aligned-all-s1/runner"
+  ],
+  "build_seconds": 13.355982542037964,
+  "implementation_note": "Same evaluator and tensor. Live signals copied to a 2 MiB aligned allocation and locally advised/collapsed to THPs before reset/timing.",
+  "files": {
+    "runner.cc": {
+      "bytes": 17484,
+      "sha256": "b66ee59950bbe50f6b1d0856b894ef8a13b3388395f8b97cb034d28bd93861e5"
+    },
+    "build.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "kernel.h": {
+      "bytes": 29968,
+      "sha256": "d6806d22eed29940813bc6d4bbee8a5af4fa1e9b5f7f10289b4f905244dd039c"
+    },
+    "runner": {
+      "bytes": 3077120,
+      "sha256": "d14b7896fd24b814e871e24b0c099fc5f1837d1f02aacc3ed44faf1e532b941b"
+    }
+  }
+}

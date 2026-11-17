@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "evaluator_header_byte_identical": true,
+  "base_candidate": "nu-aligned-all-s1",
+  "existing_model_archive_sha256": "d9dc0992a9ee8033dda264a51b79ecbf11ad92d0af0de2b565851727a2ab1317",
+  "files": {
+    "verilator-build.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "rteaal_coremark.cc": {
+      "bytes": 13517,
+      "sha256": "808bbe5914d58e293a4fafaea2866b1596740cd96543a12dad354de8e9eca962"
+    },
+    "verilator_coremark.cc": {
+      "bytes": 3392,
+      "sha256": "e3a216c683897e721efb397bac2a9d17d2f8a715eb270c27f71f08cd1ee57367"
+    },
+    "coremark_dpi.cc": {
+      "bytes": 8785,
+      "sha256": "f75c035acbf58a93dd565eae66b1aa6874018fb4d97e11437ad26aa05dd2af9b"
+    },
+    "coremark_common.h": {
+      "bytes": 6019,
+      "sha256": "05212b3df4d66814bbe4537444c086f29f272363d7e715310bf26942a598ecfe"
+    },
+    "verilator-build.command.json": {
+      "bytes": 983,
+      "sha256": "649ae43120733258024f6cf59a136e21a23f6016c45652aea6988c4ea783421c"
+    },
+    "verilator_coremark": {
+      "bytes": 44083336,
+      "sha256": "9ca763e0daa698a1da4f16b5705c7332e7a3078405ba11fd0c62b17fa82d74ab"
+    },
+    "rteaal-build.command.json": {
+      "bytes": 738,
+      "sha256": "20a428dec9ab4ee216dc266867b0e3c1c61d5b1cbf4cbd0e8f82db67b8547ce2"
+    },
+    "build.py": {
+      "bytes": 8611,
+      "sha256": "ff9d5a4550abecce1a76abc3d16af9d3701792f769d544da56fcd4165aa9a429"
+    },
+    "csr-schema.json": {
+      "bytes": 273,
+      "sha256": "74472779124f47b4a197f605f72d0640c5206dbb6c6a89c5b75402fa7e3b47a4"
+    },
+    "rteaal_coremark": {
+      "bytes": 3225232,
+      "sha256": "425a232e63f9fd274032404d05a8d4a024b238b50b818ee4fc76a87b27c47bef"
+    },
+    "rteaal-build.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "kernel.h": {
+      "bytes": 16884,
+      "sha256": "bde01fffd692535a55a8b1db92a21002a92aff51eb6b54cd5ddeb17866ee0070"
+    }
+  }
+}

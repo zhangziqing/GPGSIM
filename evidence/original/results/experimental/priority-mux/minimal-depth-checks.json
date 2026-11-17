@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "variants": {
+    "minimal-off": {
+      "output_value_depths": {
+        "dense_out": 2,
+        "clz_out": 108,
+        "lfst_out": 134
+      },
+      "or_fanin_histogram": {},
+      "lookup_entries": 16
+    },
+    "minimal-on": {
+      "output_value_depths": {
+        "dense_out": 2,
+        "clz_out": 10,
+        "lfst_out": 11
+      },
+      "or_fanin_histogram": {
+        "2": 168,
+        "3": 14,
+        "4": 6,
+        "5": 1,
+        "6": 1
+      },
+      "lookup_entries": 16
+    },
+    "minimal-replay": {
+      "output_value_depths": {
+        "dense_out": 2,
+        "clz_out": 10,
+        "lfst_out": 11
+      },
+      "or_fanin_histogram": {
+        "2": 168,
+        "3": 14,
+        "4": 6,
+        "5": 1,
+        "6": 1
+      },
+      "lookup_entries": 16
+    }
+  },
+  "source_sha256": {
+    "check_minimal.py": "5ccd5a2249d5daa1031b3ee836c392f060b38b94c91b216aff1c3ea7bd2900a1",
+    "tensor_layout.py": "c287783e70bc11b3aa36ab1932be9c29e9ee43f574b59e31c823bf6d2c704582"
+  },
+  "boundary": "All actual operand-value edges, versioned by per-layer scatter; not a gate-delay model."
+}

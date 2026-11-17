@@ -1,0 +1,5 @@
+{
+  "matches_historical_binary": true,
+  "sha256": "fa3fee970ada90a63193a10c68aba04223f3569765c74bf87137efc917064c9a",
+  "reference": "results/nanhu/benchmark-samples.json"
+}

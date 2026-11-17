@@ -1,0 +1,51 @@
+{
+  "format_version": 1,
+  "repositories": [
+    {
+      "path": "RTeAAL-Sim",
+      "url": "https://github.com/zhangziqing/RTeAAL-Sim.git",
+      "commit": "9e702ac16e0035592f9285d840629aba159be6bd",
+      "role": "FIRRTL compiler, graph transformations, upstream CPU kernels and preprocessing"
+    },
+    {
+      "path": "XiangShan-nanhu-legacy",
+      "url": "https://github.com/zhangziqing/XiangShan.git",
+      "commit": "0a68ebc13b3d96a78d8663679393ecbea5b8fb73",
+      "role": "Unmodified Nanhu RTL and pinned source dependencies"
+    }
+  ],
+  "sbt_launcher": {
+    "version": "1.9.6",
+    "url": "https://repo.maven.apache.org/maven2/org/scala-sbt/sbt-launch/1.9.6/sbt-launch-1.9.6.jar",
+    "sha256": "3c344d52897d2a457f31c0bf9e4aceab1aa617897be987f95ba7439f32553759"
+  },
+  "workload": {
+    "path": "XiangShan-nanhu-legacy/ready-to-run/coremark-2-iteration.bin",
+    "repository": "https://github.com/OpenXiangShan/ready-to-run.git",
+    "commit": "55df55381ce26dab14211e0fed4165661035ec54",
+    "bytes": 18984,
+    "sha256": "1156255cce0d01cffbf7232fa4a168a00defc41e0c8ea6096a3186ca30a48519"
+  },
+  "historical_reference": {
+    "nonreset_cycles": 100000,
+    "reset_cycles": 64,
+    "bytes": 36458271,
+    "sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+    "preclock_firrtl_sha256": "4eca6ecb46a01e8fc14a14e7d285ba123dbf70dd9d291d3c3217c7c09886ed0e"
+  },
+  "kernel_sha256": {
+    "kernel_NU.cc": "3b711c697a18f74098d2daad5143954287ff9066b75e0a8e57133b6e48fb235f",
+    "kernel_OU.cc": "eacc28eea85d7a67f09bee0ca976a7eacc9b18ee1513a51ab5b5570dee2f84a8",
+    "kernel_RU.cc": "05ad910e0d61a6c4c057c9446c561de4a213203cca2a22716644b4b8771b8d50"
+  },
+  "toolchain": {
+    "jdk": "11",
+    "sbt": "1.9.6",
+    "mill": "0.11.7",
+    "elaboration_scala": "2.12.13",
+    "elaboration_firrtl": "1.5.1",
+    "simulation_scala": "2.13.12",
+    "simulation_firrtl": "1.5.6",
+    "cpp_standard": 17
+  }
+}

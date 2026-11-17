@@ -1,0 +1,87 @@
+{
+  "design": "xiangshan-nanhu-indexed",
+  "files": {
+    "tools/rteaal_nanhu.cc": {
+      "bytes": 12986,
+      "sha256": "5992e449e7a6e6ec0f6ae1f891cb0cf09fd0dae23881e60ca289adf43c3eb6e6"
+    },
+    "tools/nanhu_tensor_layout.h": {
+      "bytes": 2143,
+      "sha256": "032754ebf436430c8df455350d943b7e7856065563b850cb4e99a2b66e078238"
+    },
+    "tools/rteaal_nanhu_large": {
+      "bytes": 476680,
+      "sha256": "d40c2a2f527a18b9765ab5d3e5eaa25b6c628ad3c7013471740d603c7cc1a66d"
+    },
+    "tools/benchmark_nanhu.py": {
+      "bytes": 5350,
+      "sha256": "18755dfdd57e9b291552e1be884f908033c2e9155a415c08226b07790e4bc1d5"
+    },
+    "RTeAAL-Sim/kernel/json/InputRegMap_xiangshan-nanhu-indexed.json": {
+      "bytes": 14854632,
+      "sha256": "68f63a55ab5aac2e16f2e6d0268760c5f7c4d010a59d5c6b9cc6304d66b5fa36"
+    },
+    "RTeAAL-Sim/kernel/json/dtmSignal_xiangshan-nanhu-indexed.json": {
+      "bytes": 36946,
+      "sha256": "03b4a4d7cff0e0e83a03a1a261f046d677861bb154d2d9dd3964d823030ac39b"
+    },
+    "RTeAAL-Sim/kernel/json/xiangshan-nanhu-indexed_S_shape.json": {
+      "bytes": 6,
+      "sha256": "7451b7d45c47ede5b3ff116a66a5f0be2d721c1f6cc0d5223eebe93c31f218b2"
+    },
+    "RTeAAL-Sim/kernel/json/xiangshan-nanhu-indexed_fptr.json": {
+      "bytes": 431410,
+      "sha256": "c136897b6d6c139e0de477ed5cffa8ba4eefc706982a6b024d1e9cf13e9a646d"
+    },
+    "RTeAAL-Sim/kernel/json/xiangshan-nanhu-indexed_layer_num.json": {
+      "bytes": 4,
+      "sha256": "56cc29cee9e859a5314952b8184da882e2482d7bc17234b4ca333bfffe5f74f3"
+    },
+    "RTeAAL-Sim/kernel/json/xiangshan-nanhu-indexed_max_s.json": {
+      "bytes": 6,
+      "sha256": "fa2716bc110a81b1e856bc9225f2b51e61a2a26a9b982dadfe7f0fb7f9bb983c"
+    },
+    "RTeAAL-Sim/kernel/json/xiangshan-nanhu-indexed_rptr.json": {
+      "bytes": 56197942,
+      "sha256": "f5f449e545e8d8cdac2c078462fdaa2d40ef8c975c92d538bae6c6af102a9cfc"
+    },
+    "RTeAAL-Sim/kernel/json/xiangshan-nanhu-indexed_sptr.json": {
+      "bytes": 25009588,
+      "sha256": "356ee85e26df099be52622c0bc107f101897d576f09ebb59201881110c11526a"
+    },
+    "RTeAAL-Sim/kernel/json/xiangshan-nanhu-indexed_unswizzled_nptr.json": {
+      "bytes": 16657539,
+      "sha256": "4c67eb7c6469b018c8d2e3fbe15faf40bdfb99033201326845d8642f4c6875ea"
+    },
+    "RTeAAL-Sim/kernel/json/xiangshan-nanhu-indexed_unswizzled_rptr.json": {
+      "bytes": 56197942,
+      "sha256": "8d213e1f4026f5da0ff6aaa9223adabcc997eeb5971ca99cd8bdab06adecf38a"
+    },
+    "RTeAAL-Sim/kernel/json/xiangshan-nanhu-indexed_unswizzled_sptr.json": {
+      "bytes": 25074724,
+      "sha256": "617bcb19ccc3d3f528f27507ba94e3b5b4f690b2f62d0d03d7dc2c859f7e6a3f"
+    },
+    "RTeAAL-Sim/kernel/json/xiangshan-nanhu-indexed_unswizzled_ss_lens_ptr.json": {
+      "bytes": 7580,
+      "sha256": "04d73ea48f7a02d3c307b0e7ed2ccf96de508356cebd88939d340efdb16aa6e9"
+    },
+    "RTeAAL-Sim/kernel/txt/layerIn_xiangshan-nanhu-indexed.txt": {
+      "bytes": 1136656,
+      "sha256": "00bd1ca5b01030b2b4389202e063ea8a5164ae2061b0ad6cad88933386e47bba"
+    },
+    "RTeAAL-Sim/kernel/txt/muxJT_xiangshan-nanhu-indexed.txt": {
+      "bytes": 1198457,
+      "sha256": "ff8b4ae5f4d95081d159d700ce2acf6ce5350f6b1e20e1d5f42481f11aa07b55"
+    },
+    "RTeAAL-Sim/kernel/yaml/operationInputMask_xiangshan-nanhu-indexed_maskedIn_full_func.yaml": {
+      "bytes": 255611689,
+      "sha256": "ff27362678b8727c779bf7ffd7c016dbf51ffed70a138f1ed7d84bce49bc05c9"
+    },
+    "RTeAAL-Sim/kernel/yaml/operationMask_xiangshan-nanhu-indexed_maskedIn_full_func.yaml": {
+      "bytes": 25041709,
+      "sha256": "638d2842a3e471b13bfed7c2ff84f67b95d84b837db831cd56c1d02df46d32bd"
+    }
+  },
+  "original_ru_kernel_unchanged": true,
+  "note": "large-layer host caller uses original op_ss_3 with output offset; experiment changes compiler lookups/containers only; full input retirement check is recorded separately"
+}

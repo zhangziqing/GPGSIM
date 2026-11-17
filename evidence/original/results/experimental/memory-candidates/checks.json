@@ -1,0 +1,158 @@
+{
+  "status": "passed",
+  "archived_files_checked": 116,
+  "full_100k_gpu_runs_checked": 12,
+  "source_revision": "3aad1ab43cc7860b1faba2268bf3c321c1b06ee3",
+  "environment": {
+    "hostname": "corvus01",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+    "cpu_affinity": [
+      2
+    ],
+    "cuda_architecture": "120",
+    "device": "name, uuid, driver_version, memory.total [MiB]\nNVIDIA RTX PRO 6000 Blackwell Workstation Edition, GPU-67983fd2-eb55-ece7-a1ec-40165d7759fb, 580.178.04, 97887 MiB\n",
+    "nvcc": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2026 NVIDIA Corporation\nBuilt on Thu_Mar_19_11:12:51_PM_PDT_2026\nCuda compilation tools, release 13.2, V13.2.78\nBuild cuda_13.2.r13.2/compiler.37668154_0\n",
+    "cmake": "cmake version 3.28.3",
+    "compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+  },
+  "archive": {
+    "bytes": 4181686,
+    "sha256": "9bb6ab77896fc7d9b17096c60f99d65bdb15106b4e08201454e6d1f8f9d9e361"
+  },
+  "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+  "cpu_fingerprints": {
+    "full_data_fingerprint": 3027358707500526234,
+    "memory64_fingerprint": 15503565812696885107,
+    "memory8_fingerprint": 656100811014868721
+  },
+  "summary": {
+    "scan": {
+      "cycles_per_second": [
+        1483.9214679178133,
+        1484.0157944383866,
+        1483.9806748592273
+      ],
+      "median_cycles_per_second": 1483.9806748592273,
+      "median_evaluation_seconds": 67.38632227100003,
+      "median_kernel_device_seconds": 66.54715395141083,
+      "median_tensor_load_seconds": 0.402369214,
+      "median_memory_plan_seconds": 0.0
+    },
+    "candidates": {
+      "cycles_per_second": [
+        2323.589506889986,
+        2323.765129391272,
+        2322.6414231130507
+      ],
+      "median_cycles_per_second": 2323.589506889986,
+      "median_evaluation_seconds": 43.03686158999971,
+      "median_kernel_device_seconds": 42.18163927534437,
+      "median_tensor_load_seconds": 0.494388708,
+      "median_memory_plan_seconds": 0.093144945
+    }
+  },
+  "speedup_ratio_of_medians": 1.5657815133680262,
+  "profile_windows": {
+    "scan": [
+      {
+        "nonreset_cycle_begin": 1024,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.85873828125,
+          "compute": 192.03124609375004,
+          "commit": 92.61928125000003,
+          "small_layers": 48.85283984375,
+          "suffix": 99.84573828125,
+          "gather": 1.1558515625
+        }
+      },
+      {
+        "nonreset_cycle_begin": 20000,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.860109375,
+          "compute": 192.4324335937501,
+          "commit": 430.3276445312499,
+          "small_layers": 48.73958203125,
+          "suffix": 99.842921875,
+          "gather": 1.15784765625
+        }
+      },
+      {
+        "nonreset_cycle_begin": 90000,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.85861328125,
+          "compute": 192.134265625,
+          "commit": 315.13027734375,
+          "small_layers": 48.7415390625,
+          "suffix": 99.8447734375,
+          "gather": 1.1552109375
+        }
+      }
+    ],
+    "candidates": [
+      {
+        "nonreset_cycle_begin": 1024,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.85913671875,
+          "compute": 192.0115859375,
+          "commit": 78.75412109374997,
+          "small_layers": 48.7775859375,
+          "suffix": 99.83661328125,
+          "gather": 1.159125
+        }
+      },
+      {
+        "nonreset_cycle_begin": 20000,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.857859375,
+          "compute": 192.43638671875,
+          "commit": 82.299515625,
+          "small_layers": 48.67096875,
+          "suffix": 99.837625,
+          "gather": 1.1556015625
+        }
+      },
+      {
+        "nonreset_cycle_begin": 90000,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.8595859375,
+          "compute": 192.11780078125003,
+          "commit": 80.55567968750002,
+          "small_layers": 48.66308203125,
+          "suffix": 99.84038671875,
+          "gather": 1.157484375
+        }
+      }
+    ]
+  },
+  "same_model_and_schedule": true,
+  "ctests": "11/11 in throughput and profiling builds",
+  "limits": [
+    "Fixed 100K-cycle prefix; CoreMark completion/CRC: not run.",
+    "Hardware performance counters: not run (previous ERR_NVGPUCTRPERM).",
+    "Static candidates do not prove dynamically active same-address collisions."
+  ]
+}

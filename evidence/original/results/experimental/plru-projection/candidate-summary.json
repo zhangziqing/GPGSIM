@@ -1,0 +1,988 @@
+{
+  "A": {
+    "configuration": {
+      "stage": "configuration",
+      "projection_enabled": false,
+      "composition_enabled": false,
+      "concat_encoding": "binary",
+      "max_visits_per_request": 2048,
+      "max_cached_slices": 200000,
+      "max_added_operators_per_candidate": 2048,
+      "max_net_growth_per_candidate": 1024,
+      "max_net_growth_total": 8192,
+      "max_candidates": 20000
+    },
+    "report_sha256": "1a69d8d1b0efefdca1b7ad23c266fc3338bb92fe9661698da4cfca480b30ebe8",
+    "candidates_by_stage": {
+      "projection": 20000,
+      "composition:bit-tree": 2,
+      "composition:word-mask": 2,
+      "composition": 19998
+    },
+    "decisions": {
+      "projection:cost-accepted": 5205,
+      "projection:growth-budget": 162,
+      "projection:no-depth-benefit": 167,
+      "projection:operator-budget": 4,
+      "projection:analysis-budget": 14462,
+      "composition:bit-tree:cost-accepted": 2,
+      "composition:word-mask:cost-accepted": 2,
+      "composition:depends-on-previous-update": 80,
+      "composition:hold-is-not-the-same-state-bit": 3290,
+      "composition:opaque-update-input": 2182,
+      "composition:dependency-budget": 3481,
+      "composition:analysis-budget": 10965
+    },
+    "composition_applied_added_removed": [
+      0,
+      0,
+      0
+    ],
+    "selected_composition_forms": [
+      {
+        "output": "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.normal_refill_idx_state_reg@next",
+        "stage": "composition:bit-tree",
+        "original_depth": 126,
+        "projected_depth": 39,
+        "added_operators": 1092,
+        "removed_operators": 520,
+        "net_operators": 572
+      },
+      {
+        "output": "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld.super_refill_idx_state_reg@next",
+        "stage": "composition:bit-tree",
+        "original_depth": 59,
+        "projected_depth": 31,
+        "added_operators": 267,
+        "removed_operators": 119,
+        "net_operators": 148
+      }
+    ],
+    "plru_state_candidates": [
+      {
+        "stage": "projection",
+        "operation": "assign_+_754231",
+        "output": "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.normal_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.normal_refill_idx_state_reg$next"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb._normal_refill_idx_T_4"
+        ],
+        "reason": "",
+        "original_depth": 126,
+        "projected_depth": 121,
+        "added_operators": 801,
+        "removed_operators": 49,
+        "net_operators": 752,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb._normal_refill_idx_T_4"
+        ],
+        "original_dependencies_count": 1,
+        "original_dependencies_truncated": false,
+        "projected_dependencies_count": 129,
+        "projected_dependencies_truncated": true,
+        "shared_nodes_count": 38,
+        "shared_nodes_truncated": true
+      },
+      {
+        "stage": "projection",
+        "operation": "assign_+_2115698",
+        "output": "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld.super_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld.super_refill_idx_state_reg$next"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld._super_refill_idx_T_1"
+        ],
+        "reason": "",
+        "original_depth": 59,
+        "projected_depth": 55,
+        "added_operators": 182,
+        "removed_operators": 25,
+        "net_operators": 157,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld._super_refill_idx_T_1"
+        ],
+        "original_dependencies_count": 1,
+        "original_dependencies_truncated": false,
+        "projected_dependencies_count": 39,
+        "projected_dependencies_truncated": true,
+        "shared_nodes_count": 21,
+        "shared_nodes_truncated": true
+      },
+      {
+        "stage": "projection",
+        "operation": "assign_+_2124627",
+        "output": "l_soc.core_with_l2.core.memBlock.dtlb_st_tlb_st.super_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_st_tlb_st.super_refill_idx_state_reg$next"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_st_tlb_st._super_refill_idx_T"
+        ],
+        "reason": "",
+        "original_depth": 46,
+        "projected_depth": 42,
+        "added_operators": 141,
+        "removed_operators": 25,
+        "net_operators": 116,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_st_tlb_st._super_refill_idx_T"
+        ],
+        "original_dependencies_count": 1,
+        "original_dependencies_truncated": false,
+        "projected_dependencies_count": 27,
+        "projected_dependencies_truncated": true,
+        "shared_nodes_count": 21,
+        "shared_nodes_truncated": true
+      },
+      {
+        "stage": "projection",
+        "operation": "assign_+_754232",
+        "output": "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.super_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.super_refill_idx_state_reg$next"
+        ],
+        "projected_dependencies": [],
+        "reason": "analysis-budget",
+        "original_dependencies_count": 1,
+        "original_dependencies_truncated": false,
+        "projected_dependencies_count": 0,
+        "projected_dependencies_truncated": false
+      },
+      {
+        "stage": "composition:bit-tree",
+        "operation": "assign_+_754231",
+        "output": "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.normal_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.normal_refill_idx_state_reg$next"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb._normal_refill_idx_T_4"
+        ],
+        "reason": "",
+        "original_depth": 126,
+        "projected_depth": 39,
+        "added_operators": 1092,
+        "removed_operators": 520,
+        "net_operators": 572,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb._normal_refill_idx_T_4"
+        ],
+        "original_dependencies_count": 1,
+        "original_dependencies_truncated": false,
+        "projected_dependencies_count": 39,
+        "projected_dependencies_truncated": true,
+        "shared_nodes_count": 68,
+        "shared_nodes_truncated": true
+      },
+      {
+        "stage": "composition:word-mask",
+        "operation": "assign_+_754231",
+        "output": "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.normal_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.normal_refill_idx_state_reg$next"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb._normal_refill_idx_T_4"
+        ],
+        "reason": "",
+        "original_depth": 126,
+        "projected_depth": 41,
+        "added_operators": 1094,
+        "removed_operators": 520,
+        "net_operators": 574,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb._normal_refill_idx_T_4"
+        ],
+        "original_dependencies_count": 1,
+        "original_dependencies_truncated": false,
+        "projected_dependencies_count": 39,
+        "projected_dependencies_truncated": true,
+        "shared_nodes_count": 68,
+        "shared_nodes_truncated": true
+      },
+      {
+        "stage": "composition:bit-tree",
+        "operation": "assign_+_2115698",
+        "output": "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld.super_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld.super_refill_idx_state_reg$next"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld._super_refill_idx_T_1"
+        ],
+        "reason": "",
+        "original_depth": 59,
+        "projected_depth": 31,
+        "added_operators": 267,
+        "removed_operators": 119,
+        "net_operators": 148,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld._super_refill_idx_T_1"
+        ],
+        "original_dependencies_count": 1,
+        "original_dependencies_truncated": false,
+        "projected_dependencies_count": 18,
+        "projected_dependencies_truncated": true,
+        "shared_nodes_count": 31,
+        "shared_nodes_truncated": true
+      },
+      {
+        "stage": "composition:word-mask",
+        "operation": "assign_+_2115698",
+        "output": "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld.super_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld.super_refill_idx_state_reg$next"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld._super_refill_idx_T_1"
+        ],
+        "reason": "",
+        "original_depth": 59,
+        "projected_depth": 33,
+        "added_operators": 269,
+        "removed_operators": 119,
+        "net_operators": 150,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld._super_refill_idx_T_1"
+        ],
+        "original_dependencies_count": 1,
+        "original_dependencies_truncated": false,
+        "projected_dependencies_count": 18,
+        "projected_dependencies_truncated": true,
+        "shared_nodes_count": 31,
+        "shared_nodes_truncated": true
+      },
+      {
+        "stage": "composition",
+        "operation": "assign_+_2124627",
+        "output": "l_soc.core_with_l2.core.memBlock.dtlb_st_tlb_st.super_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_st_tlb_st.super_refill_idx_state_reg$next"
+        ],
+        "projected_dependencies": [],
+        "reason": "analysis-budget",
+        "original_dependencies_count": 1,
+        "original_dependencies_truncated": false,
+        "projected_dependencies_count": 0,
+        "projected_dependencies_truncated": false
+      },
+      {
+        "stage": "composition",
+        "operation": "assign_+_754232",
+        "output": "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.super_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.super_refill_idx_state_reg$next"
+        ],
+        "projected_dependencies": [],
+        "reason": "analysis-budget",
+        "original_dependencies_count": 1,
+        "original_dependencies_truncated": false,
+        "projected_dependencies_count": 0,
+        "projected_dependencies_truncated": false
+      }
+    ],
+    "shrinking_examples": [
+      {
+        "stage": "projection",
+        "operation": "and_+_1471632",
+        "output": "l_soc.core_with_l2.core.exuBlocks_1.scheduler.rs.rs_0.s1_oldestSel_age._thisValid_T_4",
+        "original_dependencies": [
+          "1"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.exuBlocks_1.scheduler.rs.rs_0.statusArray.flushedVec_0"
+        ],
+        "reason": "",
+        "slice": {
+          "signal": "l_soc.core_with_l2.core.exuBlocks_1.scheduler.rs.rs_0.statusArray.io_flushed",
+          "start": 0,
+          "width": 1
+        },
+        "original_depth": 43,
+        "projected_depth": 37,
+        "added_operators": 1,
+        "removed_operators": 1,
+        "net_operators": 0,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.exuBlocks_1.scheduler.rs.rs_0.statusArray.io_flushed"
+        ],
+        "original_dependencies_count": 2,
+        "original_dependencies_truncated": true,
+        "projected_dependencies_count": 1,
+        "projected_dependencies_truncated": false,
+        "shared_nodes_count": 1,
+        "shared_nodes_truncated": false
+      }
+    ],
+    "scope": "Per-candidate plans overlap; cost-accepted is not an application count. Dependency samples have counts; full lists remain in the hashed JSONL."
+  },
+  "B": {
+    "configuration": {
+      "stage": "configuration",
+      "projection_enabled": true,
+      "composition_enabled": false,
+      "concat_encoding": "binary",
+      "max_visits_per_request": 2048,
+      "max_cached_slices": 200000,
+      "max_added_operators_per_candidate": 2048,
+      "max_net_growth_per_candidate": 1024,
+      "max_net_growth_total": 8192,
+      "max_candidates": 20000
+    },
+    "report_sha256": "f317836c291107d0871d056ddd81106bd0e56c7c33964246c0de1906908a7a9c",
+    "candidates_by_stage": {
+      "projection": 19289,
+      "composition": 19998,
+      "composition:bit-tree": 2,
+      "composition:word-mask": 2
+    },
+    "decisions": {
+      "projection:cost-accepted": 17280,
+      "projection:protected-operation-or-output-alias": 182,
+      "projection:growth-budget": 1013,
+      "projection:no-depth-benefit": 130,
+      "projection:operator-budget": 19,
+      "projection:analysis-budget": 665,
+      "composition:depends-on-previous-update": 80,
+      "composition:hold-is-not-the-same-state-bit": 4341,
+      "composition:opaque-update-input": 838,
+      "composition:bit-tree:cost-accepted": 2,
+      "composition:word-mask:cost-accepted": 2,
+      "composition:dependency-budget": 4386,
+      "composition:analysis-budget": 10353
+    },
+    "composition_applied_added_removed": [
+      0,
+      0,
+      0
+    ],
+    "selected_composition_forms": [
+      {
+        "output": "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.normal_refill_idx_state_reg@next",
+        "stage": "composition:bit-tree",
+        "original_depth": 73,
+        "projected_depth": 39,
+        "added_operators": 1092,
+        "removed_operators": 1932,
+        "net_operators": -840
+      },
+      {
+        "output": "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld.super_refill_idx_state_reg@next",
+        "stage": "composition:bit-tree",
+        "original_depth": 55,
+        "projected_depth": 31,
+        "added_operators": 267,
+        "removed_operators": 286,
+        "net_operators": -19
+      }
+    ],
+    "plru_state_candidates": [
+      {
+        "stage": "projection",
+        "operation": "assign_+_754231",
+        "output": "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.normal_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.normal_refill_idx_state_reg$next"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb._normal_refill_idx_T_4"
+        ],
+        "reason": "",
+        "original_depth": 126,
+        "projected_depth": 121,
+        "added_operators": 801,
+        "removed_operators": 49,
+        "net_operators": 752,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb._normal_refill_idx_T_4"
+        ],
+        "original_dependencies_count": 1,
+        "original_dependencies_truncated": false,
+        "projected_dependencies_count": 129,
+        "projected_dependencies_truncated": true,
+        "shared_nodes_count": 38,
+        "shared_nodes_truncated": true
+      },
+      {
+        "stage": "projection",
+        "operation": "assign_+_2115698",
+        "output": "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld.super_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld.super_refill_idx_state_reg$next"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld._super_refill_idx_T_1"
+        ],
+        "reason": "",
+        "original_depth": 59,
+        "projected_depth": 55,
+        "added_operators": 182,
+        "removed_operators": 25,
+        "net_operators": 157,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld._super_refill_idx_T_1"
+        ],
+        "original_dependencies_count": 1,
+        "original_dependencies_truncated": false,
+        "projected_dependencies_count": 39,
+        "projected_dependencies_truncated": true,
+        "shared_nodes_count": 21,
+        "shared_nodes_truncated": true
+      },
+      {
+        "stage": "projection",
+        "operation": "assign_+_2124627",
+        "output": "l_soc.core_with_l2.core.memBlock.dtlb_st_tlb_st.super_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_st_tlb_st.super_refill_idx_state_reg$next"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_st_tlb_st._super_refill_idx_T"
+        ],
+        "reason": "",
+        "original_depth": 46,
+        "projected_depth": 42,
+        "added_operators": 141,
+        "removed_operators": 25,
+        "net_operators": 116,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_st_tlb_st._super_refill_idx_T"
+        ],
+        "original_dependencies_count": 1,
+        "original_dependencies_truncated": false,
+        "projected_dependencies_count": 27,
+        "projected_dependencies_truncated": true,
+        "shared_nodes_count": 21,
+        "shared_nodes_truncated": true
+      },
+      {
+        "stage": "projection",
+        "operation": "assign_+_754232",
+        "output": "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.super_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.super_refill_idx_state_reg$next"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb._super_refill_idx_T_4"
+        ],
+        "reason": "growth-budget",
+        "original_depth": 43,
+        "projected_depth": 41,
+        "added_operators": 29,
+        "removed_operators": 7,
+        "net_operators": 22,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb._super_refill_idx_T_4"
+        ],
+        "original_dependencies_count": 1,
+        "original_dependencies_truncated": false,
+        "projected_dependencies_count": 27,
+        "projected_dependencies_truncated": true,
+        "shared_nodes_count": 7,
+        "shared_nodes_truncated": true
+      },
+      {
+        "stage": "composition:bit-tree",
+        "operation": "cat_+_projection_681981",
+        "output": "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.normal_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "16"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb._normal_refill_idx_T_4"
+        ],
+        "reason": "",
+        "original_depth": 73,
+        "projected_depth": 39,
+        "added_operators": 1092,
+        "removed_operators": 1932,
+        "net_operators": -840,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb._normal_refill_idx_T_4"
+        ],
+        "original_dependencies_count": 3,
+        "original_dependencies_truncated": true,
+        "projected_dependencies_count": 39,
+        "projected_dependencies_truncated": true,
+        "shared_nodes_count": 68,
+        "shared_nodes_truncated": true
+      },
+      {
+        "stage": "composition:word-mask",
+        "operation": "cat_+_projection_681981",
+        "output": "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.normal_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "16"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb._normal_refill_idx_T_4"
+        ],
+        "reason": "",
+        "original_depth": 73,
+        "projected_depth": 41,
+        "added_operators": 1094,
+        "removed_operators": 1932,
+        "net_operators": -838,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb._normal_refill_idx_T_4"
+        ],
+        "original_dependencies_count": 3,
+        "original_dependencies_truncated": true,
+        "projected_dependencies_count": 39,
+        "projected_dependencies_truncated": true,
+        "shared_nodes_count": 68,
+        "shared_nodes_truncated": true
+      },
+      {
+        "stage": "composition:bit-tree",
+        "operation": "cat_+_projection_688019",
+        "output": "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld.super_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "8"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld._super_refill_idx_T_1"
+        ],
+        "reason": "",
+        "original_depth": 55,
+        "projected_depth": 31,
+        "added_operators": 267,
+        "removed_operators": 286,
+        "net_operators": -19,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld._super_refill_idx_T_1"
+        ],
+        "original_dependencies_count": 3,
+        "original_dependencies_truncated": true,
+        "projected_dependencies_count": 18,
+        "projected_dependencies_truncated": true,
+        "shared_nodes_count": 31,
+        "shared_nodes_truncated": true
+      },
+      {
+        "stage": "composition:word-mask",
+        "operation": "cat_+_projection_688019",
+        "output": "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld.super_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "8"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld._super_refill_idx_T_1"
+        ],
+        "reason": "",
+        "original_depth": 55,
+        "projected_depth": 33,
+        "added_operators": 269,
+        "removed_operators": 286,
+        "net_operators": -17,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld._super_refill_idx_T_1"
+        ],
+        "original_dependencies_count": 3,
+        "original_dependencies_truncated": true,
+        "projected_dependencies_count": 18,
+        "projected_dependencies_truncated": true,
+        "shared_nodes_count": 31,
+        "shared_nodes_truncated": true
+      },
+      {
+        "stage": "composition",
+        "operation": "assign_+_754232",
+        "output": "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.super_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.super_refill_idx_state_reg$next"
+        ],
+        "projected_dependencies": [],
+        "reason": "analysis-budget",
+        "original_dependencies_count": 1,
+        "original_dependencies_truncated": false,
+        "projected_dependencies_count": 0,
+        "projected_dependencies_truncated": false
+      },
+      {
+        "stage": "composition",
+        "operation": "cat_+_projection_1076342",
+        "output": "l_soc.core_with_l2.core.memBlock.dtlb_st_tlb_st.super_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "8"
+        ],
+        "projected_dependencies": [],
+        "reason": "analysis-budget",
+        "original_dependencies_count": 3,
+        "original_dependencies_truncated": true,
+        "projected_dependencies_count": 0,
+        "projected_dependencies_truncated": false
+      }
+    ],
+    "shrinking_examples": [
+      {
+        "stage": "projection",
+        "operation": "bits_+_887136",
+        "output": "l_soc.core_with_l2.core.exuBlocks.scheduler.rs.rs_0.__rteaal_expr_502",
+        "original_dependencies": [
+          "1"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.exuBlocks.scheduler.rs.rs_0.statusArray.dataMatchVec_7"
+        ],
+        "reason": "",
+        "slice": {
+          "signal": "l_soc.core_with_l2.core.exuBlocks.scheduler.rs.rs_0.statusArray.io_wakeupMatch_0_0",
+          "start": 7,
+          "width": 1
+        },
+        "original_depth": 32,
+        "projected_depth": 10,
+        "added_operators": 1,
+        "removed_operators": 10,
+        "net_operators": -9,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.exuBlocks.scheduler.rs.rs_0.statusArray.dataMatchVec_0"
+        ],
+        "original_dependencies_count": 3,
+        "original_dependencies_truncated": true,
+        "projected_dependencies_count": 2,
+        "projected_dependencies_truncated": true,
+        "shared_nodes_count": 10,
+        "shared_nodes_truncated": true
+      }
+    ],
+    "scope": "Per-candidate plans overlap; cost-accepted is not an application count. Dependency samples have counts; full lists remain in the hashed JSONL."
+  },
+  "C": {
+    "configuration": {
+      "stage": "configuration",
+      "projection_enabled": true,
+      "composition_enabled": true,
+      "concat_encoding": "binary",
+      "max_visits_per_request": 2048,
+      "max_cached_slices": 200000,
+      "max_added_operators_per_candidate": 2048,
+      "max_net_growth_per_candidate": 1024,
+      "max_net_growth_total": 8192,
+      "max_candidates": 20000
+    },
+    "report_sha256": "f79ead6fb53dfe5b339be6082d48cc50dd52bbbedb63f0680432445d1bcb4d0d",
+    "candidates_by_stage": {
+      "projection": 19289,
+      "composition": 19998,
+      "composition:bit-tree": 2,
+      "composition:word-mask": 2
+    },
+    "decisions": {
+      "projection:cost-accepted": 17280,
+      "projection:protected-operation-or-output-alias": 182,
+      "projection:growth-budget": 1013,
+      "projection:no-depth-benefit": 130,
+      "projection:operator-budget": 19,
+      "projection:analysis-budget": 665,
+      "composition:depends-on-previous-update": 80,
+      "composition:hold-is-not-the-same-state-bit": 4581,
+      "composition:opaque-update-input": 838,
+      "composition:bit-tree:cost-accepted": 2,
+      "composition:word-mask:cost-accepted": 2,
+      "composition:dependency-budget": 4775,
+      "composition:analysis-budget": 9724
+    },
+    "composition_applied_added_removed": [
+      2,
+      1359,
+      2218
+    ],
+    "selected_composition_forms": [
+      {
+        "output": "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.normal_refill_idx_state_reg@next",
+        "stage": "composition:bit-tree",
+        "original_depth": 73,
+        "projected_depth": 39,
+        "added_operators": 1092,
+        "removed_operators": 1932,
+        "net_operators": -840
+      },
+      {
+        "output": "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld.super_refill_idx_state_reg@next",
+        "stage": "composition:bit-tree",
+        "original_depth": 55,
+        "projected_depth": 31,
+        "added_operators": 267,
+        "removed_operators": 286,
+        "net_operators": -19
+      }
+    ],
+    "plru_state_candidates": [
+      {
+        "stage": "projection",
+        "operation": "assign_+_754231",
+        "output": "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.normal_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.normal_refill_idx_state_reg$next"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb._normal_refill_idx_T_4"
+        ],
+        "reason": "",
+        "original_depth": 126,
+        "projected_depth": 121,
+        "added_operators": 801,
+        "removed_operators": 49,
+        "net_operators": 752,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb._normal_refill_idx_T_4"
+        ],
+        "original_dependencies_count": 1,
+        "original_dependencies_truncated": false,
+        "projected_dependencies_count": 129,
+        "projected_dependencies_truncated": true,
+        "shared_nodes_count": 38,
+        "shared_nodes_truncated": true
+      },
+      {
+        "stage": "projection",
+        "operation": "assign_+_2115698",
+        "output": "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld.super_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld.super_refill_idx_state_reg$next"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld._super_refill_idx_T_1"
+        ],
+        "reason": "",
+        "original_depth": 59,
+        "projected_depth": 55,
+        "added_operators": 182,
+        "removed_operators": 25,
+        "net_operators": 157,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld._super_refill_idx_T_1"
+        ],
+        "original_dependencies_count": 1,
+        "original_dependencies_truncated": false,
+        "projected_dependencies_count": 39,
+        "projected_dependencies_truncated": true,
+        "shared_nodes_count": 21,
+        "shared_nodes_truncated": true
+      },
+      {
+        "stage": "projection",
+        "operation": "assign_+_2124627",
+        "output": "l_soc.core_with_l2.core.memBlock.dtlb_st_tlb_st.super_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_st_tlb_st.super_refill_idx_state_reg$next"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_st_tlb_st._super_refill_idx_T"
+        ],
+        "reason": "",
+        "original_depth": 46,
+        "projected_depth": 42,
+        "added_operators": 141,
+        "removed_operators": 25,
+        "net_operators": 116,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_st_tlb_st._super_refill_idx_T"
+        ],
+        "original_dependencies_count": 1,
+        "original_dependencies_truncated": false,
+        "projected_dependencies_count": 27,
+        "projected_dependencies_truncated": true,
+        "shared_nodes_count": 21,
+        "shared_nodes_truncated": true
+      },
+      {
+        "stage": "projection",
+        "operation": "assign_+_754232",
+        "output": "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.super_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.super_refill_idx_state_reg$next"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb._super_refill_idx_T_4"
+        ],
+        "reason": "growth-budget",
+        "original_depth": 43,
+        "projected_depth": 41,
+        "added_operators": 29,
+        "removed_operators": 7,
+        "net_operators": 22,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb._super_refill_idx_T_4"
+        ],
+        "original_dependencies_count": 1,
+        "original_dependencies_truncated": false,
+        "projected_dependencies_count": 27,
+        "projected_dependencies_truncated": true,
+        "shared_nodes_count": 7,
+        "shared_nodes_truncated": true
+      },
+      {
+        "stage": "composition:bit-tree",
+        "operation": "cat_+_projection_681981",
+        "output": "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.normal_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "16"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb._normal_refill_idx_T_4"
+        ],
+        "reason": "",
+        "original_depth": 73,
+        "projected_depth": 39,
+        "added_operators": 1092,
+        "removed_operators": 1932,
+        "net_operators": -840,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb._normal_refill_idx_T_4"
+        ],
+        "original_dependencies_count": 3,
+        "original_dependencies_truncated": true,
+        "projected_dependencies_count": 39,
+        "projected_dependencies_truncated": true,
+        "shared_nodes_count": 68,
+        "shared_nodes_truncated": true
+      },
+      {
+        "stage": "composition:word-mask",
+        "operation": "cat_+_projection_681981",
+        "output": "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.normal_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "16"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb._normal_refill_idx_T_4"
+        ],
+        "reason": "",
+        "original_depth": 73,
+        "projected_depth": 41,
+        "added_operators": 1094,
+        "removed_operators": 1932,
+        "net_operators": -838,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb._normal_refill_idx_T_4"
+        ],
+        "original_dependencies_count": 3,
+        "original_dependencies_truncated": true,
+        "projected_dependencies_count": 39,
+        "projected_dependencies_truncated": true,
+        "shared_nodes_count": 68,
+        "shared_nodes_truncated": true
+      },
+      {
+        "stage": "composition:bit-tree",
+        "operation": "cat_+_projection_688019",
+        "output": "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld.super_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "8"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld._super_refill_idx_T_1"
+        ],
+        "reason": "",
+        "original_depth": 55,
+        "projected_depth": 31,
+        "added_operators": 267,
+        "removed_operators": 286,
+        "net_operators": -19,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld._super_refill_idx_T_1"
+        ],
+        "original_dependencies_count": 3,
+        "original_dependencies_truncated": true,
+        "projected_dependencies_count": 18,
+        "projected_dependencies_truncated": true,
+        "shared_nodes_count": 31,
+        "shared_nodes_truncated": true
+      },
+      {
+        "stage": "composition:word-mask",
+        "operation": "cat_+_projection_688019",
+        "output": "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld.super_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "8"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld._super_refill_idx_T_1"
+        ],
+        "reason": "",
+        "original_depth": 55,
+        "projected_depth": 33,
+        "added_operators": 269,
+        "removed_operators": 286,
+        "net_operators": -17,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.memBlock.dtlb_ld_tlb_ld._super_refill_idx_T_1"
+        ],
+        "original_dependencies_count": 3,
+        "original_dependencies_truncated": true,
+        "projected_dependencies_count": 18,
+        "projected_dependencies_truncated": true,
+        "shared_nodes_count": 31,
+        "shared_nodes_truncated": true
+      },
+      {
+        "stage": "composition",
+        "operation": "assign_+_754232",
+        "output": "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.super_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.super_refill_idx_state_reg$next"
+        ],
+        "projected_dependencies": [],
+        "reason": "analysis-budget",
+        "original_dependencies_count": 1,
+        "original_dependencies_truncated": false,
+        "projected_dependencies_count": 0,
+        "projected_dependencies_truncated": false
+      },
+      {
+        "stage": "composition",
+        "operation": "cat_+_projection_1076342",
+        "output": "l_soc.core_with_l2.core.memBlock.dtlb_st_tlb_st.super_refill_idx_state_reg@next",
+        "original_dependencies": [
+          "8"
+        ],
+        "projected_dependencies": [],
+        "reason": "analysis-budget",
+        "original_dependencies_count": 3,
+        "original_dependencies_truncated": true,
+        "projected_dependencies_count": 0,
+        "projected_dependencies_truncated": false
+      }
+    ],
+    "shrinking_examples": [
+      {
+        "stage": "projection",
+        "operation": "bits_+_887136",
+        "output": "l_soc.core_with_l2.core.exuBlocks.scheduler.rs.rs_0.__rteaal_expr_502",
+        "original_dependencies": [
+          "1"
+        ],
+        "projected_dependencies": [
+          "l_soc.core_with_l2.core.exuBlocks.scheduler.rs.rs_0.statusArray.dataMatchVec_7"
+        ],
+        "reason": "",
+        "slice": {
+          "signal": "l_soc.core_with_l2.core.exuBlocks.scheduler.rs.rs_0.statusArray.io_wakeupMatch_0_0",
+          "start": 7,
+          "width": 1
+        },
+        "original_depth": 32,
+        "projected_depth": 10,
+        "added_operators": 1,
+        "removed_operators": 10,
+        "net_operators": -9,
+        "shared_nodes": [
+          "l_soc.core_with_l2.core.exuBlocks.scheduler.rs.rs_0.statusArray.dataMatchVec_0"
+        ],
+        "original_dependencies_count": 3,
+        "original_dependencies_truncated": true,
+        "projected_dependencies_count": 2,
+        "projected_dependencies_truncated": true,
+        "shared_nodes_count": 10,
+        "shared_nodes_truncated": true
+      }
+    ],
+    "scope": "Per-candidate plans overlap; cost-accepted is not an application count. Dependency samples have counts; full lists remain in the hashed JSONL."
+  }
+}

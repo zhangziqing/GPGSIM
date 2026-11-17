@@ -1,0 +1,7 @@
+io
+ram.en
+ram.rIdx
+ram.wIdx
+ram.wdata
+ram.wen
+ram.wmask

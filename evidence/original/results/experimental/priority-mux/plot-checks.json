@@ -1,0 +1,79 @@
+{
+  "status": "passed",
+  "graph_revision": "84973ad2575db87f8e018c2a5c155c3572436349",
+  "source_sha256": "78e78ede2efc678760dc123b9b0c5cf01224ad1695b21c232b4fae86b8272e3e",
+  "input_sha256": {
+    "graph-checks.json": "382789ee825d20795730285034cf0da4373f0ce5c96a0b317ec476e83ebf1d36",
+    "runtime/structure.json": "e2ee34775fb36e937116d29db3848ba2fb4ece234c3a8ada852b1e839863fd8e",
+    "runtime/off/graph.json": "48c76189f2e0c769db5c74e672b0ab59df71fecd4cc4a71fcbdae644dc2eb287",
+    "runtime/on/graph.json": "6f875134eed30c2e44534c06397666ca37752fce8366143792d08398fd1ba28c"
+  },
+  "operations": {
+    "off": 2218027,
+    "on": 2222558
+  },
+  "layers": {
+    "off": 140,
+    "on": 126
+  },
+  "on_suffix": {
+    "first_layer": 70,
+    "last_layer": 126,
+    "operations": 1468,
+    "prefix_operation_fraction_percent": 99.933949980158,
+    "one_operation_layers": [
+      103,
+      104,
+      105,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126
+    ]
+  },
+  "path_labels": [
+    "ITLB PLRU state",
+    "CLZ UInt<107> (4 units)",
+    "LFST lane 5 (3 receivers)",
+    "Smaller CLZ (4 units)",
+    "ROB memory writers"
+  ],
+  "path_depths": {
+    "off": [
+      126,
+      140,
+      140,
+      78,
+      13
+    ],
+    "on": [
+      126,
+      41,
+      24,
+      36,
+      13
+    ]
+  },
+  "static_schedule_counts": {
+    "off": [
+      144,
+      140,
+      86
+    ],
+    "on": [
+      141,
+      114,
+      114
+    ]
+  },
+  "matplotlib_version": "3.11.2",
+  "outputs": {
+    "runtime/tail-analysis/priority-mux-structure.png": "cbdb980320121be3ad2cc78b945991246b9167fe8ca2565331a51646c5201472",
+    "runtime/tail-analysis/priority-mux-structure.svg": "f621f0ea204a3a1ad2de67baa17bc384b3f5431ce550b7635c4ee754f51cc100",
+    "runtime/tail-analysis/priority-mux-structure.pdf": "201ee263a5158da0e582acbba0b94b14fbbaebfce86ec31978401c03d81751d7"
+  },
+  "boundary": "All mux operands; static value DAG and scheduler counts. GPU timings are reported separately; no gate-delay measurement."
+}

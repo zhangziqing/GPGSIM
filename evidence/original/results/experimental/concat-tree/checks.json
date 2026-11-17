@@ -1,0 +1,439 @@
+{
+  "status": "passed",
+  "simulator_revision": "274d8f75c13f690546dfb64f4254fcbc0c1ef7a3",
+  "baseline": {
+    "status": "passed",
+    "tensor_sha256": {
+      "unswizzled_nptr": {
+        "old_sha256": "5bb726869a1d597c7406beb87112550ae33765461636ce887e59182f7ca957bc",
+        "new_sha256": "5bb726869a1d597c7406beb87112550ae33765461636ce887e59182f7ca957bc"
+      },
+      "unswizzled_rptr": {
+        "old_sha256": "6451e376d13b4c52039c2d47087d7feb3c68ebb963686c53174b7f995f8fcb49",
+        "new_sha256": "6451e376d13b4c52039c2d47087d7feb3c68ebb963686c53174b7f995f8fcb49"
+      },
+      "unswizzled_sptr": {
+        "old_sha256": "da2c08cf8849be2a1081258cc0e7598b5966203bcfc2c52b176ad3eb07e696af",
+        "new_sha256": "da2c08cf8849be2a1081258cc0e7598b5966203bcfc2c52b176ad3eb07e696af"
+      },
+      "unswizzled_ss_lens_ptr": {
+        "old_sha256": "828ae00e99380b094cad9ae154a8e2d031dfde4d09cc9b8ea3990ac00043b801",
+        "new_sha256": "828ae00e99380b094cad9ae154a8e2d031dfde4d09cc9b8ea3990ac00043b801"
+      },
+      "rptr": {
+        "old_sha256": "b1b5a5013fee463685a610efce3bc42c1ab0e4bedd696c4cb93746857cc484ad",
+        "new_sha256": "b1b5a5013fee463685a610efce3bc42c1ab0e4bedd696c4cb93746857cc484ad"
+      },
+      "sptr": {
+        "old_sha256": "a3b4f00004f210e372e7e9fc79a716b4c21e328135a13031a23f5e01e93eb1ff",
+        "new_sha256": "a3b4f00004f210e372e7e9fc79a716b4c21e328135a13031a23f5e01e93eb1ff"
+      },
+      "fptr": {
+        "old_sha256": "5e2f228f37d9db2942b9d918493d0142f12fff13c5960985fd58150c2536a87a",
+        "new_sha256": "5e2f228f37d9db2942b9d918493d0142f12fff13c5960985fd58150c2536a87a"
+      },
+      "layer_num": {
+        "old_sha256": "65a699905c02619370bcf9207f5a477c3d67130ca71ec6f750e07fe8d510b084",
+        "new_sha256": "65a699905c02619370bcf9207f5a477c3d67130ca71ec6f750e07fe8d510b084"
+      },
+      "S_shape": {
+        "old_sha256": "2d5548aa0ba3cd05c9ae23a5fb20d55b042cc92f88fe227fff46e8dc5df6b1d6",
+        "new_sha256": "2d5548aa0ba3cd05c9ae23a5fb20d55b042cc92f88fe227fff46e8dc5df6b1d6"
+      },
+      "muxJT": {
+        "old_sha256": "03e355bd0296619f3734fe1591961ccad3700e5ae342c8908dca8cec38b5b450",
+        "new_sha256": "03e355bd0296619f3734fe1591961ccad3700e5ae342c8908dca8cec38b5b450"
+      }
+    },
+    "initial_value_sha256": [
+      "6cff6edf33a30acedb936a079113e4dd40a2ea155d152f5c1b35fbff5b419e9e",
+      "80daa84905d8b36afcd5c376ed69073d80c613c5fdfb0dcdca47715e04738280"
+    ],
+    "initial_value_differences": 42403,
+    "runtime_zeroed_slots": 152988,
+    "runtime_normalized_initial_values_identical": true,
+    "initialization_contract": "Compiler randomizes signal values; the retained runner zeros every InputRegMap input/state slot before reset and preserves constants."
+  },
+  "rollback": {
+    "binary_runtime_and_tensor_contract_restored": true,
+    "workspace_files_match_pre_variadic_source": [
+      "results/experimental/mux-index/tensor_layout.py",
+      "results/experimental/nanhu-cuda-2060/CMakeLists.txt",
+      "results/experimental/nanhu-cuda-2060/src/engine_cpu.cpp",
+      "results/experimental/nanhu-cuda-2060/src/ops.h",
+      "tools/nanhu_tensor_layout.h",
+      "tools/check_nanhu_large_layers.cc"
+    ]
+  },
+  "scala": {
+    "tests": 93,
+    "suites": 15,
+    "passed": true,
+    "scope": "Current workspace suite includes pending PLRU tests; full compiler overlay excludes those edits."
+  },
+  "portable_cpu_ctest": {
+    "passed": 4,
+    "total": 4
+  },
+  "large_layer_sanitizers": {
+    "operations": 290000,
+    "outputs": 350000,
+    "opcodes": 29,
+    "asan_ubsan": "passed"
+  },
+  "minimal": {
+    "variants": {
+      "off": {
+        "operations": 148,
+        "depths": {
+          "shared": 1,
+          "wide_top": 2,
+          "flags": 64,
+          "count_out": 1,
+          "fields": 2,
+          "repeated": 7,
+          "wide_lo": 2,
+          "wide_hi": 3
+        }
+      },
+      "on": {
+        "operations": 148,
+        "depths": {
+          "shared": 1,
+          "wide_top": 2,
+          "flags": 7,
+          "count_out": 1,
+          "fields": 2,
+          "repeated": 3,
+          "wide_lo": 2,
+          "wide_hi": 3
+        }
+      }
+    },
+    "kernel_executions": 8,
+    "observations_per_execution": 7999,
+    "asan_ubsan": "passed"
+  },
+  "graph": {
+    "status": "passed",
+    "named_outputs": 151461,
+    "named_depth_changes": {
+      "same": 150560,
+      "shorter": 901
+    },
+    "named_depth_delta_histogram": {
+      "-1": 901,
+      "0": 150560
+    },
+    "named_depths_over_50": {
+      "off": 12890,
+      "on": 12890
+    },
+    "lowered_firrtl_sha256": {
+      "off": "af0192d4fd48a57eb1fd1077bad47979724da0977f131bc65a4ad67e715af712",
+      "on": "af0192d4fd48a57eb1fd1077bad47979724da0977f131bc65a4ad67e715af712"
+    },
+    "operation_count_unchanged": true,
+    "lookup_inventory_unchanged": true,
+    "longer_named_paths": 0
+  },
+  "full_graph_metrics": {
+    "off": {
+      "design": "concat-tree-off",
+      "operations": 2222558,
+      "layers": 126,
+      "data_slots": 490183,
+      "maximum_layer_nodes": 197530,
+      "mux_table_operations_opcode_24": 4391,
+      "mux_table_entries": 198676,
+      "memwrite_placeholder_liveness": "passed",
+      "graph_write_conflicts": "none",
+      "argument_count": 5121670,
+      "scatter_count": 2217941,
+      "bounds_count": 7308,
+      "observed_signals": 515
+    },
+    "on": {
+      "design": "concat-tree-on",
+      "operations": 2222558,
+      "layers": 126,
+      "data_slots": 490089,
+      "maximum_layer_nodes": 197615,
+      "mux_table_operations_opcode_24": 4391,
+      "mux_table_entries": 198676,
+      "memwrite_placeholder_liveness": "passed",
+      "graph_write_conflicts": "none",
+      "argument_count": 5121670,
+      "scatter_count": 2217941,
+      "bounds_count": 7308,
+      "observed_signals": 515
+    }
+  },
+  "coremark": {
+    "status": "passed",
+    "cycles": 100000,
+    "variants": {
+      "off": {
+        "observed_cycles": 100000,
+        "retired_instructions_including_fused": 171898,
+        "commit_events": 167375,
+        "fused_extra_instructions": 4523,
+        "compressed_commit_events": 74948,
+        "skipped_commit_events": 74,
+        "first_commit_master_cycle": 630,
+        "first_ram_commit_master_cycle": 8321,
+        "last_retired_pc": 2147490948,
+        "saw_trap": false,
+        "trap_pc": 0,
+        "trap_code": 0,
+        "exception_cycles": 0,
+        "uart": "Running CoreMark for 2 iterations\r\n",
+        "final_gpr": [
+          0,
+          2147490940,
+          2147536272,
+          0,
+          0,
+          44,
+          44,
+          8,
+          2147501900,
+          25438,
+          4,
+          2147536320,
+          2147536368,
+          44,
+          2147502505,
+          73,
+          2147536280,
+          9,
+          2147536320,
+          136,
+          0,
+          0,
+          2147502566,
+          2147536280,
+          103,
+          101,
+          1,
+          2147536656,
+          9,
+          9,
+          2147499056,
+          5
+        ],
+        "final_fpr": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "final_csr": [
+          3,
+          9223372079804473344,
+          9223372045444734976,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cycles_per_second": 168.57707529921154,
+        "evaluation_seconds": 593.2004682280053,
+        "wall_seconds": 601.4890583548695,
+        "full_trace_byte_identical": true
+      },
+      "on": {
+        "observed_cycles": 100000,
+        "retired_instructions_including_fused": 171898,
+        "commit_events": 167375,
+        "fused_extra_instructions": 4523,
+        "compressed_commit_events": 74948,
+        "skipped_commit_events": 74,
+        "first_commit_master_cycle": 630,
+        "first_ram_commit_master_cycle": 8321,
+        "last_retired_pc": 2147490948,
+        "saw_trap": false,
+        "trap_pc": 0,
+        "trap_code": 0,
+        "exception_cycles": 0,
+        "uart": "Running CoreMark for 2 iterations\r\n",
+        "final_gpr": [
+          0,
+          2147490940,
+          2147536272,
+          0,
+          0,
+          44,
+          44,
+          8,
+          2147501900,
+          25438,
+          4,
+          2147536320,
+          2147536368,
+          44,
+          2147502505,
+          73,
+          2147536280,
+          9,
+          2147536320,
+          136,
+          0,
+          0,
+          2147502566,
+          2147536280,
+          103,
+          101,
+          1,
+          2147536656,
+          9,
+          9,
+          2147499056,
+          5
+        ],
+        "final_fpr": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "final_csr": [
+          3,
+          9223372079804473344,
+          9223372045444734976,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cycles_per_second": 166.36019202123765,
+        "evaluation_seconds": 601.105341278002,
+        "wall_seconds": 609.4692587479949,
+        "full_trace_byte_identical": true
+      }
+    },
+    "named_architectural_state_matches_verilator": true,
+    "named_memory_mapping_and_contents_match_between_variants": true,
+    "data_buffer_fingerprints_compared": false,
+    "timing_scope": "One RU correctness run per variant; CPU affinity and concurrency recorded in command metadata; not performance samples.",
+    "workload_scope": "Fixed CoreMark 100K-cycle prefix; completion and CRC not established."
+  },
+  "coremark_artifact_sha256": {
+    "off": {
+      "binary": "e241b287227be6dcb58f359c731bedf2fef91f6f3ef200d927921372d2086e55",
+      "reference": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "program": "1156255cce0d01cffbf7232fa4a168a00defc41e0c8ea6096a3186ca30a48519"
+    },
+    "on": {
+      "binary": "5fa141e2a5f7aa3174a9710b8b6fc2b8600fa43e3cd56f56e44822446f3c6724",
+      "reference": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "program": "1156255cce0d01cffbf7232fa4a168a00defc41e0c8ea6096a3186ca30a48519"
+    }
+  },
+  "compiler_classpath_sha256": {
+    "compiler-overlay.jar": "923dbfe2168784aaf8474ddae9144dac2a36eb874379bccffd9a6ae82f19d392",
+    "chain-index.jar": "7b26873e6fda7bddbba587bc1b42a551f256ac1986d70342c724792cbde6fb50",
+    "firrtl-fast-accesses-2.13.jar": "3f2dee85a7c680425d2f466776b4aaccb6dff27ac30bef6369b0bc55198b0160",
+    "essent-nanhu.jar": "ee66eef1c43b57ba5fc9d2d2ca5cb0f2e275ef162f0b119925ec1f5d2ba6c814"
+  },
+  "compile_time_reports": {
+    "off": "\tCommand being timed: \"java -XX:ActiveProcessorCount=12 -Xmx256g -Xss64m -Xlog:class+load=info:file=/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/off/classes.log -Drteaal.nanhu=true -Drteaal.design=concat-tree-off -Drteaal.genericOnly=true -Drteaal.reduceConstantMuxChains=true -Drteaal.balancePriorityMuxChains=true -Drteaal.balanceConcat=false -Drteaal.preserved=/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/off/preserved.txt -Drteaal.skipRegElision=true -Drteaal.preClockInput=true -cp /nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/off/compiler-overlay.jar:/nfs/home/zhangziqing/RTeAAL/results/experimental/chain-index/chain-index.jar:/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/target/scala-2.13/classes:/nfs/home/zhangziqing/RTeAAL/tools/firrtl-fast-accesses/firrtl-fast-accesses-2.13.jar:/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/utils/bin/essent-nanhu.jar essent.Driver -O1 --normalize-mux-index --dump /nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/off/SimTop.preclock.lo.fir\"\n\tUser time (seconds): 1034.56\n\tSystem time (seconds): 114.05\n\tPercent of CPU this job got: 114%\n\tElapsed (wall clock) time (h:mm:ss or m:ss): 16:41.62\n\tAverage shared text size (kbytes): 0\n\tAverage unshared data size (kbytes): 0\n\tAverage stack size (kbytes): 0\n\tAverage total size (kbytes): 0\n\tMaximum resident set size (kbytes): 61125532\n\tAverage resident set size (kbytes): 0\n\tMajor (requiring I/O) page faults: 0\n\tMinor (reclaiming a frame) page faults: 64051929\n\tVoluntary context switches: 110403\n\tInvoluntary context switches: 52008\n\tSwaps: 0\n\tFile system inputs: 1326368\n\tFile system outputs: 2188024\n\tSocket messages sent: 0\n\tSocket messages received: 0\n\tSignals delivered: 0\n\tPage size (bytes): 4096\n\tExit status: 0\n",
+    "on": "\tCommand being timed: \"java -XX:ActiveProcessorCount=12 -Xmx256g -Xss64m -Xlog:class+load=info:file=/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/on/classes.log -Drteaal.nanhu=true -Drteaal.design=concat-tree-on -Drteaal.genericOnly=true -Drteaal.reduceConstantMuxChains=true -Drteaal.balancePriorityMuxChains=true -Drteaal.balanceConcat=true -Drteaal.preserved=/nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/on/preserved.txt -Drteaal.skipRegElision=true -Drteaal.preClockInput=true -cp /nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/on/compiler-overlay.jar:/nfs/home/zhangziqing/RTeAAL/results/experimental/chain-index/chain-index.jar:/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/target/scala-2.13/classes:/nfs/home/zhangziqing/RTeAAL/tools/firrtl-fast-accesses/firrtl-fast-accesses-2.13.jar:/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/utils/bin/essent-nanhu.jar essent.Driver -O1 --normalize-mux-index --dump /nfs/home/zhangziqing/RTeAAL/results/experimental/concat-tree/runtime/on/SimTop.preclock.lo.fir\"\n\tUser time (seconds): 1027.63\n\tSystem time (seconds): 138.53\n\tPercent of CPU this job got: 115%\n\tElapsed (wall clock) time (h:mm:ss or m:ss): 16:49.88\n\tAverage shared text size (kbytes): 0\n\tAverage unshared data size (kbytes): 0\n\tAverage stack size (kbytes): 0\n\tAverage total size (kbytes): 0\n\tMaximum resident set size (kbytes): 101786708\n\tAverage resident set size (kbytes): 0\n\tMajor (requiring I/O) page faults: 0\n\tMinor (reclaiming a frame) page faults: 73661254\n\tVoluntary context switches: 125474\n\tInvoluntary context switches: 48131\n\tSwaps: 0\n\tFile system inputs: 1326368\n\tFile system outputs: 2188080\n\tSocket messages sent: 0\n\tSocket messages received: 0\n\tSignals delivered: 0\n\tPage size (bytes): 4096\n\tExit status: 0\n"
+  },
+  "accepted_compiler_source_sha256": {
+    "Compiler.scala": "e67eecce0fb01d524a4769d173edb365bbfed1e9046cd63b88f35aedf77c3052",
+    "ArgsParser.scala": "e3e77601ed10abbe890d175e55c3489d32d0b3221c5c6ea904833d67842fc7b1",
+    "BalanceConcatOps.scala": "1b8add6c001d2d00e427f5a9c3bf241ab048e44e037ca2b8765014cc7fe141ad"
+  },
+  "evidence_sha256": {
+    "minimal-checks.json": "406e92187ac1058555bf390d7231101aff869bdb2ce216e82441d24658df713d",
+    "graph-checks.json": "10d1dce79ab281c1467f0233c9cc1cd9e7131170a343add628434b234256c3ce",
+    "runtime/coremark-checks.json": "7d2d3b5d10e599fd747d73fe9df5e1630d482a6cae7f6b3c6302ba5156c1c0de",
+    "runtime/scala-tests.log": "a110f9c92478fd3cdd6570f01fc425e93360930b8e2cdca222595b986814dc83",
+    "runtime/ctest.log": "bf400d7b3ab253dd453c249f32c5023ab727cabed47218cf42a9654bb44d73d3",
+    "runtime/large-layers.log": "f11cf19ce46edc3bad1fd5eaf4563f3efc7205c7c77befc309b83c0d51ae67d6"
+  },
+  "gpu": {
+    "compilation": "not run",
+    "execution": "not run",
+    "timing": "not run"
+  }
+}

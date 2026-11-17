@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "variants": {
+    "A": {
+      "samples": [
+        {
+          "sample": "sample-1",
+          "cycles_per_second": 191.36730705453584,
+          "evaluation_seconds": 522.5552971360046,
+          "wall_seconds": 529.3704775366932,
+          "tensor_load_seconds": 2.919497479
+        }
+      ],
+      "median_cycles_per_second": 191.36730705453584,
+      "minimum_cycles_per_second": 191.36730705453584,
+      "maximum_cycles_per_second": 191.36730705453584,
+      "median_throughput_ratio_to_A": 1.0
+    },
+    "B": {
+      "samples": [
+        {
+          "sample": "sample-1",
+          "cycles_per_second": 188.30209702026733,
+          "evaluation_seconds": 531.061531350003,
+          "wall_seconds": 538.5020359829068,
+          "tensor_load_seconds": 3.145587688
+        }
+      ],
+      "median_cycles_per_second": 188.30209702026733,
+      "minimum_cycles_per_second": 188.30209702026733,
+      "maximum_cycles_per_second": 188.30209702026733,
+      "median_throughput_ratio_to_A": 0.9839825825975855
+    },
+    "C": {
+      "samples": [
+        {
+          "sample": "sample-1",
+          "cycles_per_second": 196.85987130886753,
+          "evaluation_seconds": 507.97554288300256,
+          "wall_seconds": 515.4192560967058,
+          "tensor_load_seconds": 3.23688936
+        }
+      ],
+      "median_cycles_per_second": 196.85987130886753,
+      "minimum_cycles_per_second": 196.85987130886753,
+      "maximum_cycles_per_second": 196.85987130886753,
+      "median_throughput_ratio_to_A": 1.028701685459609
+    }
+  },
+  "cpu_affinity": [
+    95
+  ],
+  "host": "node007.bosccluster.com",
+  "cpu_policy": {
+    "scaling_governor": "schedutil",
+    "scaling_driver": "acpi-cpufreq",
+    "scaling_min_freq": "1500000",
+    "scaling_max_freq": "2200000"
+  },
+  "samples_per_variant": 1,
+  "scope": "Separate 100K prefix measurements; full trace and final states checked in every run. Shared host; no GPU execution.",
+  "evidence_sha256": {
+    "checks.json": "c38ee8a6baff23b3504cc8544391a3e81f7c2d497b8a9bf3cf5b437988e9a715",
+    "runtime/A-binary-v1/measure-sample-1.json": "1c425c020dd7508bc0bf50462578261ad5e5afcea774ffdd5dae9f0a48092fa2",
+    "runtime/A-binary-v1/measure-sample-1-command.json": "c599f9033cb78739c4c254fcf8e18f7251ce655d2b01579cf1de67a4d2ba37b6",
+    "runtime/A-binary-v1/measure-sample-1.time": "053a3846b918a7ad5a70e8ac4834aacc94ca2bcb6e7b122965e809d2493a76bc",
+    "runtime/B-binary-v1/measure-sample-1.json": "5216f8684a2091bbe7fd17cbb2e6074475aa2a7dbe69a0335a172671ad40f574",
+    "runtime/B-binary-v1/measure-sample-1-command.json": "ac6dd830a70c6b4ac4c2aef2ee2b7722f4e02053181932aa892bf0226a1c5583",
+    "runtime/B-binary-v1/measure-sample-1.time": "0242f6626a4e086b2c6f4651fc7f557ca2651b851e2ee1aea1d9ca782e8fa233",
+    "runtime/C-binary-v1/measure-sample-1.json": "492fe8d24c9740bb308ea3bdb760867981b5abc96dc3fde4287a7d57ed7e1f14",
+    "runtime/C-binary-v1/measure-sample-1-command.json": "e91b2b89f90b332fe3da2243ec43385707d9b7710b525025df3a233a5b58cf9a",
+    "runtime/C-binary-v1/measure-sample-1.time": "d802cd5105e70e35732c3bcfe1df1500f88fe94159726acce23f8d02d4f7c4fc"
+  }
+}

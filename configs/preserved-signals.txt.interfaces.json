@@ -1,0 +1,3468 @@
+[
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.misc.logger.a_writer.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.misc.logger.b_writer.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.misc.logger.c_writer.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.misc.logger.d_writer.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.misc.logger.a_writer_1.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.misc.logger.b_writer_1.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.misc.logger.c_writer_1.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.misc.logger.d_writer_1.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.misc.logger.a_writer_2.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.misc.logger.b_writer_2.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.misc.logger.c_writer_2.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.misc.logger.d_writer_2.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.misc.logger.a_writer_3.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.misc.logger.b_writer_3.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.misc.logger.c_writer_3.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.misc.logger.d_writer_3.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.misc.logger_1.a_writer.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.misc.logger_1.b_writer.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.misc.logger_1.c_writer.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.misc.logger_1.d_writer.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestRefillEvent",
+    "prefix": "l_soc.core_with_l2.core.frontend.icache.missUnit.difftest.",
+    "inputs": [
+      "io_coreid",
+      "io_valid",
+      "io_addr",
+      "io_data_0",
+      "io_data_1",
+      "io_data_2",
+      "io_data_3",
+      "io_data_4",
+      "io_data_5",
+      "io_data_6",
+      "io_data_7",
+      "io_cacheid"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestIntWriteback",
+    "prefix": "l_soc.core_with_l2.core.wbArbiter.difftest.",
+    "inputs": [
+      "io_coreid",
+      "io_valid",
+      "io_dest",
+      "io_data"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestIntWriteback",
+    "prefix": "l_soc.core_with_l2.core.wbArbiter.difftest_1.",
+    "inputs": [
+      "io_coreid",
+      "io_valid",
+      "io_dest",
+      "io_data"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestIntWriteback",
+    "prefix": "l_soc.core_with_l2.core.wbArbiter.difftest_2.",
+    "inputs": [
+      "io_coreid",
+      "io_valid",
+      "io_dest",
+      "io_data"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestIntWriteback",
+    "prefix": "l_soc.core_with_l2.core.wbArbiter.difftest_3.",
+    "inputs": [
+      "io_coreid",
+      "io_valid",
+      "io_dest",
+      "io_data"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestIntWriteback",
+    "prefix": "l_soc.core_with_l2.core.wbArbiter.difftest_4.",
+    "inputs": [
+      "io_coreid",
+      "io_valid",
+      "io_dest",
+      "io_data"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestIntWriteback",
+    "prefix": "l_soc.core_with_l2.core.wbArbiter.difftest_5.",
+    "inputs": [
+      "io_coreid",
+      "io_valid",
+      "io_dest",
+      "io_data"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestIntWriteback",
+    "prefix": "l_soc.core_with_l2.core.wbArbiter.difftest_6.",
+    "inputs": [
+      "io_coreid",
+      "io_valid",
+      "io_dest",
+      "io_data"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestIntWriteback",
+    "prefix": "l_soc.core_with_l2.core.wbArbiter.difftest_7.",
+    "inputs": [
+      "io_coreid",
+      "io_valid",
+      "io_dest",
+      "io_data"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestFpWriteback",
+    "prefix": "l_soc.core_with_l2.core.wbArbiter.difftest_8.",
+    "inputs": [
+      "io_coreid",
+      "io_valid",
+      "io_dest",
+      "io_data"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestFpWriteback",
+    "prefix": "l_soc.core_with_l2.core.wbArbiter.difftest_9.",
+    "inputs": [
+      "io_coreid",
+      "io_valid",
+      "io_dest",
+      "io_data"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestFpWriteback",
+    "prefix": "l_soc.core_with_l2.core.wbArbiter.difftest_10.",
+    "inputs": [
+      "io_coreid",
+      "io_valid",
+      "io_dest",
+      "io_data"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestFpWriteback",
+    "prefix": "l_soc.core_with_l2.core.wbArbiter.difftest_11.",
+    "inputs": [
+      "io_coreid",
+      "io_valid",
+      "io_dest",
+      "io_data"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestFpWriteback",
+    "prefix": "l_soc.core_with_l2.core.wbArbiter.difftest_12.",
+    "inputs": [
+      "io_coreid",
+      "io_valid",
+      "io_dest",
+      "io_data"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestFpWriteback",
+    "prefix": "l_soc.core_with_l2.core.wbArbiter.difftest_13.",
+    "inputs": [
+      "io_coreid",
+      "io_valid",
+      "io_dest",
+      "io_data"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestFpWriteback",
+    "prefix": "l_soc.core_with_l2.core.wbArbiter.difftest_14.",
+    "inputs": [
+      "io_coreid",
+      "io_valid",
+      "io_dest",
+      "io_data"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestFpWriteback",
+    "prefix": "l_soc.core_with_l2.core.wbArbiter.difftest_15.",
+    "inputs": [
+      "io_coreid",
+      "io_valid",
+      "io_dest",
+      "io_data"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestArchIntRegState",
+    "prefix": "l_soc.core_with_l2.core.exuBlocks.scheduler.difftest.",
+    "inputs": [
+      "io_coreid",
+      "io_gpr_0",
+      "io_gpr_1",
+      "io_gpr_2",
+      "io_gpr_3",
+      "io_gpr_4",
+      "io_gpr_5",
+      "io_gpr_6",
+      "io_gpr_7",
+      "io_gpr_8",
+      "io_gpr_9",
+      "io_gpr_10",
+      "io_gpr_11",
+      "io_gpr_12",
+      "io_gpr_13",
+      "io_gpr_14",
+      "io_gpr_15",
+      "io_gpr_16",
+      "io_gpr_17",
+      "io_gpr_18",
+      "io_gpr_19",
+      "io_gpr_20",
+      "io_gpr_21",
+      "io_gpr_22",
+      "io_gpr_23",
+      "io_gpr_24",
+      "io_gpr_25",
+      "io_gpr_26",
+      "io_gpr_27",
+      "io_gpr_28",
+      "io_gpr_29",
+      "io_gpr_30",
+      "io_gpr_31"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestArchEvent",
+    "prefix": "l_soc.core_with_l2.core.exuBlocks.fuBlock.exeUnits_6.csr.difftest.",
+    "inputs": [
+      "io_coreid",
+      "io_intrNO",
+      "io_cause",
+      "io_exceptionPC",
+      "io_exceptionInst"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestCSRState",
+    "prefix": "l_soc.core_with_l2.core.exuBlocks.fuBlock.exeUnits_6.csr.difftest_1.",
+    "inputs": [
+      "io_coreid",
+      "io_priviledgeMode",
+      "io_mstatus",
+      "io_sstatus",
+      "io_mepc",
+      "io_sepc",
+      "io_mtval",
+      "io_stval",
+      "io_mtvec",
+      "io_stvec",
+      "io_mcause",
+      "io_scause",
+      "io_satp",
+      "io_mip",
+      "io_mie",
+      "io_mscratch",
+      "io_sscratch",
+      "io_mideleg",
+      "io_medeleg"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestDebugMode",
+    "prefix": "l_soc.core_with_l2.core.exuBlocks.fuBlock.exeUnits_6.csr.difftest_2.",
+    "inputs": [
+      "io_coreid",
+      "io_debugMode",
+      "io_dcsr",
+      "io_dpc",
+      "io_dscratch0",
+      "io_dscratch1"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestArchFpRegState",
+    "prefix": "l_soc.core_with_l2.core.exuBlocks_1.scheduler.difftest.",
+    "inputs": [
+      "io_coreid",
+      "io_fpr_0",
+      "io_fpr_1",
+      "io_fpr_2",
+      "io_fpr_3",
+      "io_fpr_4",
+      "io_fpr_5",
+      "io_fpr_6",
+      "io_fpr_7",
+      "io_fpr_8",
+      "io_fpr_9",
+      "io_fpr_10",
+      "io_fpr_11",
+      "io_fpr_12",
+      "io_fpr_13",
+      "io_fpr_14",
+      "io_fpr_15",
+      "io_fpr_16",
+      "io_fpr_17",
+      "io_fpr_18",
+      "io_fpr_19",
+      "io_fpr_20",
+      "io_fpr_21",
+      "io_fpr_22",
+      "io_fpr_23",
+      "io_fpr_24",
+      "io_fpr_25",
+      "io_fpr_26",
+      "io_fpr_27",
+      "io_fpr_28",
+      "io_fpr_29",
+      "io_fpr_30",
+      "io_fpr_31"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestRefillEvent",
+    "prefix": "l_soc.core_with_l2.core.memBlock.dcache.dcache.missQueue.difftest.",
+    "inputs": [
+      "io_coreid",
+      "io_valid",
+      "io_addr",
+      "io_data_0",
+      "io_data_1",
+      "io_data_2",
+      "io_data_3",
+      "io_data_4",
+      "io_data_5",
+      "io_data_6",
+      "io_data_7",
+      "io_cacheid"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestAtomicEvent",
+    "prefix": "l_soc.core_with_l2.core.memBlock.atomicsUnit.difftest.",
+    "inputs": [
+      "io_coreid",
+      "io_atomicResp",
+      "io_atomicAddr",
+      "io_atomicData",
+      "io_atomicMask",
+      "io_atomicFuop",
+      "io_atomicOut"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestLrScEvent",
+    "prefix": "l_soc.core_with_l2.core.memBlock.atomicsUnit.difftest_1.",
+    "inputs": [
+      "io_coreid",
+      "io_valid",
+      "io_success"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestStoreEvent",
+    "prefix": "l_soc.core_with_l2.core.memBlock.lsq.storeQueue.difftest.",
+    "inputs": [
+      "io_coreid",
+      "io_index",
+      "io_valid",
+      "io_storeAddr",
+      "io_storeData",
+      "io_storeMask"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestStoreEvent",
+    "prefix": "l_soc.core_with_l2.core.memBlock.lsq.storeQueue.difftest_1.",
+    "inputs": [
+      "io_coreid",
+      "io_index",
+      "io_valid",
+      "io_storeAddr",
+      "io_storeData",
+      "io_storeMask"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestSbufferEvent",
+    "prefix": "l_soc.core_with_l2.core.memBlock.sbuffer.difftest.",
+    "inputs": [
+      "io_coreid",
+      "io_index",
+      "io_sbufferResp",
+      "io_sbufferAddr",
+      "io_sbufferData_0",
+      "io_sbufferData_1",
+      "io_sbufferData_2",
+      "io_sbufferData_3",
+      "io_sbufferData_4",
+      "io_sbufferData_5",
+      "io_sbufferData_6",
+      "io_sbufferData_7",
+      "io_sbufferData_8",
+      "io_sbufferData_9",
+      "io_sbufferData_10",
+      "io_sbufferData_11",
+      "io_sbufferData_12",
+      "io_sbufferData_13",
+      "io_sbufferData_14",
+      "io_sbufferData_15",
+      "io_sbufferData_16",
+      "io_sbufferData_17",
+      "io_sbufferData_18",
+      "io_sbufferData_19",
+      "io_sbufferData_20",
+      "io_sbufferData_21",
+      "io_sbufferData_22",
+      "io_sbufferData_23",
+      "io_sbufferData_24",
+      "io_sbufferData_25",
+      "io_sbufferData_26",
+      "io_sbufferData_27",
+      "io_sbufferData_28",
+      "io_sbufferData_29",
+      "io_sbufferData_30",
+      "io_sbufferData_31",
+      "io_sbufferData_32",
+      "io_sbufferData_33",
+      "io_sbufferData_34",
+      "io_sbufferData_35",
+      "io_sbufferData_36",
+      "io_sbufferData_37",
+      "io_sbufferData_38",
+      "io_sbufferData_39",
+      "io_sbufferData_40",
+      "io_sbufferData_41",
+      "io_sbufferData_42",
+      "io_sbufferData_43",
+      "io_sbufferData_44",
+      "io_sbufferData_45",
+      "io_sbufferData_46",
+      "io_sbufferData_47",
+      "io_sbufferData_48",
+      "io_sbufferData_49",
+      "io_sbufferData_50",
+      "io_sbufferData_51",
+      "io_sbufferData_52",
+      "io_sbufferData_53",
+      "io_sbufferData_54",
+      "io_sbufferData_55",
+      "io_sbufferData_56",
+      "io_sbufferData_57",
+      "io_sbufferData_58",
+      "io_sbufferData_59",
+      "io_sbufferData_60",
+      "io_sbufferData_61",
+      "io_sbufferData_62",
+      "io_sbufferData_63",
+      "io_sbufferMask"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestSbufferEvent",
+    "prefix": "l_soc.core_with_l2.core.memBlock.sbuffer.difftest_1.",
+    "inputs": [
+      "io_coreid",
+      "io_index",
+      "io_sbufferResp",
+      "io_sbufferAddr",
+      "io_sbufferData_0",
+      "io_sbufferData_1",
+      "io_sbufferData_2",
+      "io_sbufferData_3",
+      "io_sbufferData_4",
+      "io_sbufferData_5",
+      "io_sbufferData_6",
+      "io_sbufferData_7",
+      "io_sbufferData_8",
+      "io_sbufferData_9",
+      "io_sbufferData_10",
+      "io_sbufferData_11",
+      "io_sbufferData_12",
+      "io_sbufferData_13",
+      "io_sbufferData_14",
+      "io_sbufferData_15",
+      "io_sbufferData_16",
+      "io_sbufferData_17",
+      "io_sbufferData_18",
+      "io_sbufferData_19",
+      "io_sbufferData_20",
+      "io_sbufferData_21",
+      "io_sbufferData_22",
+      "io_sbufferData_23",
+      "io_sbufferData_24",
+      "io_sbufferData_25",
+      "io_sbufferData_26",
+      "io_sbufferData_27",
+      "io_sbufferData_28",
+      "io_sbufferData_29",
+      "io_sbufferData_30",
+      "io_sbufferData_31",
+      "io_sbufferData_32",
+      "io_sbufferData_33",
+      "io_sbufferData_34",
+      "io_sbufferData_35",
+      "io_sbufferData_36",
+      "io_sbufferData_37",
+      "io_sbufferData_38",
+      "io_sbufferData_39",
+      "io_sbufferData_40",
+      "io_sbufferData_41",
+      "io_sbufferData_42",
+      "io_sbufferData_43",
+      "io_sbufferData_44",
+      "io_sbufferData_45",
+      "io_sbufferData_46",
+      "io_sbufferData_47",
+      "io_sbufferData_48",
+      "io_sbufferData_49",
+      "io_sbufferData_50",
+      "io_sbufferData_51",
+      "io_sbufferData_52",
+      "io_sbufferData_53",
+      "io_sbufferData_54",
+      "io_sbufferData_55",
+      "io_sbufferData_56",
+      "io_sbufferData_57",
+      "io_sbufferData_58",
+      "io_sbufferData_59",
+      "io_sbufferData_60",
+      "io_sbufferData_61",
+      "io_sbufferData_62",
+      "io_sbufferData_63",
+      "io_sbufferMask"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestInstrCommit",
+    "prefix": "l_soc.core_with_l2.core.ctrlBlock.rob.difftest.",
+    "inputs": [
+      "io_coreid",
+      "io_index",
+      "io_valid",
+      "io_special",
+      "io_skip",
+      "io_isRVC",
+      "io_rfwen",
+      "io_fpwen",
+      "io_wpdest",
+      "io_wdest",
+      "io_pc",
+      "io_instr"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestRunaheadCommitEvent",
+    "prefix": "l_soc.core_with_l2.core.ctrlBlock.rob.runahead_commit.",
+    "inputs": [
+      "io_coreid",
+      "io_index",
+      "io_valid",
+      "io_pc"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestInstrCommit",
+    "prefix": "l_soc.core_with_l2.core.ctrlBlock.rob.difftest_1.",
+    "inputs": [
+      "io_coreid",
+      "io_index",
+      "io_valid",
+      "io_special",
+      "io_skip",
+      "io_isRVC",
+      "io_rfwen",
+      "io_fpwen",
+      "io_wpdest",
+      "io_wdest",
+      "io_pc",
+      "io_instr"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestRunaheadCommitEvent",
+    "prefix": "l_soc.core_with_l2.core.ctrlBlock.rob.runahead_commit_1.",
+    "inputs": [
+      "io_coreid",
+      "io_index",
+      "io_valid",
+      "io_pc"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestInstrCommit",
+    "prefix": "l_soc.core_with_l2.core.ctrlBlock.rob.difftest_2.",
+    "inputs": [
+      "io_coreid",
+      "io_index",
+      "io_valid",
+      "io_special",
+      "io_skip",
+      "io_isRVC",
+      "io_rfwen",
+      "io_fpwen",
+      "io_wpdest",
+      "io_wdest",
+      "io_pc",
+      "io_instr"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestRunaheadCommitEvent",
+    "prefix": "l_soc.core_with_l2.core.ctrlBlock.rob.runahead_commit_2.",
+    "inputs": [
+      "io_coreid",
+      "io_index",
+      "io_valid",
+      "io_pc"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestInstrCommit",
+    "prefix": "l_soc.core_with_l2.core.ctrlBlock.rob.difftest_3.",
+    "inputs": [
+      "io_coreid",
+      "io_index",
+      "io_valid",
+      "io_special",
+      "io_skip",
+      "io_isRVC",
+      "io_rfwen",
+      "io_fpwen",
+      "io_wpdest",
+      "io_wdest",
+      "io_pc",
+      "io_instr"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestRunaheadCommitEvent",
+    "prefix": "l_soc.core_with_l2.core.ctrlBlock.rob.runahead_commit_3.",
+    "inputs": [
+      "io_coreid",
+      "io_index",
+      "io_valid",
+      "io_pc"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestInstrCommit",
+    "prefix": "l_soc.core_with_l2.core.ctrlBlock.rob.difftest_4.",
+    "inputs": [
+      "io_coreid",
+      "io_index",
+      "io_valid",
+      "io_special",
+      "io_skip",
+      "io_isRVC",
+      "io_rfwen",
+      "io_fpwen",
+      "io_wpdest",
+      "io_wdest",
+      "io_pc",
+      "io_instr"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestRunaheadCommitEvent",
+    "prefix": "l_soc.core_with_l2.core.ctrlBlock.rob.runahead_commit_4.",
+    "inputs": [
+      "io_coreid",
+      "io_index",
+      "io_valid",
+      "io_pc"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestInstrCommit",
+    "prefix": "l_soc.core_with_l2.core.ctrlBlock.rob.difftest_5.",
+    "inputs": [
+      "io_coreid",
+      "io_index",
+      "io_valid",
+      "io_special",
+      "io_skip",
+      "io_isRVC",
+      "io_rfwen",
+      "io_fpwen",
+      "io_wpdest",
+      "io_wdest",
+      "io_pc",
+      "io_instr"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestRunaheadCommitEvent",
+    "prefix": "l_soc.core_with_l2.core.ctrlBlock.rob.runahead_commit_5.",
+    "inputs": [
+      "io_coreid",
+      "io_index",
+      "io_valid",
+      "io_pc"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestLoadEvent",
+    "prefix": "l_soc.core_with_l2.core.ctrlBlock.rob.difftest_6.",
+    "inputs": [
+      "io_coreid",
+      "io_index",
+      "io_valid",
+      "io_paddr",
+      "io_opType",
+      "io_fuType"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestLoadEvent",
+    "prefix": "l_soc.core_with_l2.core.ctrlBlock.rob.difftest_7.",
+    "inputs": [
+      "io_coreid",
+      "io_index",
+      "io_valid",
+      "io_paddr",
+      "io_opType",
+      "io_fuType"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestLoadEvent",
+    "prefix": "l_soc.core_with_l2.core.ctrlBlock.rob.difftest_8.",
+    "inputs": [
+      "io_coreid",
+      "io_index",
+      "io_valid",
+      "io_paddr",
+      "io_opType",
+      "io_fuType"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestLoadEvent",
+    "prefix": "l_soc.core_with_l2.core.ctrlBlock.rob.difftest_9.",
+    "inputs": [
+      "io_coreid",
+      "io_index",
+      "io_valid",
+      "io_paddr",
+      "io_opType",
+      "io_fuType"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestLoadEvent",
+    "prefix": "l_soc.core_with_l2.core.ctrlBlock.rob.difftest_10.",
+    "inputs": [
+      "io_coreid",
+      "io_index",
+      "io_valid",
+      "io_paddr",
+      "io_opType",
+      "io_fuType"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestLoadEvent",
+    "prefix": "l_soc.core_with_l2.core.ctrlBlock.rob.difftest_11.",
+    "inputs": [
+      "io_coreid",
+      "io_index",
+      "io_valid",
+      "io_paddr",
+      "io_opType",
+      "io_fuType"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "DifftestTrapEvent",
+    "prefix": "l_soc.core_with_l2.core.ctrlBlock.rob.difftest_12.",
+    "inputs": [
+      "io_coreid",
+      "io_valid",
+      "io_cycleCnt",
+      "io_instrCnt",
+      "io_hasWFI",
+      "io_code",
+      "io_pc"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.core_with_l2.misc.logger.a_writer.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.core_with_l2.misc.logger.b_writer.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.core_with_l2.misc.logger.c_writer.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.core_with_l2.misc.logger.d_writer.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_0.dataStorage.bankedData_0.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_0.dataStorage.bankedData_0.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_0.dataStorage.bankedData_1.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_0.dataStorage.bankedData_1.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_0.dataStorage.bankedData_2.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_0.dataStorage.bankedData_2.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_0.dataStorage.bankedData_3.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_0.dataStorage.bankedData_3.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_0.dataStorage.bankedData_4.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_0.dataStorage.bankedData_4.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_0.dataStorage.bankedData_5.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_0.dataStorage.bankedData_5.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_0.dataStorage.bankedData_6.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_0.dataStorage.bankedData_6.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_0.dataStorage.bankedData_7.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_0.dataStorage.bankedData_7.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_0.directory.clientDir.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_0.directory.selfDir.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_1.dataStorage.bankedData_0.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_1.dataStorage.bankedData_0.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_1.dataStorage.bankedData_1.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_1.dataStorage.bankedData_1.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_1.dataStorage.bankedData_2.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_1.dataStorage.bankedData_2.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_1.dataStorage.bankedData_3.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_1.dataStorage.bankedData_3.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_1.dataStorage.bankedData_4.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_1.dataStorage.bankedData_4.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_1.dataStorage.bankedData_5.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_1.dataStorage.bankedData_5.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_1.dataStorage.bankedData_6.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_1.dataStorage.bankedData_6.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_1.dataStorage.bankedData_7.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_1.dataStorage.bankedData_7.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_1.directory.clientDir.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_1.directory.selfDir.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_2.dataStorage.bankedData_0.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_2.dataStorage.bankedData_0.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_2.dataStorage.bankedData_1.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_2.dataStorage.bankedData_1.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_2.dataStorage.bankedData_2.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_2.dataStorage.bankedData_2.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_2.dataStorage.bankedData_3.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_2.dataStorage.bankedData_3.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_2.dataStorage.bankedData_4.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_2.dataStorage.bankedData_4.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_2.dataStorage.bankedData_5.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_2.dataStorage.bankedData_5.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_2.dataStorage.bankedData_6.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_2.dataStorage.bankedData_6.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_2.dataStorage.bankedData_7.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_2.dataStorage.bankedData_7.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_2.directory.clientDir.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_2.directory.selfDir.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_3.dataStorage.bankedData_0.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_3.dataStorage.bankedData_0.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_3.dataStorage.bankedData_1.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_3.dataStorage.bankedData_1.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_3.dataStorage.bankedData_2.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_3.dataStorage.bankedData_2.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_3.dataStorage.bankedData_3.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_3.dataStorage.bankedData_3.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_3.dataStorage.bankedData_4.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_3.dataStorage.bankedData_4.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_3.dataStorage.bankedData_5.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_3.dataStorage.bankedData_5.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_3.dataStorage.bankedData_6.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_3.dataStorage.bankedData_6.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_3.dataStorage.bankedData_7.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_3.dataStorage.bankedData_7.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_3.directory.clientDir.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.core_with_l2.l2cache.slices_3.directory.selfDir.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.core_with_l2.logger.a_writer.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.core_with_l2.logger.b_writer.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.core_with_l2.logger.c_writer.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.core_with_l2.logger.d_writer.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.core_with_l2.logger_1.a_writer.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.core_with_l2.logger_1.b_writer.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.core_with_l2.logger_1.c_writer.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "TLLogWriter",
+    "prefix": "l_soc.core_with_l2.logger_1.d_writer.",
+    "inputs": [
+      "channel",
+      "opcode",
+      "param",
+      "source",
+      "sink",
+      "address",
+      "data_0",
+      "data_1",
+      "data_2",
+      "data_3",
+      "stamp",
+      "user",
+      "echo",
+      "wen",
+      "reset"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_0.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_0.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_0.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_0.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_1.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_1.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_1.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_1.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_2.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_2.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_2.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_2.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_3.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_3.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_3.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_3.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_4.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_4.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_4.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_4.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_5.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_5.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_5.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_5.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_6.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_6.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_6.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_6.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_7.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_7.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_7.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.dataStorage.bankedData_7.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.directory.clientDir.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_0.directory.selfDir.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_0.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_0.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_0.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_0.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_1.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_1.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_1.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_1.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_2.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_2.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_2.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_2.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_3.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_3.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_3.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_3.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_4.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_4.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_4.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_4.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_5.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_5.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_5.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_5.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_6.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_6.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_6.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_6.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_7.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_7.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_7.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.dataStorage.bankedData_7.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.directory.clientDir.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_1.directory.selfDir.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_0.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_0.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_0.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_0.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_1.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_1.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_1.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_1.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_2.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_2.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_2.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_2.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_3.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_3.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_3.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_3.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_4.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_4.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_4.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_4.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_5.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_5.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_5.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_5.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_6.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_6.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_6.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_6.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_7.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_7.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_7.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.dataStorage.bankedData_7.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.directory.clientDir.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_2.directory.selfDir.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_0.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_0.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_0.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_0.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_1.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_1.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_1.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_1.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_2.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_2.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_2.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_2.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_3.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_3.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_3.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_3.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_4.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_4.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_4.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_4.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_5.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_5.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_5.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_5.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_6.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_6.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_6.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_6.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_7.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_7.clkGate_1.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_7.clkGate_2.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.dataStorage.bankedData_7.clkGate_3.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.directory.clientDir.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "STD_CLKGT_func",
+    "prefix": "l_soc.l3cacheOpt.slices_3.directory.selfDir.clkGate.",
+    "inputs": [
+      "TE",
+      "E"
+    ],
+    "outputs": []
+  },
+  {
+    "module": "FlashHelper",
+    "prefix": "l_simMMIO.flash.flash.",
+    "inputs": [
+      "ren",
+      "addr",
+      "__rteaal_ce_clk"
+    ]
+  },
+  {
+    "module": "SDHelper",
+    "prefix": "l_simMMIO.sd.sdHelper.",
+    "inputs": [
+      "ren",
+      "setAddr",
+      "addr",
+      "__rteaal_ce_clk"
+    ]
+  },
+  {
+    "module": "RAMHelper",
+    "prefix": "l_simAXIMem.ram.rdata_mems_0.",
+    "inputs": [
+      "en",
+      "rIdx",
+      "wIdx",
+      "wdata",
+      "wmask",
+      "wen",
+      "__rteaal_ce_clk"
+    ]
+  },
+  {
+    "module": "RAMHelper",
+    "prefix": "l_simAXIMem.ram.rdata_mems_1.",
+    "inputs": [
+      "en",
+      "rIdx",
+      "wIdx",
+      "wdata",
+      "wmask",
+      "wen",
+      "__rteaal_ce_clk"
+    ]
+  },
+  {
+    "module": "RAMHelper",
+    "prefix": "l_simAXIMem.ram.rdata_mems_2.",
+    "inputs": [
+      "en",
+      "rIdx",
+      "wIdx",
+      "wdata",
+      "wmask",
+      "wen",
+      "__rteaal_ce_clk"
+    ]
+  },
+  {
+    "module": "RAMHelper",
+    "prefix": "l_simAXIMem.ram.rdata_mems_3.",
+    "inputs": [
+      "en",
+      "rIdx",
+      "wIdx",
+      "wdata",
+      "wmask",
+      "wen",
+      "__rteaal_ce_clk"
+    ]
+  }
+]

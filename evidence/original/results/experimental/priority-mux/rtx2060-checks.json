@@ -1,0 +1,524 @@
+{
+  "status": "passed",
+  "files_checked": 406,
+  "relay_parts_checked": 44,
+  "archive_sha256": "efa5ecf0060645ce0942b153208647db2f02ec6978eb99c45289f3d4c71a6bd6",
+  "full_gpu_runs": 16,
+  "smoke_runs": 4,
+  "cuda_ctests": 45,
+  "all_full_traces_and_cpu_fingerprints_match": true,
+  "cpu_oracles": {
+    "off": {
+      "source": "results/experimental/constant-mux/runtime/portable/gpu/on/runs/cpu-export-100k",
+      "result_sha256": "36160ccc51ed5b49ab489c04656ee6ed44936dcefdb2a93dc4087927a827e787",
+      "reused_identical_graph": true,
+      "command_sha256": "8bd548e2bf7232678fdf419f340fb2caf60bc483da10f7232ef27f710bd14f41",
+      "binary_sha256": "bba56832fb0703cfd58e9f1f5d732e8c242fee9f963989bd54cd4ff3445c3b18",
+      "fingerprints": {
+        "full_data_fingerprint": 5068111312814057314,
+        "memory64_fingerprint": 15503565812696885107,
+        "memory8_fingerprint": 656100811014868721
+      }
+    },
+    "on": {
+      "source": "results/experimental/priority-mux/runtime/portable/gpu/on/runs/cpu-export-100k",
+      "result_sha256": "6486694c0543362c86a8a081ab01609c202ab53c511c1aab97649b949dd12e12",
+      "reused_identical_graph": false,
+      "command_sha256": "bf771fd635c9fe2708a116b325f02cec02875257a5979e2063f23de6b3d341c8",
+      "binary_sha256": "d2f142e6bda84dac5cc67338038ee258a4f65201babff3350d99486a0c2eb00b",
+      "fingerprints": {
+        "full_data_fingerprint": 1338522527552546502,
+        "memory64_fingerprint": 15503565812696885107,
+        "memory8_fingerprint": 656100811014868721
+      }
+    }
+  },
+  "summary": {
+    "original/off": {
+      "samples": 3,
+      "median_cycles_per_second": 697.9482016095059,
+      "median_evaluation_seconds": 143.27710819999916,
+      "median_kernel_device_seconds": 131.1610072394605,
+      "kernel_launches_per_cycle": 144,
+      "minimum_cycles_per_second": 696.0657609352625,
+      "maximum_cycles_per_second": 699.4193927280734,
+      "allocated_device_bytes": 1156236752
+    },
+    "original/on": {
+      "samples": 3,
+      "median_cycles_per_second": 746.816521316445,
+      "median_evaluation_seconds": 133.9016976000019,
+      "median_kernel_device_seconds": 121.83773521590217,
+      "kernel_launches_per_cycle": 141,
+      "minimum_cycles_per_second": 729.349822741559,
+      "maximum_cycles_per_second": 749.1146736179999,
+      "allocated_device_bytes": 1156375500
+    },
+    "no-unroll/off": {
+      "samples": 3,
+      "median_cycles_per_second": 696.4303062737675,
+      "median_evaluation_seconds": 143.58938590000116,
+      "median_kernel_device_seconds": 131.30361906862294,
+      "kernel_launches_per_cycle": 144,
+      "minimum_cycles_per_second": 695.1601688027382,
+      "maximum_cycles_per_second": 697.8907666899375,
+      "allocated_device_bytes": 1156236752
+    },
+    "no-unroll/on": {
+      "samples": 3,
+      "median_cycles_per_second": 746.6769446847638,
+      "median_evaluation_seconds": 133.92672790000037,
+      "median_kernel_device_seconds": 121.90430505609551,
+      "kernel_launches_per_cycle": 141,
+      "minimum_cycles_per_second": 746.1289101124368,
+      "maximum_cycles_per_second": 749.0548551304553,
+      "allocated_device_bytes": 1156375500
+    }
+  },
+  "gains": {
+    "graph_original_kernel_percent": 7.001711530203258,
+    "graph_no_unroll_kernel_percent": 7.21488395297436,
+    "kernel_baseline_graph_percent": -0.2174796542548596,
+    "kernel_optimized_graph_percent": -0.01868954792739741,
+    "combined_percent": 6.981713394043698
+  },
+  "environment": {
+    "utc": "2026-11-13T18:42:14.627545+00:00",
+    "hostname": "LAPTOP-JTMR2H59",
+    "platform": "Windows-10-10.0.19041-SP0",
+    "gpu": "index, name, uuid, driver_version, compute_cap\n0, NVIDIA GeForce RTX 2060, GPU-8e4316ac-74f4-4233-0e1c-be24b5560068, 565.90, 7.5\n",
+    "affinity": {
+      "pid": 37416,
+      "allowed_before_mask": "0x4",
+      "process_mask": "0x4",
+      "system_mask": "0xfff",
+      "cpus": [
+        2
+      ],
+      "children_inherit": true
+    },
+    "nvcc": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2024 NVIDIA Corporation\nBuilt on Wed_Oct_30_01:18:48_Pacific_Daylight_Time_2024\nCuda compilation tools, release 12.6, V12.6.85\nBuild cuda_12.6.r12.6/compiler.35059454_0\n",
+    "cmake": "cmake version 3.20.21032501-MSVC_2\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).\n",
+    "python": "3.9.2",
+    "build_type": "",
+    "cuda_architecture": "75",
+    "system_configuration_changes": false,
+    "affinity_initial": {
+      "pid": 37416,
+      "allowed_before_mask": "0xfff",
+      "process_mask": "0x4",
+      "system_mask": "0xfff",
+      "cpus": [
+        2
+      ],
+      "children_inherit": true
+    }
+  },
+  "builds": {
+    "original": {
+      "binary": "G:\\FileSpace\\priority-mux-rtx2060-20261114\\work\\kernels\\original\\build\\nanhu_gpu.exe",
+      "binary_sha256": "6bab09d311ba20d33317c07096c4e8ead96adf7c14997eceeaf8ca30cce19626",
+      "kernel_sha256": "7b015a0db1ec7f372b6477afc157ba9782c5bae1b801007fc58037c1c995dfe8",
+      "build_seconds": 45.3720883,
+      "build_type": "",
+      "cuda_architecture": "75",
+      "ctest": "15/15 passed"
+    },
+    "no-unroll": {
+      "binary": "G:\\FileSpace\\priority-mux-rtx2060-20261114\\work\\kernels\\no-unroll\\build\\nanhu_gpu.exe",
+      "binary_sha256": "57288d35e8ccaa616e758350980a5e5a53b4aaadd2843789d8ac2ac3eaf551c7",
+      "kernel_sha256": "e52b999211e0392c710998436022f4c269c01d0504385d0716494b09132ce3c8",
+      "build_seconds": 41.96368830000001,
+      "build_type": "",
+      "cuda_architecture": "75",
+      "ctest": "15/15 passed"
+    }
+  },
+  "sources": {
+    "original": {
+      "source_files": 16,
+      "binary_sha256": "6bab09d311ba20d33317c07096c4e8ead96adf7c14997eceeaf8ca30cce19626",
+      "kernel_sha256": "7b015a0db1ec7f372b6477afc157ba9782c5bae1b801007fc58037c1c995dfe8",
+      "device_flags": [
+        "  DEFINES = -DNANHU_HAS_CUDA=1",
+        "  FLAGS = -D_WINDOWS -Xcompiler=\" /GR /EHsc\" --generate-code=arch=compute_75,code=[compute_75,sm_75] -Xcompiler=-MD --expt-relaxed-constexpr -std=c++17"
+      ],
+      "verified_uncompiled_backups": {}
+    },
+    "no-unroll": {
+      "source_files": 16,
+      "binary_sha256": "57288d35e8ccaa616e758350980a5e5a53b4aaadd2843789d8ac2ac3eaf551c7",
+      "kernel_sha256": "e52b999211e0392c710998436022f4c269c01d0504385d0716494b09132ce3c8",
+      "device_flags": [
+        "  DEFINES = -DNANHU_HAS_CUDA=1",
+        "  FLAGS = -D_WINDOWS -Xcompiler=\" /GR /EHsc\" --generate-code=arch=compute_75,code=[compute_75,sm_75] -Xcompiler=-MD --expt-relaxed-constexpr -std=c++17"
+      ],
+      "verified_uncompiled_backups": {}
+    },
+    "profile": {
+      "source_files": 16,
+      "binary_sha256": "f003f8fd7d75ca209a72606222cbfafe57878fce20a8720decf5ed6324b9be35",
+      "kernel_sha256": "e52b999211e0392c710998436022f4c269c01d0504385d0716494b09132ce3c8",
+      "device_flags": [
+        "  DEFINES = -DNANHU_HAS_CUDA=1",
+        "  FLAGS = -D_WINDOWS -Xcompiler=\" /GR /EHsc\" --generate-code=arch=compute_75,code=[compute_75,sm_75] -Xcompiler=-MD --expt-relaxed-constexpr -std=c++17"
+      ],
+      "verified_uncompiled_backups": {
+        "src/main.cpp.orig": "538880bc8e41a0b677b5fe330c62ad95576773872c4691f27a542adcf7b6b4eb"
+      }
+    }
+  },
+  "adapter_sha256": {
+    "rtx2060_common.py": "25587aa7c1caceb2fd5077fefb46e79d1bd4b09b086e2edea9d24058c2ee6a38",
+    "prepare_native.py": "f4dbb6821b4add6e58047c4d032e1db740512b18bcc325f41b8750e45f6bc459",
+    "run_matrix_windows.py": "8e672cfbef095f418f288a1ef4fe8b4132a53d0335143c78eb85a0400592c9fe",
+    "prepare_activity.py": "bf67e48f318383e5052b9dd3b88a4446804d9dc89394462cfc6e5646ced87a75",
+    "activity_windows.cpp": "c2f86d4487ad731f5dafcf8b7770d19997ae044c3f157baea6551b22afcef186",
+    "run_profile_windows.py": "d79dfc912466386f34ba2e49478a629a66c0c600160076028b54a9092ae47526",
+    "analyze_windows.py": "c44dc62617328f220d81ef34fcb41969307854ed5089f7f3d17c05761f5d56d8",
+    "collect_windows.py": "9f6a09c36f0d4b4998209844821ceed3600cea8702eb7a602c08362466e04db0"
+  },
+  "windows": {
+    "off": [
+      {
+        "nonreset_cycle_begin": 1024,
+        "nonreset_cycle_end_exclusive": 1280,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "exact_node_occurrences_per_window": 256,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 1.4876328125,
+          "compute": 742.6157695312503,
+          "commit": 275.34827734375006,
+          "small_layers": 87.41342578125,
+          "suffix": 113.64011328125,
+          "gather": 2.4488125
+        },
+        "mean_all_kernel_us_per_cycle": 1222.9540312500003,
+        "suffix_kernel_share_percent": 9.29226368100661,
+        "all_narrow_kernel_us_per_cycle": 201.0535390625,
+        "all_narrow_kernel_share_percent": 16.439991522575877,
+        "ideal_suffix_elimination_kernel_sum_speedup": 1.1024417988817223,
+        "amdahl_scope": "Conditional kernel-duration-sum proxy only: assumes suffix can disappear with all other durations unchanged. WDDM overlaps and host/copy time prevent interpreting this as a measured end-to-end limit.",
+        "mean_within_cycle_kernel_gaps_us": 78.12394921875,
+        "negative_gap_count": 98,
+        "negative_gap_sum_us": -54.047,
+        "minimum_signed_gap_ns": -832,
+        "mean_first_kernel_start_to_last_kernel_end_us": 1301.07798046875,
+        "mean_d2h_us": 1.587625,
+        "mean_first_kernel_start_interval_us": 1643.5448470588235,
+        "mean_intercycle_after_last_kernel_us": 342.3059568627451,
+        "window_first_kernel_start_ns": 5072976643314316,
+        "window_last_copy_end_ns": 5072977063734522,
+        "timing_scope": "CUPTI end-start sum is summed activity time, not union time. Signed WDDM overlaps retained. Intercycle intervals include copies, host observation/reference/dispatch and waits; API host wait is not separately measured.",
+        "wddm_overlap_handling": "Negative signed gaps are preserved verbatim and reported; no clamping or non-overlap rejection."
+      },
+      {
+        "nonreset_cycle_begin": 20000,
+        "nonreset_cycle_end_exclusive": 20256,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "exact_node_occurrences_per_window": 256,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 1.50500390625,
+          "compute": 756.60564453125,
+          "commit": 275.89844921875005,
+          "small_layers": 87.71520703125,
+          "suffix": 109.3856953125,
+          "gather": 2.52239453125
+        },
+        "mean_all_kernel_us_per_cycle": 1233.6323945312502,
+        "suffix_kernel_share_percent": 8.866960351998852,
+        "all_narrow_kernel_us_per_cycle": 197.10090234375002,
+        "all_narrow_kernel_share_percent": 15.977280040432426,
+        "ideal_suffix_elimination_kernel_sum_speedup": 1.0972968792245628,
+        "amdahl_scope": "Conditional kernel-duration-sum proxy only: assumes suffix can disappear with all other durations unchanged. WDDM overlaps and host/copy time prevent interpreting this as a measured end-to-end limit.",
+        "mean_within_cycle_kernel_gaps_us": 182.1568984375,
+        "negative_gap_count": 72,
+        "negative_gap_sum_us": -39.042,
+        "minimum_signed_gap_ns": -928,
+        "mean_first_kernel_start_to_last_kernel_end_us": 1415.78929296875,
+        "mean_d2h_us": 1.589296875,
+        "mean_first_kernel_start_interval_us": 2385.447356862745,
+        "mean_intercycle_after_last_kernel_us": 969.1932509803921,
+        "window_first_kernel_start_ns": 5073006466633585,
+        "window_last_copy_end_ns": 5073007076326356,
+        "timing_scope": "CUPTI end-start sum is summed activity time, not union time. Signed WDDM overlaps retained. Intercycle intervals include copies, host observation/reference/dispatch and waits; API host wait is not separately measured.",
+        "wddm_overlap_handling": "Negative signed gaps are preserved verbatim and reported; no clamping or non-overlap rejection."
+      },
+      {
+        "nonreset_cycle_begin": 90000,
+        "nonreset_cycle_end_exclusive": 90256,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "exact_node_occurrences_per_window": 256,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 1.48286328125,
+          "compute": 749.1255507812502,
+          "commit": 275.0132187500001,
+          "small_layers": 87.7541875,
+          "suffix": 115.51816796875,
+          "gather": 2.46440625
+        },
+        "mean_all_kernel_us_per_cycle": 1231.3583945312503,
+        "suffix_kernel_share_percent": 9.381360331954784,
+        "all_narrow_kernel_us_per_cycle": 203.27235546875,
+        "all_narrow_kernel_share_percent": 16.507976586794708,
+        "ideal_suffix_elimination_kernel_sum_speedup": 1.1035257245785266,
+        "amdahl_scope": "Conditional kernel-duration-sum proxy only: assumes suffix can disappear with all other durations unchanged. WDDM overlaps and host/copy time prevent interpreting this as a measured end-to-end limit.",
+        "mean_within_cycle_kernel_gaps_us": 82.08978125,
+        "negative_gap_count": 43,
+        "negative_gap_sum_us": -24.929,
+        "minimum_signed_gap_ns": -1696,
+        "mean_first_kernel_start_to_last_kernel_end_us": 1313.44817578125,
+        "mean_d2h_us": 1.59925,
+        "mean_first_kernel_start_interval_us": 1653.4081176470588,
+        "mean_intercycle_after_last_kernel_us": 339.77976078431374,
+        "window_first_kernel_start_ns": 5073118190404834,
+        "window_last_copy_end_ns": 5073118613356302,
+        "timing_scope": "CUPTI end-start sum is summed activity time, not union time. Signed WDDM overlaps retained. Intercycle intervals include copies, host observation/reference/dispatch and waits; API host wait is not separately measured.",
+        "wddm_overlap_handling": "Negative signed gaps are preserved verbatim and reported; no clamping or non-overlap rejection."
+      }
+    ],
+    "on": [
+      {
+        "nonreset_cycle_begin": 1024,
+        "nonreset_cycle_end_exclusive": 1280,
+        "cycles": 256,
+        "kernels": 36096,
+        "copies": 256,
+        "dropped_records": 0,
+        "exact_node_occurrences_per_window": 256,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 1.472859375,
+          "compute": 761.0571054687498,
+          "commit": 257.1455156249999,
+          "suffix": 98.03371484375,
+          "gather": 2.18601171875
+        },
+        "mean_all_kernel_us_per_cycle": 1119.8952070312498,
+        "suffix_kernel_share_percent": 8.753829307264322,
+        "all_narrow_kernel_us_per_cycle": 98.03371484375,
+        "all_narrow_kernel_share_percent": 8.753829307264322,
+        "ideal_suffix_elimination_kernel_sum_speedup": 1.0959364019421938,
+        "amdahl_scope": "Conditional kernel-duration-sum proxy only: assumes suffix can disappear with all other durations unchanged. WDDM overlaps and host/copy time prevent interpreting this as a measured end-to-end limit.",
+        "mean_within_cycle_kernel_gaps_us": 77.84220703125,
+        "negative_gap_count": 184,
+        "negative_gap_sum_us": -52.734,
+        "minimum_signed_gap_ns": -960,
+        "mean_first_kernel_start_to_last_kernel_end_us": 1197.7374140625,
+        "mean_d2h_us": 1.59498828125,
+        "mean_first_kernel_start_interval_us": 1540.788231372549,
+        "mean_intercycle_after_last_kernel_us": 344.1078431372549,
+        "window_first_kernel_start_ns": 5073292685539340,
+        "window_last_copy_end_ns": 5073293079970179,
+        "timing_scope": "CUPTI end-start sum is summed activity time, not union time. Signed WDDM overlaps retained. Intercycle intervals include copies, host observation/reference/dispatch and waits; API host wait is not separately measured.",
+        "wddm_overlap_handling": "Negative signed gaps are preserved verbatim and reported; no clamping or non-overlap rejection."
+      },
+      {
+        "nonreset_cycle_begin": 20000,
+        "nonreset_cycle_end_exclusive": 20256,
+        "cycles": 256,
+        "kernels": 36096,
+        "copies": 256,
+        "dropped_records": 0,
+        "exact_node_occurrences_per_window": 256,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 1.48098828125,
+          "compute": 764.58892578125,
+          "commit": 255.43776171875,
+          "suffix": 98.12580078125,
+          "gather": 2.20450390625
+        },
+        "mean_all_kernel_us_per_cycle": 1121.8379804687502,
+        "suffix_kernel_share_percent": 8.746878113383984,
+        "all_narrow_kernel_us_per_cycle": 98.12580078125,
+        "all_narrow_kernel_share_percent": 8.746878113383984,
+        "ideal_suffix_elimination_kernel_sum_speedup": 1.0958529191390534,
+        "amdahl_scope": "Conditional kernel-duration-sum proxy only: assumes suffix can disappear with all other durations unchanged. WDDM overlaps and host/copy time prevent interpreting this as a measured end-to-end limit.",
+        "mean_within_cycle_kernel_gaps_us": 79.42011328125,
+        "negative_gap_count": 196,
+        "negative_gap_sum_us": -90.18,
+        "minimum_signed_gap_ns": -1184,
+        "mean_first_kernel_start_to_last_kernel_end_us": 1201.25809375,
+        "mean_d2h_us": 1.5897734375,
+        "mean_first_kernel_start_interval_us": 1561.5610392156864,
+        "mean_intercycle_after_last_kernel_us": 360.17194117647057,
+        "window_first_kernel_start_ns": 5073320427919906,
+        "window_last_copy_end_ns": 5073320827342400,
+        "timing_scope": "CUPTI end-start sum is summed activity time, not union time. Signed WDDM overlaps retained. Intercycle intervals include copies, host observation/reference/dispatch and waits; API host wait is not separately measured.",
+        "wddm_overlap_handling": "Negative signed gaps are preserved verbatim and reported; no clamping or non-overlap rejection."
+      },
+      {
+        "nonreset_cycle_begin": 90000,
+        "nonreset_cycle_end_exclusive": 90256,
+        "cycles": 256,
+        "kernels": 36096,
+        "copies": 256,
+        "dropped_records": 0,
+        "exact_node_occurrences_per_window": 256,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 1.48605859375,
+          "compute": 768.2512578124998,
+          "commit": 257.4410898437499,
+          "suffix": 98.04904296875,
+          "gather": 2.2035625
+        },
+        "mean_all_kernel_us_per_cycle": 1127.4310117187497,
+        "suffix_kernel_share_percent": 8.696677841003847,
+        "all_narrow_kernel_us_per_cycle": 98.04904296875,
+        "all_narrow_kernel_share_percent": 8.696677841003847,
+        "ideal_suffix_elimination_kernel_sum_speedup": 1.0952503987298448,
+        "amdahl_scope": "Conditional kernel-duration-sum proxy only: assumes suffix can disappear with all other durations unchanged. WDDM overlaps and host/copy time prevent interpreting this as a measured end-to-end limit.",
+        "mean_within_cycle_kernel_gaps_us": 82.3159296875,
+        "negative_gap_count": 203,
+        "negative_gap_sum_us": -103.74,
+        "minimum_signed_gap_ns": -1024,
+        "mean_first_kernel_start_to_last_kernel_end_us": 1209.74694140625,
+        "mean_d2h_us": 1.57701953125,
+        "mean_first_kernel_start_interval_us": 1550.5868705882353,
+        "mean_intercycle_after_last_kernel_us": 340.6430117647059,
+        "window_first_kernel_start_ns": 5073424395105290,
+        "window_last_copy_end_ns": 5073424791720347,
+        "timing_scope": "CUPTI end-start sum is summed activity time, not union time. Signed WDDM overlaps retained. Intercycle intervals include copies, host observation/reference/dispatch and waits; API host wait is not separately measured.",
+        "wddm_overlap_handling": "Negative signed gaps are preserved verbatim and reported; no clamping or non-overlap rejection."
+      }
+    ]
+  },
+  "profile_comparison": {
+    "identities_counts_timestamps": "exact",
+    "float_relative_tolerance": 1e-14,
+    "float_absolute_tolerance": 1e-12,
+    "reason": "Python 3.9/3.12 floating summation rounding"
+  },
+  "samples": [
+    {
+      "kind": "original",
+      "mode": "off",
+      "round": 1,
+      "cycles_per_second": 699.4193927280734,
+      "evaluation_seconds": 142.97573249999792
+    },
+    {
+      "kind": "original",
+      "mode": "on",
+      "round": 1,
+      "cycles_per_second": 746.816521316445,
+      "evaluation_seconds": 133.9016976000019
+    },
+    {
+      "kind": "no-unroll",
+      "mode": "off",
+      "round": 1,
+      "cycles_per_second": 695.1601688027382,
+      "evaluation_seconds": 143.8517402000005
+    },
+    {
+      "kind": "no-unroll",
+      "mode": "on",
+      "round": 1,
+      "cycles_per_second": 746.1289101124368,
+      "evaluation_seconds": 134.0250975999987
+    },
+    {
+      "kind": "no-unroll",
+      "mode": "on",
+      "round": 2,
+      "cycles_per_second": 746.6769446847638,
+      "evaluation_seconds": 133.92672790000037
+    },
+    {
+      "kind": "no-unroll",
+      "mode": "off",
+      "round": 2,
+      "cycles_per_second": 697.8907666899375,
+      "evaluation_seconds": 143.28889959999788
+    },
+    {
+      "kind": "original",
+      "mode": "on",
+      "round": 2,
+      "cycles_per_second": 749.1146736179999,
+      "evaluation_seconds": 133.49091069999992
+    },
+    {
+      "kind": "original",
+      "mode": "off",
+      "round": 2,
+      "cycles_per_second": 696.0657609352625,
+      "evaluation_seconds": 143.66458690000195
+    },
+    {
+      "kind": "original",
+      "mode": "off",
+      "round": 3,
+      "cycles_per_second": 697.9482016095059,
+      "evaluation_seconds": 143.27710819999916
+    },
+    {
+      "kind": "original",
+      "mode": "on",
+      "round": 3,
+      "cycles_per_second": 729.349822741559,
+      "evaluation_seconds": 137.1084174999991
+    },
+    {
+      "kind": "no-unroll",
+      "mode": "off",
+      "round": 3,
+      "cycles_per_second": 696.4303062737675,
+      "evaluation_seconds": 143.58938590000116
+    },
+    {
+      "kind": "no-unroll",
+      "mode": "on",
+      "round": 3,
+      "cycles_per_second": 749.0548551304553,
+      "evaluation_seconds": 133.50157110000177
+    }
+  ],
+  "telemetry": {
+    "samples": 500,
+    "gpu_utilization_percent": {
+      "minimum": 1.0,
+      "maximum": 83.0
+    },
+    "memory_used_mib": {
+      "minimum": 621.0,
+      "maximum": 1835.0
+    },
+    "temperature_c": {
+      "minimum": 49.0,
+      "maximum": 66.0
+    },
+    "sm_clock_mhz": {
+      "minimum": 300.0,
+      "maximum": 1890.0
+    },
+    "memory_clock_mhz": {
+      "minimum": 405.0,
+      "maximum": 5500.0
+    },
+    "power_w": {
+      "minimum": 9.41,
+      "maximum": 79.9
+    },
+    "scope": "Includes build/test/smoke/matrix/profile periods. Desktop applications left running; measurements are not from an exclusively reserved GPU."
+  },
+  "limits": [
+    "Compute Sanitizer not run",
+    "cuobjdump/SASS/resource dump unavailable in inspected toolkit; no extra installation attempted",
+    "No Nsight Compute counters or hardware bandwidth/occupancy bottleneck claim",
+    "CUPTI summed kernel durations are not disjoint device busy time; WDDM timestamp overlaps retained",
+    "CUPTI adapter records kernel and memcpy activity; host API waits are not separately measured",
+    "Tracing/control throughput is not part of the performance ranking",
+    "100K cycles are a fixed CoreMark prefix, not a completed CoreMark score",
+    "Windows CUDA12.6/MSVC empty-build-type flags differ from Blackwell Linux/CUDA13.2 toolchain; ratios here compare this machine only"
+  ]
+}

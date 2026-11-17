@@ -1,0 +1,26 @@
+{
+  "command": [
+    "taskset",
+    "-c",
+    "110",
+    "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-coremark-100k/rteaal_coremark_thp_prefault",
+    "xiangshan-nanhu-indexed",
+    "/nfs/home/zhangziqing/RTeAAL/XiangShan-nanhu-legacy/ready-to-run/coremark-2-iteration.bin",
+    "/nfs/home/zhangziqing/RTeAAL/results/nanhu/preserved-signals.txt",
+    "100000",
+    "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-coremark-100k/coremark-thp-final-rteaal.trace",
+    "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-coremark-100k/coremark-thp-final-verilator.trace"
+  ],
+  "cpu": 110,
+  "siblings": [
+    110,
+    238
+  ],
+  "binary_sha256": "2b0f992473a61007f41fac8717f58600782e88349f3dbca76106f47a0002c1bc",
+  "image": "/nfs/home/zhangziqing/RTeAAL/XiangShan-nanhu-legacy/ready-to-run/coremark-2-iteration.bin",
+  "image_sha256": "1156255cce0d01cffbf7232fa4a168a00defc41e0c8ea6096a3186ca30a48519",
+  "image_bytes": 18984,
+  "uart_sampling": "value at rising edge; Verilator samples after clock-low evaluation",
+  "requested_nonreset_cycles": 100000,
+  "reset_cycles": 64
+}

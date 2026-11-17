@@ -1,0 +1,2 @@
+# Historical evidence is preserved byte-for-byte, including original line endings.
+evidence/original/** -text

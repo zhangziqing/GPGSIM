@@ -1,0 +1,19 @@
+{
+  "selected_commit": "0a68ebc13b3d96a78d8663679393ecbea5b8fb73",
+  "generation": "Nanhu",
+  "author_date": "2023-08-01T09:28:41+08:00",
+  "committer_date": "2024-03-13T14:04:28+08:00",
+  "scala": "2.12.13",
+  "mill": "0.11.7",
+  "rteaal_firrtl": "1.5.6",
+  "following_chisel_bump": {
+    "commit": "2fa0f68b55ddc8f2f610ed871837837b8a826f69",
+    "subject": "Bump Chisel 3.6.1"
+  },
+  "jdk": "/nfs/share/graalvm-ce-java11-21.3.0",
+  "original_checkout_modified": false,
+  "chisel_declared": "3.5.0",
+  "chisel_resolved": "3.5.1",
+  "firrtl_resolved": "1.5.1",
+  "resolved_classpath": "XiangShan-nanhu-legacy/out/XiangShan/test/runClasspath.json"
+}

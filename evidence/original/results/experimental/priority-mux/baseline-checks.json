@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "prepared_firrtl_identical": true,
+  "prepared_firrtl_sha256": "7e68d4ab87e9c37d344562ef9899839085fd0c6a298f610d766b2df3fc8f9336",
+  "baseline_directory": "results/experimental/constant-mux/runtime/on",
+  "tensor_files": {
+    "unswizzled_nptr": {
+      "identical": true,
+      "sha256": "07ec6a50d2bd9c0dfd03404318eede4c6464ddf115c1a2eb63073ed9f45dd7d5"
+    },
+    "unswizzled_rptr": {
+      "identical": true,
+      "sha256": "887eaf96833821bd0f7aeb6bba931ea0a7e1172278161261649778622887e304"
+    },
+    "unswizzled_sptr": {
+      "identical": true,
+      "sha256": "b2fcff486c334cfb4b2b52c250567ce0942c519aff2e6663f44b93a6ec643f77"
+    },
+    "unswizzled_ss_lens_ptr": {
+      "identical": true,
+      "sha256": "331fca7b05e4e0843a006b647d13f459816bddec6639191996d048c27c275d3f"
+    },
+    "rptr": {
+      "identical": true,
+      "sha256": "a3ce652d12bc8aca63a85e24d3a004d3aaae81fc8ad64f24ac41b1ac29774e58"
+    },
+    "sptr": {
+      "identical": true,
+      "sha256": "ff41494da49b5673014b1b0b0235913ab2222907dbaca3e1e3197826170581e0"
+    },
+    "fptr": {
+      "identical": true,
+      "sha256": "1c901bd05f4f59907d797bb27967ee3502cd2eb1153a4419d78ab82ba8a00d40"
+    },
+    "layer_num": {
+      "identical": true,
+      "sha256": "dbae772db29058a88f9bd830e957c695347c41b6162a7eb9a9ea13def34be56b"
+    },
+    "S_shape": {
+      "identical": true,
+      "sha256": "197a7b31549c3445b8cb2d765c63bcc07df0e8d92a47a7a84e53f33999914f46"
+    }
+  }
+}

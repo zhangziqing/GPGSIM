@@ -1,0 +1,29 @@
+{
+  "SimTop.fir": {
+    "bytes": 735871839,
+    "sha256": "fb302ad2a10c1673db91ee9d4e6500fe43fbacfa1335808417b75e8a09e0ed8e"
+  },
+  "SimTop.hi.fir": {
+    "bytes": 513547193,
+    "sha256": "0e9609348001fb73c50c918a9d7be83319e75d486ec51b0511b79b543a7df6a0"
+  },
+  "SimTop.anno.json": {
+    "bytes": 1936248,
+    "sha256": "da1b4cef4b79ba4c73227f5a0e96ed1b5680b74e0207944adebaef3cc1f4bd17"
+  },
+  "SimTop.preclock.lo.fir": {
+    "path": "results/nanhu/SimTop.preclock.lo.fir",
+    "bytes": 99658529,
+    "sha256": "4eca6ecb46a01e8fc14a14e7d285ba123dbf70dd9d291d3c3217c7c09886ed0e",
+    "previous_record": {
+      "bytes": 132901136,
+      "sha256": "21fcc11e4a1a26ca1afc3e6ba216df5631502ba70e7ed08cedaeeccc0d77e179"
+    },
+    "record_note": "The checkpoint was rewritten by later compile retries (see logs/rteaal-nanhu-compile-attempt7.log); the prior manifest entry was stale. Earlier bytes were not retained for a direct comparison. Current tensor and simulator artifacts have separate verified manifests."
+  },
+  "SimTop.v": {
+    "path": "results/nanhu/verilog/SimTop.v",
+    "bytes": 140373668,
+    "sha256": "041e83d5e3c9bc74b845292192dd23c11b37a2080df6f647833e3fae089977cd"
+  }
+}

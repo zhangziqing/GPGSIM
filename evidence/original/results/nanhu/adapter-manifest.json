@@ -1,0 +1,62 @@
+{
+  "upstream_commit": "a41492ee3177a15a01f3583fd7e08010b2ab3886",
+  "kernel_RU_cc_unchanged": true,
+  "kernel_RU_sha256": "05ad910e0d61a6c4c057c9446c561de4a213203cca2a22716644b4b8771b8d50",
+  "adapter_patch_sha256": "249052fd9161d7eb66b208b0ee8110a190f0948472957d8e410399a7b2d8c194",
+  "nanhu_enabled_by": "-Drteaal.nanhu=true",
+  "whole_design_correctness": "passed checked-loop with 1 and 1000 iterations; retirement stream/defined GPRs/trap checked; not formal equivalence",
+  "firrtl_optimization": {
+    "official_sources": [
+      "downloads/RemoveAccesses-1.5.1.scala",
+      "downloads/RemoveAccesses-1.5.6.scala"
+    ],
+    "source": "tools/firrtl-fast-accesses/src/RemoveAccesses.scala",
+    "changes": [
+      "expand static selected subtree directly",
+      "avoid recursive aggregate-type hashing in expression cache"
+    ],
+    "control_comparison": "stock/optimized Low FIRRTL byte-identical for Scala 2.12 and 2.13",
+    "current_process_refresh": "Only RemoveAccesses$ method bodies refreshed; javap private schema compared identical; class redefinition logged in logs/nanhu-firrtl-pass-refresh.log and elaboration log",
+    "reproduction": "tools/elaborate_nanhu.py loads final optimized jar from process startup"
+  },
+  "compiler_jar_sha256": "ee66eef1c43b57ba5fc9d2d2ca5cb0f2e275ef162f0b119925ec1f5d2ba6c814",
+  "inactive_jtag_policy": "constant TCK=0, TMS=1, TDI=0; inverted clocks accepted only with proven constant source in every instance",
+  "observation_only_external_modules": [
+    "Difftest*",
+    "TLLogWriter (requires all input ports)"
+  ],
+  "wide_slice_control": {
+    "status": "passed",
+    "slices_against_BigInt": 2756,
+    "head_tail_against_BigInt": 42,
+    "log": "logs/nanhu-widebits-check.log"
+  },
+  "checkpoint_control": {
+    "status": "passed",
+    "modes": [
+      "fresh",
+      "exact suffix replay",
+      "skip optional register elision"
+    ],
+    "results": "results/nanhu/checkpoint-checks.json"
+  },
+  "signed_memory_control": {
+    "status": "passed",
+    "cycles": "32..999",
+    "reference": "Verilator",
+    "negative_values_included": true
+  },
+  "memory_dependency_index_control": {
+    "status": "passed",
+    "writers": 600,
+    "reference": "upstream intersection algorithm",
+    "log": "logs/nanhu-memory-edges-check.log"
+  },
+  "mux_table_control": {
+    "status": "passed",
+    "log": "logs/nanhu-mux-table-check.log"
+  },
+  "graph_index_experiment": "results/experimental/chain-index/status.json",
+  "large_layer_host": "op_ss_3 evaluator unchanged; local counter 0 and output pointer offset, host size_t aggregate; 350000-output comparison passed",
+  "runtime_artifacts": "results/nanhu/tensor-manifest.json"
+}

@@ -1,0 +1,49 @@
+{
+  "name": "nu-native-s1",
+  "configuration": {
+    "name": "nu-native-s1",
+    "family": "NU",
+    "unroll": 8,
+    "scatter": 1,
+    "native": true,
+    "compiler_unroll": false,
+    "unchecked": true,
+    "unroll_all": false,
+    "extra": []
+  },
+  "command": [
+    "clang++",
+    "-std=c++17",
+    "-O3",
+    "-g",
+    "-DNANHU_LARGE_LAYERS",
+    "-I/nfs/home/zhangziqing/RTeAAL/tools/local/include",
+    "-I/nfs/home/zhangziqing/RTeAAL/tools",
+    "-DTASK_ROOT=\"/nfs/home/zhangziqing/RTeAAL\"",
+    "-march=native",
+    "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-tuning/build/nu-native-s1/runner.cc",
+    "/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel/libfesvr.a",
+    "-lpthread",
+    "-o",
+    "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-tuning/build/nu-native-s1/runner"
+  ],
+  "build_seconds": 14.779560804367065,
+  "files": {
+    "runner.cc": {
+      "bytes": 14872,
+      "sha256": "90749e6c9c2cf15c7916abea3a4003fcb21abc3b22a57fe7d57d505f694fbe27"
+    },
+    "build.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "kernel.h": {
+      "bytes": 16884,
+      "sha256": "bde01fffd692535a55a8b1db92a21002a92aff51eb6b54cd5ddeb17866ee0070"
+    },
+    "runner": {
+      "bytes": 3051720,
+      "sha256": "6fa557b59226d389bcefed7f1a054708b2ff164689a2179053b7f0e4e512ce4c"
+    }
+  }
+}

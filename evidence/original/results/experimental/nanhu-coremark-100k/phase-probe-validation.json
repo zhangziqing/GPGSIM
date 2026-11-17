@@ -1,0 +1,6 @@
+{
+  "cycles": 10000,
+  "full_trace_byte_identical": true,
+  "trace_sha256": "47eb81186c3a5a90690bc8c16640a7361376854784756ac3d452f2ad3ed6fdba",
+  "uart": "Run"
+}

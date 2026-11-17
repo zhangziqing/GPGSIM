@@ -1,0 +1,897 @@
+{
+  "status": "passed",
+  "cpu": 91,
+  "rounds": 3,
+  "candidates": [
+    "nu-aligned-all-s1",
+    "psu8-aligned-all-s1",
+    "nu-native-s1",
+    "Verilator",
+    "ou-s1"
+  ],
+  "samples": [
+    {
+      "candidate": "nu-aligned-all-s1",
+      "round": 1,
+      "label": "final-r1-nu-aligned-all-s1",
+      "result": {
+        "candidate": "nu-aligned-all-s1",
+        "checked_cycles_per_second": 229.39716611178255,
+        "checked_run_seconds": 43.649187868,
+        "correctness": "RV64I commit stream and defined integer registers checked",
+        "cycles_per_second": 229.53074790976345,
+        "design": "xiangshan-nanhu-indexed",
+        "first_commit_cycle": 630,
+        "instructions_per_second": 183.61542901799714,
+        "loop_count_observed": 1000,
+        "measured_cycles": 10013,
+        "program": "/nfs/home/zhangziqing/RTeAAL/results/nanhu/checked-loop-1000.bin",
+        "retired_instructions": 8011,
+        "simulation_seconds": 43.62378500999988,
+        "state": {
+          "live_in": 2402664888337422865,
+          "memory64": 10045881209968702466,
+          "memory8": 2134523048896800505
+        },
+        "status": "passed",
+        "tensor_load_seconds": 2.774302524,
+        "timing": "evaluation of cycles after first commit, excluding oracle, trace, loading and reset; includes timer overhead",
+        "total_cycles": 10644,
+        "trap_code": 0,
+        "trap_pc": 2147483708,
+        "cpu": 91,
+        "validation": {
+          "trace_matches_verilator": true,
+          "status": true,
+          "total_cycles": true,
+          "first_commit_cycle": true,
+          "retired_instructions": true,
+          "measured_cycles": true,
+          "loop_count_observed": true,
+          "trap_code": true,
+          "live_state_and_memories_match_reference": true
+        },
+        "binary_sha256": "9417edfe3d4de6e0ca168048d19a7bafe594ab6d4b5ab7a8c9e86e5ac63cb0fb",
+        "host_cpu_utilization": {
+          "cpu91": {
+            "busy_percent": 99.95964487489911,
+            "ticks": 4956
+          },
+          "cpu219": {
+            "busy_percent": 5.99471652103231,
+            "ticks": 4921
+          }
+        },
+        "run_started_unix": 1794249151.2761993,
+        "run_ended_unix": 1794249200.8377175
+      }
+    },
+    {
+      "candidate": "psu8-aligned-all-s1",
+      "round": 1,
+      "label": "final-r1-psu8-aligned-all-s1",
+      "result": {
+        "candidate": "psu8-aligned-all-s1",
+        "checked_cycles_per_second": 229.26344255114438,
+        "checked_run_seconds": 43.674647334,
+        "correctness": "RV64I commit stream and defined integer registers checked",
+        "cycles_per_second": 229.41736425567711,
+        "design": "xiangshan-nanhu-indexed",
+        "first_commit_cycle": 630,
+        "instructions_per_second": 183.52472662418592,
+        "loop_count_observed": 1000,
+        "measured_cycles": 10013,
+        "program": "/nfs/home/zhangziqing/RTeAAL/results/nanhu/checked-loop-1000.bin",
+        "retired_instructions": 8011,
+        "simulation_seconds": 43.64534494800003,
+        "state": {
+          "live_in": 2402664888337422865,
+          "memory64": 10045881209968702466,
+          "memory8": 2134523048896800505
+        },
+        "status": "passed",
+        "tensor_load_seconds": 2.729759485,
+        "timing": "evaluation of cycles after first commit, excluding oracle, trace, loading and reset; includes timer overhead",
+        "total_cycles": 10644,
+        "trap_code": 0,
+        "trap_pc": 2147483708,
+        "cpu": 91,
+        "validation": {
+          "trace_matches_verilator": true,
+          "status": true,
+          "total_cycles": true,
+          "first_commit_cycle": true,
+          "retired_instructions": true,
+          "measured_cycles": true,
+          "loop_count_observed": true,
+          "trap_code": true,
+          "live_state_and_memories_match_reference": true
+        },
+        "binary_sha256": "d14b7896fd24b814e871e24b0c099fc5f1837d1f02aacc3ed44faf1e532b941b",
+        "host_cpu_utilization": {
+          "cpu91": {
+            "busy_percent": 99.93946731234867,
+            "ticks": 4956
+          },
+          "cpu219": {
+            "busy_percent": 5.31027466937945,
+            "ticks": 4915
+          }
+        },
+        "run_started_unix": 1794249250.4503212,
+        "run_ended_unix": 1794249300.0099874
+      }
+    },
+    {
+      "candidate": "nu-native-s1",
+      "round": 1,
+      "label": "final-r1-nu-native-s1",
+      "result": {
+        "candidate": "nu-native-s1",
+        "checked_cycles_per_second": 215.6642222652352,
+        "checked_run_seconds": 46.42865606,
+        "correctness": "RV64I commit stream and defined integer registers checked",
+        "cycles_per_second": 215.77921417430844,
+        "design": "xiangshan-nanhu-indexed",
+        "first_commit_cycle": 630,
+        "instructions_per_second": 172.61475137683118,
+        "loop_count_observed": 1000,
+        "measured_cycles": 10013,
+        "program": "/nfs/home/zhangziqing/RTeAAL/results/nanhu/checked-loop-1000.bin",
+        "retired_instructions": 8011,
+        "simulation_seconds": 46.40391354800007,
+        "state": {
+          "live_in": 2402664888337422865,
+          "memory64": 10045881209968702466,
+          "memory8": 2134523048896800505
+        },
+        "status": "passed",
+        "tensor_load_seconds": 2.746305047,
+        "timing": "evaluation of cycles after first commit, excluding oracle, trace, loading and reset; includes timer overhead",
+        "total_cycles": 10644,
+        "trap_code": 0,
+        "trap_pc": 2147483708,
+        "cpu": 91,
+        "validation": {
+          "trace_matches_verilator": true,
+          "status": true,
+          "total_cycles": true,
+          "first_commit_cycle": true,
+          "retired_instructions": true,
+          "measured_cycles": true,
+          "loop_count_observed": true,
+          "trap_code": true,
+          "live_state_and_memories_match_reference": true
+        },
+        "binary_sha256": "6fa557b59226d389bcefed7f1a054708b2ff164689a2179053b7f0e4e512ce4c",
+        "host_cpu_utilization": {
+          "cpu91": {
+            "busy_percent": 99.98094875214326,
+            "ticks": 5249
+          },
+          "cpu219": {
+            "busy_percent": 6.3559322033898304,
+            "ticks": 5192
+          }
+        },
+        "run_started_unix": 1794249300.0897422,
+        "run_ended_unix": 1794249352.5913439
+      }
+    },
+    {
+      "candidate": "Verilator",
+      "round": 1,
+      "label": "final-r1-Verilator",
+      "result": {
+        "checked_cycles_per_second": 911.1199730972814,
+        "checked_run_seconds": 10.989771156,
+        "cycles_per_second": 911.7162562410981,
+        "first_commit_cycle": 630,
+        "loop_count_observed": 1000,
+        "measured_cycles": 10013,
+        "retired_instructions": 8011,
+        "simulation_seconds": 10.982583595999982,
+        "simulator": "Verilator",
+        "status": "passed",
+        "total_cycles": 10644,
+        "trap_code": 0,
+        "candidate": "Verilator",
+        "cpu": 91,
+        "validation": {
+          "status": true,
+          "total_cycles": true,
+          "first_commit_cycle": true,
+          "retired_instructions": true,
+          "measured_cycles": true,
+          "loop_count_observed": true,
+          "trap_code": true,
+          "trace_matches_verilator": true
+        },
+        "binary_sha256": "fa3fee970ada90a63193a10c68aba04223f3569765c74bf87137efc917064c9a",
+        "host_cpu_utilization": {
+          "cpu91": {
+            "busy_percent": 99.91582491582491,
+            "ticks": 1188
+          },
+          "cpu219": {
+            "busy_percent": 6.429780033840948,
+            "ticks": 1182
+          }
+        },
+        "run_started_unix": 1794249352.684185,
+        "run_ended_unix": 1794249364.572133
+      }
+    },
+    {
+      "candidate": "ou-s1",
+      "round": 1,
+      "label": "final-r1-ou-s1",
+      "result": {
+        "candidate": "ou-s1",
+        "checked_cycles_per_second": 112.63843319784543,
+        "checked_run_seconds": 88.895057537,
+        "correctness": "RV64I commit stream and defined integer registers checked",
+        "cycles_per_second": 112.67257700476786,
+        "design": "xiangshan-nanhu-indexed",
+        "first_commit_cycle": 630,
+        "instructions_per_second": 90.13356055210132,
+        "loop_count_observed": 1000,
+        "measured_cycles": 10013,
+        "program": "/nfs/home/zhangziqing/RTeAAL/results/nanhu/checked-loop-1000.bin",
+        "retired_instructions": 8011,
+        "simulation_seconds": 88.86811916599981,
+        "state": {
+          "live_in": 2402664888337422865,
+          "memory64": 10045881209968702466,
+          "memory8": 2134523048896800505
+        },
+        "status": "passed",
+        "tensor_load_seconds": 2.763443723,
+        "timing": "evaluation of cycles after first commit, excluding oracle, trace, loading and reset; includes timer overhead",
+        "total_cycles": 10644,
+        "trap_code": 0,
+        "trap_pc": 2147483708,
+        "cpu": 91,
+        "validation": {
+          "trace_matches_verilator": true,
+          "status": true,
+          "total_cycles": true,
+          "first_commit_cycle": true,
+          "retired_instructions": true,
+          "measured_cycles": true,
+          "loop_count_observed": true,
+          "trap_code": true,
+          "live_state_and_memories_match_reference": true
+        },
+        "binary_sha256": "e16e18f741c87b394019c1b10fe314cda4ce1ee9d367a491be8de8b3952aca44",
+        "host_cpu_utilization": {
+          "cpu91": {
+            "busy_percent": 99.9692811796027,
+            "ticks": 9766
+          },
+          "cpu219": {
+            "busy_percent": 5.377456049638056,
+            "ticks": 9670
+          }
+        },
+        "run_started_unix": 1794249364.635182,
+        "run_ended_unix": 1794249462.2724683
+      }
+    },
+    {
+      "candidate": "nu-aligned-all-s1",
+      "round": 2,
+      "label": "final-r2-nu-aligned-all-s1",
+      "result": {
+        "candidate": "nu-aligned-all-s1",
+        "checked_cycles_per_second": 230.37290887729307,
+        "checked_run_seconds": 43.464312053,
+        "correctness": "RV64I commit stream and defined integer registers checked",
+        "cycles_per_second": 230.50082774596845,
+        "design": "xiangshan-nanhu-indexed",
+        "first_commit_cycle": 630,
+        "instructions_per_second": 184.39145413414633,
+        "loop_count_observed": 1000,
+        "measured_cycles": 10013,
+        "program": "/nfs/home/zhangziqing/RTeAAL/results/nanhu/checked-loop-1000.bin",
+        "retired_instructions": 8011,
+        "simulation_seconds": 43.44019107399987,
+        "state": {
+          "live_in": 2402664888337422865,
+          "memory64": 10045881209968702466,
+          "memory8": 2134523048896800505
+        },
+        "status": "passed",
+        "tensor_load_seconds": 2.724159382,
+        "timing": "evaluation of cycles after first commit, excluding oracle, trace, loading and reset; includes timer overhead",
+        "total_cycles": 10644,
+        "trap_code": 0,
+        "trap_pc": 2147483708,
+        "cpu": 91,
+        "validation": {
+          "trace_matches_verilator": true,
+          "status": true,
+          "total_cycles": true,
+          "first_commit_cycle": true,
+          "retired_instructions": true,
+          "measured_cycles": true,
+          "loop_count_observed": true,
+          "trap_code": true,
+          "live_state_and_memories_match_reference": true
+        },
+        "binary_sha256": "9417edfe3d4de6e0ca168048d19a7bafe594ab6d4b5ab7a8c9e86e5ac63cb0fb",
+        "host_cpu_utilization": {
+          "cpu91": {
+            "busy_percent": 99.95940734727014,
+            "ticks": 4927
+          },
+          "cpu219": {
+            "busy_percent": 5.271794871794872,
+            "ticks": 4875
+          }
+        },
+        "run_started_unix": 1794249462.3598807,
+        "run_ended_unix": 1794249511.6535254
+      }
+    },
+    {
+      "candidate": "ou-s1",
+      "round": 2,
+      "label": "final-r2-ou-s1",
+      "result": {
+        "candidate": "ou-s1",
+        "checked_cycles_per_second": 113.51658365284631,
+        "checked_run_seconds": 88.207376207,
+        "correctness": "RV64I commit stream and defined integer registers checked",
+        "cycles_per_second": 113.55507555415191,
+        "design": "xiangshan-nanhu-indexed",
+        "first_commit_cycle": 630,
+        "instructions_per_second": 90.83952413749694,
+        "loop_count_observed": 1000,
+        "measured_cycles": 10013,
+        "program": "/nfs/home/zhangziqing/RTeAAL/results/nanhu/checked-loop-1000.bin",
+        "retired_instructions": 8011,
+        "simulation_seconds": 88.17747644600017,
+        "state": {
+          "live_in": 2402664888337422865,
+          "memory64": 10045881209968702466,
+          "memory8": 2134523048896800505
+        },
+        "status": "passed",
+        "tensor_load_seconds": 2.815505002,
+        "timing": "evaluation of cycles after first commit, excluding oracle, trace, loading and reset; includes timer overhead",
+        "total_cycles": 10644,
+        "trap_code": 0,
+        "trap_pc": 2147483708,
+        "cpu": 91,
+        "validation": {
+          "trace_matches_verilator": true,
+          "status": true,
+          "total_cycles": true,
+          "first_commit_cycle": true,
+          "retired_instructions": true,
+          "measured_cycles": true,
+          "loop_count_observed": true,
+          "trap_code": true,
+          "live_state_and_memories_match_reference": true
+        },
+        "binary_sha256": "e16e18f741c87b394019c1b10fe314cda4ce1ee9d367a491be8de8b3952aca44",
+        "host_cpu_utilization": {
+          "cpu91": {
+            "busy_percent": 99.97934524424248,
+            "ticks": 9683
+          },
+          "cpu219": {
+            "busy_percent": 5.972323379461034,
+            "ticks": 9611
+          }
+        },
+        "run_started_unix": 1794249511.7559748,
+        "run_ended_unix": 1794249608.5817366
+      }
+    },
+    {
+      "candidate": "Verilator",
+      "round": 2,
+      "label": "final-r2-Verilator",
+      "result": {
+        "checked_cycles_per_second": 871.0256261444852,
+        "checked_run_seconds": 11.495643411,
+        "cycles_per_second": 871.6836239265715,
+        "first_commit_cycle": 630,
+        "loop_count_observed": 1000,
+        "measured_cycles": 10013,
+        "retired_instructions": 8011,
+        "simulation_seconds": 11.486965826999947,
+        "simulator": "Verilator",
+        "status": "passed",
+        "total_cycles": 10644,
+        "trap_code": 0,
+        "candidate": "Verilator",
+        "cpu": 91,
+        "validation": {
+          "status": true,
+          "total_cycles": true,
+          "first_commit_cycle": true,
+          "retired_instructions": true,
+          "measured_cycles": true,
+          "loop_count_observed": true,
+          "trap_code": true,
+          "trace_matches_verilator": true
+        },
+        "binary_sha256": "fa3fee970ada90a63193a10c68aba04223f3569765c74bf87137efc917064c9a",
+        "host_cpu_utilization": {
+          "cpu91": {
+            "busy_percent": 99.91909385113269,
+            "ticks": 1236
+          },
+          "cpu219": {
+            "busy_percent": 5.569205569205569,
+            "ticks": 1221
+          }
+        },
+        "run_started_unix": 1794249608.675311,
+        "run_ended_unix": 1794249621.0287106
+      }
+    },
+    {
+      "candidate": "nu-native-s1",
+      "round": 2,
+      "label": "final-r2-nu-native-s1",
+      "result": {
+        "candidate": "nu-native-s1",
+        "checked_cycles_per_second": 193.47186120601458,
+        "checked_run_seconds": 51.754296142,
+        "correctness": "RV64I commit stream and defined integer registers checked",
+        "cycles_per_second": 193.64029417419255,
+        "design": "xiangshan-nanhu-indexed",
+        "first_commit_cycle": 630,
+        "instructions_per_second": 154.90449978380929,
+        "loop_count_observed": 1000,
+        "measured_cycles": 10013,
+        "program": "/nfs/home/zhangziqing/RTeAAL/results/nanhu/checked-loop-1000.bin",
+        "retired_instructions": 8011,
+        "simulation_seconds": 51.70927901499999,
+        "state": {
+          "live_in": 2402664888337422865,
+          "memory64": 10045881209968702466,
+          "memory8": 2134523048896800505
+        },
+        "status": "passed",
+        "tensor_load_seconds": 2.847995857,
+        "timing": "evaluation of cycles after first commit, excluding oracle, trace, loading and reset; includes timer overhead",
+        "total_cycles": 10644,
+        "trap_code": 0,
+        "trap_pc": 2147483708,
+        "cpu": 91,
+        "validation": {
+          "trace_matches_verilator": true,
+          "status": true,
+          "total_cycles": true,
+          "first_commit_cycle": true,
+          "retired_instructions": true,
+          "measured_cycles": true,
+          "loop_count_observed": true,
+          "trap_code": true,
+          "live_state_and_memories_match_reference": true
+        },
+        "binary_sha256": "6fa557b59226d389bcefed7f1a054708b2ff164689a2179053b7f0e4e512ce4c",
+        "host_cpu_utilization": {
+          "cpu91": {
+            "busy_percent": 99.96565934065934,
+            "ticks": 5824
+          },
+          "cpu219": {
+            "busy_percent": 7.9056865464632455,
+            "ticks": 5768
+          }
+        },
+        "run_started_unix": 1794249621.0901182,
+        "run_ended_unix": 1794249679.3238273
+      }
+    },
+    {
+      "candidate": "psu8-aligned-all-s1",
+      "round": 2,
+      "label": "final-r2-psu8-aligned-all-s1",
+      "result": {
+        "candidate": "psu8-aligned-all-s1",
+        "checked_cycles_per_second": 219.8540778590472,
+        "checked_run_seconds": 45.543844797,
+        "correctness": "RV64I commit stream and defined integer registers checked",
+        "cycles_per_second": 220.01680913831657,
+        "design": "xiangshan-nanhu-indexed",
+        "first_commit_cycle": 630,
+        "instructions_per_second": 176.004658064308,
+        "loop_count_observed": 1000,
+        "measured_cycles": 10013,
+        "program": "/nfs/home/zhangziqing/RTeAAL/results/nanhu/checked-loop-1000.bin",
+        "retired_instructions": 8011,
+        "simulation_seconds": 45.51015915200002,
+        "state": {
+          "live_in": 2402664888337422865,
+          "memory64": 10045881209968702466,
+          "memory8": 2134523048896800505
+        },
+        "status": "passed",
+        "tensor_load_seconds": 3.003858923,
+        "timing": "evaluation of cycles after first commit, excluding oracle, trace, loading and reset; includes timer overhead",
+        "total_cycles": 10644,
+        "trap_code": 0,
+        "trap_pc": 2147483708,
+        "cpu": 91,
+        "validation": {
+          "trace_matches_verilator": true,
+          "status": true,
+          "total_cycles": true,
+          "first_commit_cycle": true,
+          "retired_instructions": true,
+          "measured_cycles": true,
+          "loop_count_observed": true,
+          "trap_code": true,
+          "live_state_and_memories_match_reference": true
+        },
+        "binary_sha256": "d14b7896fd24b814e871e24b0c099fc5f1837d1f02aacc3ed44faf1e532b941b",
+        "host_cpu_utilization": {
+          "cpu91": {
+            "busy_percent": 99.98076183147364,
+            "ticks": 5198
+          },
+          "cpu219": {
+            "busy_percent": 8.953194795105846,
+            "ticks": 5149
+          }
+        },
+        "run_started_unix": 1794249679.4032326,
+        "run_ended_unix": 1794249731.3960955
+      }
+    },
+    {
+      "candidate": "nu-native-s1",
+      "round": 3,
+      "label": "final-r3-nu-native-s1",
+      "result": {
+        "candidate": "nu-native-s1",
+        "checked_cycles_per_second": 216.4306376623277,
+        "checked_run_seconds": 46.264244786,
+        "correctness": "RV64I commit stream and defined integer registers checked",
+        "cycles_per_second": 216.5730661360515,
+        "design": "xiangshan-nanhu-indexed",
+        "first_commit_cycle": 630,
+        "instructions_per_second": 173.24980123337386,
+        "loop_count_observed": 1000,
+        "measured_cycles": 10013,
+        "program": "/nfs/home/zhangziqing/RTeAAL/results/nanhu/checked-loop-1000.bin",
+        "retired_instructions": 8011,
+        "simulation_seconds": 46.23381927700012,
+        "state": {
+          "live_in": 2402664888337422865,
+          "memory64": 10045881209968702466,
+          "memory8": 2134523048896800505
+        },
+        "status": "passed",
+        "tensor_load_seconds": 2.746249408,
+        "timing": "evaluation of cycles after first commit, excluding oracle, trace, loading and reset; includes timer overhead",
+        "total_cycles": 10644,
+        "trap_code": 0,
+        "trap_pc": 2147483708,
+        "cpu": 91,
+        "validation": {
+          "trace_matches_verilator": true,
+          "status": true,
+          "total_cycles": true,
+          "first_commit_cycle": true,
+          "retired_instructions": true,
+          "measured_cycles": true,
+          "loop_count_observed": true,
+          "trap_code": true,
+          "live_state_and_memories_match_reference": true
+        },
+        "binary_sha256": "6fa557b59226d389bcefed7f1a054708b2ff164689a2179053b7f0e4e512ce4c",
+        "host_cpu_utilization": {
+          "cpu91": {
+            "busy_percent": 99.98089780324737,
+            "ticks": 5235
+          },
+          "cpu219": {
+            "busy_percent": 6.093328191284227,
+            "ticks": 5186
+          }
+        },
+        "run_started_unix": 1794249731.4752035,
+        "run_ended_unix": 1794249783.825108
+      }
+    },
+    {
+      "candidate": "Verilator",
+      "round": 3,
+      "label": "final-r3-Verilator",
+      "result": {
+        "checked_cycles_per_second": 935.4055384089934,
+        "checked_run_seconds": 10.704448059,
+        "cycles_per_second": 936.0298375321233,
+        "first_commit_cycle": 630,
+        "loop_count_observed": 1000,
+        "measured_cycles": 10013,
+        "retired_instructions": 8011,
+        "simulation_seconds": 10.697308566999999,
+        "simulator": "Verilator",
+        "status": "passed",
+        "total_cycles": 10644,
+        "trap_code": 0,
+        "candidate": "Verilator",
+        "cpu": 91,
+        "validation": {
+          "status": true,
+          "total_cycles": true,
+          "first_commit_cycle": true,
+          "retired_instructions": true,
+          "measured_cycles": true,
+          "loop_count_observed": true,
+          "trap_code": true,
+          "trace_matches_verilator": true
+        },
+        "binary_sha256": "fa3fee970ada90a63193a10c68aba04223f3569765c74bf87137efc917064c9a",
+        "host_cpu_utilization": {
+          "cpu91": {
+            "busy_percent": 99.91364421416235,
+            "ticks": 1158
+          },
+          "cpu219": {
+            "busy_percent": 5.2905464006938425,
+            "ticks": 1153
+          }
+        },
+        "run_started_unix": 1794249783.9187143,
+        "run_ended_unix": 1794249795.4976058
+      }
+    },
+    {
+      "candidate": "ou-s1",
+      "round": 3,
+      "label": "final-r3-ou-s1",
+      "result": {
+        "candidate": "ou-s1",
+        "checked_cycles_per_second": 113.03476460469491,
+        "checked_run_seconds": 88.583366675,
+        "correctness": "RV64I commit stream and defined integer registers checked",
+        "cycles_per_second": 113.07779933782052,
+        "design": "xiangshan-nanhu-indexed",
+        "first_commit_cycle": 630,
+        "instructions_per_second": 90.45772223069434,
+        "loop_count_observed": 1000,
+        "measured_cycles": 10013,
+        "program": "/nfs/home/zhangziqing/RTeAAL/results/nanhu/checked-loop-1000.bin",
+        "retired_instructions": 8011,
+        "simulation_seconds": 88.54965394299998,
+        "state": {
+          "live_in": 2402664888337422865,
+          "memory64": 10045881209968702466,
+          "memory8": 2134523048896800505
+        },
+        "status": "passed",
+        "tensor_load_seconds": 2.765435121,
+        "timing": "evaluation of cycles after first commit, excluding oracle, trace, loading and reset; includes timer overhead",
+        "total_cycles": 10644,
+        "trap_code": 0,
+        "trap_pc": 2147483708,
+        "cpu": 91,
+        "validation": {
+          "trace_matches_verilator": true,
+          "status": true,
+          "total_cycles": true,
+          "first_commit_cycle": true,
+          "retired_instructions": true,
+          "measured_cycles": true,
+          "loop_count_observed": true,
+          "trap_code": true,
+          "live_state_and_memories_match_reference": true
+        },
+        "binary_sha256": "e16e18f741c87b394019c1b10fe314cda4ce1ee9d367a491be8de8b3952aca44",
+        "host_cpu_utilization": {
+          "cpu91": {
+            "busy_percent": 99.97942386831275,
+            "ticks": 9720
+          },
+          "cpu219": {
+            "busy_percent": 5.202611669603067,
+            "ticks": 9649
+          }
+        },
+        "run_started_unix": 1794249795.5642207,
+        "run_ended_unix": 1794249892.753658
+      }
+    },
+    {
+      "candidate": "nu-aligned-all-s1",
+      "round": 3,
+      "label": "final-r3-nu-aligned-all-s1",
+      "result": {
+        "candidate": "nu-aligned-all-s1",
+        "checked_cycles_per_second": 228.69788714366013,
+        "checked_run_seconds": 43.782651974,
+        "correctness": "RV64I commit stream and defined integer registers checked",
+        "cycles_per_second": 228.82035759845812,
+        "design": "xiangshan-nanhu-indexed",
+        "first_commit_cycle": 630,
+        "instructions_per_second": 183.04714514767298,
+        "loop_count_observed": 1000,
+        "measured_cycles": 10013,
+        "program": "/nfs/home/zhangziqing/RTeAAL/results/nanhu/checked-loop-1000.bin",
+        "retired_instructions": 8011,
+        "simulation_seconds": 43.75921838899998,
+        "state": {
+          "live_in": 2402664888337422865,
+          "memory64": 10045881209968702466,
+          "memory8": 2134523048896800505
+        },
+        "status": "passed",
+        "tensor_load_seconds": 2.778404492,
+        "timing": "evaluation of cycles after first commit, excluding oracle, trace, loading and reset; includes timer overhead",
+        "total_cycles": 10644,
+        "trap_code": 0,
+        "trap_pc": 2147483708,
+        "cpu": 91,
+        "validation": {
+          "trace_matches_verilator": true,
+          "status": true,
+          "total_cycles": true,
+          "first_commit_cycle": true,
+          "retired_instructions": true,
+          "measured_cycles": true,
+          "loop_count_observed": true,
+          "trap_code": true,
+          "live_state_and_memories_match_reference": true
+        },
+        "binary_sha256": "9417edfe3d4de6e0ca168048d19a7bafe594ab6d4b5ab7a8c9e86e5ac63cb0fb",
+        "host_cpu_utilization": {
+          "cpu91": {
+            "busy_percent": 99.95980707395498,
+            "ticks": 4976
+          },
+          "cpu219": {
+            "busy_percent": 9.194005670311867,
+            "ticks": 4938
+          }
+        },
+        "run_started_unix": 1794249892.8372707,
+        "run_ended_unix": 1794249942.6098394
+      }
+    },
+    {
+      "candidate": "psu8-aligned-all-s1",
+      "round": 3,
+      "label": "final-r3-psu8-aligned-all-s1",
+      "result": {
+        "candidate": "psu8-aligned-all-s1",
+        "checked_cycles_per_second": 228.10697263901866,
+        "checked_run_seconds": 43.896071585,
+        "correctness": "RV64I commit stream and defined integer registers checked",
+        "cycles_per_second": 228.23161210772167,
+        "design": "xiangshan-nanhu-indexed",
+        "first_commit_cycle": 630,
+        "instructions_per_second": 182.57617227432843,
+        "loop_count_observed": 1000,
+        "measured_cycles": 10013,
+        "program": "/nfs/home/zhangziqing/RTeAAL/results/nanhu/checked-loop-1000.bin",
+        "retired_instructions": 8011,
+        "simulation_seconds": 43.87209951999999,
+        "state": {
+          "live_in": 2402664888337422865,
+          "memory64": 10045881209968702466,
+          "memory8": 2134523048896800505
+        },
+        "status": "passed",
+        "tensor_load_seconds": 2.783225231,
+        "timing": "evaluation of cycles after first commit, excluding oracle, trace, loading and reset; includes timer overhead",
+        "total_cycles": 10644,
+        "trap_code": 0,
+        "trap_pc": 2147483708,
+        "cpu": 91,
+        "validation": {
+          "trace_matches_verilator": true,
+          "status": true,
+          "total_cycles": true,
+          "first_commit_cycle": true,
+          "retired_instructions": true,
+          "measured_cycles": true,
+          "loop_count_observed": true,
+          "trap_code": true,
+          "live_state_and_memories_match_reference": true
+        },
+        "binary_sha256": "d14b7896fd24b814e871e24b0c099fc5f1837d1f02aacc3ed44faf1e532b941b",
+        "host_cpu_utilization": {
+          "cpu91": {
+            "busy_percent": 99.97991967871486,
+            "ticks": 4980
+          },
+          "cpu219": {
+            "busy_percent": 8.634984833164813,
+            "ticks": 4945
+          }
+        },
+        "run_started_unix": 1794249942.6872385,
+        "run_ended_unix": 1794249992.498049
+      }
+    }
+  ],
+  "timing": "complete checked program, evaluation after first commit; excludes loading/reset/oracle/trace; includes cache startup and timer overhead",
+  "summary": {
+    "nu-aligned-all-s1": {
+      "median_cycles_per_second": 229.53074790976345,
+      "min_cycles_per_second": 228.82035759845812,
+      "max_cycles_per_second": 230.50082774596845,
+      "samples_cycles_per_second": [
+        229.53074790976345,
+        230.50082774596845,
+        228.82035759845812
+      ],
+      "labels": [
+        "final-r1-nu-aligned-all-s1",
+        "final-r2-nu-aligned-all-s1",
+        "final-r3-nu-aligned-all-s1"
+      ]
+    },
+    "psu8-aligned-all-s1": {
+      "median_cycles_per_second": 228.23161210772167,
+      "min_cycles_per_second": 220.01680913831657,
+      "max_cycles_per_second": 229.41736425567711,
+      "samples_cycles_per_second": [
+        229.41736425567711,
+        220.01680913831657,
+        228.23161210772167
+      ],
+      "labels": [
+        "final-r1-psu8-aligned-all-s1",
+        "final-r2-psu8-aligned-all-s1",
+        "final-r3-psu8-aligned-all-s1"
+      ]
+    },
+    "nu-native-s1": {
+      "median_cycles_per_second": 215.77921417430844,
+      "min_cycles_per_second": 193.64029417419255,
+      "max_cycles_per_second": 216.5730661360515,
+      "samples_cycles_per_second": [
+        215.77921417430844,
+        193.64029417419255,
+        216.5730661360515
+      ],
+      "labels": [
+        "final-r1-nu-native-s1",
+        "final-r2-nu-native-s1",
+        "final-r3-nu-native-s1"
+      ]
+    },
+    "Verilator": {
+      "median_cycles_per_second": 911.7162562410981,
+      "min_cycles_per_second": 871.6836239265715,
+      "max_cycles_per_second": 936.0298375321233,
+      "samples_cycles_per_second": [
+        911.7162562410981,
+        871.6836239265715,
+        936.0298375321233
+      ],
+      "labels": [
+        "final-r1-Verilator",
+        "final-r2-Verilator",
+        "final-r3-Verilator"
+      ]
+    },
+    "ou-s1": {
+      "median_cycles_per_second": 113.07779933782052,
+      "min_cycles_per_second": 112.67257700476786,
+      "max_cycles_per_second": 113.55507555415191,
+      "samples_cycles_per_second": [
+        112.67257700476786,
+        113.55507555415191,
+        113.07779933782052
+      ],
+      "labels": [
+        "final-r1-ou-s1",
+        "final-r2-ou-s1",
+        "final-r3-ou-s1"
+      ]
+    }
+  },
+  "fastest_rteaal_candidate": "nu-aligned-all-s1"
+}

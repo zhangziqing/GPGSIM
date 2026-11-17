@@ -1,0 +1,19 @@
+[
+  "clang++",
+  "-I/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-coremark-100k",
+  "-I/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel",
+  "-DCOREMARK_DIR=\"/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-coremark-100k\"",
+  "-std=c++17",
+  "-O3",
+  "-g",
+  "-DNANHU_LARGE_LAYERS",
+  "-I/nfs/home/zhangziqing/RTeAAL/tools/local/include",
+  "-I/nfs/home/zhangziqing/RTeAAL/tools",
+  "-DTASK_ROOT=\"/nfs/home/zhangziqing/RTeAAL\"",
+  "-march=native",
+  "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-coremark-100k/rteaal_coremark.cc",
+  "/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel/libfesvr.a",
+  "-lpthread",
+  "-o",
+  "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-coremark-100k/rteaal_coremark"
+]

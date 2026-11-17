@@ -1,0 +1,1434 @@
+{
+  "format_version": 1,
+  "selected_option": 2,
+  "created": "2026-11-17",
+  "workspace_commit": "59bc42273341ec71dabcbbdeb0f5b408f5c0feb6",
+  "simulator_commit": "9e702ac16e0035592f9285d840629aba159be6bd",
+  "description": "Only explicit files were imported. Original reports record historical runs; import does not rerun them.",
+  "excluded": [
+    "Toucan",
+    "Kunminghu",
+    "local dispatch configuration",
+    "binaries",
+    "generated RTL",
+    "tensor arrays",
+    "checkpoints",
+    "full traces"
+  ],
+  "files": [
+    {
+      "source": "tools/rteaal_nanhu.cc",
+      "target": "runtime/cpu/checked_loop.cc",
+      "source_sha256": "5992e449e7a6e6ec0f6ae1f891cb0cf09fd0dae23881e60ca289adf43c3eb6e6",
+      "import_sha256": "9870d9d7d6efd136b52c7c00fb9e131b27b50cbf25bb251b363589054251bd26",
+      "handling": "path-adapted"
+    },
+    {
+      "source": "tools/nanhu_tensor_layout.h",
+      "target": "runtime/cpu/nanhu_tensor_layout.h",
+      "source_sha256": "032754ebf436430c8df455350d943b7e7856065563b850cb4e99a2b66e078238",
+      "import_sha256": "032754ebf436430c8df455350d943b7e7856065563b850cb4e99a2b66e078238",
+      "handling": "unchanged"
+    },
+    {
+      "source": "tools/rv64_loop_oracle.h",
+      "target": "runtime/cpu/rv64_loop_oracle.h",
+      "source_sha256": "97746ca18db86ef45b040d9ea8635cd18c9f9bbf6f4d048eccd1fc0b0f7626a7",
+      "import_sha256": "97746ca18db86ef45b040d9ea8635cd18c9f9bbf6f4d048eccd1fc0b0f7626a7",
+      "handling": "unchanged"
+    },
+    {
+      "source": "tools/check_nanhu_large_layers.cc",
+      "target": "runtime/cpu/tests/large_layers.cc",
+      "source_sha256": "27ec6bdd3820e1a45dff74751d2ebf7aa8412d02f213a96af617a2c4daf5a068",
+      "import_sha256": "0604e100be02851794803e6e4d52536943b863282ea10bbda7bb7333f2f5bffe",
+      "handling": "path-adapted"
+    },
+    {
+      "source": "results/experimental/nanhu-tuning/check_groups.cc",
+      "target": "runtime/cpu/tests/grouped.cc",
+      "source_sha256": "7a07234cfa18ba15a384cc8659b2836c3ad8a3cb1e9fd3d94a449f9276cb86d0",
+      "import_sha256": "47f8e2d4828e586d0ece379bab341c667a67ed7bd67b28db024e2bc0b0fc5171",
+      "handling": "path-adapted"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark_common.h",
+      "target": "runtime/common/coremark_common.h",
+      "source_sha256": "05212b3df4d66814bbe4537444c086f29f272363d7e715310bf26942a598ecfe",
+      "import_sha256": "05212b3df4d66814bbe4537444c086f29f272363d7e715310bf26942a598ecfe",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/rteaal_coremark.cc",
+      "target": "runtime/cpu/rteaal_coremark.cc",
+      "source_sha256": "808bbe5914d58e293a4fafaea2866b1596740cd96543a12dad354de8e9eca962",
+      "import_sha256": "8d71b47c7573dda7f4169ac1ff89d8fd5f9fa4ab2728306b925cbc55f2275fc6",
+      "handling": "path-adapted"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/rteaal_coremark_thp.cc",
+      "target": "runtime/cpu/rteaal_coremark_thp.cc",
+      "source_sha256": "fbff86acbfd480d32668fb9a0b22274e6c1609097b36da41279a06db02828613",
+      "import_sha256": "df3b1d902d0fbcdc5649b0d0416260e53b3b2e85a2a0c1cce7640d8d2e0a67e3",
+      "handling": "path-adapted"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/rteaal_coremark_thp_prefault.cc",
+      "target": "runtime/cpu/rteaal_coremark_thp_prefault.cc",
+      "source_sha256": "16cd5c05e6254d12c73864a8eed41c018d1ad9b3da69c98860cbb4ce3d228082",
+      "import_sha256": "5cebcba130a5fa93375b88a2c80b2f375c43b65800aa4c547ccb2ac0f49003a5",
+      "handling": "path-adapted"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/verilator_coremark_edge.cc",
+      "target": "runtime/verilator/verilator_coremark_edge.cc",
+      "source_sha256": "7211f2980862f725cfce955afa89f7fc71c815c90cd654080ee3b447c3bc679b",
+      "import_sha256": "7211f2980862f725cfce955afa89f7fc71c815c90cd654080ee3b447c3bc679b",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark_dpi.cc",
+      "target": "runtime/verilator/coremark_dpi.cc",
+      "source_sha256": "f75c035acbf58a93dd565eae66b1aa6874018fb4d97e11437ad26aa05dd2af9b",
+      "import_sha256": "f75c035acbf58a93dd565eae66b1aa6874018fb4d97e11437ad26aa05dd2af9b",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/SimJTAG-idle.v",
+      "target": "runtime/verilator/SimJTAG-idle.v",
+      "source_sha256": "2486f67fc21158ee6d6439c1885f81514448021a14b5b3073ce4200ecb6c420c",
+      "import_sha256": "2486f67fc21158ee6d6439c1885f81514448021a14b5b3073ce4200ecb6c420c",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/checked-loop.S",
+      "target": "workloads/checked-loop.S",
+      "source_sha256": "a8ac108e6c3aa7787764de81ac55ec62c97a8cc41a2b7dd85008ba53698f56da",
+      "import_sha256": "a8ac108e6c3aa7787764de81ac55ec62c97a8cc41a2b7dd85008ba53698f56da",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/checked-loop.ld",
+      "target": "workloads/checked-loop.ld",
+      "source_sha256": "62b635850573cb62c00620a31eb2aa2252f2f8a371c4e6c21c86f4e60bafd858",
+      "import_sha256": "62b635850573cb62c00620a31eb2aa2252f2f8a371c4e6c21c86f4e60bafd858",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/preserved-signals.txt",
+      "target": "configs/preserved-signals.txt",
+      "source_sha256": "ef5ff7d66b7c5cb15239ad76cb28d4b5744ddb99d23b86e3ca2171e82055d172",
+      "import_sha256": "ef5ff7d66b7c5cb15239ad76cb28d4b5744ddb99d23b86e3ca2171e82055d172",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/preserved-signals.txt.interfaces.json",
+      "target": "configs/preserved-signals.txt.interfaces.json",
+      "source_sha256": "63d8157aa7e18bd973c359fc70f348a06c9662d36cd8d9f26a8200d1ed1a618b",
+      "import_sha256": "63d8157aa7e18bd973c359fc70f348a06c9662d36cd8d9f26a8200d1ed1a618b",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/csr-schema.json",
+      "target": "configs/csr-schema.json",
+      "source_sha256": "74472779124f47b4a197f605f72d0640c5206dbb6c6a89c5b75402fa7e3b47a4",
+      "import_sha256": "74472779124f47b4a197f605f72d0640c5206dbb6c6a89c5b75402fa7e3b47a4",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/concat-tree/REPORT.md",
+      "target": "evidence/original/results/experimental/concat-tree/REPORT.md",
+      "source_sha256": "8f6314eeb5c18a2adb1ba10d73705eb9154084a1f1293527fb52ccb8435b5c87",
+      "import_sha256": "8f6314eeb5c18a2adb1ba10d73705eb9154084a1f1293527fb52ccb8435b5c87",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/concat-tree/baseline-checks.json",
+      "target": "evidence/original/results/experimental/concat-tree/baseline-checks.json",
+      "source_sha256": "b9e690e9d984b48beda2b60df7cbaef6a31e0a0a13e9e4624ed90c5fb6c1f7d7",
+      "import_sha256": "b9e690e9d984b48beda2b60df7cbaef6a31e0a0a13e9e4624ed90c5fb6c1f7d7",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/concat-tree/checks.json",
+      "target": "evidence/original/results/experimental/concat-tree/checks.json",
+      "source_sha256": "e2af0023049c306c61e44915c8516996433b639ae224050546f56054f9506e7e",
+      "import_sha256": "e2af0023049c306c61e44915c8516996433b639ae224050546f56054f9506e7e",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/concat-tree/graph-checks.json",
+      "target": "evidence/original/results/experimental/concat-tree/graph-checks.json",
+      "source_sha256": "10d1dce79ab281c1467f0233c9cc1cd9e7131170a343add628434b234256c3ce",
+      "import_sha256": "10d1dce79ab281c1467f0233c9cc1cd9e7131170a343add628434b234256c3ce",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/concat-tree/minimal-checks.json",
+      "target": "evidence/original/results/experimental/concat-tree/minimal-checks.json",
+      "source_sha256": "406e92187ac1058555bf390d7231101aff869bdb2ce216e82441d24658df713d",
+      "import_sha256": "406e92187ac1058555bf390d7231101aff869bdb2ce216e82441d24658df713d",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/concat-tree/rtx2060-checks.json",
+      "target": "evidence/original/results/experimental/concat-tree/rtx2060-checks.json",
+      "source_sha256": "b60f39f6bb73bf2ff0d9657476da9713a317b9fd07cc02ccaad9a7ba60af2f8f",
+      "import_sha256": "b60f39f6bb73bf2ff0d9657476da9713a317b9fd07cc02ccaad9a7ba60af2f8f",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/concat-tree/rtx6000-checks.json",
+      "target": "evidence/original/results/experimental/concat-tree/rtx6000-checks.json",
+      "source_sha256": "4e8d8f7855d51cad3efddd4d831e318de3dca375ba6b97aa23f6b4f581bbc474",
+      "import_sha256": "4e8d8f7855d51cad3efddd4d831e318de3dca375ba6b97aa23f6b4f581bbc474",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/constant-mux/REPORT.md",
+      "target": "evidence/original/results/experimental/constant-mux/REPORT.md",
+      "source_sha256": "e3ff3650ccd25bf1c54868a71c967d746ed7041c11673e35267db23c027d54cc",
+      "import_sha256": "e3ff3650ccd25bf1c54868a71c967d746ed7041c11673e35267db23c027d54cc",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/constant-mux/checks.json",
+      "target": "evidence/original/results/experimental/constant-mux/checks.json",
+      "source_sha256": "3ec30d24831879201e80f33b259bdd586d6b5d46518712c2ec74d6955bf65e8f",
+      "import_sha256": "3ec30d24831879201e80f33b259bdd586d6b5d46518712c2ec74d6955bf65e8f",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/constant-mux/gpu-checks.json",
+      "target": "evidence/original/results/experimental/constant-mux/gpu-checks.json",
+      "source_sha256": "8597e6aba8f6242543f33cbf71702e7ea7db2f146b935dd3168dc196d44dbd5b",
+      "import_sha256": "8597e6aba8f6242543f33cbf71702e7ea7db2f146b935dd3168dc196d44dbd5b",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/constant-mux/gpu-direct-checks.json",
+      "target": "evidence/original/results/experimental/constant-mux/gpu-direct-checks.json",
+      "source_sha256": "56c85875d20c8987a2a9b4b7946b4cd5d202c2ea0b05906e6bfd19e867c4635a",
+      "import_sha256": "56c85875d20c8987a2a9b4b7946b4cd5d202c2ea0b05906e6bfd19e867c4635a",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/constant-mux/graph-checks.json",
+      "target": "evidence/original/results/experimental/constant-mux/graph-checks.json",
+      "source_sha256": "298f2f51d461b372705baaaea5998ed75429d8d51e2990ca7a1485bc13a3fa1e",
+      "import_sha256": "298f2f51d461b372705baaaea5998ed75429d8d51e2990ca7a1485bc13a3fa1e",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/flat-descriptors/REPORT.md",
+      "target": "evidence/original/results/experimental/flat-descriptors/REPORT.md",
+      "source_sha256": "1bd21cf717bbf283a788108e4a733c328fa51268daa3b1d2c27477a844145307",
+      "import_sha256": "1bd21cf717bbf283a788108e4a733c328fa51268daa3b1d2c27477a844145307",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/flat-descriptors/checks.json",
+      "target": "evidence/original/results/experimental/flat-descriptors/checks.json",
+      "source_sha256": "1140731e0f62994242cfcb885b17274ef1b13bef372dcdf0a331294a91286fa9",
+      "import_sha256": "1140731e0f62994242cfcb885b17274ef1b13bef372dcdf0a331294a91286fa9",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/flat-descriptors/optimization-rerun-checks.json",
+      "target": "evidence/original/results/experimental/flat-descriptors/optimization-rerun-checks.json",
+      "source_sha256": "28dd999a27611b537439b9343071755aa3daae355096812e0c8520eb5e5897d2",
+      "import_sha256": "28dd999a27611b537439b9343071755aa3daae355096812e0c8520eb5e5897d2",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/flat-descriptors/optimization-rerun-results.json",
+      "target": "evidence/original/results/experimental/flat-descriptors/optimization-rerun-results.json",
+      "source_sha256": "9f9bdc125bd276180c3e926f4e3227845da8a63322172a6512e10c5d3ddec6cb",
+      "import_sha256": "9f9bdc125bd276180c3e926f4e3227845da8a63322172a6512e10c5d3ddec6cb",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/gsim-nanhu/REPORT.md",
+      "target": "evidence/original/results/experimental/gsim-nanhu/REPORT.md",
+      "source_sha256": "d8d6e110e3691365787ecd9577709dfaeae40684570bf74d91d2486c87c7cc75",
+      "import_sha256": "d8d6e110e3691365787ecd9577709dfaeae40684570bf74d91d2486c87c7cc75",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/gsim-nanhu/adapter-checks.json",
+      "target": "evidence/original/results/experimental/gsim-nanhu/adapter-checks.json",
+      "source_sha256": "f006d7c7b92e4f94d9e22e11210e27444b10e7fb799fc4899f7d195a2ecbfd5b",
+      "import_sha256": "f006d7c7b92e4f94d9e22e11210e27444b10e7fb799fc4899f7d195a2ecbfd5b",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/gsim-nanhu/build-manifest.json",
+      "target": "evidence/original/results/experimental/gsim-nanhu/build-manifest.json",
+      "source_sha256": "edc6b56114e44f2f7a2c663f0b207253039530a096346e6fbcd717440ef3bf01",
+      "import_sha256": "edc6b56114e44f2f7a2c663f0b207253039530a096346e6fbcd717440ef3bf01",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/gsim-nanhu/coremark-100k-20261114-result.json",
+      "target": "evidence/original/results/experimental/gsim-nanhu/coremark-100k-20261114-result.json",
+      "source_sha256": "4cd465d87a4fabed69dab17933494cb7d71621cb0067f235e00e2ba5248bf1a0",
+      "import_sha256": "4cd465d87a4fabed69dab17933494cb7d71621cb0067f235e00e2ba5248bf1a0",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/gsim-nanhu/input-manifest.json",
+      "target": "evidence/original/results/experimental/gsim-nanhu/input-manifest.json",
+      "source_sha256": "43922b280a4c06e14337b523fe1a3d32ca909b9c52d9af453e7d3e02c3fe56c8",
+      "import_sha256": "43922b280a4c06e14337b523fe1a3d32ca909b9c52d9af453e7d3e02c3fe56c8",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/memory-candidates/REPORT.md",
+      "target": "evidence/original/results/experimental/memory-candidates/REPORT.md",
+      "source_sha256": "c05626d2031dd371457ed63063450f83e65d981adb28d351f71386ecfa42ecdf",
+      "import_sha256": "c05626d2031dd371457ed63063450f83e65d981adb28d351f71386ecfa42ecdf",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/memory-candidates/checks.json",
+      "target": "evidence/original/results/experimental/memory-candidates/checks.json",
+      "source_sha256": "21ea2dc7862fd80250f46d205275eead0b12862c91411e6ecb3c5e00d58ba565",
+      "import_sha256": "21ea2dc7862fd80250f46d205275eead0b12862c91411e6ecb3c5e00d58ba565",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/memory-direct/REPORT.md",
+      "target": "evidence/original/results/experimental/memory-direct/REPORT.md",
+      "source_sha256": "47ba6ace05473935a314dd35a7b58508939533ab06ef2225d3ee4934a6ed60b0",
+      "import_sha256": "47ba6ace05473935a314dd35a7b58508939533ab06ef2225d3ee4934a6ed60b0",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/memory-direct/checks.json",
+      "target": "evidence/original/results/experimental/memory-direct/checks.json",
+      "source_sha256": "48b3ce40d270e8ac72c1e4e724cee634e6c386359dcc30b9eb7e483c109e58e8",
+      "import_sha256": "48b3ce40d270e8ac72c1e4e724cee634e6c386359dcc30b9eb7e483c109e58e8",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/memory-direct/profile-checks.json",
+      "target": "evidence/original/results/experimental/memory-direct/profile-checks.json",
+      "source_sha256": "8cb3a433c708d30b01bd149d2cb892cd2994ca4dd102b7b70cf19bad5dc2f08a",
+      "import_sha256": "8cb3a433c708d30b01bd149d2cb892cd2994ca4dd102b7b70cf19bad5dc2f08a",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/memory-direct/unroll-checks.json",
+      "target": "evidence/original/results/experimental/memory-direct/unroll-checks.json",
+      "source_sha256": "f1215cfa7f905089b528639f5ffb9344acc229b80d8f3e82a5af33841b777b7d",
+      "import_sha256": "f1215cfa7f905089b528639f5ffb9344acc229b80d8f3e82a5af33841b777b7d",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/mux-index/REPORT_zh.md",
+      "target": "evidence/original/results/experimental/mux-index/REPORT_zh.md",
+      "source_sha256": "af9240a231944388a29ee04546021d0fa75781b845abd23f07397329faf43ba2",
+      "import_sha256": "af9240a231944388a29ee04546021d0fa75781b845abd23f07397329faf43ba2",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/mux-index/checks.json",
+      "target": "evidence/original/results/experimental/mux-index/checks.json",
+      "source_sha256": "fec1f5af01fb0f75c15a8e95b75f3ae495f6caf5713dae85c6f5c5fd282b23e2",
+      "import_sha256": "fec1f5af01fb0f75c15a8e95b75f3ae495f6caf5713dae85c6f5c5fd282b23e2",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/mux-index/gpu-checks.json",
+      "target": "evidence/original/results/experimental/mux-index/gpu-checks.json",
+      "source_sha256": "f8997512adbfd3b9458e4312cdc7961afd5a9dbaff8b64c08d183b68d3052335",
+      "import_sha256": "f8997512adbfd3b9458e4312cdc7961afd5a9dbaff8b64c08d183b68d3052335",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-avx512-node035/REPORT_zh.md",
+      "target": "evidence/original/results/experimental/nanhu-avx512-node035/REPORT_zh.md",
+      "source_sha256": "a65e465335ece8cfe8b3ee77bace031de4f27816beeccfee72278734e128e879",
+      "import_sha256": "a65e465335ece8cfe8b3ee77bace031de4f27816beeccfee72278734e128e879",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-avx512-node035/artifact-manifest.json",
+      "target": "evidence/original/results/experimental/nanhu-avx512-node035/artifact-manifest.json",
+      "source_sha256": "16c75229212d2cbfa345a9ff971db8ead23172320565d2ce539a7b5b9345b88f",
+      "import_sha256": "16c75229212d2cbfa345a9ff971db8ead23172320565d2ce539a7b5b9345b88f",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-avx512-node035/automatic-gather-source-sites.json",
+      "target": "evidence/original/results/experimental/nanhu-avx512-node035/automatic-gather-source-sites.json",
+      "source_sha256": "a2474ec397157e4393b582cb1452def13d57ba01c76681dd2a352feecc7d2731",
+      "import_sha256": "a2474ec397157e4393b582cb1452def13d57ba01c76681dd2a352feecc7d2731",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-avx512-node035/extended-check-results.json",
+      "target": "evidence/original/results/experimental/nanhu-avx512-node035/extended-check-results.json",
+      "source_sha256": "37a33b52532e803fa5e6ded676d1747966ff51ebefa75c0e2e1daac6d583a9e2",
+      "import_sha256": "37a33b52532e803fa5e6ded676d1747966ff51ebefa75c0e2e1daac6d583a9e2",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-avx512-node035/screen-validation.json",
+      "target": "evidence/original/results/experimental/nanhu-avx512-node035/screen-validation.json",
+      "source_sha256": "4cdc0768d037904158ab34c03283037cb8a936c7f40ec7697912719a5deffc14",
+      "import_sha256": "4cdc0768d037904158ab34c03283037cb8a936c7f40ec7697912719a5deffc14",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-avx512-node035/summary.json",
+      "target": "evidence/original/results/experimental/nanhu-avx512-node035/summary.json",
+      "source_sha256": "8fb84fb781a2dcd5b1a2d604835707360b300c034df458cd29a0664d72bb5f11",
+      "import_sha256": "8fb84fb781a2dcd5b1a2d604835707360b300c034df458cd29a0664d72bb5f11",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-avx512-node035/validation.json",
+      "target": "evidence/original/results/experimental/nanhu-avx512-node035/validation.json",
+      "source_sha256": "5a4ec64d28a5c6408e1566c7b5e6796d7cf46463eeaf62cbe634ad72ebf60f0e",
+      "import_sha256": "5a4ec64d28a5c6408e1566c7b5e6796d7cf46463eeaf62cbe634ad72ebf60f0e",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-avx512-node035/vector-operand-validation.json",
+      "target": "evidence/original/results/experimental/nanhu-avx512-node035/vector-operand-validation.json",
+      "source_sha256": "06a755b14944d1b798c681a759dc45250556e573911df9e923076040fcb7af26",
+      "import_sha256": "06a755b14944d1b798c681a759dc45250556e573911df9e923076040fcb7af26",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/REPORT_zh.md",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/REPORT_zh.md",
+      "source_sha256": "d889cce65f69eec3f8c22688a0cd806241585684fe623e40baca3d85b1509190",
+      "import_sha256": "d889cce65f69eec3f8c22688a0cd806241585684fe623e40baca3d85b1509190",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/artifact-manifest.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/artifact-manifest.json",
+      "source_sha256": "1a9489ac1503f063bcba538c57eb417ccb176b157162b8668f2e0d98692fc3c8",
+      "import_sha256": "1a9489ac1503f063bcba538c57eb417ccb176b157162b8668f2e0d98692fc3c8",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/build-manifest.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/build-manifest.json",
+      "source_sha256": "f27d7b48f8c8ba611721eb3d38bfc5654a94425caad09213f58bcc1398ef7835",
+      "import_sha256": "f27d7b48f8c8ba611721eb3d38bfc5654a94425caad09213f58bcc1398ef7835",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark-comparison.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/coremark-comparison.json",
+      "source_sha256": "e899712ef13c35e36c9f47cfa154b593cd1f978df196f5544f4dd9fddd1f49b0",
+      "import_sha256": "e899712ef13c35e36c9f47cfa154b593cd1f978df196f5544f4dd9fddd1f49b0",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark-edge-comparison.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/coremark-edge-comparison.json",
+      "source_sha256": "09d5dad7e4b2203da8aaf110f7c7b211e8463fbc4c3b76eafb3aff7e225041dd",
+      "import_sha256": "09d5dad7e4b2203da8aaf110f7c7b211e8463fbc4c3b76eafb3aff7e225041dd",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark-edge-rteaal.command.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/coremark-edge-rteaal.command.json",
+      "source_sha256": "d35d79379e68b7e753eb740316ba9fe3c2084cc8a2ae4af316e00bb796377958",
+      "import_sha256": "d35d79379e68b7e753eb740316ba9fe3c2084cc8a2ae4af316e00bb796377958",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark-edge-verilator.command.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/coremark-edge-verilator.command.json",
+      "source_sha256": "736aab80d9d7480e8733889c66862645f8df00a71cdaacfd89dbb0912eec8451",
+      "import_sha256": "736aab80d9d7480e8733889c66862645f8df00a71cdaacfd89dbb0912eec8451",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark-preflight-rteaal.command.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/coremark-preflight-rteaal.command.json",
+      "source_sha256": "0d47f77645d135e8797d829879b6e17f53b8d40764033aa0bc075c08003a152a",
+      "import_sha256": "0d47f77645d135e8797d829879b6e17f53b8d40764033aa0bc075c08003a152a",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark-preflight-verilator.command.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/coremark-preflight-verilator.command.json",
+      "source_sha256": "2c82ffce1bba203cc9e73d52a96e614f02b02d15d17a5efcb0bcc90768111d57",
+      "import_sha256": "2c82ffce1bba203cc9e73d52a96e614f02b02d15d17a5efcb0bcc90768111d57",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark-rteaal.command.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/coremark-rteaal.command.json",
+      "source_sha256": "03855f1abd8eca5c830057f4f6453c43940a509de221a43012956623c6cdd534",
+      "import_sha256": "03855f1abd8eca5c830057f4f6453c43940a509de221a43012956623c6cdd534",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark-thp-comparison.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/coremark-thp-comparison.json",
+      "source_sha256": "eb11f4991c9312a6caa63723c414cdb82155d7ad671554a0da5ed4c837c28dbb",
+      "import_sha256": "eb11f4991c9312a6caa63723c414cdb82155d7ad671554a0da5ed4c837c28dbb",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark-thp-final-comparison.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/coremark-thp-final-comparison.json",
+      "source_sha256": "89b56c04cab86858093410e70349164ca8e6f7fae13541f43c96136439277db1",
+      "import_sha256": "89b56c04cab86858093410e70349164ca8e6f7fae13541f43c96136439277db1",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark-thp-final-preflight-rteaal.command.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/coremark-thp-final-preflight-rteaal.command.json",
+      "source_sha256": "0dba9aae56d1c9630593d68c850891a7ad56c5c213b2b721c9f2570caeee30d4",
+      "import_sha256": "0dba9aae56d1c9630593d68c850891a7ad56c5c213b2b721c9f2570caeee30d4",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark-thp-final-preflight-verilator.command.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/coremark-thp-final-preflight-verilator.command.json",
+      "source_sha256": "8b0958787f3c52ac865ab415356746b1dcec7036f02a7543c21ec7ee956ce890",
+      "import_sha256": "8b0958787f3c52ac865ab415356746b1dcec7036f02a7543c21ec7ee956ce890",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark-thp-final-rteaal.command.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/coremark-thp-final-rteaal.command.json",
+      "source_sha256": "9accbc75a95ecc294a7e9c8249a994f676c2825b71400d8e8d7245aac5b8eb6a",
+      "import_sha256": "9accbc75a95ecc294a7e9c8249a994f676c2825b71400d8e8d7245aac5b8eb6a",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark-thp-final-verilator.command.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/coremark-thp-final-verilator.command.json",
+      "source_sha256": "0fb63032dbfe034fbe0ccb599d071cbb1d3e94918bc3321346f1368017ad491d",
+      "import_sha256": "0fb63032dbfe034fbe0ccb599d071cbb1d3e94918bc3321346f1368017ad491d",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark-thp-full-comparison.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/coremark-thp-full-comparison.json",
+      "source_sha256": "3af8bab5e6cf1fd454d8b0323f6ea4c463c142de5039667d71a98bd7db3949e7",
+      "import_sha256": "3af8bab5e6cf1fd454d8b0323f6ea4c463c142de5039667d71a98bd7db3949e7",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark-thp-full-preflight-rteaal.command.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/coremark-thp-full-preflight-rteaal.command.json",
+      "source_sha256": "274aac04083eb4332ac69a125097b9ceba11dc9274f400f9c4b1f411e4126931",
+      "import_sha256": "274aac04083eb4332ac69a125097b9ceba11dc9274f400f9c4b1f411e4126931",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark-thp-full-preflight-verilator.command.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/coremark-thp-full-preflight-verilator.command.json",
+      "source_sha256": "50a4978d44aba7306fdaa0458887aad309cf4825d385ee029cb2f124036d727f",
+      "import_sha256": "50a4978d44aba7306fdaa0458887aad309cf4825d385ee029cb2f124036d727f",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark-thp-node1-comparison.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/coremark-thp-node1-comparison.json",
+      "source_sha256": "60c4646b169b72b4fe74f87556accb36c88f58f46aba9c77796eb258c252f105",
+      "import_sha256": "60c4646b169b72b4fe74f87556accb36c88f58f46aba9c77796eb258c252f105",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark-thp-node1-preflight-rteaal.command.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/coremark-thp-node1-preflight-rteaal.command.json",
+      "source_sha256": "c7420c5aade4eb2690269f5601a619039262a40c2736d1207f0efbe9ac1756c5",
+      "import_sha256": "c7420c5aade4eb2690269f5601a619039262a40c2736d1207f0efbe9ac1756c5",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark-thp-node1-preflight-verilator.command.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/coremark-thp-node1-preflight-verilator.command.json",
+      "source_sha256": "8b2bc1c907558666a104cbc1efc70ed77bfa0f9098f95f394e791f12e43c5e5a",
+      "import_sha256": "8b2bc1c907558666a104cbc1efc70ed77bfa0f9098f95f394e791f12e43c5e5a",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark-thp-node1-rteaal.command.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/coremark-thp-node1-rteaal.command.json",
+      "source_sha256": "35ba9f5d7e3fd8353611001b80c77dd35b86cb0cd0d20259b86ae692d90d2a93",
+      "import_sha256": "35ba9f5d7e3fd8353611001b80c77dd35b86cb0cd0d20259b86ae692d90d2a93",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark-thp-node1-verilator.command.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/coremark-thp-node1-verilator.command.json",
+      "source_sha256": "ec8e93dc28773d6548b2f9ace372132dc3a279b0a11230ab52aa502e5178f58b",
+      "import_sha256": "ec8e93dc28773d6548b2f9ace372132dc3a279b0a11230ab52aa502e5178f58b",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark-thp-preflight-rteaal.command.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/coremark-thp-preflight-rteaal.command.json",
+      "source_sha256": "96b08c3941d7233a74c85276b62551674b0d73e56c1a4784a5b8ca5045b2cf49",
+      "import_sha256": "96b08c3941d7233a74c85276b62551674b0d73e56c1a4784a5b8ca5045b2cf49",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark-thp-preflight-verilator.command.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/coremark-thp-preflight-verilator.command.json",
+      "source_sha256": "1f306a20fb7170b9dca5bd6390c491dac12edbe5bc1158c1abc2f684ae061766",
+      "import_sha256": "1f306a20fb7170b9dca5bd6390c491dac12edbe5bc1158c1abc2f684ae061766",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/coremark-verilator.command.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/coremark-verilator.command.json",
+      "source_sha256": "7507436a4fe86298c62c4b6c6b5666039c701980c41af484cedb7bf40fa48a4e",
+      "import_sha256": "7507436a4fe86298c62c4b6c6b5666039c701980c41af484cedb7bf40fa48a4e",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/edge-build-manifest.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/edge-build-manifest.json",
+      "source_sha256": "6b92f549656a44a7dfb46908a3cae490af394466a20e37924960adfc53c5f218",
+      "import_sha256": "6b92f549656a44a7dfb46908a3cae490af394466a20e37924960adfc53c5f218",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/phase-probe-rteaal.command.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/phase-probe-rteaal.command.json",
+      "source_sha256": "08fac0f40948fb310c39aad62809da3f2ec4d8ebda42013a2ad6cbb5b3ed51f8",
+      "import_sha256": "08fac0f40948fb310c39aad62809da3f2ec4d8ebda42013a2ad6cbb5b3ed51f8",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/phase-probe-validation.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/phase-probe-validation.json",
+      "source_sha256": "c9187841791c83ad74ae2f16e409fa7c907a2c7748f15379906bf1707f91a98e",
+      "import_sha256": "c9187841791c83ad74ae2f16e409fa7c907a2c7748f15379906bf1707f91a98e",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/phase-probe-verilator.command.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/phase-probe-verilator.command.json",
+      "source_sha256": "afee7c1e57323bf3cb768b5364ffb3bb605705542d8a59119f97c81d5dbcc8a3",
+      "import_sha256": "afee7c1e57323bf3cb768b5364ffb3bb605705542d8a59119f97c81d5dbcc8a3",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/rteaal-build.command.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/rteaal-build.command.json",
+      "source_sha256": "20a428dec9ab4ee216dc266867b0e3c1c61d5b1cbf4cbd0e8f82db67b8547ce2",
+      "import_sha256": "20a428dec9ab4ee216dc266867b0e3c1c61d5b1cbf4cbd0e8f82db67b8547ce2",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/rteaal-thp-build.command.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/rteaal-thp-build.command.json",
+      "source_sha256": "97b34649637a2f2a0e84ae34b9f9c51d6ff5d77d383da6c59558a8a5eb9b7dc2",
+      "import_sha256": "97b34649637a2f2a0e84ae34b9f9c51d6ff5d77d383da6c59558a8a5eb9b7dc2",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/rteaal-thp-prefault-build.command.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/rteaal-thp-prefault-build.command.json",
+      "source_sha256": "48bb1b1d24941e01d4c34dfaeb697e0f3a2dd32e961e227ba8035af49395216f",
+      "import_sha256": "48bb1b1d24941e01d4c34dfaeb697e0f3a2dd32e961e227ba8035af49395216f",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/thp-build-manifest.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/thp-build-manifest.json",
+      "source_sha256": "e8b994c7b99d12fd4344a58728e0c1b50d646dd275405d007b2dbf6f92c9522d",
+      "import_sha256": "e8b994c7b99d12fd4344a58728e0c1b50d646dd275405d007b2dbf6f92c9522d",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/thp-prefault-build-manifest.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/thp-prefault-build-manifest.json",
+      "source_sha256": "d60c28bbfccb34aa44e938bf985708de9545a60b9341c940d6662669197433cb",
+      "import_sha256": "d60c28bbfccb34aa44e938bf985708de9545a60b9341c940d6662669197433cb",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/validation.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/validation.json",
+      "source_sha256": "b66173acb677ffe991ad633b132436271dfecc00073cc2b76933edd5dae75692",
+      "import_sha256": "b66173acb677ffe991ad633b132436271dfecc00073cc2b76933edd5dae75692",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/verilator-build.command.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/verilator-build.command.json",
+      "source_sha256": "649ae43120733258024f6cf59a136e21a23f6016c45652aea6988c4ea783421c",
+      "import_sha256": "649ae43120733258024f6cf59a136e21a23f6016c45652aea6988c4ea783421c",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-coremark-100k/verilator-edge-build.command.json",
+      "target": "evidence/original/results/experimental/nanhu-coremark-100k/verilator-edge-build.command.json",
+      "source_sha256": "a134b25e1e0be0f973a4a80cdaa36f25c5e7dfbf898e1197d247d2b8f4dad154",
+      "import_sha256": "a134b25e1e0be0f973a4a80cdaa36f25c5e7dfbf898e1197d247d2b8f4dad154",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/CMakeLists.txt",
+      "target": "runtime/cuda/CMakeLists.txt",
+      "source_sha256": "eb0d2925ca56b3923769906a39cc322bb9b7083a14a2d9c5a303143730350d9f",
+      "import_sha256": "eb0d2925ca56b3923769906a39cc322bb9b7083a14a2d9c5a303143730350d9f",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/NOTICE.md",
+      "target": "runtime/cuda/NOTICE.md",
+      "source_sha256": "91f8aa23a08f4a4400d894d1d4a6d506b3a833d175d6b494c27209595138c98b",
+      "import_sha256": "91f8aa23a08f4a4400d894d1d4a6d506b3a833d175d6b494c27209595138c98b",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/licenses/XiangShan-MulanPSL2.txt",
+      "target": "runtime/cuda/licenses/XiangShan-MulanPSL2.txt",
+      "source_sha256": "dde9c094144dabf139105d8af29cd0a8581506fdbd3777c6f8e232d35fac673c",
+      "import_sha256": "dde9c094144dabf139105d8af29cd0a8581506fdbd3777c6f8e232d35fac673c",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/licenses/nlohmann-json-MIT.txt",
+      "target": "runtime/cuda/licenses/nlohmann-json-MIT.txt",
+      "source_sha256": "c0d068392ea65358b798b8c165103560f06e9e3b38c4ab4e2d8810a7b931af86",
+      "import_sha256": "c0d068392ea65358b798b8c165103560f06e9e3b38c4ab4e2d8810a7b931af86",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/profiling/remote-results/PROFILE_REPORT_zh.md",
+      "target": "evidence/original/results/experimental/nanhu-cuda-2060/profiling/remote-results/PROFILE_REPORT_zh.md",
+      "source_sha256": "11df0c49a2c5506dc75914fb981b6f54fba0e7ef2ed439ff6f92eb3770b7583f",
+      "import_sha256": "11df0c49a2c5506dc75914fb981b6f54fba0e7ef2ed439ff6f92eb3770b7583f",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/profiling/remote-results/profile-summary.json",
+      "target": "evidence/original/results/experimental/nanhu-cuda-2060/profiling/remote-results/profile-summary.json",
+      "source_sha256": "c9464dd475c50a25d92774efac453a87e42a2fee067418a6b77a79e728299fb7",
+      "import_sha256": "c9464dd475c50a25d92774efac453a87e42a2fee067418a6b77a79e728299fb7",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/profiling/remote-results/source-proof.json",
+      "target": "evidence/original/results/experimental/nanhu-cuda-2060/profiling/remote-results/source-proof.json",
+      "source_sha256": "c5aa99843bbe162c0b92d3e3dd59e62be4382b786f2c8f810215640e23b8dabc",
+      "import_sha256": "c5aa99843bbe162c0b92d3e3dd59e62be4382b786f2c8f810215640e23b8dabc",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/remote-results/GPU_REPORT_zh.md",
+      "target": "evidence/original/results/experimental/nanhu-cuda-2060/remote-results/GPU_REPORT_zh.md",
+      "source_sha256": "ab74a35d03826df7d3c51e7c69640a67807df297b1957af3a5ff96bf9610ccbf",
+      "import_sha256": "ab74a35d03826df7d3c51e7c69640a67807df297b1957af3a5ff96bf9610ccbf",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/remote-results/REPORT_zh.md",
+      "target": "evidence/original/results/experimental/nanhu-cuda-2060/remote-results/REPORT_zh.md",
+      "source_sha256": "37ca60526dd9c426ec187f970b4131099478916b7f95c928f26c1aa8abd6edca",
+      "import_sha256": "37ca60526dd9c426ec187f970b4131099478916b7f95c928f26c1aa8abd6edca",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/remote-results/artifact-manifest.json",
+      "target": "evidence/original/results/experimental/nanhu-cuda-2060/remote-results/artifact-manifest.json",
+      "source_sha256": "8a589460bc26c154c996b9352da0bb8ab8ba81b96815eb9f5e78c0556bff1160",
+      "import_sha256": "8a589460bc26c154c996b9352da0bb8ab8ba81b96815eb9f5e78c0556bff1160",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/remote-results/gpu-summary.json",
+      "target": "evidence/original/results/experimental/nanhu-cuda-2060/remote-results/gpu-summary.json",
+      "source_sha256": "33c39f2333665bc366f256755a17e501f68ce4294651c1792856d2ccd37dbf15",
+      "import_sha256": "33c39f2333665bc366f256755a17e501f68ce4294651c1792856d2ccd37dbf15",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/run.py",
+      "target": "runtime/cuda/run.py",
+      "source_sha256": "7d27e9e05152dc4ed91d19a9dc95a7bafb38b8e1b63f933af11d64f8844d0542",
+      "import_sha256": "7d27e9e05152dc4ed91d19a9dc95a7bafb38b8e1b63f933af11d64f8844d0542",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/src/coremark_common.h",
+      "target": "runtime/cuda/src/coremark_common.h",
+      "source_sha256": "05212b3df4d66814bbe4537444c086f29f272363d7e715310bf26942a598ecfe",
+      "import_sha256": "05212b3df4d66814bbe4537444c086f29f272363d7e715310bf26942a598ecfe",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/src/engine.h",
+      "target": "runtime/cuda/src/engine.h",
+      "source_sha256": "27c43bed466a1e6e2c730584df673e59b8366774d2c96d5bd2395d14b7fe290f",
+      "import_sha256": "27c43bed466a1e6e2c730584df673e59b8366774d2c96d5bd2395d14b7fe290f",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/src/engine_cpu.cpp",
+      "target": "runtime/cuda/src/engine_cpu.cpp",
+      "source_sha256": "29c9facf30c9684e00dc9bc0e3a0775c11f8be3801b201571683b454ddd9f452",
+      "import_sha256": "29c9facf30c9684e00dc9bc0e3a0775c11f8be3801b201571683b454ddd9f452",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/src/engine_cuda.cu",
+      "target": "runtime/cuda/src/engine_cuda.cu",
+      "source_sha256": "6c39fad7ed9b9311aed901e4ecc5b94980bec748f82d75a68e217935a03b80ad",
+      "import_sha256": "6c39fad7ed9b9311aed901e4ecc5b94980bec748f82d75a68e217935a03b80ad",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/src/flat_ops.cpp",
+      "target": "runtime/cuda/src/flat_ops.cpp",
+      "source_sha256": "dedab0eea9d6f7e97913ad76e42de5fcd4440d29b56c600010eb13e42a4543cb",
+      "import_sha256": "dedab0eea9d6f7e97913ad76e42de5fcd4440d29b56c600010eb13e42a4543cb",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/src/flat_ops.h",
+      "target": "runtime/cuda/src/flat_ops.h",
+      "source_sha256": "924c19db9e7e5554f36e0705dd838a563af383b5a03a2390ecf5f920bbf7728c",
+      "import_sha256": "924c19db9e7e5554f36e0705dd838a563af383b5a03a2390ecf5f920bbf7728c",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/src/main.cpp",
+      "target": "runtime/cuda/src/main.cpp",
+      "source_sha256": "a7a231b7cceab72d3eb72477866a7ac54140453073fd187b59f5274a6b888ac6",
+      "import_sha256": "a7a231b7cceab72d3eb72477866a7ac54140453073fd187b59f5274a6b888ac6",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/src/memory_plan.cpp",
+      "target": "runtime/cuda/src/memory_plan.cpp",
+      "source_sha256": "55f51a5acc7d03c90a9634ba6792ec01cdc071ac17f9228b721570730207a3e7",
+      "import_sha256": "55f51a5acc7d03c90a9634ba6792ec01cdc071ac17f9228b721570730207a3e7",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/src/memory_plan.h",
+      "target": "runtime/cuda/src/memory_plan.h",
+      "source_sha256": "7cdb101d1856b567ceaebef8b7a08009f17b0330888a807dea422e533b8f5aeb",
+      "import_sha256": "7cdb101d1856b567ceaebef8b7a08009f17b0330888a807dea422e533b8f5aeb",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/src/ops.h",
+      "target": "runtime/cuda/src/ops.h",
+      "source_sha256": "dcc29eeb9eedbc5cc2b4ee445c33813af79c19831bee2677a8342203ddc60433",
+      "import_sha256": "dcc29eeb9eedbc5cc2b4ee445c33813af79c19831bee2677a8342203ddc60433",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/tests/flat_plan_test.cpp",
+      "target": "runtime/cuda/tests/flat_plan_test.cpp",
+      "source_sha256": "4678dbff65ece226f18b2754b609efae800cdce2cf3fe161198b509479d9485c",
+      "import_sha256": "4678dbff65ece226f18b2754b609efae800cdce2cf3fe161198b509479d9485c",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/tests/memory_direct_test.cpp",
+      "target": "runtime/cuda/tests/memory_direct_test.cpp",
+      "source_sha256": "7d8bac7e21810929f57df8c4d7cf1f7eb611ead1c16e4d3a141ded521a6a459a",
+      "import_sha256": "7d8bac7e21810929f57df8c4d7cf1f7eb611ead1c16e4d3a141ded521a6a459a",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/tests/memory_plan_test.cpp",
+      "target": "runtime/cuda/tests/memory_plan_test.cpp",
+      "source_sha256": "1d648d0722f83186e8e1ee0e6cf784c64387a28e4bd71e34a01296e4b67afe87",
+      "import_sha256": "1d648d0722f83186e8e1ee0e6cf784c64387a28e4bd71e34a01296e4b67afe87",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/tests/op_test.cpp",
+      "target": "runtime/cuda/tests/op_test.cpp",
+      "source_sha256": "b681a37857b9a08f4e07cbe6081decfaa6ebc859259c90502f139ff0d4917e54",
+      "import_sha256": "b681a37857b9a08f4e07cbe6081decfaa6ebc859259c90502f139ff0d4917e54",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/tests/reference_ou.h",
+      "target": "runtime/cuda/tests/reference_ou.h",
+      "source_sha256": "dc2859ecab68d6af638404cdd47737077a65f6b9413e27f6f4986961b1d6e615",
+      "import_sha256": "dc2859ecab68d6af638404cdd47737077a65f6b9413e27f6f4986961b1d6e615",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-cuda-2060/vendor/json.hpp",
+      "target": "runtime/cuda/vendor/json.hpp",
+      "source_sha256": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63",
+      "import_sha256": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-tuning/REPORT_zh.md",
+      "target": "evidence/original/results/experimental/nanhu-tuning/REPORT_zh.md",
+      "source_sha256": "ddbcc0ffe0634cdb20de372ca866f5de57f34f944301f4e0c6aa8ee6ebf488d7",
+      "import_sha256": "ddbcc0ffe0634cdb20de372ca866f5de57f34f944301f4e0c6aa8ee6ebf488d7",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-tuning/aligned-kernel-integrity.json",
+      "target": "evidence/original/results/experimental/nanhu-tuning/aligned-kernel-integrity.json",
+      "source_sha256": "4871d007a47911139a06d835162f082131614721c81de7110b95096c5cc2507c",
+      "import_sha256": "4871d007a47911139a06d835162f082131614721c81de7110b95096c5cc2507c",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-tuning/artifact-manifest.json",
+      "target": "evidence/original/results/experimental/nanhu-tuning/artifact-manifest.json",
+      "source_sha256": "5272ebe9cf2b577116a24576cb79849269057c2378d3ed108f9ea17a7e21a103",
+      "import_sha256": "5272ebe9cf2b577116a24576cb79849269057c2378d3ed108f9ea17a7e21a103",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-tuning/build/nu-aligned-all-s1/manifest.json",
+      "target": "evidence/original/results/experimental/nanhu-tuning/build/nu-aligned-all-s1/manifest.json",
+      "source_sha256": "7d29c0a7ef1e1912b9c4465620d2919b11b9f55011517f5493d72198184f6d17",
+      "import_sha256": "7d29c0a7ef1e1912b9c4465620d2919b11b9f55011517f5493d72198184f6d17",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-tuning/build/nu-native-s1/manifest.json",
+      "target": "evidence/original/results/experimental/nanhu-tuning/build/nu-native-s1/manifest.json",
+      "source_sha256": "e5e26b8035c0086a5b7271d890351b64c6e58c3c2305055886f8ecdb45107e7e",
+      "import_sha256": "e5e26b8035c0086a5b7271d890351b64c6e58c3c2305055886f8ecdb45107e7e",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-tuning/build/psu8-aligned-all-s1/manifest.json",
+      "target": "evidence/original/results/experimental/nanhu-tuning/build/psu8-aligned-all-s1/manifest.json",
+      "source_sha256": "c7c7db6cfa9abf1b7b58d36050fbdfbcc307fd7f51dcac95647160f693d6fadc",
+      "import_sha256": "c7c7db6cfa9abf1b7b58d36050fbdfbcc307fd7f51dcac95647160f693d6fadc",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-tuning/candidate-integrity.json",
+      "target": "evidence/original/results/experimental/nanhu-tuning/candidate-integrity.json",
+      "source_sha256": "3061e03f7996d948239fa67e8d07943f4df7588163d643d855ef7858568db7c3",
+      "import_sha256": "3061e03f7996d948239fa67e8d07943f4df7588163d643d855ef7858568db7c3",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-tuning/environment.json",
+      "target": "evidence/original/results/experimental/nanhu-tuning/environment.json",
+      "source_sha256": "9ef162b2b574383c6c2d3545e23cd77daa80a42f909884435a5f356e01a7098c",
+      "import_sha256": "9ef162b2b574383c6c2d3545e23cd77daa80a42f909884435a5f356e01a7098c",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-tuning/final-comparison.json",
+      "target": "evidence/original/results/experimental/nanhu-tuning/final-comparison.json",
+      "source_sha256": "687bb34c17e02586a128416884de26257ac5bc244cd0590237b293cd36021270",
+      "import_sha256": "687bb34c17e02586a128416884de26257ac5bc244cd0590237b293cd36021270",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-tuning/host.json",
+      "target": "evidence/original/results/experimental/nanhu-tuning/host.json",
+      "source_sha256": "c854a1a9fc0785eb7c7837733e3264d463dbab19ac8f7f095f21034de62c5adc",
+      "import_sha256": "c854a1a9fc0785eb7c7837733e3264d463dbab19ac8f7f095f21034de62c5adc",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-tuning/layout.json",
+      "target": "evidence/original/results/experimental/nanhu-tuning/layout.json",
+      "source_sha256": "20d1a5e8c99d60aabbbdc6c451c77aa7323dc1a1e471ca6c7e786508b2b5d0ed",
+      "import_sha256": "20d1a5e8c99d60aabbbdc6c451c77aa7323dc1a1e471ca6c7e786508b2b5d0ed",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-tuning/liveness.json",
+      "target": "evidence/original/results/experimental/nanhu-tuning/liveness.json",
+      "source_sha256": "4ef36055c10c1050e2ee01a3ed13fedf1b06a0d61ea729196ce8c35790a8c77c",
+      "import_sha256": "4ef36055c10c1050e2ee01a3ed13fedf1b06a0d61ea729196ce8c35790a8c77c",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-tuning/semantic-checks.json",
+      "target": "evidence/original/results/experimental/nanhu-tuning/semantic-checks.json",
+      "source_sha256": "09355174148d8b97db6c9ff1236f4e065cec4ed42a828f8e37184c819188f4e4",
+      "import_sha256": "09355174148d8b97db6c9ff1236f4e065cec4ed42a828f8e37184c819188f4e4",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-tuning/summary.json",
+      "target": "evidence/original/results/experimental/nanhu-tuning/summary.json",
+      "source_sha256": "3bf4ce66999ae419203ef7882c250219fb2a5c21465e9f724398f305862a7ae3",
+      "import_sha256": "3bf4ce66999ae419203ef7882c250219fb2a5c21465e9f724398f305862a7ae3",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-tuning/upstream-kernel-integrity.json",
+      "target": "evidence/original/results/experimental/nanhu-tuning/upstream-kernel-integrity.json",
+      "source_sha256": "9ede74f86b9fa3d4d0de77684662cbd56f050fcfe341d6d81117c7ace7d8a7a5",
+      "import_sha256": "9ede74f86b9fa3d4d0de77684662cbd56f050fcfe341d6d81117c7ace7d8a7a5",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-tuning/verilator-integrity.json",
+      "target": "evidence/original/results/experimental/nanhu-tuning/verilator-integrity.json",
+      "source_sha256": "0f0338639080803fea302ec006ac5480f674ca250388dc6f00f5c4ba1e4f2571",
+      "import_sha256": "0f0338639080803fea302ec006ac5480f674ca250388dc6f00f5c4ba1e4f2571",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/plru-projection/PROJECTION_ONLY_FLAT.md",
+      "target": "evidence/original/results/experimental/plru-projection/PROJECTION_ONLY_FLAT.md",
+      "source_sha256": "68f4fad723be17485b54e371be2cdadecc3a79902ea3259dd5e7cdca391632da",
+      "import_sha256": "68f4fad723be17485b54e371be2cdadecc3a79902ea3259dd5e7cdca391632da",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/plru-projection/README.md",
+      "target": "evidence/original/results/experimental/plru-projection/README.md",
+      "source_sha256": "bab7f0c6c7e63fa0e72baa069c6074db0863d3dd9484a83a1c6f3d9725fe7fe0",
+      "import_sha256": "bab7f0c6c7e63fa0e72baa069c6074db0863d3dd9484a83a1c6f3d9725fe7fe0",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/plru-projection/REPORT.md",
+      "target": "evidence/original/results/experimental/plru-projection/REPORT.md",
+      "source_sha256": "185dfe807e977df528a9dc7e731b411108c944f3c654f5974cb0f260256d2603",
+      "import_sha256": "185dfe807e977df528a9dc7e731b411108c944f3c654f5974cb0f260256d2603",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/plru-projection/candidate-summary.json",
+      "target": "evidence/original/results/experimental/plru-projection/candidate-summary.json",
+      "source_sha256": "3d2ab0a0e451f27c6a016f395d6b74e97c6c05164763b20baf33dac65bf1a9e5",
+      "import_sha256": "3d2ab0a0e451f27c6a016f395d6b74e97c6c05164763b20baf33dac65bf1a9e5",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/plru-projection/checks.json",
+      "target": "evidence/original/results/experimental/plru-projection/checks.json",
+      "source_sha256": "c38ee8a6baff23b3504cc8544391a3e81f7c2d497b8a9bf3cf5b437988e9a715",
+      "import_sha256": "c38ee8a6baff23b3504cc8544391a3e81f7c2d497b8a9bf3cf5b437988e9a715",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/plru-projection/long-path-checks.json",
+      "target": "evidence/original/results/experimental/plru-projection/long-path-checks.json",
+      "source_sha256": "4e3bd465729f1263ba37e734af586025309e882e7edc8591e63c0a9c0ccdb53f",
+      "import_sha256": "4e3bd465729f1263ba37e734af586025309e882e7edc8591e63c0a9c0ccdb53f",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/plru-projection/named-memory-checks.json",
+      "target": "evidence/original/results/experimental/plru-projection/named-memory-checks.json",
+      "source_sha256": "65ea96fda39cd9c683f0688a9e4b40ec0f0e200731eff179e160518353b95a0b",
+      "import_sha256": "65ea96fda39cd9c683f0688a9e4b40ec0f0e200731eff179e160518353b95a0b",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/plru-projection/normalization-checks-v5.json",
+      "target": "evidence/original/results/experimental/plru-projection/normalization-checks-v5.json",
+      "source_sha256": "6cc14bbac7b2e424dc98df1ca4b9c795c2bee43618ce69eeb9d8330ecd7858b8",
+      "import_sha256": "6cc14bbac7b2e424dc98df1ca4b9c795c2bee43618ce69eeb9d8330ecd7858b8",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/plru-projection/normalization-source.json",
+      "target": "evidence/original/results/experimental/plru-projection/normalization-source.json",
+      "source_sha256": "a55f154877e7eb3cedabe681e34564c2a909330982c54549840e01b649b60257",
+      "import_sha256": "a55f154877e7eb3cedabe681e34564c2a909330982c54549840e01b649b60257",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/plru-projection/performance.json",
+      "target": "evidence/original/results/experimental/plru-projection/performance.json",
+      "source_sha256": "83ce0688905be43c0d6428703b4d5a9daeb8b3b268dceffefc184411682ada4f",
+      "import_sha256": "83ce0688905be43c0d6428703b4d5a9daeb8b3b268dceffefc184411682ada4f",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/plru-projection/projection-only-flat-checks.json",
+      "target": "evidence/original/results/experimental/plru-projection/projection-only-flat-checks.json",
+      "source_sha256": "4681055a75979f5ff20064db63e77091e8ce8b8e6d5203833453f2f6def1cf05",
+      "import_sha256": "4681055a75979f5ff20064db63e77091e8ce8b8e6d5203833453f2f6def1cf05",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/plru-projection/projection-only-flat-results.json",
+      "target": "evidence/original/results/experimental/plru-projection/projection-only-flat-results.json",
+      "source_sha256": "c976c375957f9205db940e2f040b3f7121f5da46de41217ec65c3b73501efec5",
+      "import_sha256": "c976c375957f9205db940e2f040b3f7121f5da46de41217ec65c3b73501efec5",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/plru-projection/rtx6000-checks.json",
+      "target": "evidence/original/results/experimental/plru-projection/rtx6000-checks.json",
+      "source_sha256": "b0fb7b66b13d6b9f9239ca2f614cff76876e4b9737ae617e3f65d7eb90024538",
+      "import_sha256": "b0fb7b66b13d6b9f9239ca2f614cff76876e4b9737ae617e3f65d7eb90024538",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/plru-projection/scala-validation.json",
+      "target": "evidence/original/results/experimental/plru-projection/scala-validation.json",
+      "source_sha256": "08f8a599e83f072bcba011fe7016d5af91c4d6264e0a6df645830577cf9b184e",
+      "import_sha256": "08f8a599e83f072bcba011fe7016d5af91c4d6264e0a6df645830577cf9b184e",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/priority-mux/REPORT.md",
+      "target": "evidence/original/results/experimental/priority-mux/REPORT.md",
+      "source_sha256": "bc66af4efbb8a1e2e6467fe25c0177a6e0cc1981161b327a9186d22aab2d129b",
+      "import_sha256": "bc66af4efbb8a1e2e6467fe25c0177a6e0cc1981161b327a9186d22aab2d129b",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/priority-mux/baseline-checks.json",
+      "target": "evidence/original/results/experimental/priority-mux/baseline-checks.json",
+      "source_sha256": "1403f103f2913ccc917c3a4c8ab7337cd13c7b3062a25f1d7cf6984e122977f7",
+      "import_sha256": "1403f103f2913ccc917c3a4c8ab7337cd13c7b3062a25f1d7cf6984e122977f7",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/priority-mux/checks.json",
+      "target": "evidence/original/results/experimental/priority-mux/checks.json",
+      "source_sha256": "4fbf55486e97ed871839409bb7f7c309b867d46421bb4d7aac2ab671d0ea5f03",
+      "import_sha256": "4fbf55486e97ed871839409bb7f7c309b867d46421bb4d7aac2ab671d0ea5f03",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/priority-mux/critical-path-checks.json",
+      "target": "evidence/original/results/experimental/priority-mux/critical-path-checks.json",
+      "source_sha256": "9eb963e8ff341d02273f4606f464b58ea4814bdec79db06d8973b77d172db704",
+      "import_sha256": "9eb963e8ff341d02273f4606f464b58ea4814bdec79db06d8973b77d172db704",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/priority-mux/firrtl-checks.json",
+      "target": "evidence/original/results/experimental/priority-mux/firrtl-checks.json",
+      "source_sha256": "959e2fa7b5a23fe51c41786f5527fe96cc49dd49592b239f66f15a073d2339bb",
+      "import_sha256": "959e2fa7b5a23fe51c41786f5527fe96cc49dd49592b239f66f15a073d2339bb",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/priority-mux/gpu-checks.json",
+      "target": "evidence/original/results/experimental/priority-mux/gpu-checks.json",
+      "source_sha256": "a96e942cf43e052cee53bf58d4a5f87f897317fa402e2a04d9b39f39fc56551d",
+      "import_sha256": "a96e942cf43e052cee53bf58d4a5f87f897317fa402e2a04d9b39f39fc56551d",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/priority-mux/gpu-plot-checks.json",
+      "target": "evidence/original/results/experimental/priority-mux/gpu-plot-checks.json",
+      "source_sha256": "26410bc9e22b25c921fe12fd014e02d6abd3292dc9ae1bd16f24807a790b2bb7",
+      "import_sha256": "26410bc9e22b25c921fe12fd014e02d6abd3292dc9ae1bd16f24807a790b2bb7",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/priority-mux/graph-checks.json",
+      "target": "evidence/original/results/experimental/priority-mux/graph-checks.json",
+      "source_sha256": "382789ee825d20795730285034cf0da4373f0ce5c96a0b317ec476e83ebf1d36",
+      "import_sha256": "382789ee825d20795730285034cf0da4373f0ce5c96a0b317ec476e83ebf1d36",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/priority-mux/long-path-checks.json",
+      "target": "evidence/original/results/experimental/priority-mux/long-path-checks.json",
+      "source_sha256": "b8d71433bbdd02da9ee4632b32385ba8f3256526916d3cd2db1c5a1516e487a0",
+      "import_sha256": "b8d71433bbdd02da9ee4632b32385ba8f3256526916d3cd2db1c5a1516e487a0",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/priority-mux/lookup-checks.json",
+      "target": "evidence/original/results/experimental/priority-mux/lookup-checks.json",
+      "source_sha256": "00d3503e6274bdea19a4a783a55b339cf869b48e82ed14ef5127044797110339",
+      "import_sha256": "00d3503e6274bdea19a4a783a55b339cf869b48e82ed14ef5127044797110339",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/priority-mux/minimal-checks.json",
+      "target": "evidence/original/results/experimental/priority-mux/minimal-checks.json",
+      "source_sha256": "7ed97fcdc2e0f3ce7658c5a9aa0644cac52a215b142b5120ca993c95e5d4afc2",
+      "import_sha256": "7ed97fcdc2e0f3ce7658c5a9aa0644cac52a215b142b5120ca993c95e5d4afc2",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/priority-mux/minimal-depth-checks.json",
+      "target": "evidence/original/results/experimental/priority-mux/minimal-depth-checks.json",
+      "source_sha256": "3b64731707913703e4e21420a8b9440ecb16b365162baa36443aeba367995f50",
+      "import_sha256": "3b64731707913703e4e21420a8b9440ecb16b365162baa36443aeba367995f50",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/priority-mux/plot-checks.json",
+      "target": "evidence/original/results/experimental/priority-mux/plot-checks.json",
+      "source_sha256": "a6279b367a74cf82d7f80f250090d172eb6dfbe353322d4b6537369c28500bf0",
+      "import_sha256": "a6279b367a74cf82d7f80f250090d172eb6dfbe353322d4b6537369c28500bf0",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/priority-mux/rtx2060-checks.json",
+      "target": "evidence/original/results/experimental/priority-mux/rtx2060-checks.json",
+      "source_sha256": "7d86df1ea5ac05aa4b6ea11db2f992779a5a76ef6260f18f64e471ef49811ecb",
+      "import_sha256": "7d86df1ea5ac05aa4b6ea11db2f992779a5a76ef6260f18f64e471ef49811ecb",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/priority-mux/two-gpu-plot-checks.json",
+      "target": "evidence/original/results/experimental/priority-mux/two-gpu-plot-checks.json",
+      "source_sha256": "e4817d057bcb6b24d5f87311bbff212947119278fba3aa43af686d63d674a43d",
+      "import_sha256": "e4817d057bcb6b24d5f87311bbff212947119278fba3aa43af686d63d674a43d",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/ActiveFalling.fir",
+      "target": "fixtures/nanhu/ActiveFalling.fir",
+      "source_sha256": "29c9b3428209c7db659d9af331fea720358fd7c25e343574c2bbf11f7005d8cb",
+      "import_sha256": "29c9b3428209c7db659d9af331fea720358fd7c25e343574c2bbf11f7005d8cb",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/BoolClockMemory.fir",
+      "target": "fixtures/nanhu/BoolClockMemory.fir",
+      "source_sha256": "a0e72d221bc1ac429eb59f5dcedb2011f03113383a18341f9d1fdbbe133b8aa8",
+      "import_sha256": "a0e72d221bc1ac429eb59f5dcedb2011f03113383a18341f9d1fdbbe133b8aa8",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/FlashHelper.v",
+      "target": "fixtures/nanhu/FlashHelper.v",
+      "source_sha256": "395be6591621ddf991a8afe986f52a2dce8415218574f57b564e8e1a13c3b53b",
+      "import_sha256": "395be6591621ddf991a8afe986f52a2dce8415218574f57b564e8e1a13c3b53b",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/FlashHelperProbe.fir",
+      "target": "fixtures/nanhu/FlashHelperProbe.fir",
+      "source_sha256": "36ef143a98fb461438c55af66526af7ee87edfd6dd8f5bf0a7d10a10f0efe8b0",
+      "import_sha256": "36ef143a98fb461438c55af66526af7ee87edfd6dd8f5bf0a7d10a10f0efe8b0",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/GatedMemory.fir",
+      "target": "fixtures/nanhu/GatedMemory.fir",
+      "source_sha256": "d58c0be11fa2febea233da840dc51e322de47501072a9a8ad76c4731deaf9f11",
+      "import_sha256": "d58c0be11fa2febea233da840dc51e322de47501072a9a8ad76c4731deaf9f11",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/IdleJTAG.v",
+      "target": "fixtures/nanhu/IdleJTAG.v",
+      "source_sha256": "ebe0ca42256ee4c01efa12f74b0fce5b4598d54cf5e68b14e35af7072ef7e8b9",
+      "import_sha256": "ebe0ca42256ee4c01efa12f74b0fce5b4598d54cf5e68b14e35af7072ef7e8b9",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/IdleJtagClock.fir",
+      "target": "fixtures/nanhu/IdleJtagClock.fir",
+      "source_sha256": "38752acebb2478644a8a7b633f4b98e1337f01d3f39b20720a01b4b9aef15bc3",
+      "import_sha256": "38752acebb2478644a8a7b633f4b98e1337f01d3f39b20720a01b4b9aef15bc3",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/NestedAccess.fir",
+      "target": "fixtures/nanhu/NestedAccess.fir",
+      "source_sha256": "d6f2c4f5ecd717191f918d959c49e9212d3bf2335a7bfbecf858de03d48f1a06",
+      "import_sha256": "d6f2c4f5ecd717191f918d959c49e9212d3bf2335a7bfbecf858de03d48f1a06",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/RamHelperProbe.fir",
+      "target": "fixtures/nanhu/RamHelperProbe.fir",
+      "source_sha256": "6b395e31917dd127684b9730f877d7c250943c324c82297f13b8c1e8c2d7e162",
+      "import_sha256": "6b395e31917dd127684b9730f877d7c250943c324c82297f13b8c1e8c2d7e162",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/STD_CLKGT_func.v",
+      "target": "fixtures/nanhu/STD_CLKGT_func.v",
+      "source_sha256": "63e803f82cfa36b5eefa6daf891be6c231596d69d791f5b0de092d957e173971",
+      "import_sha256": "63e803f82cfa36b5eefa6daf891be6c231596d69d791f5b0de092d957e173971",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/SignedMemory.fir",
+      "target": "fixtures/nanhu/SignedMemory.fir",
+      "source_sha256": "1612b43c8393eb6d3b5f3919f11e29b77b639aaa29861950b5ed94df7212811e",
+      "import_sha256": "1612b43c8393eb6d3b5f3919f11e29b77b639aaa29861950b5ed94df7212811e",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/adapter-manifest.json",
+      "target": "evidence/original/results/nanhu/adapter-manifest.json",
+      "source_sha256": "5d3566bef9ae6002a3ec6cc06c9e907b3f10ae0be5a4d015e77642d293bcc6c8",
+      "import_sha256": "5d3566bef9ae6002a3ec6cc06c9e907b3f10ae0be5a4d015e77642d293bcc6c8",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/benchmark-result.json",
+      "target": "evidence/original/results/nanhu/benchmark-result.json",
+      "source_sha256": "51ec8625cf10854568e222aa420eb41b7b344d92bfefc8fc62ebb13fd4ebeae2",
+      "import_sha256": "51ec8625cf10854568e222aa420eb41b7b344d92bfefc8fc62ebb13fd4ebeae2",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/benchmark-samples.json",
+      "target": "evidence/original/results/nanhu/benchmark-samples.json",
+      "source_sha256": "e4ee82389fc31b2427544e0b5354a6f4c97a6cbcd818140dd0bf2032149bf2b5",
+      "import_sha256": "e4ee82389fc31b2427544e0b5354a6f4c97a6cbcd818140dd0bf2032149bf2b5",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/bool-preserved.txt",
+      "target": "fixtures/nanhu/bool-preserved.txt",
+      "source_sha256": "39f0eddabc3bb09a15d19c638a2baac75f56d1d550c8fe778b3c44df5773d29f",
+      "import_sha256": "39f0eddabc3bb09a15d19c638a2baac75f56d1d550c8fe778b3c44df5773d29f",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/checkpoint-checks.json",
+      "target": "evidence/original/results/nanhu/checkpoint-checks.json",
+      "source_sha256": "66b652892deb07ecf64ddf02470fe6a11811441253fd5331d1ee92318df68461",
+      "import_sha256": "66b652892deb07ecf64ddf02470fe6a11811441253fd5331d1ee92318df68461",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/clock-preserved.txt",
+      "target": "fixtures/nanhu/clock-preserved.txt",
+      "source_sha256": "39f0eddabc3bb09a15d19c638a2baac75f56d1d550c8fe778b3c44df5773d29f",
+      "import_sha256": "39f0eddabc3bb09a15d19c638a2baac75f56d1d550c8fe778b3c44df5773d29f",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/control-checks.json",
+      "target": "evidence/original/results/nanhu/control-checks.json",
+      "source_sha256": "2708395bd713414c3c2e3ed11fee11e5d1d35dd278f324374bfadaeb497e3fc5",
+      "import_sha256": "2708395bd713414c3c2e3ed11fee11e5d1d35dd278f324374bfadaeb497e3fc5",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/elaboration-command.json",
+      "target": "evidence/original/results/nanhu/elaboration-command.json",
+      "source_sha256": "f233f3d27c21d1cd151d039e112724df36927998cabbf66cbe1a057e78dc2a2b",
+      "import_sha256": "f233f3d27c21d1cd151d039e112724df36927998cabbf66cbe1a057e78dc2a2b",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/firrtl-artifacts.json",
+      "target": "evidence/original/results/nanhu/firrtl-artifacts.json",
+      "source_sha256": "a90fc80095c29fb7219c5e4d06f2928c72f5bc254093973b0e0b491499a85400",
+      "import_sha256": "a90fc80095c29fb7219c5e4d06f2928c72f5bc254093973b0e0b491499a85400",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/flash-preserved.txt",
+      "target": "fixtures/nanhu/flash-preserved.txt",
+      "source_sha256": "6acae1c842dfd316ae0393ce697e93031d0fce1db4fa6ed08dfa761822b5028a",
+      "import_sha256": "6acae1c842dfd316ae0393ce697e93031d0fce1db4fa6ed08dfa761822b5028a",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/gated-preserved.txt",
+      "target": "fixtures/nanhu/gated-preserved.txt",
+      "source_sha256": "39f0eddabc3bb09a15d19c638a2baac75f56d1d550c8fe778b3c44df5773d29f",
+      "import_sha256": "39f0eddabc3bb09a15d19c638a2baac75f56d1d550c8fe778b3c44df5773d29f",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/idle-preserved.txt",
+      "target": "fixtures/nanhu/idle-preserved.txt",
+      "source_sha256": "39f0eddabc3bb09a15d19c638a2baac75f56d1d550c8fe778b3c44df5773d29f",
+      "import_sha256": "39f0eddabc3bb09a15d19c638a2baac75f56d1d550c8fe778b3c44df5773d29f",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/ram-preserved.txt",
+      "target": "fixtures/nanhu/ram-preserved.txt",
+      "source_sha256": "66fe44c8e902f2b0cf77863463ac11b08c7d21780d052c71fd59d49f7d99d579",
+      "import_sha256": "66fe44c8e902f2b0cf77863463ac11b08c7d21780d052c71fd59d49f7d99d579",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/signed-preserved.txt",
+      "target": "fixtures/nanhu/signed-preserved.txt",
+      "source_sha256": "39f0eddabc3bb09a15d19c638a2baac75f56d1d550c8fe778b3c44df5773d29f",
+      "import_sha256": "39f0eddabc3bb09a15d19c638a2baac75f56d1d550c8fe778b3c44df5773d29f",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/tensor-manifest.json",
+      "target": "evidence/original/results/nanhu/tensor-manifest.json",
+      "source_sha256": "b43b5d7d049d018becdd7c3df0eed2053ae97c8a56b2bc6890766a2a9ffb2615",
+      "import_sha256": "b43b5d7d049d018becdd7c3df0eed2053ae97c8a56b2bc6890766a2a9ffb2615",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/verilator-baseline.json",
+      "target": "evidence/original/results/nanhu/verilator-baseline.json",
+      "source_sha256": "6cdee19c4c7bb3d63e63ddf95763273c86b5d4f884e1da04e8135c54c2242021",
+      "import_sha256": "6cdee19c4c7bb3d63e63ddf95763273c86b5d4f884e1da04e8135c54c2242021",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/nanhu/version-selection.json",
+      "target": "evidence/original/results/nanhu/version-selection.json",
+      "source_sha256": "f64ca14dadb773392bf1ab1ce18c44e0dc39a84bb6e6dd08d0066a617970a21d",
+      "import_sha256": "f64ca14dadb773392bf1ab1ce18c44e0dc39a84bb6e6dd08d0066a617970a21d",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/remote/my-laptop-20261113/REPORT_zh.md",
+      "target": "evidence/original/results/remote/my-laptop-20261113/REPORT_zh.md",
+      "source_sha256": "dcece911aeea6414ca7be079c7ff4b087e1a775ec3ca5071e4f80b1d5c908740",
+      "import_sha256": "dcece911aeea6414ca7be079c7ff4b087e1a775ec3ca5071e4f80b1d5c908740",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/remote/my-laptop-20261113/summary.json",
+      "target": "evidence/original/results/remote/my-laptop-20261113/summary.json",
+      "source_sha256": "cab9285c9276bc695214940f7a4299f47048215654add105e42626f86b3b4c46",
+      "import_sha256": "cab9285c9276bc695214940f7a4299f47048215654add105e42626f86b3b4c46",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/remote/my-laptop-profile-20261112/PROFILE_REPORT_zh.md",
+      "target": "evidence/original/results/remote/my-laptop-profile-20261112/PROFILE_REPORT_zh.md",
+      "source_sha256": "1d6fc3f8decfe0c592f99fd6f4931cf4811a6d84a3117948b08dc937edd927ca",
+      "import_sha256": "1d6fc3f8decfe0c592f99fd6f4931cf4811a6d84a3117948b08dc937edd927ca",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/remote/my-laptop-profile-20261112/profile-summary.json",
+      "target": "evidence/original/results/remote/my-laptop-profile-20261112/profile-summary.json",
+      "source_sha256": "9c84289bce5e90c103c14ab5b3a9ba488fba76d58241f30ff46cc83453db91d3",
+      "import_sha256": "9c84289bce5e90c103c14ab5b3a9ba488fba76d58241f30ff46cc83453db91d3",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/xiangshan-nanhu-source.json",
+      "target": "evidence/original/results/xiangshan-nanhu-source.json",
+      "source_sha256": "f692d5ed9c2857e400d773861278eafa91688d5d25d3e3074ac121ca091c3d5e",
+      "import_sha256": "f692d5ed9c2857e400d773861278eafa91688d5d25d3e3074ac121ca091c3d5e",
+      "handling": "unchanged"
+    },
+    {
+      "source": "results/experimental/nanhu-tuning/layout.py",
+      "target": "tools/layout.py",
+      "source_sha256": "4bd2155e230475b792c4099c68387492dc2c78bc7e31340d70a161229c98d23f",
+      "import_sha256": "a736601be81886f3005b217c7c9f950667d00de0172c4b1128373369f2dbbc1c",
+      "handling": "path-adapted"
+    },
+    {
+      "source": "results/experimental/nanhu-tuning/check_liveness.py",
+      "target": "tools/check_liveness.py",
+      "source_sha256": "2f97f40c34788648387f577c547da7eb763597ce030c0b22f47cf596a92485ac",
+      "import_sha256": "b1f6dfb23f5e4f739d67f5d1e03e3b43468d236e9d541335d2359de2f0f0eff7",
+      "handling": "path-adapted"
+    }
+  ]
+}

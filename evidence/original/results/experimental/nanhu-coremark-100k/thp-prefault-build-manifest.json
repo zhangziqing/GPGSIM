@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "base_source_sha256": "808bbe5914d58e293a4fafaea2866b1596740cd96543a12dad354de8e9eca962",
+  "evaluator_header_byte_identical": true,
+  "files": {
+    "build-thp-prefault.py": {
+      "bytes": 4008,
+      "sha256": "6de2c78aa30b3d175e5c9bdf4cd41a9139993109cf1b041975123cb933de3c37"
+    },
+    "run-thp-prefault.py": {
+      "bytes": 7586,
+      "sha256": "c5e28f892095f091939b5887afa3b1f5d1c3f091bafd84e8b4c8cc19f5786281"
+    },
+    "rteaal_coremark_thp_prefault.cc": {
+      "bytes": 14477,
+      "sha256": "16cd5c05e6254d12c73864a8eed41c018d1ad9b3da69c98860cbb4ce3d228082"
+    },
+    "rteaal_coremark_thp_prefault": {
+      "bytes": 3247720,
+      "sha256": "2b0f992473a61007f41fac8717f58600782e88349f3dbca76106f47a0002c1bc"
+    },
+    "rteaal-thp-prefault-build.command.json": {
+      "bytes": 764,
+      "sha256": "48bb1b1d24941e01d4c34dfaeb697e0f3a2dd32e961e227ba8035af49395216f"
+    },
+    "rteaal-thp-prefault-build.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

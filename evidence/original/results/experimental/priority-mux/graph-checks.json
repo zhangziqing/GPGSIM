@@ -1,0 +1,474 @@
+{
+  "status": "passed",
+  "variants": {
+    "off": {
+      "layout": {
+        "operations": 2218027,
+        "layers": 140,
+        "data_slots": 490621,
+        "argument_count": 5111382,
+        "scatter_count": 2213410,
+        "memwrite_placeholders": 5428,
+        "memwrite_placeholder_liveness": "passed",
+        "graph_write_conflicts": "none",
+        "ram_bases": {
+          "l_simAXIMem.ram.rdata_mems_0.mem": 1384182,
+          "l_simAXIMem.ram.rdata_mems_1.mem": 34938614,
+          "l_simAXIMem.ram.rdata_mems_2.mem": 68493046,
+          "l_simAXIMem.ram.rdata_mems_3.mem": 102047478
+        },
+        "mux_table_operations_opcode_24": 4403,
+        "mux_table_entries": 198808
+      },
+      "value_path_nodes": 140,
+      "nonassign_path_nodes": 138,
+      "orchain_fanin_histogram": {
+        "3": 17599,
+        "4": 9736,
+        "5": 1916,
+        "6": 448,
+        "7": 38,
+        "8": 9,
+        "9": 2,
+        "17": 16,
+        "63": 2
+      },
+      "lookup_size_histogram": {
+        "4": 190,
+        "8": 2206,
+        "16": 985,
+        "32": 117,
+        "64": 248,
+        "128": 189,
+        "256": 466,
+        "512": 1,
+        "1024": 1
+      },
+      "rob_writeback": {
+        "l_soc.core_with_l2.core.ctrlBlock.rob.writebacked": {
+          "ports": 23,
+          "maximum_value_path_nodes": 13,
+          "maximum_scheduled_layer": 13
+        },
+        "l_soc.core_with_l2.core.ctrlBlock.rob.store_data_writebacked": {
+          "ports": 9,
+          "maximum_value_path_nodes": 13,
+          "maximum_scheduled_layer": 13
+        }
+      },
+      "lfst": {
+        "table_entries": 128,
+        "first_complete_selection_node": 799463,
+        "first_complete_selection_layer": 5,
+        "first_complete_selection_depth_from_table_registers": 1,
+        "maximum_table_value_to_result_selection_depth": 133,
+        "deepest_complete_selection_node": 2218026,
+        "deepest_complete_selection_layer": 140,
+        "complete_selection_depth_histogram": {
+          "1": 1,
+          "2": 1,
+          "3": 9,
+          "127": 5,
+          "128": 13,
+          "129": 4,
+          "130": 12,
+          "131": 11,
+          "132": 10,
+          "133": 9
+        },
+        "complete_selection_nodes": 75
+      },
+      "cuda_static": {
+        "kernel_launches_per_cycle": 144,
+        "kernel_launch_counts": {
+          "set_reset": 1,
+          "compute": 70,
+          "commit": 70,
+          "small_layers": 2,
+          "gather": 1
+        },
+        "fused_layers": 70,
+        "final_suffix": {
+          "layer_begin": 97,
+          "layer_end_exclusive": 140,
+          "logical_layers": 43,
+          "node_begin": 2217109,
+          "node_end_exclusive": 2218027,
+          "nodes": 918,
+          "total_outputs": 918,
+          "maximum_layer_nodes": 34,
+          "maximum_layer_outputs": 34,
+          "opcode_node_counts": {
+            "1": 4,
+            "6": 4,
+            "13": 19,
+            "14": 4,
+            "17": 42,
+            "18": 15,
+            "19": 699,
+            "20": 131
+          },
+          "memory_write_nodes": 0,
+          "kernel": "small_layers",
+          "ordinal": 142,
+          "blocks": 1,
+          "threads": 128,
+          "scatter_offset": 2212492,
+          "final_suffix": true,
+          "fraction_of_all_nodes": 0.00041388134589885514,
+          "fraction_of_all_layers": 0.30714285714285716
+        },
+        "block_barriers_per_cycle": 140,
+        "final_suffix_block_barriers_per_cycle": 86
+      },
+      "targets": {
+        "l_soc.core_with_l2.core.ctrlBlock.fpDq.dataModule.r_5_cf_waitForRobIdx_value": {
+          "layer": 140,
+          "value_path_nodes": 140,
+          "maximum_mux_spine": 133,
+          "or_fanin_histogram": {
+            "2": 49,
+            "3": 6,
+            "4": 6
+          }
+        },
+        "l_soc.core_with_l2.core.ctrlBlock.intDq.dataModule.r_5_cf_waitForRobIdx_value": {
+          "layer": 140,
+          "value_path_nodes": 140,
+          "maximum_mux_spine": 133,
+          "or_fanin_histogram": {
+            "2": 49,
+            "3": 6,
+            "4": 6
+          }
+        },
+        "l_soc.core_with_l2.core.ctrlBlock.lsDq.dataModule.r_5_cf_waitForRobIdx_value": {
+          "layer": 140,
+          "value_path_nodes": 140,
+          "maximum_mux_spine": 133,
+          "or_fanin_histogram": {
+            "2": 49,
+            "3": 6,
+            "4": 6
+          }
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_0.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "layer": 140,
+          "value_path_nodes": 140,
+          "maximum_mux_spine": 108,
+          "or_fanin_histogram": {
+            "2": 9
+          }
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_0.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "layer": 78,
+          "value_path_nodes": 78,
+          "maximum_mux_spine": 50,
+          "or_fanin_histogram": {
+            "2": 7
+          }
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_1.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "layer": 140,
+          "value_path_nodes": 140,
+          "maximum_mux_spine": 108,
+          "or_fanin_histogram": {
+            "2": 9
+          }
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_1.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "layer": 78,
+          "value_path_nodes": 78,
+          "maximum_mux_spine": 50,
+          "or_fanin_histogram": {
+            "2": 7
+          }
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_2.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "layer": 140,
+          "value_path_nodes": 140,
+          "maximum_mux_spine": 108,
+          "or_fanin_histogram": {
+            "2": 9
+          }
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_2.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "layer": 78,
+          "value_path_nodes": 78,
+          "maximum_mux_spine": 50,
+          "or_fanin_histogram": {
+            "2": 7
+          }
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_3.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "layer": 140,
+          "value_path_nodes": 140,
+          "maximum_mux_spine": 108,
+          "or_fanin_histogram": {
+            "2": 9
+          }
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_3.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "layer": 78,
+          "value_path_nodes": 78,
+          "maximum_mux_spine": 50,
+          "or_fanin_histogram": {
+            "2": 7
+          }
+        }
+      },
+      "critical_path_endpoint": [
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_0.fmac.add_pipe.s2_io_in_r_1_near_path_lzc"
+      ],
+      "compiler_revision": "84973ad2575db87f8e018c2a5c155c3572436349"
+    },
+    "on": {
+      "layout": {
+        "operations": 2222558,
+        "layers": 126,
+        "data_slots": 490183,
+        "argument_count": 5121670,
+        "scatter_count": 2217941,
+        "memwrite_placeholders": 5428,
+        "memwrite_placeholder_liveness": "passed",
+        "graph_write_conflicts": "none",
+        "ram_bases": {
+          "l_simAXIMem.ram.rdata_mems_0.mem": 1384182,
+          "l_simAXIMem.ram.rdata_mems_1.mem": 34938614,
+          "l_simAXIMem.ram.rdata_mems_2.mem": 68493046,
+          "l_simAXIMem.ram.rdata_mems_3.mem": 102047478
+        },
+        "mux_table_operations_opcode_24": 4391,
+        "mux_table_entries": 198676
+      },
+      "value_path_nodes": 126,
+      "nonassign_path_nodes": 123,
+      "orchain_fanin_histogram": {
+        "3": 18032,
+        "4": 9848,
+        "5": 1938,
+        "6": 450,
+        "7": 39,
+        "8": 9,
+        "9": 2,
+        "17": 16,
+        "63": 2
+      },
+      "lookup_size_histogram": {
+        "4": 193,
+        "8": 2192,
+        "16": 985,
+        "32": 116,
+        "64": 248,
+        "128": 189,
+        "256": 466,
+        "512": 1,
+        "1024": 1
+      },
+      "rob_writeback": {
+        "l_soc.core_with_l2.core.ctrlBlock.rob.writebacked": {
+          "ports": 23,
+          "maximum_value_path_nodes": 13,
+          "maximum_scheduled_layer": 13
+        },
+        "l_soc.core_with_l2.core.ctrlBlock.rob.store_data_writebacked": {
+          "ports": 9,
+          "maximum_value_path_nodes": 13,
+          "maximum_scheduled_layer": 13
+        }
+      },
+      "lfst": {
+        "table_entries": 128,
+        "first_complete_selection_node": 804594,
+        "first_complete_selection_layer": 5,
+        "first_complete_selection_depth_from_table_registers": 1,
+        "maximum_table_value_to_result_selection_depth": 9,
+        "deepest_complete_selection_node": 1781618,
+        "deepest_complete_selection_layer": 24,
+        "complete_selection_depth_histogram": {
+          "1": 1,
+          "2": 1,
+          "3": 9,
+          "7": 1,
+          "8": 13,
+          "9": 36
+        },
+        "complete_selection_nodes": 61
+      },
+      "cuda_static": {
+        "kernel_launches_per_cycle": 141,
+        "kernel_launch_counts": {
+          "set_reset": 1,
+          "compute": 69,
+          "commit": 69,
+          "small_layers": 1,
+          "gather": 1
+        },
+        "fused_layers": 57,
+        "final_suffix": {
+          "layer_begin": 69,
+          "layer_end_exclusive": 126,
+          "logical_layers": 57,
+          "node_begin": 2221090,
+          "node_end_exclusive": 2222558,
+          "nodes": 1468,
+          "total_outputs": 1484,
+          "maximum_layer_nodes": 190,
+          "maximum_layer_outputs": 190,
+          "opcode_node_counts": {
+            "0": 2,
+            "4": 4,
+            "8": 4,
+            "10": 1,
+            "13": 59,
+            "14": 86,
+            "15": 10,
+            "17": 94,
+            "18": 45,
+            "19": 563,
+            "20": 584,
+            "25": 16
+          },
+          "memory_write_nodes": 0,
+          "kernel": "small_layers",
+          "ordinal": 139,
+          "blocks": 1,
+          "threads": 128,
+          "scatter_offset": 2216457,
+          "final_suffix": true,
+          "fraction_of_all_nodes": 0.0006605001984200188,
+          "fraction_of_all_layers": 0.4523809523809524
+        },
+        "block_barriers_per_cycle": 114,
+        "final_suffix_block_barriers_per_cycle": 114
+      },
+      "targets": {
+        "l_soc.core_with_l2.core.ctrlBlock.fpDq.dataModule.r_5_cf_waitForRobIdx_value": {
+          "layer": 24,
+          "value_path_nodes": 24,
+          "maximum_mux_spine": 9,
+          "or_fanin_histogram": {
+            "2": 136,
+            "3": 15,
+            "4": 11,
+            "5": 1
+          }
+        },
+        "l_soc.core_with_l2.core.ctrlBlock.intDq.dataModule.r_5_cf_waitForRobIdx_value": {
+          "layer": 24,
+          "value_path_nodes": 24,
+          "maximum_mux_spine": 9,
+          "or_fanin_histogram": {
+            "2": 136,
+            "3": 15,
+            "4": 11,
+            "5": 1
+          }
+        },
+        "l_soc.core_with_l2.core.ctrlBlock.lsDq.dataModule.r_5_cf_waitForRobIdx_value": {
+          "layer": 24,
+          "value_path_nodes": 24,
+          "maximum_mux_spine": 9,
+          "or_fanin_histogram": {
+            "2": 136,
+            "3": 15,
+            "4": 11,
+            "5": 1
+          }
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_0.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "layer": 41,
+          "value_path_nodes": 41,
+          "maximum_mux_spine": 9,
+          "or_fanin_histogram": {
+            "2": 139,
+            "3": 25,
+            "4": 6
+          }
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_0.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "layer": 36,
+          "value_path_nodes": 36,
+          "maximum_mux_spine": 8,
+          "or_fanin_histogram": {
+            "2": 55,
+            "3": 10,
+            "4": 4,
+            "5": 1
+          }
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_1.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "layer": 41,
+          "value_path_nodes": 41,
+          "maximum_mux_spine": 9,
+          "or_fanin_histogram": {
+            "2": 137,
+            "3": 24,
+            "4": 6,
+            "5": 1
+          }
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_1.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "layer": 36,
+          "value_path_nodes": 36,
+          "maximum_mux_spine": 8,
+          "or_fanin_histogram": {
+            "2": 56,
+            "3": 13,
+            "4": 3
+          }
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_2.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "layer": 41,
+          "value_path_nodes": 41,
+          "maximum_mux_spine": 9,
+          "or_fanin_histogram": {
+            "2": 137,
+            "3": 26,
+            "4": 6
+          }
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_2.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "layer": 36,
+          "value_path_nodes": 36,
+          "maximum_mux_spine": 8,
+          "or_fanin_histogram": {
+            "2": 55,
+            "3": 8,
+            "4": 4,
+            "5": 2
+          }
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_3.fmac.add_pipe.s2_io_in_r_1_near_path_lzc": {
+          "layer": 41,
+          "value_path_nodes": 41,
+          "maximum_mux_spine": 9,
+          "or_fanin_histogram": {
+            "2": 133,
+            "3": 25,
+            "4": 5,
+            "5": 1,
+            "6": 1
+          }
+        },
+        "l_soc.core_with_l2.core.exuBlocks_1.fuBlock.exeUnits_3.fmac.add_pipe.s2_io_in_r_near_path_lzc": {
+          "layer": 36,
+          "value_path_nodes": 36,
+          "maximum_mux_spine": 8,
+          "or_fanin_histogram": {
+            "2": 55,
+            "3": 8,
+            "4": 4,
+            "5": 2
+          }
+        }
+      },
+      "critical_path_endpoint": [
+        "l_soc.core_with_l2.core.frontend.io_ptw_tlb_itlb.normal_refill_idx_state_reg"
+      ],
+      "compiler_revision": "84973ad2575db87f8e018c2a5c155c3572436349"
+    }
+  },
+  "full_structure_sha256": "e2ee34775fb36e937116d29db3848ba2fb4ece234c3a8ada852b1e839863fd8e",
+  "boundary": "Static operand-value edges with all mux branches; excludes memory array dependencies and register anti-overwrite scheduling edges; no gate-delay model."
+}

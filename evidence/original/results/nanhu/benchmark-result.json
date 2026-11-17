@@ -1,0 +1,179 @@
+{
+  "status": "passed",
+  "design": "XiangShan Nanhu",
+  "commit": "0a68ebc13b3d96a78d8663679393ecbea5b8fb73",
+  "config": "DefaultConfig",
+  "cores": 1,
+  "chisel_declared": "3.5.0",
+  "chisel_resolved": "3.5.1",
+  "firrtl_resolved": "1.5.1",
+  "rteaal_firrtl": "1.5.6",
+  "cycles_per_second": 18.16174301963564,
+  "instructions_per_second": 14.528668889172224,
+  "speedup": 0.036125271634529534,
+  "real_xiangshan_program_executed": true,
+  "stage": "Three alternating paired RU/Verilator runs passed the checked 1000-loop program",
+  "rtl_modified": false,
+  "experiment_adapter_enabled_by": "-Drteaal.nanhu=true",
+  "control_results": "results/nanhu/control-checks.json",
+  "adapter_control_checks": "passed",
+  "remove_accesses_equivalence_checks": "byte-identical on nested dynamic-index control",
+  "firrtl_artifacts": "results/nanhu/firrtl-artifacts.json",
+  "first_compile_failure": {
+    "stage": "clock-event lowering",
+    "message": "Unsupported clock debug_module_io_clock in SoCMisc",
+    "log": "logs/rteaal-nanhu-compile-attempt1.log",
+    "fixed_control": "two-level Bool clock forwarding matches Verilator"
+  },
+  "clock_lowering": {
+    "status": "passed",
+    "guarded_register_updates": 71138,
+    "guarded_memory_enables": 5576,
+    "preserved_observables": 515,
+    "checkpoint": "results/nanhu/SimTop.preclock.lo.fir"
+  },
+  "verilator_real_program_executed": true,
+  "rteaal_real_program_executed": true,
+  "verilator_correctness": {
+    "loop_1_instructions": 19,
+    "loop_1000_instructions": 8011,
+    "checks": [
+      "retired PC/instruction stream",
+      "defined integer registers",
+      "successful trap"
+    ],
+    "logs": [
+      "logs/nanhu-verilator-loop-1.log",
+      "logs/nanhu-verilator-loop-1000.log"
+    ]
+  },
+  "wide_slice_check": {
+    "cases": 2756,
+    "status": "passed",
+    "log": "logs/nanhu-widebits-check.log"
+  },
+  "compiler_failures": [
+    {
+      "attempt": 3,
+      "reason": "Head operation not implemented in upstream extractor",
+      "log": "logs/rteaal-nanhu-compile-attempt3.log"
+    },
+    {
+      "attempt": 4,
+      "reason": "Signed predictor SRAM omitted by memory metadata parser",
+      "log": "logs/rteaal-nanhu-compile-attempt4.log"
+    },
+    {
+      "attempt": 6,
+      "reason": "Mux jump table sized using first literal width rather than selector width",
+      "log": "logs/rteaal-nanhu-compile-attempt6.log",
+      "control_fix": "logs/nanhu-mux-table-check.log"
+    },
+    {
+      "attempt": 7,
+      "reason": "Manually stopped the original full-graph layering scan; validated indexing used in separate experiment",
+      "log": "logs/rteaal-nanhu-compile-attempt7.log",
+      "resource_log": "logs/rteaal-nanhu-compile-attempt7.time",
+      "termination": "SIGTERM, not an observed OOM"
+    }
+  ],
+  "checkpoint_checks": "results/nanhu/checkpoint-checks.json",
+  "memory_dependency_control": "logs/nanhu-memory-edges-check.log",
+  "mux_table_control": {
+    "status": "passed",
+    "cases": "all 8 values of a 3-bit selector with 0/1/4 mixed-width literals; sparse 64-bit selector retains mux chain",
+    "log": "logs/nanhu-mux-table-check.log"
+  },
+  "verilator_baseline": {
+    "status": "passed",
+    "cpu": 95,
+    "samples_cycles_per_second": [
+      389.794764863328,
+      315.2262079897165,
+      405.69892297111113
+    ],
+    "median_cycles_per_second": 389.794764863328,
+    "results": "results/nanhu/verilator-baseline.json",
+    "timing": "after first boot instruction retirement until checked successful trap, excluding loading/reset/oracle/trace; includes cache startup stalls and timer overhead"
+  },
+  "isolated_graph_index_experiment": "results/experimental/chain-index/status.json",
+  "graph_checkpoint": "results/nanhu/SimTop.indexed.graph.bin",
+  "tensor": {
+    "design": "xiangshan-nanhu-indexed",
+    "operations": 2096953,
+    "layers": 1036,
+    "largest_layer_slots": 461324,
+    "max_layer_outputs": 189110,
+    "register_event_observables": 515,
+    "compile_log": "logs/rteaal-nanhu-indexed-resume.log",
+    "preprocess_log": "logs/rteaal-nanhu-indexed-preprocess.log"
+  },
+  "large_layer_runner": {
+    "status": "control_passed",
+    "kernel_RU_cc_unchanged": true,
+    "method": "zero local counter with output pointer offset; host uses size_t aggregate; opcode evaluator unchanged",
+    "control_operations": 290000,
+    "control_outputs": 350000,
+    "all_opcodes": 29,
+    "log": "logs/nanhu-large-layers-check.log",
+    "asan_ubsan": "passed (LeakSanitizer disabled because unsupported under sandbox ptrace)"
+  },
+  "rteaal_correctness": {
+    "loop_1_instructions": 19,
+    "loop_1_total_cycles": 8510,
+    "checks": [
+      "retired PC/instruction stream",
+      "defined integer registers",
+      "successful trap",
+      "byte-identical retirement cycle/PC/instruction trace vs Verilator"
+    ],
+    "log": "logs/nanhu-rteaal-loop-1.log",
+    "single_run_cycles_per_second": 18.948520231830283,
+    "benchmark_scope": "Separate short loop-1 correctness run; final three-pair loop-1000 benchmark passed",
+    "loop_1000_instructions": 8011,
+    "loop_1000_total_cycles": 10644,
+    "loop_1000_log": "logs/nanhu-benchmark-rteaal-ru-1.out",
+    "loop_1000_logs": [
+      "logs/nanhu-benchmark-rteaal-ru-1.out",
+      "logs/nanhu-benchmark-rteaal-ru-2.out",
+      "logs/nanhu-benchmark-rteaal-ru-3.out"
+    ],
+    "cycle_trace_comparison_scope": "Byte-identical cycle/PC/instruction trace for loop-1; loop-1000 checks PC/instruction stream and defined GPRs independently against oracle, plus matching aggregate cycle counts"
+  },
+  "paired_benchmark": "results/nanhu/benchmark-samples.json",
+  "performance": {
+    "simulator": "RTeAAL-RU with experimental Nanhu compiler/host adapters",
+    "statistic": "median of three alternating paired runs per simulator",
+    "cpu": 95,
+    "node": "node007.bosccluster.com",
+    "program": "results/nanhu/checked-loop-1000.bin",
+    "program_sha256": "c759e3067fc549ce8d05c04576c8cccda0d6a5bb02085b387c223265d3207726",
+    "summary": {
+      "RTeAAL-RU": {
+        "median_cycles_per_second": 18.16174301963564,
+        "min_cycles_per_second": 17.76022940918091,
+        "max_cycles_per_second": 19.554531651383858,
+        "median_simulation_seconds": 551.3237352369982
+      },
+      "Verilator": {
+        "median_cycles_per_second": 502.74343134007455,
+        "min_cycles_per_second": 481.7705469317359,
+        "max_cycles_per_second": 702.3159165937419,
+        "median_simulation_seconds": 19.916719694
+      }
+    },
+    "speedup_over_verilator": 0.036125271634529534,
+    "time_ratio_to_verilator": 27.681452754646482,
+    "correctness_counts": {
+      "total_cycles": 10644,
+      "first_commit_cycle": 630,
+      "retired_instructions": 8011,
+      "measured_cycles": 10013,
+      "loop_count_observed": 1000,
+      "trap_code": 0
+    },
+    "timing": "evaluation after first retired boot instruction until successful checked trap; excludes loading, reset, oracle and trace; includes cache startup stalls and per-cycle timer overhead",
+    "scope": "Short RV64I program on single-core DefaultConfig with real caches. Shared host. Includes startup/cache stalls; no steady-state-only or full-ISA correctness claim. Other RTeAAL kernels not benchmarked."
+  },
+  "whole_design_formal_equivalence": "not performed; observed program behavior checked"
+}

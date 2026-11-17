@@ -1,0 +1,61 @@
+{
+  "utc": "2026-11-12T07:11:55.582113+00:00",
+  "identical_core_files": [
+    {
+      "path": "src/engine_cuda.cu",
+      "original_sha256": "ccd54f8a8d5e45ce689592631bce71f311f39db3ec0fbe70865ed6db169606a1",
+      "profiling_sha256": "ccd54f8a8d5e45ce689592631bce71f311f39db3ec0fbe70865ed6db169606a1",
+      "unchanged": true
+    },
+    {
+      "path": "src/engine_cpu.cpp",
+      "original_sha256": "8855667f8739781f6e75b3651f0e2b1b3b29995b641ed054acd7a50768868eff",
+      "profiling_sha256": "8855667f8739781f6e75b3651f0e2b1b3b29995b641ed054acd7a50768868eff",
+      "unchanged": true
+    },
+    {
+      "path": "src/ops.h",
+      "original_sha256": "ee48b146879973437fd62ae4911200276823b90ff07f1c049d6cf74f2c2d42c7",
+      "profiling_sha256": "ee48b146879973437fd62ae4911200276823b90ff07f1c049d6cf74f2c2d42c7",
+      "unchanged": true
+    },
+    {
+      "path": "src/engine.h",
+      "original_sha256": "fa5cb92782c02f9e2ea2bd59a0657a878027cee148406ccae0e261fc8575ead3",
+      "profiling_sha256": "fa5cb92782c02f9e2ea2bd59a0657a878027cee148406ccae0e261fc8575ead3",
+      "unchanged": true
+    },
+    {
+      "path": "src/coremark_common.h",
+      "original_sha256": "05212b3df4d66814bbe4537444c086f29f272363d7e715310bf26942a598ecfe",
+      "profiling_sha256": "05212b3df4d66814bbe4537444c086f29f272363d7e715310bf26942a598ecfe",
+      "unchanged": true
+    },
+    {
+      "path": "tests/op_test.cpp",
+      "original_sha256": "3cd7b10435ca5c454e4c264bb79c906f29b9b1cf2c15789190fe1a5523aac29a",
+      "profiling_sha256": "3cd7b10435ca5c454e4c264bb79c906f29b9b1cf2c15789190fe1a5523aac29a",
+      "unchanged": true
+    },
+    {
+      "path": "tests/reference_ou.h",
+      "original_sha256": "dc2859ecab68d6af638404cdd47737077a65f6b9413e27f6f4986961b1d6e615",
+      "profiling_sha256": "dc2859ecab68d6af638404cdd47737077a65f6b9413e27f6f4986961b1d6e615",
+      "unchanged": true
+    }
+  ],
+  "original_manifest_checked_entries": 40,
+  "original_manifest_mismatches": 0,
+  "immutable_task_files_sha256": {
+    "GPU_REPORT_zh.md": "ab74a35d03826df7d3c51e7c69640a67807df297b1957af3a5ff96bf9610ccbf",
+    "gpu-summary.json": "33c39f2333665bc366f256755a17e501f68ce4294651c1792856d2ccd37dbf15",
+    "gpu-results.tar.gz": "cbb4124081a79a892cbde5b8a9bf6638e01f01f5d55531bf343901c285f297a4",
+    "candidate/build-win5/nanhu_gpu.exe": "7f08fd127477db8527d4a074064f781430247c0dfb26ed4efe595f13b90be25f"
+  },
+  "profiling_binary_sha256": "72c789f40af566a51cd0af733e23b4625425d1568babb2c0af4842d4cade6287",
+  "only_changes": [
+    "main.cpp default-disabled profiler range control and per-window timing",
+    "CMake include directories for official CUDA Profiler API headers",
+    "optional post-timing final JSON mirror survives Nsight capture-scoped output"
+  ]
+}

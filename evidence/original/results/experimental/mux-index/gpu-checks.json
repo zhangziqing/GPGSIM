@@ -1,0 +1,301 @@
+{
+  "status": "passed",
+  "host": "corvus01",
+  "environment": {
+    "hostname": "corvus01",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+    "cpu_affinity": [
+      2
+    ],
+    "cuda_architecture": "120",
+    "device_info": "name, uuid, driver_version, memory.total [MiB], compute_cap\nNVIDIA RTX PRO 6000 Blackwell Workstation Edition, GPU-67983fd2-eb55-ece7-a1ec-40165d7759fb, 580.178.04, 97887 MiB, 12.0",
+    "nvcc": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2026 NVIDIA Corporation\nBuilt on Thu_Mar_19_11:12:51_PM_PDT_2026\nCuda compilation tools, release 13.2, V13.2.78\nBuild cuda_13.2.r13.2/compiler.37668154_0",
+    "cmake": "cmake version 3.28.3",
+    "compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+  },
+  "archive_sha256": "01addc2d797789fccc063a848657425c01d35bd602208ae6d24d50bad2618184",
+  "archive_files_verified": 91,
+  "simulator_revision": "12f0e00fadda98a5d0b343a868332c941e7c572a",
+  "full_gpu_runs_checked": 10,
+  "scala_suites": 9,
+  "scala_tests_passed": 54,
+  "test_revision": "d863ac5461d335c9813e1c658d7570f8d21c75af",
+  "minimal_pipeline": {
+    "status": "passed",
+    "variants": {
+      "off": {
+        "operations": 2129,
+        "layers": 1026,
+        "opcode_24_tables": 0,
+        "ru_checks": 3072,
+        "status": "passed"
+      },
+      "on": {
+        "operations": 7,
+        "layers": 3,
+        "opcode_24_tables": 1,
+        "ru_checks": 3072,
+        "status": "passed"
+      },
+      "replay": {
+        "operations": 7,
+        "layers": 3,
+        "opcode_24_tables": 1,
+        "ru_checks": 3072,
+        "status": "passed"
+      }
+    }
+  },
+  "register_writers_checked": 600,
+  "memory_writers_checked_per_nanhu_mode": 600,
+  "reference_trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+  "per_variant_cpu_export_state_matches_gpu": true,
+  "off_on_named_memory_mapping_and_contents_match": true,
+  "data_buffer_fingerprints_compared_between_variants": false,
+  "throughput_speedup_ratio_of_medians": 2.0162811690514766,
+  "throughput_improvement_percent": 101.62811690514766,
+  "summary": {
+    "off": {
+      "samples": 3,
+      "median_cycles_per_second": 737.0996775118001,
+      "median_evaluation_seconds": 135.66686168900014,
+      "median_kernel_device_seconds": 134.7845006761508,
+      "median_final_10k_window_seconds": 14.06926932199994,
+      "kernel_launches_per_cycle": 144,
+      "fused_small_layers_per_cycle": 966,
+      "static_final_suffix_layers": 939,
+      "min_cycles_per_second": 736.7382499328515,
+      "max_cycles_per_second": 737.1239311888069,
+      "mux_table_size_counts": {
+        "4": 192,
+        "8": 2099,
+        "16": 984,
+        "32": 117,
+        "64": 248,
+        "128": 188,
+        "256": 466,
+        "512": 1
+      }
+    },
+    "on": {
+      "samples": 3,
+      "median_cycles_per_second": 1486.2001994809589,
+      "median_evaluation_seconds": 67.28568603000056,
+      "median_kernel_device_seconds": 66.43167321944843,
+      "median_final_10k_window_seconds": 7.229853242000004,
+      "kernel_launches_per_cycle": 144,
+      "fused_small_layers_per_cycle": 135,
+      "static_final_suffix_layers": 108,
+      "min_cycles_per_second": 1484.9546631945614,
+      "max_cycles_per_second": 1486.6651769648338,
+      "mux_table_size_counts": {
+        "4": 190,
+        "8": 2206,
+        "16": 985,
+        "32": 117,
+        "64": 248,
+        "128": 189,
+        "256": 466,
+        "512": 1,
+        "1024": 1
+      }
+    }
+  },
+  "profiles": {
+    "off": [
+      {
+        "nonreset_cycle_begin": 1024,
+        "nonreset_cycle_end_exclusive": 1280,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.829109375,
+          "compute": 187.38580468749998,
+          "commit": 90.47173437500005,
+          "small_layers": 45.8834453125,
+          "suffix": 787.86797265625,
+          "gather": 1.091234375
+        },
+        "mean_all_kernel_us_per_cycle": 1113.52930078125,
+        "suffix_kernel_share_percent": 70.75413032270309,
+        "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies"
+      },
+      {
+        "nonreset_cycle_begin": 20000,
+        "nonreset_cycle_end_exclusive": 20256,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.82873046875,
+          "compute": 187.7275859375,
+          "commit": 395.0895390625,
+          "small_layers": 45.8843515625,
+          "suffix": 787.67421875,
+          "gather": 1.091625
+        },
+        "mean_all_kernel_us_per_cycle": 1418.29605078125,
+        "suffix_kernel_share_percent": 55.53665740774783,
+        "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies"
+      },
+      {
+        "nonreset_cycle_begin": 90000,
+        "nonreset_cycle_end_exclusive": 90256,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.8279765625,
+          "compute": 187.4062421875,
+          "commit": 297.0117421874999,
+          "small_layers": 45.88643359375,
+          "suffix": 787.822796875,
+          "gather": 1.093
+        },
+        "mean_all_kernel_us_per_cycle": 1320.04819140625,
+        "suffix_kernel_share_percent": 59.68136633221935,
+        "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies"
+      }
+    ],
+    "on": [
+      {
+        "nonreset_cycle_begin": 1024,
+        "nonreset_cycle_end_exclusive": 1280,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.8597578125,
+          "compute": 192.01008984375005,
+          "commit": 91.80147656250001,
+          "small_layers": 48.8658828125,
+          "suffix": 99.83259765625,
+          "gather": 1.15685546875
+        },
+        "mean_all_kernel_us_per_cycle": 434.52666015625005,
+        "suffix_kernel_share_percent": 22.975022434837832,
+        "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies"
+      },
+      {
+        "nonreset_cycle_begin": 20000,
+        "nonreset_cycle_end_exclusive": 20256,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.8590078125,
+          "compute": 192.348375,
+          "commit": 429.4377226562499,
+          "small_layers": 48.75514453125,
+          "suffix": 99.82849609375,
+          "gather": 1.15622265625
+        },
+        "mean_all_kernel_us_per_cycle": 772.3849687499999,
+        "suffix_kernel_share_percent": 12.924707255153976,
+        "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies"
+      },
+      {
+        "nonreset_cycle_begin": 90000,
+        "nonreset_cycle_end_exclusive": 90256,
+        "cycles": 256,
+        "kernels": 36864,
+        "copies": 256,
+        "dropped_records": 0,
+        "mean_kernel_us_per_cycle": {
+          "set_reset": 0.8582421875,
+          "compute": 192.11294531249996,
+          "commit": 314.25794531250006,
+          "small_layers": 48.750140625,
+          "suffix": 99.83828125,
+          "gather": 1.1564765625
+        },
+        "mean_all_kernel_us_per_cycle": 656.97403125,
+        "suffix_kernel_share_percent": 15.196686094280077,
+        "timing_scope": "CUPTI kernel end-start; excludes gaps, host work and copies"
+      }
+    ]
+  },
+  "runs": [
+    {
+      "mode": "off",
+      "label": "mux-profile-control",
+      "cycles_per_second": 736.6031385183932,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "per_variant_cpu_fingerprints_match": true
+    },
+    {
+      "mode": "off",
+      "label": "mux-profile-cupti",
+      "cycles_per_second": 719.7068963707428,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "per_variant_cpu_fingerprints_match": true
+    },
+    {
+      "mode": "off",
+      "label": "mux-r01-off",
+      "cycles_per_second": 737.0996775118001,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "per_variant_cpu_fingerprints_match": true
+    },
+    {
+      "mode": "off",
+      "label": "mux-r02-off",
+      "cycles_per_second": 737.1239311888069,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "per_variant_cpu_fingerprints_match": true
+    },
+    {
+      "mode": "off",
+      "label": "mux-r03-off",
+      "cycles_per_second": 736.7382499328515,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "per_variant_cpu_fingerprints_match": true
+    },
+    {
+      "mode": "on",
+      "label": "mux-profile-control",
+      "cycles_per_second": 1486.8853954483898,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "per_variant_cpu_fingerprints_match": true
+    },
+    {
+      "mode": "on",
+      "label": "mux-profile-cupti",
+      "cycles_per_second": 1361.685237737712,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "per_variant_cpu_fingerprints_match": true
+    },
+    {
+      "mode": "on",
+      "label": "mux-r01-on",
+      "cycles_per_second": 1486.2001994809589,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "per_variant_cpu_fingerprints_match": true
+    },
+    {
+      "mode": "on",
+      "label": "mux-r02-on",
+      "cycles_per_second": 1486.6651769648338,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "per_variant_cpu_fingerprints_match": true
+    },
+    {
+      "mode": "on",
+      "label": "mux-r03-on",
+      "cycles_per_second": 1484.9546631945614,
+      "trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+      "per_variant_cpu_fingerprints_match": true
+    }
+  ],
+  "profile_build_type": "Release; throughput builds use the CMake default",
+  "unavailable_checks": {
+    "hardware_resource_counters": "not run",
+    "compute_sanitizer": "not run"
+  }
+}

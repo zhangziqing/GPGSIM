@@ -1,0 +1,225 @@
+{
+  "status": "passed",
+  "results": {
+    "auto256": {
+      "status": "passed",
+      "command": [
+        "taskset",
+        "-c",
+        "9",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-avx512-node035/build/auto256/check_extended"
+      ],
+      "returncode": 0,
+      "binary_sha256": "8a5e84be588b9a1ebccc2ab06086d67b93af3e73a2cbac26dea3e89c82b3d2bb"
+    },
+    "auto512": {
+      "status": "passed",
+      "command": [
+        "taskset",
+        "-c",
+        "9",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-avx512-node035/build/auto512/check_extended"
+      ],
+      "returncode": 0,
+      "binary_sha256": "df2e71d8456102c21c426a657cc7e077fd7cbaa16c51f6f5916914fbb4e3df48"
+    },
+    "avx2-control": {
+      "status": "passed",
+      "command": [
+        "taskset",
+        "-c",
+        "9",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-avx512-node035/build/avx2-control/check_extended"
+      ],
+      "returncode": 0,
+      "binary_sha256": "9912228d589ed89eaf087bdaa3a0e50d32f9dbbcc584493be9199dc342861dae"
+    },
+    "broad8": {
+      "status": "passed",
+      "command": [
+        "taskset",
+        "-c",
+        "9",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-avx512-node035/build/broad8/check_extended"
+      ],
+      "returncode": 0,
+      "binary_sha256": "1f9633b7bd0e2f5101da987c188438f2796a09f7c77f690d6152dc8543a53b6f"
+    },
+    "combo8": {
+      "status": "passed",
+      "command": [
+        "taskset",
+        "-c",
+        "9",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-avx512-node035/build/combo8/check_extended"
+      ],
+      "returncode": 0,
+      "binary_sha256": "1bdd722f6b04bbc2ebe33fafbca86daa87abf53e5e77e7b316aa642427630cab"
+    },
+    "combo8-permute": {
+      "status": "passed",
+      "command": [
+        "taskset",
+        "-c",
+        "9",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-avx512-node035/build/combo8-permute/check_extended"
+      ],
+      "returncode": 0,
+      "binary_sha256": "daeec5d062fcc4770f9b04e0fdd6d13531ea5b73d73e026e249c763ecb1a87e1"
+    },
+    "combo8-soa": {
+      "status": "passed",
+      "command": [
+        "taskset",
+        "-c",
+        "9",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-avx512-node035/build/combo8-soa/check_extended"
+      ],
+      "returncode": 0,
+      "binary_sha256": "3a99dcab15b282fd1d83230f94c6e0334c82d3a7c1758c5ec0d1d3ca4140a3e9"
+    },
+    "combo8-soa256": {
+      "status": "passed",
+      "command": [
+        "taskset",
+        "-c",
+        "9",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-avx512-node035/build/combo8-soa256/check_extended"
+      ],
+      "returncode": 0,
+      "binary_sha256": "468b23a83bfe4c3975c4c9d752b86d9e5ab53433eaa99ce0a1bbbe7695fc8d05"
+    },
+    "hybrid-combo8-soa": {
+      "status": "passed",
+      "command": [
+        "taskset",
+        "-c",
+        "9",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-avx512-node035/build/hybrid-combo8-soa/check_extended"
+      ],
+      "returncode": 0,
+      "binary_sha256": "a72e8889db174d7fc3986e669d9d0f01594fc34a7572c900bbb14ea3b871429d"
+    },
+    "hybrid-mux8": {
+      "status": "passed",
+      "command": [
+        "taskset",
+        "-c",
+        "9",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-avx512-node035/build/hybrid-mux8/check_extended"
+      ],
+      "returncode": 0,
+      "binary_sha256": "3d71ec2a3735c470b775c9342838af8abfea05685250c225f78414491ec63a7a"
+    },
+    "hybrid-scatter8": {
+      "status": "passed",
+      "command": [
+        "taskset",
+        "-c",
+        "9",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-avx512-node035/build/hybrid-scatter8/check_extended"
+      ],
+      "returncode": 0,
+      "binary_sha256": "f393c3f339472a675274253f14142d2f3e4f408b68620f166a8a2d1486e64b34"
+    },
+    "logic8": {
+      "status": "passed",
+      "command": [
+        "taskset",
+        "-c",
+        "9",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-avx512-node035/build/logic8/check_extended"
+      ],
+      "returncode": 0,
+      "binary_sha256": "675277101ffa450c13ef3e8301901fa16fee6377dd4806d3f5e0ae55d12c4202"
+    },
+    "mux-dual8": {
+      "status": "passed",
+      "command": [
+        "taskset",
+        "-c",
+        "9",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-avx512-node035/build/mux-dual8/check_extended"
+      ],
+      "returncode": 0,
+      "binary_sha256": "de580d94cb60951e87d15a21edd3b3694e4a144677d2c361e2d90348076e6542"
+    },
+    "mux-masked8": {
+      "status": "passed",
+      "command": [
+        "taskset",
+        "-c",
+        "9",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-avx512-node035/build/mux-masked8/check_extended"
+      ],
+      "returncode": 0,
+      "binary_sha256": "185a684dc47a12eb72b6c650ac588d66c0841aaf00cb3ef7b86f905760111b58"
+    },
+    "mux-select8": {
+      "status": "passed",
+      "command": [
+        "taskset",
+        "-c",
+        "9",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-avx512-node035/build/mux-select8/check_extended"
+      ],
+      "returncode": 0,
+      "binary_sha256": "9a08b42012fc35d48a784adcd30a576ed3d3740fc07448e8cbfac4b2a8cfeb7f"
+    },
+    "native-control": {
+      "status": "passed",
+      "command": [
+        "taskset",
+        "-c",
+        "9",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-avx512-node035/build/native-control/check_extended"
+      ],
+      "returncode": 0,
+      "binary_sha256": "59e083ce625c1bba1cf7c1b83a21921cd663bf3d1dbd8b5c38d63a3ad7b126cc"
+    },
+    "scatter4": {
+      "status": "passed",
+      "command": [
+        "taskset",
+        "-c",
+        "9",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-avx512-node035/build/scatter4/check_extended"
+      ],
+      "returncode": 0,
+      "binary_sha256": "4869ee188d982377453a27a681a782cd95bc20d0b0f23380d33f1e1eda649ad5"
+    },
+    "scatter8": {
+      "status": "passed",
+      "command": [
+        "taskset",
+        "-c",
+        "9",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-avx512-node035/build/scatter8/check_extended"
+      ],
+      "returncode": 0,
+      "binary_sha256": "3def8b112e5b32b971501e3786f33b1e20e4fb35ef7467b26c29574df07f25bc"
+    },
+    "scatter8x2": {
+      "status": "passed",
+      "command": [
+        "taskset",
+        "-c",
+        "9",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-avx512-node035/build/scatter8x2/check_extended"
+      ],
+      "returncode": 0,
+      "binary_sha256": "6dd78247f2f9f2b55d4fb3faa98aab56eba29f16b9cb3112a8a3273b37dcd500"
+    },
+    "soa-hot8": {
+      "status": "passed",
+      "command": [
+        "taskset",
+        "-c",
+        "9",
+        "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-avx512-node035/build/soa-hot8/check_extended"
+      ],
+      "returncode": 0,
+      "binary_sha256": "14dacbf77f17a04587516ea1204a885823e6997e1db757aa8b2708b95cb1cb48"
+    }
+  }
+}

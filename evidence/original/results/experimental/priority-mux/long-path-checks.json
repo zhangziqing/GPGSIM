@@ -1,0 +1,171 @@
+{
+  "status": "passed",
+  "operations_scanned": 2222558,
+  "value_edges_scanned": 3337363,
+  "maximum_depth": 126,
+  "maximum_nonassign_depth": 123,
+  "threshold_exclusive": 50,
+  "nodes_over_threshold": 50235,
+  "endpoints_over_threshold": 13105,
+  "named_endpoint_rows": 13105,
+  "unnamed_endpoints": 0,
+  "endpoint_kind_counts": {
+    "graph_sink": 13105,
+    "register": 12961,
+    "memory_write": 144
+  },
+  "endpoint_depth_histogram": {
+    "51": 4175,
+    "52": 233,
+    "53": 2471,
+    "54": 2400,
+    "55": 2129,
+    "56": 329,
+    "57": 66,
+    "58": 59,
+    "59": 11,
+    "60": 88,
+    "61": 9,
+    "62": 132,
+    "63": 212,
+    "64": 157,
+    "65": 86,
+    "66": 32,
+    "67": 12,
+    "68": 74,
+    "69": 98,
+    "70": 102,
+    "73": 80,
+    "78": 1,
+    "83": 4,
+    "87": 2,
+    "89": 2,
+    "90": 8,
+    "91": 2,
+    "92": 18,
+    "93": 32,
+    "94": 80,
+    "126": 1
+  },
+  "families": 56,
+  "categories": [
+    {
+      "category": "ITLB PLRU",
+      "endpoints": 1,
+      "minimum_depth": 126,
+      "maximum_depth": 126
+    },
+    {
+      "category": "LoadQueue and LoadUnit",
+      "endpoints": 718,
+      "minimum_depth": 51,
+      "maximum_depth": 94
+    },
+    {
+      "category": "Store buffer",
+      "endpoints": 1,
+      "minimum_depth": 78,
+      "maximum_depth": 78
+    },
+    {
+      "category": "L3 SourceD",
+      "endpoints": 488,
+      "minimum_depth": 57,
+      "maximum_depth": 70
+    },
+    {
+      "category": "L2 SourceD",
+      "endpoints": 352,
+      "minimum_depth": 58,
+      "maximum_depth": 69
+    },
+    {
+      "category": "Issue age matrices",
+      "endpoints": 9225,
+      "minimum_depth": 51,
+      "maximum_depth": 66
+    },
+    {
+      "category": "AXI and TileLink misc",
+      "endpoints": 480,
+      "minimum_depth": 51,
+      "maximum_depth": 61
+    },
+    {
+      "category": "DTLB PLRU",
+      "endpoints": 1,
+      "minimum_depth": 59,
+      "maximum_depth": 59
+    },
+    {
+      "category": "FTQ commit state",
+      "endpoints": 55,
+      "minimum_depth": 51,
+      "maximum_depth": 59
+    },
+    {
+      "category": "ICache and IFU",
+      "endpoints": 20,
+      "minimum_depth": 52,
+      "maximum_depth": 59
+    },
+    {
+      "category": "TileLink D-channel buffers",
+      "endpoints": 112,
+      "minimum_depth": 52,
+      "maximum_depth": 58
+    },
+    {
+      "category": "Integer divider",
+      "endpoints": 8,
+      "minimum_depth": 53,
+      "maximum_depth": 56
+    },
+    {
+      "category": "Floating-point FMA",
+      "endpoints": 1424,
+      "minimum_depth": 52,
+      "maximum_depth": 53
+    },
+    {
+      "category": "Floating-point divide and square root",
+      "endpoints": 12,
+      "minimum_depth": 51,
+      "maximum_depth": 53
+    },
+    {
+      "category": "L1 DCache",
+      "endpoints": 8,
+      "minimum_depth": 52,
+      "maximum_depth": 53
+    },
+    {
+      "category": "L2 and L3 data storage",
+      "endpoints": 200,
+      "minimum_depth": 51,
+      "maximum_depth": 52
+    }
+  ],
+  "inventory": "runtime/long-paths-on-verified",
+  "checks": [
+    "portable_input_hashes",
+    "all_depth_recurrences",
+    "all_deep_sinks_covered",
+    "all_witness_edges",
+    "retained_global_and_target_depths",
+    "all_category_rows_covered"
+  ],
+  "source_sha256": {
+    "results/experimental/priority-mux/summarize_long_paths.py": "dd92fd8b0acf35b81dfc6617a09c4bbee2e19ac54c4fbc41b87251af61e66044",
+    "inspect_long_paths.py": "3b8e102703b59cc83a4f84be4e052490ab24962041fde96722c918a1645cf09f"
+  },
+  "artifact_sha256": {
+    "summary.json": "936f3e26a3d2972e6315552d6248f2d9915610ca96ae91f8a77f6317734611f6",
+    "endpoints.tsv": "37901ce7d4beb08fcccb96976e629f996af98afa8c9075180679d4762406c380",
+    "endpoints.json": "99a224c6c98b15cb86e7972b0945f310b6efcd47f983114878d24772a76f419b",
+    "path-nodes.json": "1f53bb8ac7f61c25f9e27b75ce36d20d005b4157b0807ddd37f8194239fd20dd",
+    "nodes-over-threshold.tsv": "556dea033180dfecea612b755f8516b05388ef1314eff0675ca236673994b458",
+    "edge_sources.bin": "2a65e8194783f43daaa9da7c4b2bbdd29fdc92016bb7d3df9c6c1c8853ab5a07",
+    "edge_offsets.bin": "3174515b75bc545372999e5e5a3e01e4030966f593846d7179737fb73b9c1bd3"
+  }
+}

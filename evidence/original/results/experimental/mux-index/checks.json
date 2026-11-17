@@ -1,0 +1,65 @@
+{
+  "status": "correctness_and_gpu_trials_passed",
+  "variants": {
+    "off": {
+      "design": "xiangshan-nanhu-mux-index-off",
+      "operations": 2220712,
+      "mux_table_operations_opcode_24": 4295,
+      "mux_table_entries": 196792,
+      "layers": 1036,
+      "normalized_chains": 0,
+      "normalized_muxes": 0,
+      "compile_peak_rss_kib": 80948172,
+      "loaded_compiler_class": "[16.843s][info][class,load] essent.EssentCompiler source: file:/nfs/home/zhangziqing/RTeAAL/results/experimental/mux-index/runtime/compiler-overlay.jar",
+      "loaded_args_parser_class": "[0.182s][info][class,load] essent.ArgsParser source: file:/nfs/home/zhangziqing/RTeAAL/results/experimental/mux-index/runtime/compiler-overlay.jar",
+      "compile_wall_time": "27:34.23"
+    },
+    "on": {
+      "design": "xiangshan-nanhu-mux-index-on",
+      "operations": 2218090,
+      "mux_table_operations_opcode_24": 4403,
+      "mux_table_entries": 198808,
+      "layers": 205,
+      "normalized_chains": 2,
+      "normalized_muxes": 1150,
+      "compile_peak_rss_kib": 55000032,
+      "loaded_compiler_class": "[10.247s][info][class,load] essent.EssentCompiler source: file:/nfs/home/zhangziqing/RTeAAL/results/experimental/mux-index/runtime/compiler-overlay.jar",
+      "loaded_args_parser_class": "[0.096s][info][class,load] essent.ArgsParser source: file:/nfs/home/zhangziqing/RTeAAL/results/experimental/mux-index/runtime/compiler-overlay.jar",
+      "compile_wall_time": "18:06.65"
+    }
+  },
+  "structure": {
+    "status": "structure_checks_passed",
+    "off_mux_table_operations": 4295,
+    "on_mux_table_operations": 4403,
+    "off_mux_table_entries": 196792,
+    "on_mux_table_entries": 198808,
+    "off_operations": 2220712,
+    "on_operations": 2218090,
+    "off_layers": 1036,
+    "on_layers": 205,
+    "memory_map_same_by_name": true,
+    "graph_write_conflicts": "none",
+    "memwrite_placeholder_liveness": "passed"
+  },
+  "cpu_correctness": {
+    "status": "passed",
+    "cycles": 100000,
+    "reference_trace_sha256": "aac4bdad014633cadab8d50497e1555c60e05272eb091e0c3445c32237e6c3ae",
+    "named_architectural_state_matches_verilator": true,
+    "named_memory_mapping_and_contents_match_between_variants": true,
+    "data_buffer_fingerprints_compared": false
+  },
+  "graph_contract_control": {
+    "memory_edges": "passed; 600 writers with Nanhu mode disabled and 600 with it enabled"
+  },
+  "gpu": {
+    "status": "passed",
+    "host": "corvus01",
+    "full_gpu_runs_checked": 10,
+    "speedup_ratio_of_medians": 2.0162811690514766,
+    "profile_windows_checked": 6,
+    "dropped_activity_records": 0,
+    "audit": "gpu-checks.json"
+  }
+}

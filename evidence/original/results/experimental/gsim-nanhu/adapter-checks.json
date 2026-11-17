@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "gsim": "GSIM master-2026-10-29-23c4553\nBuild Date: 2026-10-30T07:28:17Z\nBuild CXX: Ubuntu clang version 19.1.1 (1ubuntu1~24.04.2)",
+  "adapters_sha256": {
+    "lowmem.py": "3d8a56015a2662066291bf8bf5196390129c36e4bbaf027184b6103f56826799",
+    "resets.py": "ac8dc55eeabd95c78f84a3e057a2fb61bc07925a8fb971f5381d98f5c0b04179"
+  },
+  "checks": {
+    "gate": {
+      "status": "passed",
+      "cycles": 2048,
+      "fixture_sha256": "8adf4dad1c7434377eabc6291ec85b826cedcb40f33c738364aad2f0a69c9340",
+      "oracle_sha256": "a6f7d38e7a2b614e9523c2a0475e4985dd95c1c1222f7b372d0beaf7fe142f15"
+    },
+    "memory": {
+      "status": "passed",
+      "cycles": 2048,
+      "fixture_sha256": "2bab25de8339a38e9be2b85f1ed26c16b9bb659f49b6af1d58f2f2a5ef288545",
+      "oracle_sha256": "916aca333c3e70a3288d206dd1157f7bffa152709ce1a7bfe182361038be453f"
+    },
+    "async-reset": {
+      "status": "passed",
+      "cycles": 2048,
+      "fixture_sha256": "ec7463d9f51ef620477f9a7a1c7a92a7d54d62ed461048e0a35a4095a421a1f8",
+      "oracle_sha256": "9259de8e633b6aca1888531ce02da36d08707fb76d7f0fb97ebf4debc4dace5e"
+    },
+    "async-reset-native": {
+      "status": "expected_failure",
+      "cycles": 2,
+      "fixture_sha256": "ec7463d9f51ef620477f9a7a1c7a92a7d54d62ed461048e0a35a4095a421a1f8",
+      "oracle_sha256": "9259de8e633b6aca1888531ce02da36d08707fb76d7f0fb97ebf4debc4dace5e"
+    }
+  },
+  "scope": "Synchronous-reset mux gate; guarded asynchronous reset with activateAll on external reset transitions; scalar asynchronous RAM read and masked edge write",
+  "memory_conversion": {
+    "memories": 1,
+    "readers": 1,
+    "writers": 1
+  },
+  "reset_conversion": {
+    "async_registers": 2,
+    "guarded_connections": 2
+  }
+}

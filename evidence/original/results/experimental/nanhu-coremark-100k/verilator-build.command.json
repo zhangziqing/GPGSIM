@@ -1,0 +1,22 @@
+[
+  "clang++",
+  "-std=c++17",
+  "-O3",
+  "-g",
+  "-I/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-coremark-100k",
+  "-I/nfs/home/zhangziqing/RTeAAL/RTeAAL-Sim/kernel",
+  "-I/nfs/home/zhangziqing/RTeAAL/results/nanhu/obj-xiangshan",
+  "-I/usr/local/share/verilator/include",
+  "-I/usr/local/share/verilator/include/vltstd",
+  "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-coremark-100k/verilator_coremark.cc",
+  "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-coremark-100k/coremark_dpi.cc",
+  "/nfs/home/zhangziqing/RTeAAL/results/nanhu/obj-xiangshan/VSimTop__ALL.a",
+  "/nfs/home/zhangziqing/RTeAAL/results/nanhu/obj-xiangshan/verilated.o",
+  "/nfs/home/zhangziqing/RTeAAL/results/nanhu/obj-xiangshan/verilated_dpi.o",
+  "/nfs/home/zhangziqing/RTeAAL/results/nanhu/obj-xiangshan/verilated_threads.o",
+  "-fuse-ld=mold",
+  "-pthread",
+  "-latomic",
+  "-o",
+  "/nfs/home/zhangziqing/RTeAAL/results/experimental/nanhu-coremark-100k/verilator_coremark"
+]

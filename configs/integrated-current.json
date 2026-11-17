@@ -1,0 +1,24 @@
+{
+  "name": "integrated-current",
+  "design": "xiangshan-nanhu-indexed",
+  "source_config": "DefaultConfig",
+  "cores": 1,
+  "compiler_options": [
+    "-O1"
+  ],
+  "jvm_properties": {
+    "rteaal.nanhu": "true",
+    "rteaal.genericOnly": "true",
+    "rteaal.skipRegElision": "true",
+    "rteaal.balanceAndOr": "false"
+  },
+  "optional_passes": {
+    "normalize_mux_index": false,
+    "project_slices": false,
+    "compose_masked_updates": false
+  },
+  "reset_cycles": 64,
+  "nonreset_cycles": 100000,
+  "ram_bytes": 268435456,
+  "status": "Configuration for the pinned integrated compiler; historical graph identities must be checked separately. No new performance measurements are implied."
+}

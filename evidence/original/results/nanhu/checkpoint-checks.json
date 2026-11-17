@@ -1,0 +1,86 @@
+[
+  {
+    "case": "bool",
+    "mode": "fresh",
+    "status": "passed",
+    "first_checked_cycle": 32,
+    "last_checked_cycle": 999
+  },
+  {
+    "case": "bool",
+    "mode": "resume",
+    "status": "passed",
+    "first_checked_cycle": 32,
+    "last_checked_cycle": 999
+  },
+  {
+    "case": "bool",
+    "mode": "skip-reg-elision",
+    "status": "passed",
+    "first_checked_cycle": 32,
+    "last_checked_cycle": 999
+  },
+  {
+    "case": "ram",
+    "mode": "fresh",
+    "status": "passed",
+    "first_checked_cycle": 0,
+    "last_checked_cycle": 999
+  },
+  {
+    "case": "ram",
+    "mode": "resume",
+    "status": "passed",
+    "first_checked_cycle": 0,
+    "last_checked_cycle": 999
+  },
+  {
+    "case": "ram",
+    "mode": "skip-reg-elision",
+    "status": "passed",
+    "first_checked_cycle": 0,
+    "last_checked_cycle": 999
+  },
+  {
+    "case": "flash",
+    "mode": "fresh",
+    "status": "passed",
+    "first_checked_cycle": 2,
+    "last_checked_cycle": 999
+  },
+  {
+    "case": "flash",
+    "mode": "resume",
+    "status": "passed",
+    "first_checked_cycle": 2,
+    "last_checked_cycle": 999
+  },
+  {
+    "case": "flash",
+    "mode": "skip-reg-elision",
+    "status": "passed",
+    "first_checked_cycle": 2,
+    "last_checked_cycle": 999
+  },
+  {
+    "case": "idle",
+    "mode": "fresh",
+    "status": "passed",
+    "first_checked_cycle": 1,
+    "last_checked_cycle": 999
+  },
+  {
+    "case": "idle",
+    "mode": "resume",
+    "status": "passed",
+    "first_checked_cycle": 1,
+    "last_checked_cycle": 999
+  },
+  {
+    "case": "idle",
+    "mode": "skip-reg-elision",
+    "status": "passed",
+    "first_checked_cycle": 1,
+    "last_checked_cycle": 999
+  }
+]
