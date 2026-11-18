@@ -1,4 +1,5 @@
 #include "memory_plan.h"
+#include "flat_ops.h"
 #include <algorithm>
 #include <iostream>
 #include <random>
@@ -54,6 +55,26 @@ void static_boundaries() {
     const auto empty = build_memory_write_plan(m);
     require(empty.offsets == std::vector<uint32_t>{0} && empty.later.empty(), "Empty plan");
 }
+void disjoint_commit() {
+    Model m = initial_model();
+    add(m, 0, 8, 3); add(m, 0, 12, 3);
+    add(m, 1, 8, 3); add(m, 2, 12, 3);
+    m.layers = {{0, uint32_t(m.ops.size()), 0, 0}}; m.validate();
+    const auto plan = build_memory_write_plan(m);
+    const auto flat = build_flat_plan(m);
+    require(plan.later.empty(), "Disjoint writers have candidates");
+    std::vector<Write> writes{{9, 0x123, 0, 1}, {13, 0x234, 0, 0},
+                              {9, 0x345, 1, 1}, {13, 0x456, 2, 1}};
+    std::vector<uint64_t> words(m.size64);
+    std::vector<uint8_t> bytes(m.size8);
+    View v{}; v.flat_ops = flat.ops.data(); v.writes = writes.data();
+    v.memory_offsets = plan.offsets.data(); v.memory_later = nullptr;
+    v.mem64 = words.data(); v.mem8 = bytes.data();
+    for (uint64_t thread = 0; thread < 3; ++thread)
+        commit_memory_parallel(v, m.layers[0], thread, 3);
+    require(words[9] == 0x123 && words[13] == 0 && bytes[9] == 0x45 && bytes[13] == 0x56,
+            "Direct stores, inactive writers, pool separation or byte truncation differ");
+}
 void randomized_equivalence() {
     std::mt19937_64 rng(2813);
     for (unsigned trial = 0; trial < 64; ++trial) {
@@ -68,12 +89,14 @@ void randomized_equivalence() {
             m.layers.push_back({begin, uint32_t(m.ops.size()), 0, begin});
         }
         m.validate(); const auto p = build_memory_write_plan(m);
+        const auto flat = build_flat_plan(m);
         auto data = m.initial; std::vector<Write> writes(m.memwrites);
         std::vector<uint64_t> expected64(m.size64), actual64(m.size64);
         std::vector<uint8_t> expected8(m.size8), actual8(m.size8);
         Error error{};
         View v{}; v.ops = m.ops.data(); v.args = m.args.data(); v.data = data.data();
         v.writes = writes.data(); v.error = &error; v.size64 = m.size64; v.size8 = m.size8;
+        v.flat_ops = flat.ops.data(); v.memory_offsets = p.offsets.data(); v.memory_later = p.later.data();
         for (uint32_t cycle = 0; cycle < 32; ++cycle) {
             data[0] = cycle & 1; data[1] = cycle % 5 != 0;
             for (const Op o : m.ops) {
@@ -89,20 +112,18 @@ void randomized_equivalence() {
                     const bool final = is_final_memory_write_candidate(v, w, p.offsets.data(), p.later.data());
                     require(final == is_final_memory_write(v, l, i), "Candidate/full scan decision differs");
                 }
-                // Reverse application order exposes any unsuppressed aliases,
-                // including equal-value writers (whose flags are checked above).
-                for (uint32_t i = l.end; i-- > l.begin;) {
-                    const uint32_t w = m.ops[i].out;
-                    if (!is_final_memory_write_candidate(v, w, p.offsets.data(), p.later.data())) continue;
-                    if (writes[w].kind == 0) actual64[writes[w].address] = writes[w].value;
-                    else actual8[writes[w].address] = uint8_t(writes[w].value);
-                }
+                // Exercise the production commit helper in reverse thread order,
+                // including equal-value conflicts, idle threads and strided work.
+                v.mem64 = actual64.data(); v.mem8 = actual8.data();
+                const uint64_t stride = cycle % 2 ? 7 : 256;
+                for (uint64_t thread = stride; thread-- > 0;)
+                    commit_memory_parallel(v, l, thread, stride);
                 require(actual64 == expected64 && actual8 == expected8, "Ordered memory state differs");
             }
         }
     }
 }
 int main() try {
-    static_boundaries(); randomized_equivalence();
+    static_boundaries(); disjoint_commit(); randomized_equivalence();
     std::cout << "PASS: static candidate boundaries; 64 models x 32 cycles vs ordered memory commit\n";
 } catch (const std::exception& e) { std::cerr << "FAIL: " << e.what() << '\n'; return 1; }

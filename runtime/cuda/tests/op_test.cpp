@@ -171,21 +171,17 @@ void memory_write_order() {
 }
 
 int main(int argc, char** argv) try {
-    bool cpu = false; Config cfg;
+    bool cpu = false;
     for (int i = 1; i < argc; ++i) {
         const std::string a = argv[i];
         if (a == "--cpu") cpu = true;
-        else if (a == "--no-graph") cfg.graph = false;
-        else if (a == "--memory-candidates") cfg.memory_candidates = true;
-        else if (a == "--flat-descriptors") cfg.flat_descriptors = true;
-        else if (a == "--tail-threshold" && i + 1 < argc) cfg.tail_threshold = std::stoul(argv[++i]);
         else throw std::runtime_error("Unknown op_test argument: " + a);
     }
     boundaries(); memory_write_order();
     Fixture f; const Model& m = f.m;
-    auto engine = cpu ? make_cpu(m, cfg.flat_descriptors) : make_cuda(m, cfg);
-    if (engine->info().flat_descriptors != cfg.flat_descriptors)
-        throw std::runtime_error("Opcode test descriptor mode differs");
+    auto engine = cpu ? make_cpu(m) : make_cuda(m);
+    if (!cpu && engine->info().backend != "CUDA Graph")
+        throw std::runtime_error("Opcode test did not use CUDA Graph");
     auto data = m.initial;
     std::vector<uint64_t> output(m.max_outputs), mem64(m.size64), scratch1, scratch2;
     std::vector<uint8_t> mem8(m.size8);

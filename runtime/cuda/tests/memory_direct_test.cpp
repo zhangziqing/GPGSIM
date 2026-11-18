@@ -8,7 +8,7 @@ using namespace nanhu;
 
 // Independent expected values check old-state reads, enable/mask gating, pool
 // separation and byte truncation while writes span multiple CUDA blocks.
-void exercise(bool cpu, Config config, uint32_t count) {
+void exercise(bool cpu, uint32_t count) {
     Model m;
     // reset, one, zero, rotating address, toggled enable, toggled mask, value
     m.initial = {0, 1, 0, 0, 1, 0, 0x11223344556677F0ULL};
@@ -58,7 +58,7 @@ void exercise(bool cpu, Config config, uint32_t count) {
     for (uint32_t i = 0; i < m.initial.size(); ++i) m.observe.push_back(i);
     m.validate();
     auto oracle = make_cpu(m);
-    auto tested = cpu ? make_cpu(m, config.flat_descriptors) : make_cuda(m, config);
+    auto tested = cpu ? make_cpu(m) : make_cuda(m);
     std::vector<uint64_t> words(m.size64);
     std::vector<uint8_t> bytes(m.size8);
     for (uint32_t cycle = 0; cycle < 24; ++cycle) {
@@ -86,25 +86,19 @@ void exercise(bool cpu, Config config, uint32_t count) {
         actual.memory64 != fingerprint(words) || actual.memory8 != fingerprint(bytes))
         throw std::runtime_error("Direct commit final state differs");
     const auto info = tested->info();
-    if (info.flat_descriptors != config.flat_descriptors)
-        throw std::runtime_error("Direct commit test descriptor mode differs");
-    if (!cpu && (!info.direct_memory_writes || info.memory_candidates || info.memory_plan_bytes ||
-        (config.tail_threshold == 0 ? info.fused_layers != 0 : info.fused_layers == 0)))
-        throw std::runtime_error("Requested direct commit/fusion mode was not used");
+    if (!cpu && (info.memory_candidate_pairs || !info.memory_plan_bytes ||
+                 !info.fused_layers || info.backend != "CUDA Graph"))
+        throw std::runtime_error("Disjoint writers were not committed directly with the expected fusion");
     std::cout << "PASS: " << count * 2 << " disjoint writers, 24 cycles, independent memory oracle; " << info.backend << '\n';
 }
 
 int main(int argc, char** argv) try {
-    bool cpu = false; Config config; config.direct_memory_writes = true;
+    bool cpu = false;
     for (int i = 1; i < argc; ++i) {
         const std::string arg = argv[i];
         if (arg == "--cpu") cpu = true;
-        else if (arg == "--no-graph") config.graph = false;
-        else if (arg == "--flat-descriptors") config.flat_descriptors = true;
-        else if (arg == "--tail-threshold" && i + 1 < argc) config.tail_threshold = std::stoul(argv[++i]);
-        else if (arg == "--threads" && i + 1 < argc) config.threads = std::stoul(argv[++i]);
         else throw std::runtime_error("Unknown memory_direct_test argument: " + arg);
     }
-    exercise(cpu, config, 7); exercise(cpu, config, 641);
+    exercise(cpu, 7); exercise(cpu, 641);
     return 0;
 } catch (const std::exception& e) { std::cerr << "FAIL: " << e.what() << '\n'; return 1; }

@@ -52,8 +52,8 @@ HD inline uint64_t extend(uint64_t v, unsigned bits, bool sign) {
 }
 
 // No in-place data writes here. Memory writes are staged until every read of
-// this layer has completed. Ordered commit preserves opcode priority; optional
-// direct CUDA commit requires disjoint active writes in each backing pool.
+// this layer has completed. Ordered CPU/fused commit and candidate-based
+// parallel CUDA commit preserve last-writer priority in each backing pool.
 // Fixed removes unreachable variadic/memory cases from the inline specialization.
 template<bool Fixed = false, class Operands>
 HD inline void evaluate_operands(const View& v, uint32_t node, const Op o, const Operands& a) {

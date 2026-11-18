@@ -48,7 +48,7 @@ Model load_model(const fs::path& dir, const Json& j) {
 
 // Exercise the actual GPU launch/barrier paths against the shared CPU path.
 // Independent opcode tests are in op_test; this checks staging/scatter/order.
-int self_test(bool cpu, Config config) {
+int self_test(bool cpu, int device) {
     Model m; m.initial.resize(1024); m.reset_slot = 0; m.size64 = 1024; m.size8 = 1024;
     std::mt19937_64 rng(103);
     for (auto& x : m.initial) x = rng();
@@ -87,7 +87,7 @@ int self_test(bool cpu, Config config) {
     for (uint32_t i = 0; i < m.initial.size(); ++i) m.observe.push_back(i);
     m.validate();
     auto reference = make_cpu(m);
-    auto test = cpu ? make_cpu(m, config.flat_descriptors) : make_cuda(m, config);
+    auto test = cpu ? make_cpu(m) : make_cuda(m, device);
     for (uint32_t cycle = 0; cycle < 96; ++cycle) {
         auto expected = reference->step(cycle < 64);
         auto actual = test->step(cycle < 64);
@@ -100,10 +100,12 @@ int self_test(bool cpu, Config config) {
     const auto a = reference->fingerprints(), b = test->fingerprints();
     if (a.data != b.data || a.memory64 != b.memory64 || a.memory8 != b.memory8) throw std::runtime_error("Self-test final memory mismatch");
     const Info info = test->info();
-    if (info.flat_descriptors != config.flat_descriptors) throw std::runtime_error("Descriptor mode differs");
-    std::cout << Json{{"status", "passed"}, {"test", "96 cycles; 257-operation wide + 21 narrow layers; ordered aliased memory writes; 64 reset cycles; all state and memory"},
+    if (!cpu && (info.backend != "CUDA Graph" || info.kernels_per_cycle != 5 ||
+                 info.fused_layers != m.layers.size() - 1))
+        throw std::runtime_error("Optimized graph/fusion schedule differs");
+    std::cout << Json{{"status", "passed"}, {"test", "96 cycles; 257-operation wide + 22 narrow layers; ordered aliased memory writes; 64 reset cycles; all state and memory"},
         {"backend", info.backend}, {"device", info.device}, {"kernels_per_cycle", info.kernels_per_cycle}, {"fused_layers", info.fused_layers},
-        {"flat_descriptors", info.flat_descriptors}, {"flat_inlined_nodes", info.flat_inlined_nodes},
+        {"flat_inlined_nodes", info.flat_inlined_nodes},
         {"descriptor_bytes", info.descriptor_bytes}, {"flat_plan_seconds", info.flat_plan_seconds}}.dump(2) << '\n';
     return 0;
 }
@@ -112,35 +114,26 @@ int main(int argc, char** argv) try {
     fs::path data_dir = "data";
     std::string trace = "gpu.trace", reference;
     uint64_t cycles = 100000; bool cpu = false, self = false;
-    Config config;
+    int device = 0;
     for (int i = 1; i < argc; ++i) {
         const std::string a = argv[i];
         const auto next = [&]() -> std::string { if (++i >= argc) throw std::runtime_error("Missing value after " + a); return argv[i]; };
         if (a == "--data") data_dir = next(); else if (a == "--cycles") cycles = std::stoull(next());
         else if (a == "--trace") trace = next(); else if (a == "--reference") reference = next();
-        else if (a == "--device") config.device = std::stoi(next());
-        else if (a == "--threads") config.threads = std::stoul(next());
-        else if (a == "--tail-threshold") config.tail_threshold = std::stoul(next());
-        else if (a == "--no-graph") config.graph = false;
-        else if (a == "--memory-candidates") config.memory_candidates = true;
-        else if (a == "--direct-memory-writes") config.direct_memory_writes = true;
-        else if (a == "--flat-descriptors") config.flat_descriptors = true;
+        else if (a == "--device") device = std::stoi(next());
         else if (a == "--cpu") cpu = true; else if (a == "--self-test") self = true;
         else if (a == "--help") {
             std::cout << "nanhu_gpu [--data data] [--cycles 100000] [--trace gpu.trace] [--reference prefix.trace]\n"
-                " [--device 0] [--threads 256] [--tail-threshold 128] [--no-graph]\n"
-                " [--memory-candidates | --direct-memory-writes] [--flat-descriptors] [--self-test] [--cpu]\n";
+                " [--device 0] [--self-test] [--cpu]\n";
             return 0;
         } else throw std::runtime_error("Unknown argument " + a);
     }
-    if (config.direct_memory_writes && (config.memory_candidates || cpu || self))
-        throw std::runtime_error("--direct-memory-writes requires CUDA, excludes --memory-candidates; use memory_direct_test for its self-test");
-    if (self) return self_test(cpu, config);
+    if (self) return self_test(cpu, device);
     if (!cycles || cycles > 100000) throw std::runtime_error("This packaged reference supports 1..100000 non-reset cycles");
     const auto load_start = std::chrono::steady_clock::now();
     Json meta = read_json(data_dir / "model.json");
     Model model = load_model(data_dir, meta);
-    auto engine = cpu ? make_cpu(model, config.flat_descriptors) : make_cuda(model, config);
+    auto engine = cpu ? make_cpu(model) : make_cuda(model, device);
     const Info info = engine->info();
     std::cerr << info.backend << " device=" << info.device << " VRAMbytes=" << info.allocated_bytes
         << " kernels/cycle=" << info.kernels_per_cycle << " fused_small_layers=" << info.fused_layers << '\n';
@@ -198,20 +191,16 @@ int main(int argc, char** argv) try {
     result["kernel_device_cycles_per_second"] = gpu_seconds > 0 ? Json(cycles / gpu_seconds) : Json(nullptr);
     result["allocated_device_bytes"] = info.allocated_bytes; result["kernels_per_cycle"] = info.kernels_per_cycle;
     result["fused_small_layers"] = info.fused_layers; result["original_layers"] = model.layers.size();
-    result["tail_threshold"] = config.tail_threshold; result["threads"] = config.threads;
+    result["tail_threshold"] = info.small_layer_threshold; result["threads"] = info.threads_per_block;
     result["full_data_fingerprint"] = fingerprints.data;
     result["memory64_fingerprint"] = fingerprints.memory64; result["memory8_fingerprint"] = fingerprints.memory8;
     result["window_evaluation_seconds"] = windows;
     result["tensor_load_seconds"] = std::chrono::duration<double>(load_end - load_start).count();
-    result["cuda_graph"] = config.graph;
-    result["memory_candidates"] = info.memory_candidates;
-    result["direct_memory_writes"] = info.direct_memory_writes;
     result["memory_candidate_pairs"] = info.memory_candidate_pairs;
     result["memory_full_scan_pairs"] = info.memory_full_scan_pairs;
     result["memory_inactive_writers"] = info.memory_inactive_writers;
     result["memory_plan_bytes"] = info.memory_plan_bytes;
     result["memory_plan_seconds"] = info.memory_plan_seconds;
-    result["flat_descriptors"] = info.flat_descriptors;
     result["flat_inlined_nodes"] = info.flat_inlined_nodes;
     result["descriptor_bytes"] = info.descriptor_bytes;
     result["flat_plan_seconds"] = info.flat_plan_seconds;

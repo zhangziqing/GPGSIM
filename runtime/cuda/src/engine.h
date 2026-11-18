@@ -15,8 +15,6 @@ struct Model {
     uint32_t reset_slot = 0, max_outputs = 0, memwrites = 0;
     void validate() const;
 };
-struct Config { bool graph = true; unsigned tail_threshold = 128, threads = 256; int device = 0;
-    bool memory_candidates = false, direct_memory_writes = false, flat_descriptors = false; };
 struct Fingerprints { uint64_t data, memory64, memory8; };
 template<class T> uint64_t fingerprint(const std::vector<T>& x) {
     uint64_t h = 14695981039346656037ULL;
@@ -28,11 +26,10 @@ struct Info {
     std::string backend, device;
     uint64_t allocated_bytes = 0;
     unsigned kernels_per_cycle = 0, fused_layers = 0;
-    bool memory_candidates = false, direct_memory_writes = false;
+    unsigned threads_per_block = 0, small_layer_threshold = 0;
     uint64_t memory_candidate_pairs = 0, memory_full_scan_pairs = 0, memory_plan_bytes = 0;
     uint32_t memory_inactive_writers = 0;
     double memory_plan_seconds = 0;
-    bool flat_descriptors = false;
     uint64_t flat_inlined_nodes = 0, descriptor_bytes = 0;
     double flat_plan_seconds = 0;
 };
@@ -43,6 +40,6 @@ public:
     virtual Fingerprints fingerprints() = 0;
     virtual Info info() const = 0;
 };
-std::unique_ptr<Engine> make_cpu(const Model& model, bool flat_descriptors = false);
-std::unique_ptr<Engine> make_cuda(const Model& model, Config config);
+std::unique_ptr<Engine> make_cpu(const Model& model);
+std::unique_ptr<Engine> make_cuda(const Model& model, int device = 0);
 } // namespace nanhu

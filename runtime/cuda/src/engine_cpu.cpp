@@ -70,7 +70,6 @@ void Model::validate() const {
         throw std::runtime_error("Program outside modeled RAM");
 }
 
-template<bool Flat>
 class CPU final : public Engine {
     const Model& model;
     FlatPlan flat;
@@ -79,23 +78,20 @@ class CPU final : public Engine {
     std::vector<Write> writes;
     Error error{};
 public:
-    explicit CPU(const Model& m) : model(m), flat(Flat ? build_flat_plan(m) : FlatPlan{}), data(m.initial), out(m.max_outputs),
+    explicit CPU(const Model& m) : model(m), flat(build_flat_plan(m)), data(m.initial), out(m.max_outputs),
         mem64(m.size64), snapshot(m.observe.size()), mem8(m.size8), writes(m.memwrites) {
         for (auto base : m.ram_bases) std::memcpy(mem64.data() + base, m.program.data(), m.program.size());
     }
     Step step(bool reset) override {
         data[model.reset_slot] = reset;
-        View v{model.ops.data(), model.args.data(), model.scatter.data(), model.jump.data(),
+        View v{nullptr, model.args.data(), model.scatter.data(), model.jump.data(),
             data.data(), out.data(), mem64.data(), mem8.data(), writes.data(), &error, model.size64, model.size8};
-        if constexpr (Flat) { v.ops = nullptr; v.flat_ops = flat.ops.data(); }
+        v.flat_ops = flat.ops.data();
         size_t offset = 0;
         for (auto l : model.layers) {
-            for (uint32_t i = l.begin; i < l.end; ++i) {
-                if constexpr (Flat) evaluate_flat(v, i);
-                else evaluate(v, i);
-            }
+            for (uint32_t i = l.begin; i < l.end; ++i) evaluate_flat(v, i);
             if (error.code) throw std::runtime_error("CPU evaluator error " + std::to_string(error.code) + " node " + std::to_string(error.node));
-            commit_memory<Flat>(v, l);
+            commit_memory<true>(v, l);
             for (uint32_t j = 0; j < l.outputs; ++j) data[model.scatter[offset + j]] = out[j];
             offset += l.outputs;
         }
@@ -104,19 +100,18 @@ public:
     }
     Fingerprints fingerprints() override { return {fingerprint(data), fingerprint(mem64), fingerprint(mem8)}; }
     Info info() const override {
-        Info info{Flat ? "CPU flat evaluator (validation)" : "CPU shared evaluator (validation)", "host"};
-        info.flat_descriptors = Flat; info.flat_inlined_nodes = flat.inlined_nodes;
-        info.descriptor_bytes = model.ops.size() * (Flat ? sizeof(FlatOp) : sizeof(Op));
+        Info info{"CPU flat evaluator (validation)", "host"};
+        info.flat_inlined_nodes = flat.inlined_nodes;
+        info.descriptor_bytes = model.ops.size() * sizeof(FlatOp);
         info.flat_plan_seconds = flat.build_seconds;
         return info;
     }
 };
-std::unique_ptr<Engine> make_cpu(const Model& model, bool flat_descriptors) {
-    if (flat_descriptors) return std::make_unique<CPU<true>>(model);
-    return std::make_unique<CPU<false>>(model);
+std::unique_ptr<Engine> make_cpu(const Model& model) {
+    return std::make_unique<CPU>(model);
 }
 #ifndef NANHU_HAS_CUDA
-std::unique_ptr<Engine> make_cuda(const Model&, Config) {
+std::unique_ptr<Engine> make_cuda(const Model&, int) {
     throw std::runtime_error("CUDA backend not built; configure with -DNANHU_ENABLE_CUDA=ON and nvcc, or explicitly use --cpu for validation");
 }
 #endif

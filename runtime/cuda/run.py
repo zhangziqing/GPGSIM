@@ -28,17 +28,8 @@ def main():
     p.add_argument('--cycles', type=int, default=1024)
     p.add_argument('--label', default=datetime.datetime.now().strftime('%Y%m%d-%H%M%S'))
     p.add_argument('--cpu', action='store_true')
-    p.add_argument('--no-graph', action='store_true')
-    p.add_argument('--flat-descriptors', action='store_true')
-    memory = p.add_mutually_exclusive_group()
-    memory.add_argument('--memory-candidates', action='store_true')
-    memory.add_argument('--direct-memory-writes', action='store_true')
-    p.add_argument('--tail-threshold', type=int, default=128)
-    p.add_argument('--threads', type=int, default=256)
     p.add_argument('--device', type=int, default=0)
     a = p.parse_args()
-    if a.cpu and a.direct_memory_writes:
-        p.error('--direct-memory-writes requires CUDA')
     if not 1 <= a.cycles <= 100000:
         p.error('cycles must be 1..100000')
     if not a.label or a.label in ('.', '..') or Path(a.label).name != a.label:
@@ -60,18 +51,9 @@ def main():
     if a.cycles == 100000 and sha(reference) != model['reference_sha256']:
         raise RuntimeError('Decompressed full reference hash differs')
     command = [str(a.binary.resolve()), '--data', str(a.data.resolve()), '--cycles', str(a.cycles),
-        '--trace', str(folder / 'actual.trace'), '--reference', str(reference), '--tail-threshold', str(a.tail_threshold),
-        '--threads', str(a.threads), '--device', str(a.device)]
+        '--trace', str(folder / 'actual.trace'), '--reference', str(reference), '--device', str(a.device)]
     if a.cpu:
         command += ['--cpu']
-    if a.no_graph:
-        command += ['--no-graph']
-    if a.flat_descriptors:
-        command += ['--flat-descriptors']
-    if a.memory_candidates:
-        command += ['--memory-candidates']
-    if a.direct_memory_writes:
-        command += ['--direct-memory-writes']
     metadata = dict(command=command, binary_sha256=sha(a.binary), model_sha256=sha(a.data / 'model.json'),
                     platform=platform.platform(), cycles=a.cycles)
     try:
@@ -86,10 +68,6 @@ def main():
         print((folder / 'run.log').read_text()[-4000:])
         raise RuntimeError('Runner failed: ' + str(folder))
     value = json.loads((folder / 'result.out').read_text())
-    if value.get('flat_descriptors', False) != a.flat_descriptors:
-        raise RuntimeError('Descriptor mode differs from request')
-    if value['direct_memory_writes'] != a.direct_memory_writes:
-        raise RuntimeError('Memory commit mode differs from request')
     if value['observed_cycles'] != a.cycles or not value['online_reference_comparison']:
         raise RuntimeError('Reference check not active or cycle count differs')
     if sha(folder / 'actual.trace') != sha(reference):
