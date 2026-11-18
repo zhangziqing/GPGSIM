@@ -1,5 +1,9 @@
 # Nanhu simulation and measurement contract
 
+This contract covers GPGSIM's current Nanhu integration. Its device, reset and
+observation policies must be specified separately for any further design;
+[ARCHITECTURE.md](ARCHITECTURE.md) describes the framework responsibilities.
+
 The source design is single-core Nanhu `DefaultConfig` at
 `0a68ebc13b3d96a78d8663679393ecbea5b8fb73`, with real L1/L2/L3. Original
 module/instance hierarchy and source dependencies belong to XiangShan. FIRRTL
