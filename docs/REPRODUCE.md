@@ -1,4 +1,8 @@
-# Source-flow validation branch
+# GPGSIM source-flow validation branch
+
+This workflow targets the Nanhu integration of GPGSIM, the simulation framework
+and supporting infrastructure built on RTeAAL. See
+[ARCHITECTURE.md](ARCHITECTURE.md) for the framework responsibilities.
 
 These are explicit source-build entry points under development. They have not
 completed a fresh source-to-Nanhu replay. The accepted import/runtime checks are
