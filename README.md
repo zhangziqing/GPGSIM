@@ -1,10 +1,19 @@
-# RTeAAL Nanhu reproduction artifact
+# GPGSIM
 
-This repository selects the Nanhu simulation and performance-reproduction files
-from the original research workspace. It owns the Nanhu hosts, CUDA backend,
-workload recipes, configurations and selected evidence. The FIRRTL compiler is
-maintained in the `RTeAAL-Sim` submodule; processor RTL is maintained in the
-`XiangShan-nanhu-legacy` submodule, pointing to the author's XiangShan fork.
+GPGSIM is a simulation framework and supporting infrastructure built on RTeAAL.
+It maintains CPU/CUDA runtimes, simulation hosts, build and run tooling, workload
+recipes, correctness checks, measurement workflows and source provenance.
+
+The FIRRTL compiler, general graph transformations and upstream CPU kernels are
+maintained in `zhangziqing/RTeAAL-Sim`. Design RTL remains in its source repository;
+the current Nanhu integration pins `zhangziqing/XiangShan`. Both dependencies
+are referenced through submodules.
+
+Nanhu is the current design integration and validation case. Its device models,
+observers, workloads and measurements document that integration's scope. The
+framework's broader purpose does not imply verified support for arbitrary RTL.
+[Architecture and responsibilities](docs/ARCHITECTURE.md) describes the runtime,
+infrastructure and design-specific boundaries.
 
 **Status:** initial source organization and runtime checks. This is not yet an
 accepted fresh-clone reproduction of every reported performance result.
@@ -35,6 +44,10 @@ The exact dependencies are simulator
 `0a68ebc13b3d96a78d8663679393ecbea5b8fb73`. See
 [sources.lock.json](sources.lock.json) and [the model contract](docs/MODEL_CONTRACT.md).
 The original workspace's uncommitted compiler edits are not included in these pins.
+
+The configuration files, workload recipes and processor hosts currently target
+Nanhu. The pinned RTL is required by this integration, rather than by every
+future use of the framework.
 
 ## Build and check the runtimes
 
@@ -96,11 +109,11 @@ paths and identities: they are historical records, not measurements of this
 new repository. Relative links inside them can refer to original-workspace
 files that have not been ported.
 
-CoreMark results in this artifact concern a **100,000-cycle non-reset prefix
+Nanhu CoreMark results concern a **100,000-cycle non-reset prefix
 after 64 reset cycles**. They do not establish a completed CoreMark run, final
-CRC or score. [The migration plan](docs/MIGRATION.md) lists the remaining source
-flow, CUDA export and comparison-specific work. Toucan and unrelated Kunminghu
-experiments are excluded.
+CRC or score. [The migration plan](docs/MIGRATION.md) tracks framework organization,
+remaining source-flow validation, CUDA export and comparison-specific work.
+Toucan and unrelated Kunminghu experiments are excluded.
 
 [Third-party source notices](NOTICE.md) preserve the provenance and license
 boundaries of the imported code and pinned dependencies.

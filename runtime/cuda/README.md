@@ -1,4 +1,9 @@
-# Nanhu CUDA runtime
+# GPGSIM CUDA runtime: Nanhu integration
+
+The CUDA runtime belongs to the GPGSIM simulation framework. Its current host,
+model package and observation interfaces target Nanhu; broader design support
+requires separate integration and validation. See the
+[framework architecture](../../docs/ARCHITECTURE.md).
 
 This directory contains the Nanhu CUDA backend, its independent CPU interpreter,
 CMake controls and dependency notices. It is a source import; generated `data/`

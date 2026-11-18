@@ -1,4 +1,9 @@
-# Import verification and remaining reproduction work
+# GPGSIM verification status and remaining work
+
+GPGSIM is a simulation framework and supporting infrastructure built on RTeAAL.
+The checks recorded here currently cover runtime components and the Nanhu
+integration. They do not establish support for additional designs. See
+[ARCHITECTURE.md](ARCHITECTURE.md) for responsibilities and integration boundaries.
 
 Recorded November 17, 2026. Machine-readable evidence is in
 [provenance/validation.json](../provenance/validation.json).

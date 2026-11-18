@@ -1,9 +1,16 @@
-# Nanhu publication plan: separate reproduction repository
+# GPGSIM framework and infrastructure migration plan
 
-Updated November 17, 2026. The user selected **option 2**: create a clean
-`zhangziqing/RTeAAL-Nanhu` reproduction repository by selecting necessary files
-from this workspace. The earlier simulator-only consolidation proposal is
-superseded. The current workspace is the source pool, not the publication unit.
+Updated November 18, 2026. The user selected **option 2**: maintain an independent
+repository by selecting necessary files from the research workspace. The
+repository is now `zhangziqing/GPGSIM`, a simulation framework and supporting
+infrastructure built on RTeAAL. Nanhu is its current design integration and
+validation case. The earlier name, `RTeAAL-Nanhu`, described the initial import;
+Nanhu performance reproduction is one framework use case.
+
+The current workspace is the source pool. Its existing local checkout remains
+at `RTeAAL-Nanhu/`; the logical repository name below is GPGSIM.
+[ARCHITECTURE.md](ARCHITECTURE.md) describes component responsibilities and the
+boundary between current integration support and future generalization.
 
 ## Repository ownership
 
@@ -11,9 +18,9 @@ superseded. The current workspace is the source pool, not the publication unit.
 | --- | --- |
 | `zhangziqing/RTeAAL-Sim` | FIRRTL compiler, general graph transformations, fast-accesses source, upstream CPU kernels and compiler tests |
 | `zhangziqing/XiangShan` | Processor RTL and any actual RTL modifications; pinned Nanhu dependencies |
-| `zhangziqing/RTeAAL-Nanhu` | Nanhu-specific hosts, CUDA implementation, source-build orchestration, workload recipes, measurement settings, checks and selected evidence |
+| `zhangziqing/GPGSIM` | Simulation runtimes and hosts, build/run infrastructure, design integrations, workload recipes, checks, measurement workflows and provenance |
 
-The reproduction repository references both source repositories by exact Git
+GPGSIM references both source repositories by exact Git
 submodule commit. Compiler or RTL source is not duplicated in it. The initial
 pins are simulator `9e702ac16e0035592f9285d840629aba159be6bd` and Nanhu
 `0a68ebc13b3d96a78d8663679393ecbea5b8fb73`; both were confirmed accessible
@@ -26,7 +33,7 @@ patch is inferred from the presence of host or compiler adapters.
 ## Selected layout
 
 ```text
-RTeAAL-Nanhu/
+GPGSIM/
 ├── RTeAAL-Sim/                  # Pinned compiler submodule
 ├── XiangShan-nanhu-legacy/      # Pinned processor submodule
 ├── sources.lock.json           # Commits, tool versions, workload and input hashes
@@ -41,23 +48,25 @@ RTeAAL-Nanhu/
 ├── fixtures/nanhu/             # Small semantic control inputs
 ├── evidence/original/          # Immutable selected historical records
 ├── provenance/                 # Per-file source hashes and migration inventory
-├── docs/                       # Reproduction status, contracts and remaining work
+├── docs/                       # Framework boundaries, integration status and remaining work
 └── build/                      # Ignored models, generated RTL, binaries and new runs
 ```
 
-Generic compiler changes stay in the compiler repository. The initial artifact
-keeps separately measured observer implementations: merging them is outside this
-organization task. The CUDA implementation is published as a Nanhu runtime until
-broader applicability is demonstrated.
+Generic compiler changes stay in the compiler repository. GPGSIM owns runtime
+execution and its supporting infrastructure. Existing Nanhu-specific observers,
+host devices, model inputs and settings retain their current locations and
+contracts. Broader design support requires explicit interfaces and validation;
+this positioning update does not generalize the runtime implementation.
 
 ## File selection and import status
 
 [publication-files.csv](../provenance/publication-files.csv) retains the original
 392-file, approximately 8.5 MB source inventory. Its source hashes are unchanged.
-`destination_repo` now assigns ownership, and `stage` distinguishes imported
-files, existing compiler dependencies, replacement entry points and pending
-ports. Repeated target names can identify several old scripts replaced by one
-new source-build entry point; they are not multiple file copies.
+`destination_repo` assigns current ownership, including the GPGSIM rename,
+and `stage` distinguishes imported files, existing compiler dependencies,
+replacement entry points and pending ports. Repeated target names can identify
+several old scripts replaced by one new source-build entry point; they are not
+multiple file copies.
 
 The first import selects CPU and Verilator hosts, the CUDA implementation and
 its tests/licenses/JSON header, required observation configuration, small
@@ -99,9 +108,10 @@ files and generated artifacts are preserved.
 
 ## Code Modification Plan
 
-1. Establish the independent repository, pinned submodules, provenance inventory,
-   focused ignore rules and a readable status entry point. Import source baselines
-   without changing the current workspace or its compiler/RTL checkouts.
+1. Maintain `README.md`, `docs/ARCHITECTURE.md`, this migration plan and the
+   publication inventory around GPGSIM's framework and infrastructure ownership.
+   Preserve source hashes, dependency pins and Nanhu validation boundaries.
+   Check links, Git metadata, inventory fields and ignored artifact paths.
 2. Build the CPU hosts and preprocessing from pinned upstream source using CMake;
    generate the measured wide-counter NU wrapper directly from `kernel_NU.cc`.
    Rebuild RV64I workloads and run existing independent RU/NU kernel controls.
@@ -111,9 +121,10 @@ files and generated artifacts are preserved.
    CoreMark-prefix execution. Use isolated build outputs; require hashes and
    explicit CPU affinity. These entry points require full source-flow validation
    before declaring fresh-clone reproduction accepted.
-4. Retain the CUDA source/runtime controls and versioned dependency notices.
-   Build with CUDA disabled and run the eight existing CPU CTests. CUDA builds,
-   real-device CTests, model export and full prefix runs require separate checks.
+4. Maintain CPU/CUDA runtime builds, semantic controls and dependency notices.
+   Run the controls applicable to each source revision. CUDA compilation,
+   real-device controls, portable model export and full-prefix execution have
+   separate acceptance records; historical test counts are revision-specific.
 5. Port reported comparisons one at a time: original CPU baseline, GPU graph and
    runtime variants, repaired PLRU, then GSIM/AVX-512 if their results are published.
    Resolve transitive imports, old class overlays, source pins, graph settings and
@@ -124,10 +135,15 @@ files and generated artifacts are preserved.
    separately. Publish source only with explicit current verification status;
    full reproducibility requires regeneration or hashed release assets and a
    checked full-prefix result from the documented configuration.
+7. Before adding further designs, define model generation, host-device and
+   observation interfaces around the current runtime and Nanhu integration.
+   Keep compiler and RTL ownership separate. Validate each new integration
+   against its own reference; defer directory moves and API refactoring until
+   those requirements are established.
 
 ## Initial implementation status
 
-The independent public repository `zhangziqing/RTeAAL-Nanhu` has been created.
+The independent public repository is now named `zhangziqing/GPGSIM`.
 The selected import contains 202 source/evidence records with original and
 imported hashes; the larger inventory remains a backlog, not a wholesale copy.
 
@@ -146,6 +162,10 @@ source-build entry points, which have syntax/CLI checks but no complete Nanhu
 acceptance. No new performance result or complete CoreMark run is claimed.
 
 ## Remaining acceptance work
+
+The framework still needs explicit interfaces for additional designs and a
+portable model-generation flow. The steps below describe the remaining Nanhu
+integration acceptance, rather than defining the repository's whole scope.
 
 The compiler's prior small-test integration does not establish a newly generated
 full Nanhu result. Full elaboration, source compiler build, tensor export,
