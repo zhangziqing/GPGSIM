@@ -204,6 +204,10 @@ int main(int argc, char** argv) try {
     result["flat_inlined_nodes"] = info.flat_inlined_nodes;
     result["descriptor_bytes"] = info.descriptor_bytes;
     result["flat_plan_seconds"] = info.flat_plan_seconds;
+    result["op_group_segments"] = info.op_group_segments;
+    result["op_group_nodes"] = info.op_group_nodes;
+    result["op_group_plan_bytes"] = info.op_group_plan_bytes;
+    result["op_group_plan_seconds"] = info.op_group_plan_seconds;
     result["timing"] = "Non-reset evaluation wall time includes dispatch, synchronization and compact observation copy; excludes loading, reset, trace formatting, reference comparison and final fingerprints. kernel_device_seconds separately uses CUDA events.";
     result["validation_scope"] = "Nanhu CoreMark fixed prefix; optional online cycle/commit/GPR/FPR/CSR/exception/trap/UART reference; 100K cycles do not complete CoreMark.";
     std::cout << result.dump(2) << '\n';

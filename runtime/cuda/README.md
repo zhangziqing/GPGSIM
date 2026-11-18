@@ -19,18 +19,19 @@ cmake --build build/cuda-cpu -j4
 ctest --test-dir build/cuda-cpu --output-on-failure
 ```
 
-All eight CPU tests passed for this import. Real CUDA builds require a supported
-CUDA toolkit and explicit target architecture, for example `75` for the historical
-RTX 2060 configuration:
+The CPU tests cover scheduling, opcodes, memory semantics, candidate
+arbitration, flat descriptors and opcode grouping. CUDA builds require a
+supported toolkit and the target architecture, for example `86` for an RTX 3090
+or `75` for an RTX 2060:
 
 ```bash
-cmake -S runtime/cuda -B build/cuda -DCMAKE_BUILD_TYPE=Release -DCMAKE_CUDA_ARCHITECTURES=75
+cmake -S runtime/cuda -B build/cuda -DCMAKE_BUILD_TYPE=Release -DCMAKE_CUDA_ARCHITECTURES=86
 cmake --build build/cuda -j4
 ctest --test-dir build/cuda --output-on-failure
 ```
 
-CUDA compilation and execution for the imported repository have not been run
-on this host. CPU controls do not establish GPU execution correctness.
+CPU controls do not establish GPU execution correctness. Run the CUDA controls
+on the target device before checking model execution.
 
 ## Checked model execution
 
@@ -46,10 +47,12 @@ python3 runtime/cuda/run.py --binary build/cuda/nanhu_gpu --data /path/to/model 
 
 The wrapper verifies package hashes, compares the complete requested trace and,
 for 100K cycles, checks model-specific final reference fields. It fails on a
-CUDA error instead of falling back to CPU. Memory-candidate commits and direct
-writes are distinct modes; direct writes require a checked conflict plan.
-Flat descriptors, CUDA Graph use, thread count and tail threshold remain explicit
-runtime settings. Graph/compiler variants also need distinct exported identities.
+CUDA error instead of falling back to CPU. The CUDA runtime always uses flat
+descriptors, CUDA Graphs, 256 threads and a small-layer threshold of 128. Large
+layers use opcode groups that preserve node and operand order; fused small
+layers use flat evaluation. Memory commits use a static arbitration plan to
+preserve last-writer priority. Use `--device` to select the CUDA device or `--cpu`
+for validation. Graph/compiler variants need distinct exported identities.
 
 `cycles_per_second`, device-event throughput and simulation-loop wall throughput
 cover different intervals; use the report's stated timing definition.

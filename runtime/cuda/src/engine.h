@@ -32,6 +32,8 @@ struct Info {
     double memory_plan_seconds = 0;
     uint64_t flat_inlined_nodes = 0, descriptor_bytes = 0;
     double flat_plan_seconds = 0;
+    uint64_t op_group_segments = 0, op_group_nodes = 0, op_group_plan_bytes = 0;
+    double op_group_plan_seconds = 0;
 };
 class Engine {
 public:

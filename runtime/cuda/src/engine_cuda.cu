@@ -1,6 +1,7 @@
 #include <cuda_runtime.h>
 #include "engine.h"
 #include "flat_ops.h"
+#include "op_groups.h"
 #include "memory_plan.h"
 #include <algorithm>
 #include <stdexcept>
@@ -23,9 +24,40 @@ template<class T> struct Device {
     std::vector<T> download() const { std::vector<T> x(n); if (n) CU(cudaMemcpy(x.data(), p, n * sizeof(T), cudaMemcpyDeviceToHost)); return x; }
 };
 __global__ void set_reset(uint64_t* data, uint32_t slot, bool reset) { if (threadIdx.x == 0) data[slot] = reset; }
-__global__ void compute(View v, Layer l) {
-    for (uint32_t i = l.begin + blockIdx.x * blockDim.x + threadIdx.x; i < l.end; i += blockDim.x * gridDim.x) {
-        evaluate_flat(v, i);
+// Each block owns one opcode run slice; scalar arithmetic is specialized at
+// compile time. Node IDs and scalar output slots follow the original order.
+template<uint32_t Code>
+__device__ inline void run_group(const View& v, const GroupSeg& segment, const BlockWork& work,
+                                 const uint32_t* vals) {
+    constexpr uint32_t stride = op_group_stride(Code);
+    const uint64_t limit = uint64_t(work.offset) + blockDim.x;
+    const uint64_t end = segment.count < limit ? segment.count : limit;
+    for (uint64_t j = uint64_t(work.offset) + threadIdx.x; j < end; j += blockDim.x) {
+        const uint32_t out = segment.first_out + uint32_t(j);
+        const uint32_t* a = vals + segment.data_off + stride * j;
+        const uint32_t node = segment.begin + uint32_t(j);
+        evaluate_operands<true>(v, node, Op{0, out, 1, Code},
+            InlineOperands{a[0], stride >= 2 ? a[1] : 0u, stride >= 3 ? a[2] : 0u});
+    }
+}
+__global__ void compute_grouped(View v, const BlockWork* work, const GroupSeg* segments,
+                                const uint32_t* vals) {
+    const BlockWork item = work[blockIdx.x];
+    const GroupSeg segment = segments[item.seg];
+    switch (segment.code) {
+#define NANHU_GROUP_RUN(code) case code: run_group<code>(v, segment, item, vals); break
+    NANHU_GROUP_RUN(0); NANHU_GROUP_RUN(1); NANHU_GROUP_RUN(2); NANHU_GROUP_RUN(3);
+    NANHU_GROUP_RUN(4); NANHU_GROUP_RUN(5); NANHU_GROUP_RUN(6); NANHU_GROUP_RUN(7);
+    NANHU_GROUP_RUN(8); NANHU_GROUP_RUN(9); NANHU_GROUP_RUN(10); NANHU_GROUP_RUN(11);
+    NANHU_GROUP_RUN(12); NANHU_GROUP_RUN(13); NANHU_GROUP_RUN(14); NANHU_GROUP_RUN(15);
+    NANHU_GROUP_RUN(16); NANHU_GROUP_RUN(17); NANHU_GROUP_RUN(18); NANHU_GROUP_RUN(19);
+    NANHU_GROUP_RUN(20); NANHU_GROUP_RUN(24);
+#undef NANHU_GROUP_RUN
+    default:
+        const uint64_t limit = uint64_t(item.offset) + blockDim.x;
+        const uint64_t end = segment.count < limit ? segment.count : limit;
+        for (uint64_t j = uint64_t(item.offset) + threadIdx.x; j < end; j += blockDim.x)
+            evaluate_flat(v, segment.begin + uint32_t(j));
     }
 }
 __global__ void commit(View v, Layer l, uint32_t scatter_offset) {
@@ -62,6 +94,10 @@ class CUDA final : public Engine {
     const Model& m;
     Info details;
     MemoryWritePlan plan;
+    OpGroupPlan group_plan;
+    Device<GroupSeg> group_segments;
+    Device<BlockWork> group_work;
+    Device<uint32_t> group_vals;
     Device<FlatOp> flat_ops;
     Device<Layer> layers;
     Device<uint32_t> args, scatter, jump, observe;
@@ -90,7 +126,9 @@ class CUDA final : public Engine {
                 small_layers<<<1, threads_per_block, 0, stream>>>(view, layers.p, begin, i, old_offset);
                 ++kernels; fused += i - begin;
             } else {
-                compute<<<blocks(l.end - l.begin), threads_per_block, 0, stream>>>(view, l);
+                compute_grouped<<<group_plan.layer_work_count[i], threads_per_block, 0, stream>>>(
+                    view, group_work.p + group_plan.layer_work_begin[i],
+                    group_segments.p + group_plan.layer_seg_begin[i], group_vals.p);
                 commit<<<blocks(l.outputs), threads_per_block, 0, stream>>>(view, l, offset);
                 kernels += 2; offset += l.outputs; ++i;
             }
@@ -112,7 +150,9 @@ class CUDA final : public Engine {
     }
 public:
     explicit CUDA(const Model& model, int device) : m(model),
-        plan(build_memory_write_plan(m)),
+        plan(build_memory_write_plan(m)), group_plan(build_op_groups(m, threads_per_block)),
+        group_segments(group_plan.segs.size()), group_work(group_plan.work.size()),
+        group_vals(group_plan.vals.size()),
         flat_ops(m.ops.size()),
         layers(m.layers.size()), args(m.args.size()), scatter(m.scatter.size()),
         jump(m.jump.size()), observe(m.observe.size()), memory_offsets(plan.offsets.size()), memory_later(plan.later.size()),
@@ -127,7 +167,12 @@ public:
         const FlatPlan flat = build_flat_plan(m);
         flat_ops.copy(flat.ops);
         details.flat_inlined_nodes = flat.inlined_nodes; details.flat_plan_seconds = flat.build_seconds;
-        details.descriptor_bytes = flat_ops.n * sizeof(FlatOp);
+        group_segments.copy(group_plan.segs); group_work.copy(group_plan.work);
+        group_vals.copy(group_plan.vals);
+        details.op_group_segments = group_plan.segs.size(); details.op_group_nodes = group_plan.nodes;
+        details.op_group_plan_seconds = group_plan.build_seconds;
+        details.op_group_plan_bytes = group_plan.device_bytes();
+        details.descriptor_bytes = flat_ops.n * sizeof(FlatOp) + details.op_group_plan_bytes;
         layers.copy(m.layers); args.copy(m.args); scatter.copy(m.scatter);
         jump.copy(m.jump); observe.copy(m.observe); data.copy(m.initial);
         memory_offsets.copy(plan.offsets); memory_later.copy(plan.later);
@@ -178,7 +223,9 @@ std::unique_ptr<Engine> make_cuda(const Model& model, int device) {
     if (p.major < 7 || (p.major == 7 && p.minor < 5)) throw std::runtime_error("This build targets compute capability 7.5+ (RTX 2060)");
     size_t free = 0, total = 0; CU(cudaMemGetInfo(&free, &total));
     const uint64_t need = model.size64 * 8 + model.size8 +
-        model.ops.size() * sizeof(FlatOp) +
+        // Conservative bound: at most one segment and block per node, with
+        // three compact scalar operands. Actual allocations are reported in Info.
+        model.ops.size() * (sizeof(FlatOp) + sizeof(GroupSeg) + sizeof(BlockWork) + 3 * sizeof(uint32_t)) +
         (model.args.size() + model.scatter.size() + model.jump.size()) * 4 + model.initial.size() * 8 +
         model.max_outputs * 8 + model.memwrites * sizeof(Write) + 64 * 1024 * 1024;
     if (free < need) throw std::runtime_error("Not enough free VRAM: need approximately " + std::to_string(need) + " bytes");

@@ -170,6 +170,25 @@ void memory_write_order() {
         throw std::runtime_error("Parallel memory-write final state differs from ordered commit");
 }
 
+void grouped_error_node() {
+    Model m;
+    m.initial = {0, 1, 0}; m.size64 = m.size8 = 1;
+    for (uint32_t node = 0; node < 257; ++node) {
+        m.ops.push_back({uint32_t(m.args.size()), node, 1, 2});
+        m.args.insert(m.args.end(), {2, 1, node == 14 ? 2u : 1u});
+        m.scatter.push_back(uint32_t(m.initial.size())); m.initial.push_back(0);
+    }
+    m.layers.push_back({0, 257, 257, 257}); m.max_outputs = 257;
+    m.validate();
+    auto engine = make_cuda(m);
+    try { engine->step(false); }
+    catch (const std::runtime_error& error) {
+        if (std::string(error.what()).find("GPU evaluator error 2 node 14 detail 0") != std::string::npos) return;
+        throw;
+    }
+    throw std::runtime_error("Grouped division-by-zero error missing");
+}
+
 int main(int argc, char** argv) try {
     bool cpu = false;
     for (int i = 1; i < argc; ++i) {
@@ -180,7 +199,7 @@ int main(int argc, char** argv) try {
     boundaries(); memory_write_order();
     Fixture f; const Model& m = f.m;
     auto engine = cpu ? make_cpu(m) : make_cuda(m);
-    if (!cpu && engine->info().backend != "CUDA Graph")
+    if (!cpu && (engine->info().backend != "CUDA Graph" || !engine->info().op_group_nodes))
         throw std::runtime_error("Opcode test did not use CUDA Graph");
     auto data = m.initial;
     std::vector<uint64_t> output(m.max_outputs), mem64(m.size64), scratch1, scratch2;
@@ -211,6 +230,7 @@ int main(int argc, char** argv) try {
     const auto fp = engine->fingerprints();
     if (fp.data != fingerprint(data) || fp.memory64 != fingerprint(mem64) || fp.memory8 != fingerprint(mem8))
         throw std::runtime_error("Opcode oracle final state or memory mismatch");
+    if (!cpu) grouped_error_node();
     std::cout << "PASS: all 29 opcodes, " << m.ops.size() << " vectors x 4 cycles, original OU oracle; "
               << engine->info().backend << "; host boundary cases\n";
     return 0;
