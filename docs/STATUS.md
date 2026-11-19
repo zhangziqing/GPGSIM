@@ -5,25 +5,26 @@ The checks recorded here currently cover runtime components and the Nanhu
 integration. They do not establish support for additional designs. See
 [ARCHITECTURE.md](ARCHITECTURE.md) for responsibilities and integration boundaries.
 
-Recorded November 17, 2026. Machine-readable evidence is in
-[provenance/validation.json](../provenance/validation.json).
+Initial baseline recorded November 17, 2026; CUDA branch updated November 19,
+2026. Baseline evidence is in [provenance/validation.json](../provenance/validation.json);
+new CUDA measurements are in the [RTX 3090 report](../evidence/rtx3090-nanhu-69l/REPORT.md).
 
 | Check | Result | Boundary |
 | --- | --- | --- |
 | Dependency source identities | Passed | Clean local checkouts at both exact pins; GitHub confirmed both commits exist in the author's forks |
 | CPU source build | Passed | RU checked host, NU/CoreMark/THP variants, FESVR and preprocessing rebuilt from pinned C++ source |
 | Existing RU/NU controls | 2/2 passed | All 29 opcodes, large counters, wide shifts and memory compared with independent existing evaluators |
-| CUDA backend CPU controls | 8/8 passed | Schedule, opcode, memory, conflict-plan and flat-descriptor controls; GPU not exercised |
+| CUDA backend controls | 9/9 passed on RTX 3090 | Current grouped runtime: six CPU controls and three real GPU controls; supersedes the initial eight CPU-only controls |
 | Fresh local checkout | Passed | CPU and CUDA-CPU builds plus all 10 CTests in a separate temporary directory; existing installed yaml-cpp used |
 | RV64I workloads | Rebuilt | Loop counts 1 and 1000; binary hashes recorded in local ignored build manifest |
 | Tensor layout and liveness | Passed | Existing frozen model; semantic reports/input hashes match original checks after path relocation |
 | CPU CoreMark short prefix | Passed | 1,024 observed non-reset cycles match the original Verilator trace byte-for-byte |
 | Compiler build/full elaboration/new tensors | Not run | Source-flow entry points remain isolated on `reproduction-flow` |
 | New Verilator source build and complete 100K comparison | Not run | Historical reports do not supply this acceptance |
-| Portable CUDA model export, CUDA build and GPU replay | Not run | No NVCC/GPU on the source host; no model package is committed |
-| Reported performance replication | Not run | No new timed experiment is claimed |
+| Frozen CUDA model, CUDA build and GPU replay | Passed | Published cached 69-layer model, Release sm_86 build, checked GPU smoke and three full 100K prefixes; not new compiler output |
+| Current CUDA performance measurement | Measured | Single RTX 3090 evaluation median 2528.92 cycles/s; no same-card ungrouped comparison or historical speedup claim |
 
-The 1,024-cycle smoke run uses the unchanged historical tensor files through
+The baseline CPU 1,024-cycle smoke run uses unchanged historical tensor files through
 ignored local symlinks. Its new runner is rebuilt from source, and its complete
 trace SHA-256 is
 `3632de25749ade3041fc5901ddc4f08d85fdfc79fb021b00e141f15e4a2c79cc`.
@@ -39,6 +40,11 @@ points. Those additions have only syntax/interface checks until the full
 source flow is run. They must not be treated as accepted reproduction commands
 on the strength of the main branch's runtime checks.
 
+`cuda-op-groups` contains the kernel fixes, original-order opcode grouping,
+ordinary Git model/reference assets under `ready-to-run/`, and the checked
+RTX 3090 measurement summary. It does not accept the full source flow or
+broaden the cached model's validation boundary. No Release is required.
+
 ## Next acceptance units
 
 1. Validate pinned recursive RTL dependencies and resolve historical nested
@@ -50,8 +56,9 @@ on the strength of the main branch's runtime checks.
    independent CPU model against a newly source-built Verilator reference.
    Progress from a small prefix to the full checked 100K prefix.
 4. Add a portable CUDA exporter with per-graph fingerprints and a hashed asset
-   recipe; run CUDA compilation, device controls and full-prefix checks on the
-   selected GPU before timing.
+   recipe for freshly compiled graphs. The frozen model's runtime has now passed
+   CUDA compilation, device controls and full-prefix checks on an RTX 3090 before
+   timing; new compiler output still needs this acceptance.
 5. Port each comparison's sources, settings and measurement driver separately.
    The inventory marks old CPU tuning, mux/concat/PLRU, runtime ablations,
    GSIM and AVX-512 drivers as pending. Their reports remain original evidence.

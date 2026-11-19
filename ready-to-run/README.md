@@ -50,6 +50,19 @@ cp ready-to-run/nanhu-coremark-100k-reference-aac4bdad.trace.gz build/ready-to-r
 curl -fL 'https://raw.githubusercontent.com/OpenXiangShan/ready-to-run/55df55381ce26dab14211e0fed4165661035ec54/coremark-2-iteration.bin' -o build/ready-to-run/data/program.bin
 ```
 
+If the raw-content hostname is unavailable, fetch the same pinned blob through
+GitHub's Git endpoint instead. Use a fresh upstream directory:
+
+```sh
+git init build/ready-to-run/workload-source
+git -C build/ready-to-run/workload-source remote add origin https://github.com/OpenXiangShan/ready-to-run.git
+git -C build/ready-to-run/workload-source config remote.origin.promisor true
+git -C build/ready-to-run/workload-source config remote.origin.partialclonefilter blob:none
+git -C build/ready-to-run/workload-source fetch --depth=1 --filter=blob:none origin 55df55381ce26dab14211e0fed4165661035ec54
+git -C build/ready-to-run/workload-source show 55df55381ce26dab14211e0fed4165661035ec54:coremark-2-iteration.bin > build/ready-to-run/data/program.bin
+printf '%s  %s\n' 1156255cce0d01cffbf7232fa4a168a00defc41e0c8ea6096a3186ca30a48519 build/ready-to-run/data/program.bin | sha256sum -c -
+```
+
 The workload is the upstream 18,984-byte CoreMark image with SHA-256
 `1156255cce0d01cffbf7232fa4a168a00defc41e0c8ea6096a3186ca30a48519`.
 `runtime/cuda/run.py` verifies all model input sizes and SHA-256 values before
@@ -78,3 +91,6 @@ Every requested row is checked online and byte-for-byte after execution.
 Full-prefix runs also compare architectural endpoints and all three model
 state fingerprints. This prefix does not establish completed CoreMark,
 its final CRC or a CoreMark score.
+
+The [RTX 3090 measurement](../evidence/rtx3090-nanhu-69l/REPORT.md) records three
+checked 100K samples, aggregate resource use, environment and timing definitions.

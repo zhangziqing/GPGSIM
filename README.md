@@ -91,6 +91,8 @@ For real CUDA execution, build with `NANHU_ENABLE_CUDA=ON` and explicitly select
 explain model requirements and validation boundaries. The
 [ready-to-run Nanhu package](ready-to-run/README.md) supplies the 69-layer
 frozen model, its optimization settings, reference trace and RTX 3090 commands.
+The [RTX 3090 report](evidence/rtx3090-nanhu-69l/REPORT.md) records three checked
+100K samples of that frozen model; it does not validate fresh compiler output.
 
 The RV64I workloads require a RISC-V GNU toolchain:
 
