@@ -32,6 +32,7 @@ workloads/                 Checked RV64I source and linker script
 runtime/cpu/               RU/NU/THP hosts and source-build CMake project
 runtime/verilator/         CoreMark reference host and idle JTAG harness
 runtime/cuda/              CUDA backend, independent CPU controls and notices
+ready-to-run/              Frozen 69-layer Nanhu model and 100K reference trace
 fixtures/nanhu/            Small clock, memory and reset control inputs
 provenance/                Source-file hashes and migration inventory
 evidence/original/         Selected original reports, checks and compact results
@@ -77,7 +78,7 @@ requires generated model files under `build/model`, or a supplied
 `kernel/{json,txt,yaml}`, `utils/bin` memory metadata and `layout.json`.
 Historical evidence is not a model package.
 
-The CUDA backend also provides eight CPU-only controls:
+The CUDA backend also provides six CPU-only controls:
 
 ```bash
 cmake -S runtime/cuda -B build/cuda-cpu -DNANHU_ENABLE_CUDA=OFF -DCMAKE_BUILD_TYPE=Release
@@ -87,7 +88,9 @@ ctest --test-dir build/cuda-cpu --output-on-failure
 
 For real CUDA execution, build with `NANHU_ENABLE_CUDA=ON` and explicitly select
 `CMAKE_CUDA_ARCHITECTURES` for the device. [CUDA runtime instructions](runtime/cuda/README.md)
-explain model requirements, flags and validation boundaries.
+explain model requirements and validation boundaries. The
+[ready-to-run Nanhu package](ready-to-run/README.md) supplies the 69-layer
+frozen model, its optimization settings, reference trace and RTX 3090 commands.
 
 The RV64I workloads require a RISC-V GNU toolchain:
 
@@ -97,8 +100,9 @@ python3 tools/build_workloads.py
 
 This creates two binaries and a new manifest under ignored `build/workloads/`.
 The CoreMark image comes from the pinned `ready-to-run` submodule; the acquisition
-identity and hash are in the lock file. No workload or generated model binary
-is embedded in this repository.
+identity and hash are in the lock file. The workload is fetched from its pinned
+upstream source; the selected frozen model and necessary reference trace are
+stored under `ready-to-run/`.
 
 ## Evidence and publication scope
 

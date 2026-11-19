@@ -6,8 +6,8 @@ requires separate integration and validation. See the
 [framework architecture](../../docs/ARCHITECTURE.md).
 
 This directory contains the Nanhu CUDA backend, its independent CPU interpreter,
-CMake controls and dependency notices. It is a source import; generated `data/`
-model packages and full traces are intentionally absent.
+CMake controls and dependency notices. The selected frozen Nanhu model and
+reference trace are available in [`ready-to-run/`](../../ready-to-run/README.md).
 
 ## Build and semantic controls
 
@@ -36,9 +36,9 @@ on the target device before checking model execution.
 ## Checked model execution
 
 `run.py` requires a format-1 model directory containing `model.json`, all hashed
-binary arrays, the workload and compressed 100K reference. The migration does
-not include such a package or claim to regenerate it yet. Once a verified model
-package exists, use explicit inputs and a fresh label:
+binary arrays, the workload and compressed 100K reference. Prepare the frozen
+69-layer model using the ready-to-run instructions, then use explicit inputs
+and a fresh label:
 
 ```bash
 python3 runtime/cuda/run.py --binary build/cuda/nanhu_gpu --data /path/to/model --cycles 1024 --label gpu-smoke
